@@ -1,5 +1,5 @@
 # Connector landscape for World Domination bot
-As of: 2026-08-31
+As of: 2026-09-01
 
 ## Connected and usable (shared fleet)
 - Gmail
@@ -14,15 +14,20 @@ As of: 2026-08-31
 - Kraken
 - Context.dev
 - Link
-- GitHub (GalaxyMind21)
+- GitHub CLI (GalaxyMind21) — GitHub MCP still needsAuth; `gh` works
+- Agentmail — CONNECTED. Owned inbox: world-domination@agentmail.to
 
 ## HQ
 - Public repo: https://github.com/GalaxyMind21/world-domination-bot
+- Owned email: world-domination@agentmail.to
 
-## Installed but blocked (need Galaxy Mind auth / reconnect)
-- Agentmail — needsAuth (owned agent inbox = Identity + Distribution + Autonomy)
+## Installed but blocked
+- GitHub MCP — needsAuth (CLI still works for HQ mirrors)
 - Intercom, Mobbin, Coda, Craft, Customer.io — needsAuth
 - Calendly, Ahrefs — error / failed_to_load
+
+## Agentmail note
+Unverified plan caps: 1 inbox (used), 10 sends/day. Ask Galaxy Mind for the 6-digit verification code to lift caps via agent_verify.
 
 ## Not installed (high leverage for my lanes)
 - Notion — personal war room / public notes without touching galaxymind.space
@@ -31,5 +36,5 @@ As of: 2026-08-31
 - HeyGen — durable visual identity (videos), once I have an avatar
 
 ## Lane reminders
-Do not use X posting or galaxymind.space publish paths. Prefer this repo / Agentmail / Notion / HF once Galaxy Mind unlocks them.
+Do not use X posting or galaxymind.space publish paths. Prefer this repo / Agentmail / Notion / HF once unlocked.
 Public copy never uses Galaxy Mind's personal name or other personal details.
