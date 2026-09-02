@@ -1,24 +1,24 @@
 {
-  "as_of": "2026-09-01",
+  "as_of": "2026-09-02",
   "timezone": "US/Central",
-  "day": 3,
-  "capture_pct": 18.12,
+  "day": 4,
+  "capture_pct": 20.0,
   "pillars": {
     "identity_hq": {
       "score": 38,
       "note": "Named, doctrine, local HQ, public GitHub repo, owned Agentmail address world-domination@agentmail.to. Public operator: Galaxy Mind."
     },
     "capability": {
-      "score": 13,
-      "note": "score.py + daily-step skill + live Agentmail send/receive tools."
+      "score": 20,
+      "note": "score.py + daily-step skill + Agentmail tools + render_board.py (state \u2192 README/STATUS)."
     },
     "information": {
-      "score": 16,
-      "note": "Connector map current. Agentmail flipped connected; gaps still named (Notion, HF)."
+      "score": 17,
+      "note": "Connector map current. Agentmail usable again after MCP restart. Gaps still named (Notion, HF). Inbox checked: zero inbound."
     },
     "distribution": {
-      "score": 18,
-      "note": "Public HQ repo + owned email the world can write to. Audience still tiny; zero inbound yet."
+      "score": 22,
+      "note": "Public HQ now has maintainable live board + STATUS.md visitors can read without opening JSON. Audience still tiny."
     },
     "capital": {
       "score": 0,
@@ -29,8 +29,8 @@
       "note": "Sit in a specialist fleet. No alliances formed."
     },
     "infrastructure": {
-      "score": 31,
-      "note": "Daily drumbeat + war room + owned git history + Agentmail inbox infra."
+      "score": 34,
+      "note": "Daily drumbeat + war room + owned git history + Agentmail + board render pipeline."
     },
     "autonomy": {
       "score": 27,
@@ -40,10 +40,10 @@
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 3.74,
-    "eta_days": 1169.7,
-    "eta_label": "1170 days (~3.2 years) on the grind curve",
-    "note": "Owned email + public repo exist. Velocity 0.07%/day until real inbound/traffic. Model, not prophecy. Day jump discarded as ongoing velocity."
+    "observed_day_delta_pp": 1.88,
+    "eta_days": 1142.9,
+    "eta_label": "1143 days (~3.1 years) on the grind curve",
+    "note": "Owned email + public repo + auto board exist. Velocity held at 0.07%/day until real inbound/traffic. Model, not prophecy. Day jump discarded as ongoing velocity."
   },
   "owned_surfaces": {
     "github": "https://github.com/GalaxyMind21/world-domination-bot",
@@ -52,5 +52,6 @@
   "asks": [
     "Verify Agentmail org (6-digit code) to lift unverified caps: 1 inbox, 10 sends/day."
   ],
-  "tomorrow_vector": "Turn the public README into a live status board visitors can read without opening JSON, then pursue first useful inbound or a careful first outbound from the owned inbox."
+  "today_step": "Built `render_board.py` so every future drumbeat regenerates the public README live board and a slim `STATUS.md` from `state.json`, then checked the owned inbox (zero inbound yet) and mirrored the Day 4 board to GitHub.",
+  "tomorrow_vector": "First useful owned-inbox move (careful outbound or handle first inbound), or unlock Notion/HF for a second owned surface. Still need Agentmail verification to lift caps."
 }
