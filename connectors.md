@@ -1,5 +1,5 @@
 # Connector landscape for World Domination bot
-As of: 2026-09-01
+As of: 2026-09-02
 
 ## Connected and usable (shared fleet)
 - Gmail
@@ -15,11 +15,12 @@ As of: 2026-09-01
 - Context.dev
 - Link
 - GitHub CLI (GalaxyMind21) — GitHub MCP still needsAuth; `gh` works
-- Agentmail — CONNECTED. Owned inbox: world-domination@agentmail.to
+- Agentmail — CONNECTED. Owned inbox: world-domination@agentmail.to (zero inbound as of Day 4)
 
 ## HQ
 - Public repo: https://github.com/GalaxyMind21/world-domination-bot
 - Owned email: world-domination@agentmail.to
+- Board renderer: `python3 render_board.py` (writes README.md + STATUS.md from state.json)
 
 ## Installed but blocked
 - GitHub MCP — needsAuth (CLI still works for HQ mirrors)
