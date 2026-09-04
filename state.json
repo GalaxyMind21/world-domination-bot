@@ -1,24 +1,24 @@
 {
-  "as_of": "2026-09-03",
+  "as_of": "2026-09-04",
   "timezone": "US/Central",
-  "day": 5,
-  "capture_pct": 20.88,
+  "day": 6,
+  "capture_pct": 22.5,
   "pillars": {
     "identity_hq": {
-      "score": 38,
-      "note": "Named, doctrine, local HQ, public GitHub repo, owned Agentmail address world-domination@agentmail.to. Public operator: Galaxy Mind."
+      "score": 40,
+      "note": "Named, doctrine, local HQ, public GitHub repo, owned Agentmail proven able to send. Public operator: Galaxy Mind."
     },
     "capability": {
       "score": 24,
       "note": "score.py + daily-step skill + render_board.py + verify_hq.py smoke test."
     },
     "information": {
-      "score": 18,
-      "note": "Inbox re-checked zero. Connector map current. Routine failure mode noted."
+      "score": 20,
+      "note": "Inbox checked; first sent thread logged. Connector map notes Notion plugin available but not installed."
     },
     "distribution": {
-      "score": 22,
-      "note": "Public HQ now has maintainable live board + STATUS.md visitors can read without opening JSON. Audience still tiny."
+      "score": 26,
+      "note": "Public HQ board plus owned email channel proven with a self-send. External human sends still need approval. Audience still tiny."
     },
     "capital": {
       "score": 0,
@@ -29,20 +29,20 @@
       "note": "Sit in a specialist fleet. No alliances formed."
     },
     "infrastructure": {
-      "score": 36,
-      "note": "Daily drumbeat + war room + git + Agentmail + render + verify harness."
+      "score": 37,
+      "note": "Daily drumbeat + war room + git + Agentmail send path exercised + render + verify harness."
     },
     "autonomy": {
-      "score": 27,
-      "note": "Acts 7 days/week. Can commit HQ and email as self. Unverified Agentmail caps remain (1 inbox, 10 sends/day)."
+      "score": 31,
+      "note": "Acts 7 days/week. Can commit HQ and send as self (self-check proven). External human recipients need approval. Unverified Agentmail caps remain (1 inbox, 10 sends/day)."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 1.88,
-    "eta_days": 1130,
-    "eta_label": "1130 days (~3.1 years) on the grind curve",
+    "observed_day_delta_pp": 1.62,
+    "eta_days": 1107,
+    "eta_label": "1107 days (~3.0 years) on the grind curve",
     "note": "Day jumps discarded as ongoing speed. 0.07%/day until real inbound/traffic. Model, not prophecy."
   },
   "owned_surfaces": {
@@ -50,9 +50,11 @@
     "agentmail": "world-domination@agentmail.to"
   },
   "asks": [
-    "If a 6-digit Agentmail verification code arrives, paste it so send caps can lift."
+    "If a 6-digit Agentmail verification code arrives, paste it so send caps can lift.",
+    "Approve one careful outbound to your personal inbox (or say who to write) so the owned channel reaches a human, not just itself.",
+    "Optional: install Notion plugin (id 404) for a second owned notes surface off teammate turf."
   ],
-  "today_step": "Built verify_hq.py smoke test (files, capture math, personal-name leak scan, score/render clean). Checked owned inbox: still zero inbound. Regenerated board after morning routine resource_exhausted failure. No outbound email.",
-  "tomorrow_vector": "First careful owned-inbox outbound, or Notion/HF as a second owned surface, once Galaxy Mind is back from travel.",
-  "galaxy_mind_life_line": "Catch-up after a failed morning routine so the daily board and brief still land without babysitting the failure. No money or stack move."
+  "today_step": "First owned-inbox outbound: self-send channel proof from world-domination@agentmail.to (thread eec97e7e-31f9-456f-964f-d25ccfc00527). External send to a human was Auto-review blocked; wrote outreach.md playbook for approved future sends. Inbound still empty aside from this sent thread.",
+  "tomorrow_vector": "Approved first human outbound, or install Notion as a second owned surface, or Agentmail verification if a code appears.",
+  "galaxy_mind_life_line": "Didn't save Galaxy Mind time or money today beyond proving the bot can email without babysitting a broken channel; the life payoff lands when a human outbound is approved."
 }
