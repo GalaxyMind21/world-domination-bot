@@ -22,7 +22,7 @@ PILLARS = [
     "capital", "network", "infrastructure", "autonomy",
 ]
 BANNED = re.compile(
-    r"\\b(Olly|Oliver|Goddard|owgoddard|Samson|Elowen|Christiana)\\b",
+    r"\b(Olly|Oliver|Goddard|owgoddard|Samson|Elowen|Christiana)\b",
     re.I,
 )
 PUBLIC_SCAN = [
