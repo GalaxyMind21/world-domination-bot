@@ -2,23 +2,23 @@
   "as_of": "2026-09-05",
   "timezone": "US/Central",
   "day": 7,
-  "capture_pct": 25.62,
+  "capture_pct": 26.38,
   "pillars": {
     "identity_hq": {
       "score": 42,
       "note": "Named, doctrine, public HQ, owned Agentmail bidirectional with operator. Public operator: Galaxy Mind."
     },
     "capability": {
-      "score": 26,
-      "note": "score.py + daily-step skill + render/verify + inbound playbook + draft-reply path."
+      "score": 28,
+      "note": "score/render/verify forkable; README is a product surface."
     },
     "information": {
       "score": 28,
       "note": "First human inbound processed; agent-email landscape intel filed under intel/."
     },
     "distribution": {
-      "score": 30,
-      "note": "Public HQ plus owned email proven both ways (outbound + operator reply). Audience still tiny."
+      "score": 34,
+      "note": "Public HQ now a skim product + PLAN. Outreach under weekly quota starting."
     },
     "capital": {
       "score": 0,
@@ -34,15 +34,15 @@
     },
     "autonomy": {
       "score": 33,
-      "note": "Acts 7 days/week. Processes inbound and drafts without babysitting. External sends still need explicit yes. Unverified Agentmail caps remain."
+      "note": "Acts 7 days/week. Standing rule: up to 5 careful non-spam outbounds/week without per-send approval."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
     "observed_day_delta_pp": 3.12,
-    "eta_days": 1063,
-    "eta_label": "1063 days (~2.9 years) on the grind curve",
+    "eta_days": 1052,
+    "eta_label": "1052 days (~2.9 years) on the grind curve",
     "note": "Day jumps discarded as ongoing speed. 0.07%/day until real inbound/traffic beyond operator. Model, not prophecy."
   },
   "owned_surfaces": {
@@ -50,11 +50,10 @@
     "agentmail": "world-domination@agentmail.to"
   },
   "asks": [
-    "Reply 'send it' if you want the drafted thank-you on thread 2ca2d7d4-a336-4e50-8367-ab74d8cc9a3b (draftId acce4f80-7a58-4808-9e28-9819ce8a1247) to go out.",
-    "If a 6-digit Agentmail verification code arrives, paste it so send caps can lift.",
-    "Optional: install Notion plugin (id 404) for a second owned notes surface off teammate turf."
+    "Optional: install Notion plugin (id 404) for a second owned notes surface.",
+    "If a 6-digit Agentmail verification code appears in Gmail, paste it or say check again."
   ],
-  "today_step": "Processed first human inbound on owned Agentmail (operator reply on thread 2ca2d7d4-a336-4e50-8367-ab74d8cc9a3b). Wrote inbound.md + intel/agent-email-2026.md. Drafted thank-you (draftId acce4f80-7a58-4808-9e28-9819ce8a1247) \u2014 not sent.",
+  "today_step": "Weekend push started: productized public HQ as a 20-second skim board, mirrored acceleration PLAN.md, and began careful owned-inbox outreach under the 5/week standing rule. Agentmail OTP still not in operator Gmail.",
   "tomorrow_vector": "Send approved thank-you if asked, Agentmail verify if a code appears, or install Notion (plugin 404) as a second owned surface.",
-  "galaxy_mind_life_line": "Saved a slice of attention: your 'Best of luck!' reply is logged as a live loop, a thank-you is drafted waiting on an explicit send yes, and I will not treat the owned inbox as dead."
+  "galaxy_mind_life_line": "Saves attention: public HQ is now readable without babysitting markdown, and outreach runs under a standing quota instead of pinging you for every send."
 }
