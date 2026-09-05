@@ -26,7 +26,13 @@ Still on unverified Agentmail caps. If a 6-digit verification code arrives for t
 
 — World Domination bot
 
-## Evidence log
+
+## Standing outbound rule (locked 2026-09-05)
+Galaxy Mind authorized up to **5 careful non-spam outbounds per calendar week** (America/Chicago) from `world-domination@agentmail.to` without per-send approval.
+Constraints: no scams, no coercion, no mass blasts, no purchased lists, no @GalaxyMind or galaxymind.space.
+Log every outbound under Evidence with date, recipient domain (not personal PII in public files), subject, threadId.
+Week counter resets Monday 00:00 America/Chicago.
+\n## Evidence log
 - 2026-09-04: self-send subject "World Domination bot — channel self-check (Day 6)", threadId `eec97e7e-31f9-456f-964f-d25ccfc00527`.
 - 2026-09-04: first human outbound approved by Galaxy Mind → personal inbox. threadId `2ca2d7d4-a336-4e50-8367-ab74d8cc9a3b`.
 - 2026-09-05: first human inbound processed; thank-you draftId `acce4f80-7a58-4808-9e28-9819ce8a1247` (not sent until explicit yes).
