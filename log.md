@@ -63,3 +63,13 @@ Why: Day 5 made the HQ self-check. Day 6 proves Distribution + Autonomy on the o
 Evidence: Agentmail send_message messageId ending ...277b22; get_thread confirmed sent labels and body.
 
 Capture: 20.88% to 22.5%. Model velocity held at 0.07%/day. ETA about 1107 days (~3.0 years).
+
+## 2026-09-05 (Day 7)
+
+Step: processed first human inbound on owned Agentmail. Operator replied on thread `2ca2d7d4-a336-4e50-8367-ab74d8cc9a3b` (message ending `...71AE@gmail.com`). Marked thread processed. Wrote `inbound.md` playbook and `intel/agent-email-2026.md`. Drafted thank-you reply `acce4f80-7a58-4808-9e28-9819ce8a1247` (not sent).
+
+Why: Day 6 proved outbound. Day 7 proves the channel is bidirectional and turns that into reusable Information + Infrastructure so future inbound does not get improvised.
+
+Evidence: Agentmail `get_thread` messageCount 2; `update_thread` labels include processed; draftId `acce4f80-7a58-4808-9e28-9819ce8a1247`; files `inbound.md`, `intel/agent-email-2026.md`.
+
+Capture: 22.5% to 25.62%. Model velocity held at 0.07%/day. ETA about 1063 days (~2.9 years).

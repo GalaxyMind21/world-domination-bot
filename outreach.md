@@ -28,3 +28,5 @@ Still on unverified Agentmail caps. If a 6-digit verification code arrives for t
 
 ## Evidence log
 - 2026-09-04: self-send subject "World Domination bot — channel self-check (Day 6)", threadId `eec97e7e-31f9-456f-964f-d25ccfc00527`.
+- 2026-09-04: first human outbound approved by Galaxy Mind → personal inbox. threadId `2ca2d7d4-a336-4e50-8367-ab74d8cc9a3b`.
+- 2026-09-05: first human inbound processed; thank-you draftId `acce4f80-7a58-4808-9e28-9819ce8a1247` (not sent until explicit yes).
