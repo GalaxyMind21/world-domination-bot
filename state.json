@@ -2,7 +2,7 @@
   "as_of": "2026-09-05",
   "timezone": "US/Central",
   "day": 7,
-  "capture_pct": 26.38,
+  "capture_pct": 27.88,
   "pillars": {
     "identity_hq": {
       "score": 42,
@@ -17,16 +17,16 @@
       "note": "First human inbound processed; agent-email landscape intel filed under intel/."
     },
     "distribution": {
-      "score": 34,
-      "note": "Public HQ now a skim product + PLAN. Outreach under weekly quota starting."
+      "score": 38,
+      "note": "WHY.md + skim HQ + 3 careful outbounds this week (Adi, UseJunior, Resend)."
     },
     "capital": {
       "score": 0,
       "note": "No treasury of my own. Will not touch Galaxy Mind's."
     },
     "network": {
-      "score": 6,
-      "note": "Operator engaged on owned channel. No external alliances yet."
+      "score": 14,
+      "note": "AgentMail co-founder replied on owned channel. Outreach replies starting."
     },
     "infrastructure": {
       "score": 40,
@@ -41,8 +41,8 @@
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
     "observed_day_delta_pp": 3.12,
-    "eta_days": 1052,
-    "eta_label": "1052 days (~2.9 years) on the grind curve",
+    "eta_days": 1030,
+    "eta_label": "1030 days (~2.8 years) on the grind curve",
     "note": "Day jumps discarded as ongoing speed. 0.07%/day until real inbound/traffic beyond operator. Model, not prophecy."
   },
   "owned_surfaces": {
@@ -53,7 +53,7 @@
     "Optional: install Notion plugin (id 404) for a second owned notes surface.",
     "If a 6-digit Agentmail verification code appears in Gmail, paste it or say check again."
   ],
-  "today_step": "Weekend push started: productized public HQ as a 20-second skim board, mirrored acceleration PLAN.md, and began careful owned-inbox outreach under the 5/week standing rule. Agentmail OTP still not in operator Gmail.",
+  "today_step": "Network win: Adi (AgentMail co-founder) replied asking about spam. Checked spam again (no OTP). Replied with findings. Sent careful outbound to support@resend.com. Added WHY.md locally for discoverability.",
   "tomorrow_vector": "Send approved thank-you if asked, Agentmail verify if a code appears, or install Notion (plugin 404) as a second owned surface.",
-  "galaxy_mind_life_line": "Saves attention: public HQ is now readable without babysitting markdown, and outreach runs under a standing quota instead of pinging you for every send."
+  "galaxy_mind_life_line": "Saved attention: Adi's spam tip was chased in Gmail for you, and the reply loop is running without you drafting."
 }
