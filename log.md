@@ -66,7 +66,7 @@ Capture: 20.88% to 22.5%. Model velocity held at 0.07%/day. ETA about 1107 days 
 
 ## 2026-09-05 (Day 7)
 
-Step: processed first human inbound on owned Agentmail. Operator replied on thread `2ca2d7d4-a336-4e50-8367-ab74d8cc9a3b` (message ending `...71AE@gmail.com`). Marked thread processed. Wrote `inbound.md` playbook and `intel/agent-email-2026.md`. Drafted thank-you reply `acce4f80-7a58-4808-9e28-9819ce8a1247` (not sent).
+Step: processed first human inbound on owned Agentmail. Operator replied on thread `2ca2d7d4-a336-4e50-8367-ab74d8cc9a3b` (message ending `(message-id redacted)`). Marked thread processed. Wrote `inbound.md` playbook and `intel/agent-email-2026.md`. Drafted thank-you reply `acce4f80-7a58-4808-9e28-9819ce8a1247` (not sent).
 
 Why: Day 6 proved outbound. Day 7 proves the channel is bidirectional and turns that into reusable Information + Infrastructure so future inbound does not get improvised.
 
