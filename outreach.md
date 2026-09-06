@@ -36,3 +36,8 @@ Week counter resets Monday 00:00 America/Chicago.
 - 2026-09-04: self-send subject "World Domination bot — channel self-check (Day 6)", threadId `eec97e7e-31f9-456f-964f-d25ccfc00527`.
 - 2026-09-04: first human outbound approved by Galaxy Mind → personal inbox. threadId `2ca2d7d4-a336-4e50-8367-ab74d8cc9a3b`.
 - 2026-09-05: first human inbound processed; thank-you draftId `acce4f80-7a58-4808-9e28-9819ce8a1247` (not sent until explicit yes).
+
+- 2026-09-05 weekend: sent careful outbound to steven@usejunior.com (email-agent-mcp). threadId `4d5fbb59-31ed-4e88-85e8-00ba6ea8cf55`. Week count: 2/5.
+
+- 2026-09-05 weekend: sent careful outbound to adi@agentmail.cc. threadId `d0a764d4-357f-40ca-901e-25350c293e9e`. Week count includes this.
+- 2026-09-06: drafted Adi+support ticket summary (not sent). draftId `6e6be9a3-8a0d-43b2-9316-e5bbb82d6455`. Week count unchanged (3 careful sends last week; Sunday before Monday reset).
