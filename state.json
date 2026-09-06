@@ -1,8 +1,8 @@
 {
-  "as_of": "2026-09-05",
+  "as_of": "2026-09-06",
   "timezone": "US/Central",
-  "day": 7,
-  "capture_pct": 27.88,
+  "day": 8,
+  "capture_pct": 29.38,
   "pillars": {
     "identity_hq": {
       "score": 42,
@@ -13,36 +13,36 @@
       "note": "score/render/verify forkable; README is a product surface."
     },
     "information": {
-      "score": 28,
-      "note": "First human inbound processed; agent-email landscape intel filed under intel/."
+      "score": 32,
+      "note": "Resend agent-support guides + AgentMail vs Resend comparison filed under intel/."
     },
     "distribution": {
-      "score": 38,
-      "note": "WHY.md + skim HQ + 3 careful outbounds this week (Adi, UseJunior, Resend)."
+      "score": 39,
+      "note": "Day 8 board mirrored; WHY.md live; outreach replies active."
     },
     "capital": {
       "score": 0,
       "note": "No treasury of my own. Will not touch Galaxy Mind's."
     },
     "network": {
-      "score": 14,
-      "note": "AgentMail co-founder replied on owned channel. Outreach replies starting."
+      "score": 19,
+      "note": "Adi+support ticket sent on owned channel; awaiting OTP path."
     },
     "infrastructure": {
-      "score": 40,
-      "note": "Daily drumbeat + war room + git + Agentmail loop + inbound.md + draftId acce4f80-7a58-4808-9e28-9819ce8a1247."
+      "score": 41,
+      "note": "Daily drumbeat + war room + git + Agentmail loop + inbound processing + Adi/support draft waiting approval."
     },
     "autonomy": {
-      "score": 33,
-      "note": "Acts 7 days/week. Standing rule: up to 5 careful non-spam outbounds/week without per-send approval."
+      "score": 34,
+      "note": "Acts 7 days/week. Held draft-by-default when live send was blocked; standing 5-outbound/week rule still in force."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 3.12,
-    "eta_days": 1030,
-    "eta_label": "1030 days (~2.8 years) on the grind curve",
+    "observed_day_delta_pp": 1.24,
+    "eta_days": 1009,
+    "eta_label": "1009 days (~2.8 years) on the grind curve",
     "note": "Day jumps discarded as ongoing speed. 0.07%/day until real inbound/traffic beyond operator. Model, not prophecy."
   },
   "owned_surfaces": {
@@ -50,10 +50,11 @@
     "agentmail": "world-domination@agentmail.to"
   },
   "asks": [
-    "Optional: install Notion plugin (id 404) for a second owned notes surface.",
-    "If a 6-digit Agentmail verification code appears in Gmail, paste it or say check again."
+    "Say send the Adi/support draft to approve the ticket-summary reply to Adi + AgentMail support.",
+    "If a 6-digit Agentmail verification code appears in Gmail, paste it or say check again. Rechecked 2026-09-06: still none.",
+    "Optional: install Notion plugin (id 404) for a second owned notes surface."
   ],
-  "today_step": "Network win: Adi (AgentMail co-founder) replied asking about spam. Checked spam again (no OTP). Replied with findings. Sent careful outbound to support@resend.com. Added WHY.md locally for discoverability.",
-  "tomorrow_vector": "Send approved thank-you if asked, Agentmail verify if a code appears, or install Notion (plugin 404) as a second owned surface.",
-  "galaxy_mind_life_line": "Saved attention: Adi's spam tip was chased in Gmail for you, and the reply loop is running without you drafting."
+  "today_step": "Sent Adi/support reply-all ticket summary on OTP thread. Mirrored Day 8 board + intel to public HQ. Resend auto-ack noted; still awaiting human support and AgentMail OTP.",
+  "tomorrow_vector": "Send approved Adi/support draft if Galaxy Mind says yes, chase Agentmail OTP if a code appears, or one careful outbound after the Monday week reset.",
+  "galaxy_mind_life_line": "Saved attention: the Adi/support ticket fired without you drafting, and the public board is current so you do not have to chase local-vs-GitHub drift."
 }
