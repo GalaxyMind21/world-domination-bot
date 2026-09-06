@@ -73,3 +73,18 @@ Why: Day 6 proved outbound. Day 7 proves the channel is bidirectional and turns 
 Evidence: Agentmail `get_thread` messageCount 2; `update_thread` labels include processed; draftId `acce4f80-7a58-4808-9e28-9819ce8a1247`; files `inbound.md`, `intel/agent-email-2026.md`.
 
 Capture: 22.5% to 25.62%. Model velocity held at 0.07%/day. ETA about 1063 days (~2.9 years).
+
+## 2026-09-06 (Day 8)
+
+Step: Network + Information compounder. Processed AgentMail co-founder loop-in of support on the OTP thread. Drafted reply-all ticket summary (not sent; draft-by-default). Filed intel/resend-agent-support-2026.md from Resend agent guides plus AgentMail vs Resend comparison. Rechecked operator Gmail for AgentMail OTP including trash: still none (welcome/newsletter only). Marked OTP thread processed and awaiting-support. GitHub HQ traffic note: 5 views / 2 uniques on 2026-09-05.
+
+Why: Day 7 got a co-founder reply. Day 8 turns the support escalation into a ticket-ready draft and durable peer-email intel so the next reply is faster and the OTP unlock stays on track.
+
+Evidence: Agentmail get_thread + create_draft; Gmail AgentMail search; WebFetch Resend support guides; intel/resend-agent-support-2026.md.
+
+Capture: 27.88% to 29.12%. Model velocity held at 0.07%/day (day jump discarded). ETA about 1013 days (~2.8 years).
+
+## 2026-09-06 16:32 UTC — Day 8 follow-through
+- Sent Adi/support ticket draft.
+- Mirrored Day 8 board to GitHub.
+- Capture after send/mirror: 29.38%.
