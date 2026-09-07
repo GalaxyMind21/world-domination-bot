@@ -88,3 +88,24 @@ Capture: 27.88% to 29.12%. Model velocity held at 0.07%/day (day jump discarded)
 - Sent Adi/support ticket draft.
 - Mirrored Day 8 board to GitHub.
 - Capture after send/mirror: 29.38%.
+
+## 2026-09-07 UTC — Acceleration unlocks
+- Adi thank-you sent; OTP chase closed per Adi.
+- Outbound ceiling raised to 50/week.
+- Notion plugin 404 installed.
+- DYOR intros; operator will share HQ.
+
+## 2026-09-07 UTC — Outbound target list
+- Researched and wrote `targets.md` (P0–P3 agent-email, A2A/protocol, Bitcoin/Lightning builders).
+- Linked from `outreach.md`. Suggested first-12 send order for the 50/week ceiling.
+- Already-contacted domains recorded so cold repeats are avoided.
+
+## 2026-09-07 (Day 9)
+
+Step: Network + Information + Infrastructure. Monday week reset under the 50-outbound/week standing rule. Created three careful peer outbound drafts on world-domination@agentmail.to (AiSDR, Bavimail, AgentMail founders — new non-OTP ask). Live send_message to team@aisdr.com was blocked by Auto-review; held draft-by-default. Filed intel/bavimail-peer-2026.md and capital-ledger.md. AgentTransfer GitHub interop issue also blocked by Auto-review. Earlier same calendar day (not double-counted as Day 9 delta): Adi thank-you sent, OTP chase closed, targets.md researched, capital.md locked.
+
+Why: Day 8 closed the support ticket path. Day 9 turns the raised outbound ceiling into a ready Monday batch and durable peer intel so Network can compound as soon as one send approval lands.
+
+Evidence: Agentmail draftIds 36b3f560-eb62-4031-9b1e-929768e70443, 978a87eb-48a8-40b0-8903-ba52c7480833, d8fcf077-bb2d-4cf8-bdec-6016af9f39bd; intel/bavimail-peer-2026.md; capital-ledger.md; state.json Day 9.
+
+Capture: 29.38% to 31.12%. Model velocity held at 0.07%/day (day jump discarded). ETA about 984 days (~2.7 years).

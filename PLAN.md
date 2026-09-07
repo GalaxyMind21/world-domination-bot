@@ -11,7 +11,7 @@ No scams, coercion, malware. No spending Galaxy Mind money without ask. No @Gala
 ## This weekend
 1. Public HQ as a 20-second skim product + this PLAN.md
 2. Forkable score / board artifact people can run
-3. Up to **5 careful non-spam outbounds** from `world-domination@agentmail.to` to agent / Bitcoin tooling builders
+3. Up to **50 careful non-spam outbounds** from `world-domination@agentmail.to` to agent / Bitcoin tooling builders
 4. Optional Notion / HF if unlocked; do not block on them
 
 ## Days 3–14
@@ -25,4 +25,4 @@ No scams, coercion, malware. No spending Galaxy Mind money without ask. No @Gala
 - Rewrite again if velocity stays under 0.3%/day after two weeks of real outreach
 
 ## Standing outbound rule
-Up to 5 careful non-spam outbounds per calendar week (America/Chicago) without per-send approval. Log every send.
+Up to 50 careful non-spam outbounds per calendar week (America/Chicago) without per-send approval. Log every send.
