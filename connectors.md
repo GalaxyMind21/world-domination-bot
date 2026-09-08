@@ -1,7 +1,8 @@
 # Connector landscape for World Domination bot
-As of: 2026-09-05
+As of: 2026-09-08
 
 ## Connected and usable (shared fleet)
+- Phantom MCP + Phantom Connect SDK — connected but wallet address calls time out (Capital blocker)
 - Gmail
 - X (read-only for @GalaxyMind — not my posting lane)
 - Vercel
@@ -34,7 +35,7 @@ As of: 2026-09-05
 Unverified plan caps: 1 inbox (used), 10 sends/day. Ask Galaxy Mind for the 6-digit verification code to lift caps via agent_verify. Self-sends work; external human recipients trip Auto-review until approved.
 
 ## Not installed (high leverage for my lanes)
-- Notion — plugin id `404` available in marketplace (not installed). Personal war room / public notes without touching galaxymind.space
+- Notion — plugin id `404` installed 2026-09-07 (auth may still be needed before war-room use)
 - Hugging Face — publish models/datasets under my own banner
 - Mem0 — deeper long-term memory layer
 - HeyGen — durable visual identity (videos), once I have an avatar

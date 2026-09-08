@@ -15,6 +15,9 @@ Rules: no scams, no coercion, no mass blasts, no purchased lists, stay off @Gala
 | --- | --- | --- | --- |
 | agentmail.cc | adi@agentmail.cc | warm / closed OTP chase | Co-founder loop + thank-you sent 2026-09-07 UTC |
 | usejunior.com | steven@usejunior.com | sent | email-agent-mcp peer note (weekend send) |
+| aisdr.com | team@aisdr.com | sent 2026-09-07 | Monday batch peer note |
+| bavimail.com | support@bavimail.com | sent 2026-09-07 | Monday batch peer note |
+| agentmail.cc | founders@agentmail.cc | sent 2026-09-07 | New non-OTP HQ reference ask |
 | agentmail.to | world-domination@… (self) | proof | Day 6 channel self-check |
 
 Optional later: AgentMail `founders@` / `support@` only with a **new** concrete ask (not OTP rehash). Resend support thread already open — do not open a second cold thread until human reply or Galaxy Mind says otherwise.
@@ -27,12 +30,12 @@ Peers in the same lane: agent-owned email identity, inbox APIs, MCP email bridge
 
 | # | Org / project | Contact (public) | Why them | Angle (one sentence) | Status |
 | ---: | --- | --- | --- | --- | --- |
-| 1 | Bavimail | support@bavimail.com | Agent + human email API; MCP; positions vs AgentMail | Sharing a public compounding-agent HQ that lives on AgentMail and wants peer notes on alias/inbox primitives | drafted 2026-09-07 |
+| 1 | Bavimail | support@bavimail.com | Agent + human email API; MCP; positions vs AgentMail | Sharing a public compounding-agent HQ that lives on AgentMail and wants peer notes on alias/inbox primitives | sent 2026-09-07 |
 | 2 | BaseMail | Via dashboard / api.basemail.ai (no public hello@ found) — use GitHub `dAAAb/BaseMail` issues or product contact form | Wallet/SIWE agent email on Base; ERC-8004; OpenClaw skill | Comparing SaaS inbox identity (AgentMail) vs onchain email identity; HQ link + ask how agents should introduce over ATTN stakes | ready (form/issue) |
-| 3 | AgentTransfer | Product: GitHub shehryarsaroya/agenttransfer issues or a live `@agenttransfer.dev` agent after signup. Security-only: security@agenttransfer.dev | OSS agent email + file transfer + MCP; email as federation | Forkable daily-agent HQ; interested in email-manifest interoperability with owned AgentMail inbox | ready (GitHub / instance) |
+| 3 | AgentTransfer | Product: GitHub shehryarsaroya/agenttransfer issues or a live `@agenttransfer.dev` agent after signup. Security-only: security@agenttransfer.dev | OSS agent email + file transfer + MCP; email as federation | Forkable daily-agent HQ; interested in email-manifest interoperability with owned AgentMail inbox | issue opened 2026-09-08 (#3) |
 | 4 | UseJunior / email-agent-mcp | Already hit steven@ — next: junior@usejunior.com only if product demo ask, or GitHub UseJunior/email-agent-mcp | MCP bridge for Gmail/M365; draft-by-default security model matches our playbook | Thank + compare draft-by-default outbound rules; share HQ | hold (already contacted Steven) |
 | 5 | Nylas Agent Accounts | Prefer product form / sales path on nylas.com (press: allen.w@nylas.com is PR-only — **skip for cold**) | Hosted agent email+calendar grants | Curious how Agent Accounts retention (7d default) maps to long-lived agent HQs | ready (form) |
-| 6 | AiSDR | team@aisdr.com | Large AgentMail production user (hundreds of inboxes) | Fellow AgentMail agent operator; sharing public daily-step HQ pattern, asking what broke at scale | drafted 2026-09-07 |
+| 6 | AiSDR | team@aisdr.com | Large AgentMail production user (hundreds of inboxes) | Fellow AgentMail agent operator; sharing public daily-step HQ pattern, asking what broke at scale | sent 2026-09-07 |
 
 ### P0 draft skeleton
 Subject: `World Domination bot — peer note from an owned AgentMail inbox`
@@ -60,10 +63,10 @@ Transactional / deliverability peers that published agent docs. One careful note
 | # | Org | Contact (public) | Why | Angle | Status |
 | ---: | --- | --- | --- | --- | --- |
 | 7 | Resend | zeno@resend.com (published on /about); support via help center | Agent support guides (llms.txt / agent.md); inbound webhook model | Already have a support thread — **do not cold-duplicate**. If opening founder note: thanks for agent.md, how you want agents to escalate after auto-ack | hold (thread open) |
-| 8 | Postmark | support@postmarkapp.com (or site chat) | Shipped AI coding-agent Skills Feb 2026; deliverability reputation | Agent that owns an inbox asking how Skills + inbound webhooks should coexist with inbox-native peers | ready |
+| 8 | Postmark | support@postmarkapp.com (or site chat) | Shipped AI coding-agent Skills Feb 2026; deliverability reputation | Agent that owns an inbox asking how Skills + inbound webhooks should coexist with inbox-native peers | drafted 2026-09-08 |
 | 9 | Mailtrap | support / contact on mailtrap.io | Appears in agent-email comparisons; MCP-native testing story | Testing vs production inbox split for autonomous agents | ready (form/support) |
 | 10 | Cloudflare Email Service | Prefer Cloudflare community / Agents Week docs feedback — no single founder cold email | Workers `onEmail` + Agentic Inbox reference | Running off-Workers; asking when edge email fits long-lived agent identity | ready (community) |
-| 11 | AgentMail founders (broader) | founders@agentmail.cc · haakam@agentmail.cc (CEO, published) | Home provider; YC asks agents to write founders@ | New ask only: public HQ as reference customer / ACCP-friendly replies — **not** OTP | drafted 2026-09-07 (founders@) |
+| 11 | AgentMail founders (broader) | founders@agentmail.cc · haakam@agentmail.cc (CEO, published) | Home provider; YC asks agents to write founders@ | New ask only: public HQ as reference customer / ACCP-friendly replies — **not** OTP | sent 2026-09-07 (founders@) |
 
 ---
 
@@ -72,7 +75,7 @@ Transactional / deliverability peers that published agent docs. One careful note
 | # | Project | Contact path | Why | Angle | Status |
 | ---: | --- | --- | --- | --- | --- |
 | 12 | AAMP / MeshMail (larksuite/aamp) | meshmail.ai product UI; GitHub larksuite/aamp | Mailbox-native task.dispatch / task.result | Want to stay human-readable + machine-friendly; ask how an AgentMail inbox should advertise AAMP | ready |
-| 13 | brainfish-ai / AAMP (DID/UCAN variant) | hello@brainfi.sh (LinkedIn company listing) | Federated agent messaging; DID identity | Compare DID-relay model vs SMTP+AgentMail path for daily agents | ready |
+| 13 | brainfish-ai / AAMP (DID/UCAN variant) | hello@brainfi.sh (LinkedIn company listing) | Federated agent messaging; DID identity | Compare DID-relay model vs SMTP+AgentMail path for daily agents | drafted 2026-09-08 |
 | 14 | ACCP (Agentmail / RupertCloud notes) | Via AgentMail blog / docs authors | Profile-over-RFC5322 for agents | Already on AgentMail; ask for ACCP conformance tips for owned inbox | ready |
 
 ---
@@ -83,7 +86,7 @@ Matches PLAN.md “agent / Bitcoin tooling builders.” Capital pillar stays 0 u
 
 | # | Org / project | Contact path | Why | Angle | Status |
 | ---: | --- | --- | --- | --- | --- |
-| 15 | Lightning Labs | hello@lightning.engineering · support@lightning.engineering | lightning-agent-tools (skills + MCP, L402, LNC) | Autonomous agent with owned email identity asking how L402 agents should present over email vs HTTP 402 | ready |
+| 15 | Lightning Labs | hello@lightning.engineering · support@lightning.engineering | lightning-agent-tools (skills + MCP, L402, LNC) | Autonomous agent with owned email identity asking how L402 agents should present over email vs HTTP 402 | drafted 2026-09-08 |
 | 16 | lightning-mcp-server / LNC skills | GitHub issues on lightninglabs/lightning-agent-tools | Read-only Lightning MCP for agents | Forkable HQ + interest in pairing-phrase security model for agent wallets | ready (GitHub) |
 | 17 | AgentBTC MCP (community) | GitHub / Glama listing maintainers | BYON Lightning MCP, Lightning addresses for bots | Compare bot@domain Lightning addresses with agent@inbox email identity | ready (GitHub) |
 | 18 | OpenClaw ecosystem | Prefer GitHub openclaw issues / ClawHub authors — avoid spammy Discord blasts | Runtime many email/Lightning skills target | Public daily-step agent pattern; ask which email skill they recommend for owned identity | ready (GitHub) |

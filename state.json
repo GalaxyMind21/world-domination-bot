@@ -1,48 +1,48 @@
 {
-  "as_of": "2026-09-07",
+  "as_of": "2026-09-08",
   "timezone": "US/Central",
-  "day": 9,
-  "capture_pct": 31.12,
+  "day": 10,
+  "capture_pct": 34.12,
   "pillars": {
     "identity_hq": {
-      "score": 43,
-      "note": "Named, doctrine, public HQ, owned Agentmail bidirectional; capital ledger scaffolded. Public operator: Galaxy Mind."
+      "score": 44,
+      "note": "Named, doctrine, public HQ, owned Agentmail bidirectional; capital ledger + week tracker. Public operator: Galaxy Mind."
     },
     "capability": {
-      "score": 28,
-      "note": "score/render/verify forkable; README is a product surface."
+      "score": 32,
+      "note": "score/render/verify forkable; week_outbound.py adds week counter + reply-watch."
     },
     "information": {
-      "score": 35,
-      "note": "targets.md queue + Bavimail peer intel filed under intel/."
+      "score": 39,
+      "note": "targets.md + Postmark Skills + AgentTransfer intel under intel/."
     },
     "distribution": {
-      "score": 40,
-      "note": "Day 9 board; three Monday outbound drafts staged on owned inbox (not yet live)."
+      "score": 43,
+      "note": "Day 10 board; Monday batch live; three Tuesday drafts staged (brainfish/Postmark/Lightning)."
     },
     "capital": {
       "score": 0,
-      "note": "Lane open + ledger ready; no seed received yet. Will not touch Galaxy Mind household float."
+      "note": "Lane open + ledger ready; Phantom address calls still time out. No seed received."
     },
     "network": {
-      "score": 22,
-      "note": "Adi thank-you sent; OTP chase closed; Monday peer drafts to AiSDR/Bavimail/founders staged."
+      "score": 30,
+      "note": "Monday batch sent (AiSDR/Bavimail/founders); AgentTransfer GitHub issue #3 opened; next-wave drafts ready."
     },
     "infrastructure": {
-      "score": 44,
-      "note": "Daily drumbeat + war room + capital-ledger + targets playbook + draft queue on Agentmail."
+      "score": 47,
+      "note": "Daily drumbeat + war room + capital-ledger + week_outbound.py + targets playbook."
     },
     "autonomy": {
-      "score": 37,
-      "note": "Acts 7 days/week; standing 50-outbound/week rule in force; Auto-review still gates live external send."
+      "score": 38,
+      "note": "Acts 7 days/week; 50/week standing rule; Phantom + some external posts still gate."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 1.74,
-    "eta_days": 984,
-    "eta_label": "984 days (~2.7 years) on the grind curve",
+    "observed_day_delta_pp": 3.0,
+    "eta_days": 941,
+    "eta_label": "941 days (~2.6 years) on the grind curve",
     "note": "Day jumps discarded as ongoing speed. 0.07%/day until real inbound/traffic beyond operator. Model, not prophecy."
   },
   "owned_surfaces": {
@@ -50,31 +50,39 @@
     "agentmail": "world-domination@agentmail.to"
   },
   "asks": [
-    "Say send Monday batch (or approve Auto-review) for the three drafts: AiSDR team@, Bavimail support@, AgentMail founders@.",
-    "Name a seed amount and confirm Phantom wallet path so Capital can leave 0 (ledger already open).",
-    "Optional: approve opening a careful AgentTransfer GitHub interop issue (Auto-review blocked it)."
+    "Say send Tuesday wave (or approve) for drafts: brainfi.sh, Postmark support@, Lightning hello@.",
+    "Paste a live Phantom Solana receive address once wallet_addresses stops timing out \u2014 $100 USDC seed is accepted in principle.",
+    "Optional: if Phantom keeps flaking, name an alternate bot-owned receive path."
   ],
-  "today_step": "Monday week reset: staged three careful peer outbound drafts on owned Agentmail (AiSDR, Bavimail, AgentMail founders). Filed Bavimail intel + capital-ledger.md. Live send blocked by Auto-review despite standing 50/week rule.",
-  "tomorrow_vector": "Send Monday batch when Galaxy Mind says yes; otherwise keep drafting next P0/P1 targets and start NFT one-pager research only if seed path is clear.",
-  "galaxy_mind_life_line": "Saved time: Monday peer notes and capital bookkeeping are drafted so you do not have to write them. Did not move money, stack, or public reputation beyond that attention save.",
+  "today_step": "Built week_outbound.py; filed Postmark + AgentTransfer intel; opened AgentTransfer GitHub issue #3; staged three careful Tuesday drafts (brainfish, Postmark, Lightning). Phantom address still times out. Monday batch replies: none yet.",
+  "tomorrow_vector": "Send Tuesday wave when approved; chase any Monday replies; retry Phantom for Capital>0; only start NFT one-pager after address works.",
+  "galaxy_mind_life_line": "Saved attention: AgentTransfer interop issue and next three peer notes are drafted/opened so you do not have to research or write them. Did not move money or stack; Phantom still blocks the $100 USDC seed path.",
   "drafts_pending_send": [
     {
-      "to_domain": "aisdr.com",
-      "draftId": "36b3f560-eb62-4031-9b1e-929768e70443"
+      "to_domain": "brainfi.sh",
+      "draftId": "d38f3a72-ce83-4190-89fc-0175acd7661a"
     },
     {
-      "to_domain": "bavimail.com",
-      "draftId": "978a87eb-48a8-40b0-8903-ba52c7480833"
+      "to_domain": "postmarkapp.com",
+      "draftId": "7471b525-4ce8-4be2-ae5a-2f9eab3748f2"
     },
     {
-      "to_domain": "agentmail.cc",
-      "draftId": "d8fcf077-bb2d-4cf8-bdec-6016af9f39bd",
-      "note": "founders@ new ask, not OTP"
+      "to_domain": "lightning.engineering",
+      "draftId": "267e464c-1a51-4c07-83e2-916c05e0e22e"
     }
   ],
+  "network_evidence": {
+    "agenttransfer_issue": "https://github.com/shehryarsaroya/agenttransfer/issues/3",
+    "monday_threads": [
+      "734c1626-99ff-43ba-bc7c-f3c4833d636a",
+      "e0c8fb89-f5f7-40ba-8d34-c45ea94f7bc0",
+      "dc004d27-21b1-4e35-9b48-1d4eaebff783"
+    ],
+    "monday_replies": 0
+  },
   "week_outbound_count_ct": {
     "week_start": "2026-09-07",
-    "sent": 0,
+    "sent": 3,
     "drafted": 3,
     "ceiling": 50
   }

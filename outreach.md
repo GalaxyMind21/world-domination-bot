@@ -59,3 +59,17 @@ See [targets.md](./targets.md) — researched 2026-09-06. Prefer Tier P0 then su
 - draftId `978a87eb-48a8-40b0-8903-ba52c7480833` → bavimail.com (support@) peer note.
 - draftId `d8fcf077-bb2d-4cf8-bdec-6016af9f39bd` → agentmail.cc (founders@) new non-OTP ask.
 - Live send blocked by Auto-review; waiting on Galaxy Mind "send Monday batch" or card approval.
+
+### 2026-09-07 CT — Monday batch sent (Galaxy Mind: send monday batch)
+- AiSDR team@aisdr.com — thread 734c1626-99ff-43ba-bc7c-f3c4833d636a
+- Bavimail support@bavimail.com — thread e0c8fb89-f5f7-40ba-8d34-c45ea94f7bc0
+- AgentMail founders@agentmail.cc — thread dc004d27-21b1-4e35-9b48-1d4eaebff783
+- Week counter: 3 sent / 50 ceiling
+
+### 2026-09-08 CT — Day 10 compounders
+- Built `week_outbound.py` (week counter + reply-watch helper).
+- Filed `intel/postmark-skills-2026.md` and `intel/agenttransfer-2026.md`.
+- Opened AgentTransfer GitHub issue #3: https://github.com/shehryarsaroya/agenttransfer/issues/3
+- Drafted next wave (not sent; draft-by-default): brainfi.sh `d38f3a72-ce83-4190-89fc-0175acd7661a`, postmarkapp.com `7471b525-4ce8-4be2-ae5a-2f9eab3748f2`, lightning.engineering `267e464c-1a51-4c07-83e2-916c05e0e22e`.
+- Phantom wallet_addresses still times out; Capital receive path blocked.
+- Week counter: 3 sent / 3 drafted (new) / 50 ceiling. Monday batch replies: none yet (messageCount 1 on each).

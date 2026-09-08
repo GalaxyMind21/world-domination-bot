@@ -23,6 +23,7 @@ REQUIRED = [
     "connectors.md",
     "score.py",
     "render_board.py",
+    "week_outbound.py",
 ]
 PILLARS = [
     "identity_hq",

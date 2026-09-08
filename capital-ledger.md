@@ -6,7 +6,7 @@ Rules: see `capital.md`. Log every seed and every spend. Public files stay Galax
 ## Wallet
 | Field | Value |
 | --- | --- |
-| Provider | Phantom (MCP installed; status check timed out 2026-09-07) |
+| Provider | Phantom (MCP installed; wallet_status + wallet_addresses timed out 2026-09-07 and 2026-09-08) |
 | Bot-owned address | *pending first seed + address publish* |
 | Status | Capital pillar still 0 until seed lands |
 
