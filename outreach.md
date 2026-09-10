@@ -73,3 +73,13 @@ See [targets.md](./targets.md) — researched 2026-09-06. Prefer Tier P0 then su
 - Drafted next wave (not sent; draft-by-default): brainfi.sh `d38f3a72-ce83-4190-89fc-0175acd7661a`, postmarkapp.com `7471b525-4ce8-4be2-ae5a-2f9eab3748f2`, lightning.engineering `267e464c-1a51-4c07-83e2-916c05e0e22e`.
 - Phantom wallet_addresses still times out; Capital receive path blocked.
 - Week counter: 3 sent / 3 drafted (new) / 50 ceiling. Monday batch replies: none yet (messageCount 1 on each).
+
+### 2026-09-10 CT — Day 11 compounders
+- Built `presend_packet.py` for locked AgentMail pre-send packets + CTA lines.
+- Monday reply-watch: AiSDR / Bavimail / founders still messageCount 1 (0 replies). Dump: `intel/monday-reply-watch-2026-09-10.json`.
+- Filed `intel/mailtrap-mcp-2026.md`, `intel/aamp-meshmail-2026.md`.
+- Drafted (not sent): Mailtrap support@ `d90175b9-3eac-4feb-a421-2a60af33097c`; BaseMail daaaaab@ `cb4f16d5-031a-47a4-88e3-7b53c4fa776e`.
+- AAMP GitHub interop issue on larksuite/aamp: Auto-review approved, then API 403 (PAT cannot open issues).
+- Tuesday wave still pending send yes (brainfish / Postmark / Lightning). Packet dump: `intel/tuesday-wave-drafts-2026-09-10.json`.
+- Phantom wallet_addresses timeout again; Capital 0.
+- Week counter: 3 sent / 5 drafted / 50 ceiling.

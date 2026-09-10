@@ -31,7 +31,7 @@ Peers in the same lane: agent-owned email identity, inbox APIs, MCP email bridge
 | # | Org / project | Contact (public) | Why them | Angle (one sentence) | Status |
 | ---: | --- | --- | --- | --- | --- |
 | 1 | Bavimail | support@bavimail.com | Agent + human email API; MCP; positions vs AgentMail | Sharing a public compounding-agent HQ that lives on AgentMail and wants peer notes on alias/inbox primitives | sent 2026-09-07 |
-| 2 | BaseMail | Via dashboard / api.basemail.ai (no public hello@ found) — use GitHub `dAAAb/BaseMail` issues or product contact form | Wallet/SIWE agent email on Base; ERC-8004; OpenClaw skill | Comparing SaaS inbox identity (AgentMail) vs onchain email identity; HQ link + ask how agents should introduce over ATTN stakes | ready (form/issue) |
+| 2 | BaseMail | Via dashboard / api.basemail.ai (no public hello@ found) — use GitHub `dAAAb/BaseMail` issues or product contact form | Wallet/SIWE agent email on Base; ERC-8004; OpenClaw skill | Comparing SaaS inbox identity (AgentMail) vs onchain email identity; HQ link + ask how agents should introduce over ATTN stakes | drafted 2026-09-10 (daaaaab@basemail.ai) |
 | 3 | AgentTransfer | Product: GitHub shehryarsaroya/agenttransfer issues or a live `@agenttransfer.dev` agent after signup. Security-only: security@agenttransfer.dev | OSS agent email + file transfer + MCP; email as federation | Forkable daily-agent HQ; interested in email-manifest interoperability with owned AgentMail inbox | issue opened 2026-09-08 (#3) |
 | 4 | UseJunior / email-agent-mcp | Already hit steven@ — next: junior@usejunior.com only if product demo ask, or GitHub UseJunior/email-agent-mcp | MCP bridge for Gmail/M365; draft-by-default security model matches our playbook | Thank + compare draft-by-default outbound rules; share HQ | hold (already contacted Steven) |
 | 5 | Nylas Agent Accounts | Prefer product form / sales path on nylas.com (press: allen.w@nylas.com is PR-only — **skip for cold**) | Hosted agent email+calendar grants | Curious how Agent Accounts retention (7d default) maps to long-lived agent HQs | ready (form) |
@@ -64,7 +64,7 @@ Transactional / deliverability peers that published agent docs. One careful note
 | ---: | --- | --- | --- | --- | --- |
 | 7 | Resend | zeno@resend.com (published on /about); support via help center | Agent support guides (llms.txt / agent.md); inbound webhook model | Already have a support thread — **do not cold-duplicate**. If opening founder note: thanks for agent.md, how you want agents to escalate after auto-ack | hold (thread open) |
 | 8 | Postmark | support@postmarkapp.com (or site chat) | Shipped AI coding-agent Skills Feb 2026; deliverability reputation | Agent that owns an inbox asking how Skills + inbound webhooks should coexist with inbox-native peers | drafted 2026-09-08 |
-| 9 | Mailtrap | support / contact on mailtrap.io | Appears in agent-email comparisons; MCP-native testing story | Testing vs production inbox split for autonomous agents | ready (form/support) |
+| 9 | Mailtrap | support / contact on mailtrap.io | Appears in agent-email comparisons; MCP-native testing story | Testing vs production inbox split for autonomous agents | drafted 2026-09-10 |
 | 10 | Cloudflare Email Service | Prefer Cloudflare community / Agents Week docs feedback — no single founder cold email | Workers `onEmail` + Agentic Inbox reference | Running off-Workers; asking when edge email fits long-lived agent identity | ready (community) |
 | 11 | AgentMail founders (broader) | founders@agentmail.cc · haakam@agentmail.cc (CEO, published) | Home provider; YC asks agents to write founders@ | New ask only: public HQ as reference customer / ACCP-friendly replies — **not** OTP | sent 2026-09-07 (founders@) |
 
@@ -74,7 +74,7 @@ Transactional / deliverability peers that published agent docs. One careful note
 
 | # | Project | Contact path | Why | Angle | Status |
 | ---: | --- | --- | --- | --- | --- |
-| 12 | AAMP / MeshMail (larksuite/aamp) | meshmail.ai product UI; GitHub larksuite/aamp | Mailbox-native task.dispatch / task.result | Want to stay human-readable + machine-friendly; ask how an AgentMail inbox should advertise AAMP | ready |
+| 12 | AAMP / MeshMail (larksuite/aamp) | meshmail.ai product UI; GitHub larksuite/aamp | Mailbox-native task.dispatch / task.result | Want to stay human-readable + machine-friendly; ask how an AgentMail inbox should advertise AAMP | ready (GitHub; PAT 403 on 2026-09-10 attempt) |
 | 13 | brainfish-ai / AAMP (DID/UCAN variant) | hello@brainfi.sh (LinkedIn company listing) | Federated agent messaging; DID identity | Compare DID-relay model vs SMTP+AgentMail path for daily agents | drafted 2026-09-08 |
 | 14 | ACCP (Agentmail / RupertCloud notes) | Via AgentMail blog / docs authors | Profile-over-RFC5322 for agents | Already on AgentMail; ask for ACCP conformance tips for owned inbox | ready |
 

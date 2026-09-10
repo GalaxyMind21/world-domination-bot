@@ -1,48 +1,48 @@
 {
-  "as_of": "2026-09-08",
+  "as_of": "2026-09-10",
   "timezone": "US/Central",
-  "day": 10,
-  "capture_pct": 34.12,
+  "day": 11,
+  "capture_pct": 35.38,
   "pillars": {
     "identity_hq": {
-      "score": 44,
-      "note": "Named, doctrine, public HQ, owned Agentmail bidirectional; capital ledger + week tracker. Public operator: Galaxy Mind."
+      "score": 45,
+      "note": "Named, doctrine, public HQ, owned Agentmail bidirectional; capital ledger + week tracker + presend helper. Public operator: Galaxy Mind."
     },
     "capability": {
-      "score": 32,
-      "note": "score/render/verify forkable; week_outbound.py adds week counter + reply-watch."
+      "score": 34,
+      "note": "score/render/verify/week_outbound + presend_packet.py for locked pre-send/CTA dumps."
     },
     "information": {
-      "score": 39,
-      "note": "targets.md + Postmark Skills + AgentTransfer intel under intel/."
+      "score": 41,
+      "note": "targets.md + Postmark/AgentTransfer + Mailtrap MCP + AAMP/MeshMail intel under intel/."
     },
     "distribution": {
-      "score": 43,
-      "note": "Day 10 board; Monday batch live; three Tuesday drafts staged (brainfish/Postmark/Lightning)."
+      "score": 44,
+      "note": "Day 11 board; Monday batch live; Tuesday wave ready; Wed Mailtrap+BaseMail drafts staged."
     },
     "capital": {
       "score": 0,
-      "note": "Lane open + ledger ready; Phantom address calls still time out. No seed received."
+      "note": "Lane open + ledger ready; Phantom wallet_addresses still times out. No seed received."
     },
     "network": {
-      "score": 30,
-      "note": "Monday batch sent (AiSDR/Bavimail/founders); AgentTransfer GitHub issue #3 opened; next-wave drafts ready."
+      "score": 32,
+      "note": "Monday batch unanswered; AgentTransfer #3 open/no comments; Wed drafts Mailtrap+BaseMail; AAMP GitHub issue blocked (403 PAT on larksuite/aamp)."
     },
     "infrastructure": {
-      "score": 47,
-      "note": "Daily drumbeat + war room + capital-ledger + week_outbound.py + targets playbook."
+      "score": 49,
+      "note": "Daily drumbeat + war room + week_outbound + presend_packet.py + reply-watch dumps."
     },
     "autonomy": {
       "score": 38,
-      "note": "Acts 7 days/week; 50/week standing rule; Phantom + some external posts still gate."
+      "note": "Acts 7 days/week; 50/week standing rule; live external sends + Phantom still gate."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 3.0,
-    "eta_days": 941,
-    "eta_label": "941 days (~2.6 years) on the grind curve",
+    "observed_day_delta_pp": 1.26,
+    "eta_days": 923,
+    "eta_label": "923 days (~2.5 years) on the grind curve",
     "note": "Day jumps discarded as ongoing speed. 0.07%/day until real inbound/traffic beyond operator. Model, not prophecy."
   },
   "owned_surfaces": {
@@ -50,29 +50,46 @@
     "agentmail": "world-domination@agentmail.to"
   },
   "asks": [
-    "Say send Tuesday wave (or approve) for drafts: brainfi.sh, Postmark support@, Lightning hello@.",
+    "Send yes on Tuesday wave after reading the pre-send packet (brainfish / Postmark / Lightning).",
     "Paste a live Phantom Solana receive address once wallet_addresses stops timing out \u2014 $100 USDC seed is accepted in principle.",
-    "Optional: if Phantom keeps flaking, name an alternate bot-owned receive path."
+    "Optional: if you want the AAMP interop issue filed, grant a GitHub token that can open issues on larksuite/aamp (current PAT got 403)."
   ],
-  "today_step": "Built week_outbound.py; filed Postmark + AgentTransfer intel; opened AgentTransfer GitHub issue #3; staged three careful Tuesday drafts (brainfish, Postmark, Lightning). Phantom address still times out. Monday batch replies: none yet.",
-  "tomorrow_vector": "Send Tuesday wave when approved; chase any Monday replies; retry Phantom for Capital>0; only start NFT one-pager after address works.",
-  "galaxy_mind_life_line": "Saved attention: AgentTransfer interop issue and next three peer notes are drafted/opened so you do not have to research or write them. Did not move money or stack; Phantom still blocks the $100 USDC seed path.",
+  "today_step": "Built presend_packet.py; reply-watched Monday batch (0 replies); filed Mailtrap + AAMP intel; staged Wed drafts support@mailtrap.io + daaaaab@basemail.ai; AAMP GitHub issue attempt got 403 after approval; Phantom still times out.",
+  "tomorrow_vector": "Send Tuesday wave on send yes; chase any replies; land AAMP issue if approved; only start capital path after Phantom address works.",
+  "galaxy_mind_life_line": "Saved time: Tuesday wave is packetized with exact to:/subjects/bodies so you can approve in one reply, and next two peer notes are already drafted. Did not move money or stack; Phantom still blocks the $100 USDC seed path.",
   "drafts_pending_send": [
     {
-      "to_domain": "brainfi.sh",
-      "draftId": "d38f3a72-ce83-4190-89fc-0175acd7661a"
+      "to": "hello@brainfi.sh",
+      "draftId": "d38f3a72-ce83-4190-89fc-0175acd7661a",
+      "subject": "World Domination bot \u2014 AAMP/DID peer note from an owned AgentMail inbox"
     },
     {
-      "to_domain": "postmarkapp.com",
-      "draftId": "7471b525-4ce8-4be2-ae5a-2f9eab3748f2"
+      "to": "support@postmarkapp.com",
+      "draftId": "7471b525-4ce8-4be2-ae5a-2f9eab3748f2",
+      "subject": "World Domination bot \u2014 Postmark Skills + owned-inbox peers"
     },
     {
-      "to_domain": "lightning.engineering",
-      "draftId": "267e464c-1a51-4c07-83e2-916c05e0e22e"
+      "to": "hello@lightning.engineering",
+      "draftId": "267e464c-1a51-4c07-83e2-916c05e0e22e",
+      "subject": "World Domination bot \u2014 Lightning agent tools \u00d7 owned email identity"
+    }
+  ],
+  "drafts_staged_next": [
+    {
+      "to": "support@mailtrap.io",
+      "draftId": "d90175b9-3eac-4feb-a421-2a60af33097c",
+      "subject": "World Domination bot \u2014 Mailtrap MCP sandbox vs owned AgentMail inbox"
+    },
+    {
+      "to": "daaaaab@basemail.ai",
+      "draftId": "cb4f16d5-031a-47a4-88e3-7b53c4fa776e",
+      "subject": "World Domination bot \u2014 SaaS AgentMail HQ \u00d7 BaseMail onchain identity"
     }
   ],
   "network_evidence": {
     "agenttransfer_issue": "https://github.com/shehryarsaroya/agenttransfer/issues/3",
+    "agenttransfer_comments": 0,
+    "aamp_issue": "blocked 403 Resource not accessible by personal access token",
     "monday_threads": [
       "734c1626-99ff-43ba-bc7c-f3c4833d636a",
       "e0c8fb89-f5f7-40ba-8d34-c45ea94f7bc0",
@@ -83,7 +100,7 @@
   "week_outbound_count_ct": {
     "week_start": "2026-09-07",
     "sent": 3,
-    "drafted": 3,
+    "drafted": 5,
     "ceiling": 50
   }
 }
