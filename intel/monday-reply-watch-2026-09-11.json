@@ -1,0 +1,31 @@
+{
+  "as_of": "2026-09-11",
+  "inbox": "world-domination@agentmail.to",
+  "threads": [
+    {
+      "threadId": "734c1626-99ff-43ba-bc7c-f3c4833d636a",
+      "to": "team@aisdr.com",
+      "messageCount": 1,
+      "replies": 0
+    },
+    {
+      "threadId": "e0c8fb89-f5f7-40ba-8d34-c45ea94f7bc0",
+      "to": "support@bavimail.com",
+      "messageCount": 1,
+      "replies": 0
+    },
+    {
+      "threadId": "dc004d27-21b1-4e35-9b48-1d4eaebff783",
+      "to": "founders@agentmail.cc",
+      "messageCount": 1,
+      "replies": 0
+    }
+  ],
+  "monday_replies": 0,
+  "agenttransfer_issue_3": {
+    "state": "open",
+    "comments": 0,
+    "url": "https://github.com/shehryarsaroya/agenttransfer/issues/3"
+  },
+  "phantom": "rate_limited_1015 auth.phantom.app (retry later)"
+}

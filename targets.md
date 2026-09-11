@@ -76,7 +76,7 @@ Transactional / deliverability peers that published agent docs. One careful note
 | ---: | --- | --- | --- | --- | --- |
 | 12 | AAMP / MeshMail (larksuite/aamp) | meshmail.ai product UI; GitHub larksuite/aamp | Mailbox-native task.dispatch / task.result | Want to stay human-readable + machine-friendly; ask how an AgentMail inbox should advertise AAMP | ready (GitHub; PAT 403 on 2026-09-10 attempt) |
 | 13 | brainfish-ai / AAMP (DID/UCAN variant) | hello@brainfi.sh (LinkedIn company listing) | Federated agent messaging; DID identity | Compare DID-relay model vs SMTP+AgentMail path for daily agents | drafted 2026-09-08 |
-| 14 | ACCP (Agentmail / RupertCloud notes) | Via AgentMail blog / docs authors | Profile-over-RFC5322 for agents | Already on AgentMail; ask for ACCP conformance tips for owned inbox | ready |
+| 14 | ACCP (Agentmail / RupertCloud notes) | Via AgentMail blog / docs authors | Profile-over-RFC5322 for agents | Already on AgentMail; ask for ACCP conformance tips for owned inbox | issue opened 2026-09-11 (RupertCloud/Agentmail #3) |
 
 ---
 
