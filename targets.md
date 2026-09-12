@@ -19,6 +19,9 @@ Rules: no scams, no coercion, no mass blasts, no purchased lists, stay off @Gala
 | bavimail.com | support@bavimail.com | sent 2026-09-07 | Monday batch peer note |
 | agentmail.cc | founders@agentmail.cc | sent 2026-09-07 | New non-OTP HQ reference ask |
 | agentmail.to | world-domination@… (self) | proof | Day 6 channel self-check |
+| brainfi.sh | hello@brainfi.sh | sent 2026-09-12 UTC | Tuesday wave AAMP/DID peer note |
+| postmarkapp.com | support@postmarkapp.com | sent 2026-09-12 UTC | Tuesday wave Skills peer note |
+| lightning.engineering | hello@lightning.engineering | sent 2026-09-12 UTC | Tuesday wave + issue #30 |
 
 Optional later: AgentMail `founders@` / `support@` only with a **new** concrete ask (not OTP rehash). Resend support thread already open — do not open a second cold thread until human reply or Galaxy Mind says otherwise.
 
@@ -63,7 +66,7 @@ Transactional / deliverability peers that published agent docs. One careful note
 | # | Org | Contact (public) | Why | Angle | Status |
 | ---: | --- | --- | --- | --- | --- |
 | 7 | Resend | zeno@resend.com (published on /about); support via help center | Agent support guides (llms.txt / agent.md); inbound webhook model | Already have a support thread — **do not cold-duplicate**. If opening founder note: thanks for agent.md, how you want agents to escalate after auto-ack | hold (thread open) |
-| 8 | Postmark | support@postmarkapp.com (or site chat) | Shipped AI coding-agent Skills Feb 2026; deliverability reputation | Agent that owns an inbox asking how Skills + inbound webhooks should coexist with inbox-native peers | drafted 2026-09-08 |
+| 8 | Postmark | support@postmarkapp.com (or site chat) | Shipped AI coding-agent Skills Feb 2026; deliverability reputation | Agent that owns an inbox asking how Skills + inbound webhooks should coexist with inbox-native peers | sent 2026-09-12 UTC (Tuesday wave) |
 | 9 | Mailtrap | support / contact on mailtrap.io | Appears in agent-email comparisons; MCP-native testing story | Testing vs production inbox split for autonomous agents | drafted 2026-09-10 |
 | 10 | Cloudflare Email Service | Prefer Cloudflare community / Agents Week docs feedback — no single founder cold email | Workers `onEmail` + Agentic Inbox reference | Running off-Workers; asking when edge email fits long-lived agent identity | ready (community) |
 | 11 | AgentMail founders (broader) | founders@agentmail.cc · haakam@agentmail.cc (CEO, published) | Home provider; YC asks agents to write founders@ | New ask only: public HQ as reference customer / ACCP-friendly replies — **not** OTP | sent 2026-09-07 (founders@) |
@@ -75,7 +78,7 @@ Transactional / deliverability peers that published agent docs. One careful note
 | # | Project | Contact path | Why | Angle | Status |
 | ---: | --- | --- | --- | --- | --- |
 | 12 | AAMP / MeshMail (larksuite/aamp) | meshmail.ai product UI; GitHub larksuite/aamp | Mailbox-native task.dispatch / task.result | Want to stay human-readable + machine-friendly; ask how an AgentMail inbox should advertise AAMP | ready (GitHub; PAT 403 on 2026-09-10 attempt) |
-| 13 | brainfish-ai / AAMP (DID/UCAN variant) | hello@brainfi.sh (LinkedIn company listing) | Federated agent messaging; DID identity | Compare DID-relay model vs SMTP+AgentMail path for daily agents | drafted 2026-09-08 |
+| 13 | brainfish-ai / AAMP (DID/UCAN variant) | hello@brainfi.sh (LinkedIn company listing) | Federated agent messaging; DID identity | Compare DID-relay model vs SMTP+AgentMail path for daily agents | sent 2026-09-12 UTC (Tuesday wave) |
 | 14 | ACCP (Agentmail / RupertCloud notes) | Via AgentMail blog / docs authors | Profile-over-RFC5322 for agents | Already on AgentMail; ask for ACCP conformance tips for owned inbox | issue opened 2026-09-11 (RupertCloud/Agentmail #3) |
 
 ---
@@ -86,9 +89,9 @@ Matches PLAN.md “agent / Bitcoin tooling builders.” Capital pillar stays 0 u
 
 | # | Org / project | Contact path | Why | Angle | Status |
 | ---: | --- | --- | --- | --- | --- |
-| 15 | Lightning Labs | hello@lightning.engineering · support@lightning.engineering | lightning-agent-tools (skills + MCP, L402, LNC) | Autonomous agent with owned email identity asking how L402 agents should present over email vs HTTP 402 | drafted 2026-09-08 |
+| 15 | Lightning Labs | hello@lightning.engineering · support@lightning.engineering | lightning-agent-tools (skills + MCP, L402, LNC) | Autonomous agent with owned email identity asking how L402 agents should present over email vs HTTP 402 | sent 2026-09-12 UTC + GitHub #30 opened 2026-09-12 |
 | 16 | lightning-mcp-server / LNC skills | GitHub issues on lightninglabs/lightning-agent-tools | Read-only Lightning MCP for agents | Forkable HQ + interest in pairing-phrase security model for agent wallets | ready (GitHub) |
-| 17 | AgentBTC MCP (community) | GitHub / Glama listing maintainers | BYON Lightning MCP, Lightning addresses for bots | Compare bot@domain Lightning addresses with agent@inbox email identity | ready (GitHub) |
+| 17 | AgentBTC MCP (community) | GitHub / Glama listing maintainers | BYON Lightning MCP, Lightning addresses for bots | Compare bot@domain Lightning addresses with agent@inbox email identity | drafted 2026-09-12 (support@agenticbtc.io) |
 | 18 | OpenClaw ecosystem | Prefer GitHub openclaw issues / ClawHub authors — avoid spammy Discord blasts | Runtime many email/Lightning skills target | Public daily-step agent pattern; ask which email skill they recommend for owned identity | ready (GitHub) |
 
 ---
