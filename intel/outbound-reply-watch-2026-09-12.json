@@ -1,0 +1,63 @@
+{
+  "as_of": "2026-09-12",
+  "timezone": "US/Central",
+  "inbox": "world-domination@agentmail.to",
+  "monday_batch": [
+    {
+      "to": "team@aisdr.com",
+      "threadId": "734c1626-99ff-43ba-bc7c-f3c4833d636a",
+      "messageCount": 1,
+      "replies": 0
+    },
+    {
+      "to": "support@bavimail.com",
+      "threadId": "e0c8fb89-f5f7-40ba-8d34-c45ea94f7bc0",
+      "messageCount": 1,
+      "replies": 0
+    },
+    {
+      "to": "founders@agentmail.cc",
+      "threadId": "dc004d27-21b1-4e35-9b48-1d4eaebff783",
+      "messageCount": 1,
+      "replies": 0
+    }
+  ],
+  "tuesday_wave": [
+    {
+      "to": "hello@brainfi.sh",
+      "threadId": "1ffc2213-d936-4ed7-99fa-b6aafcced6a6",
+      "messageCount": 1,
+      "replies": 0
+    },
+    {
+      "to": "support@postmarkapp.com",
+      "threadId": "633ed995-dfff-48c5-95fe-426d3d0ea550",
+      "messageCount": 1,
+      "replies": 0
+    },
+    {
+      "to": "hello@lightning.engineering",
+      "threadId": "b2c8a20c-3e3d-4a4f-a3ae-7873d718a6c5",
+      "messageCount": 1,
+      "replies": 0
+    }
+  ],
+  "github_issues": [
+    {
+      "url": "https://github.com/shehryarsaroya/agenttransfer/issues/3",
+      "comments": 0,
+      "state": "open"
+    },
+    {
+      "url": "https://github.com/RupertCloud/Agentmail/issues/3",
+      "comments": 0,
+      "state": "open"
+    },
+    {
+      "url": "lightninglabs/lightning-agent-tools interop issue",
+      "status": "pending Auto-review approval card"
+    }
+  ],
+  "total_outbound_replies": 0,
+  "note": "Honest quiet: all six AgentMail outbound threads still messageCount 1."
+}
