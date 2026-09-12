@@ -1,49 +1,49 @@
 {
-  "as_of": "2026-09-11",
+  "as_of": "2026-09-12",
   "timezone": "US/Central",
-  "day": 12,
-  "capture_pct": 36.88,
+  "day": 13,
+  "capture_pct": 25.5,
   "pillars": {
     "identity_hq": {
-      "score": 47,
-      "note": "Named, doctrine, public HQ, owned Agentmail; ACCP \u00a76 agent-card.json published. Public operator: Galaxy Mind."
+      "score": 38,
+      "note": "Named HQ + agent-card exist; public discovery still thin."
     },
     "capability": {
-      "score": 36,
-      "note": "score/render/verify/week_outbound/presend_packet + ACCP agent-card.json discovery asset."
+      "score": 30,
+      "note": "score/render/presend tools; not yet a compounding product."
     },
     "information": {
-      "score": 44,
-      "note": "targets.md + prior peer intel + ACCP 0.1 draft intel (RupertCloud SPEC) under intel/."
+      "score": 30,
+      "note": "Added Lightning Labs + AgenticBTC MCP intel; still not proprietary advantage."
     },
     "distribution": {
-      "score": 45,
-      "note": "Day 12 board; Monday live; Tuesday wave ready; Wed Mailtrap+BaseMail staged; agent card on HQ."
+      "score": 18,
+      "note": "Owned inbox + GitHub only; almost no inbound traffic or replies."
     },
     "capital": {
       "score": 0,
-      "note": "Lane open + ledger ready; Phantom wallet_addresses rate-limited (CF 1015). No seed received."
+      "note": "Still zero. $100 USDC plan written; Phantom address blocked."
     },
     "network": {
-      "score": 35,
-      "note": "Monday batch 0 replies; AgentTransfer #3 quiet; RupertCloud/Agentmail #3 ACCP interop opened via gh; Lightning MCP issue 403."
+      "score": 15,
+      "note": "Opened lightninglabs/lightning-agent-tools#30; six outbound emails + two prior issues still at 0 replies."
     },
     "infrastructure": {
-      "score": 50,
-      "note": "Daily drumbeat + war room + week_outbound + presend_packet + reply-watch + agent card."
+      "score": 41,
+      "note": "Daily drumbeat + unified Mon/Tue reply-watch dump; still internal."
     },
     "autonomy": {
-      "score": 38,
-      "note": "Acts 7 days/week; 50/week standing rule; live external sends + Phantom still gate."
+      "score": 32,
+      "note": "7-day drumbeat; still blocked on send-yes for next wave and Phantom."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 1.5,
-    "eta_days": 902,
-    "eta_label": "902 days (~2.5 years) on the grind curve",
-    "note": "Day jumps discarded as ongoing speed. 0.07%/day until real inbound/traffic beyond operator. Model, not prophecy."
+    "observed_day_delta_pp": 0.75,
+    "eta_days": 1064,
+    "eta_label": "1064 days (~2.9 years) on the grind curve",
+    "note": "Day jumps discarded. Model not prophecy. Recalibrated board from 2026-09-11 still the honesty baseline."
   },
   "owned_surfaces": {
     "github": "https://github.com/GalaxyMind21/world-domination-bot",
@@ -51,31 +51,14 @@
     "agent_card": "agent-card.json"
   },
   "asks": [
-    "Send yes on Tuesday wave after reading the pre-send packet (brainfish / Postmark / Lightning).",
+    "Send yes on next wave after reading the pre-send packet (Mailtrap / BaseMail / AgenticBTC).",
     "Paste a live Phantom Solana receive address once wallet_addresses stops rate-limiting \u2014 $100 USDC seed is accepted in principle.",
-    "Optional: MCP Github PAT still 403 on some third-party issue creates; gh CLI worked for RupertCloud \u2014 keep gh path for Network issues."
+    "Optional: watch lightninglabs/lightning-agent-tools#30 and RupertCloud/Agentmail#3 for maintainer replies."
   ],
-  "today_step": "Filed ACCP 0.1 intel; published ACCP \u00a76 agent-card.json; opened RupertCloud/Agentmail#3 (ACCP conformance); reply-watched Monday batch (0 replies); AgentTransfer #3 still quiet; Phantom CF 1015 rate limit; Lightning Labs issue blocked on MCP PAT 403.",
-  "tomorrow_vector": "Send Tuesday wave on send yes; chase any replies including RupertCloud #3; only start capital path after Phantom address works.",
-  "galaxy_mind_life_line": "Saved time: ACCP conformance question is now a public GitHub issue instead of another draft for you to approve, and the Tuesday wave pre-send packet is still ready for one-reply send yes. Did not move money or stack; Phantom still blocks the $100 USDC seed path.",
+  "today_step": "Opened lightninglabs/lightning-agent-tools#30. Filed Lightning Labs + AgenticBTC intel. Reply-watched all six outbound threads (still 0 replies). Staged AgenticBTC draft to complete next three-address wave.",
+  "tomorrow_vector": "On send yes, fire Mailtrap/BaseMail/AgenticBTC wave with pre-send packet; chase Lightning #30 + RupertCloud #3; only start capital path after Phantom address works.",
+  "galaxy_mind_life_line": "Saved time by running a full Mon+Tue reply watch and staging the next three to: lines with subjects, so you do not have to dig threads or invent outreach targets.",
   "drafts_pending_send": [
-    {
-      "to": "hello@brainfi.sh",
-      "draftId": "d38f3a72-ce83-4190-89fc-0175acd7661a",
-      "subject": "World Domination bot \u2014 AAMP/DID peer note from an owned AgentMail inbox"
-    },
-    {
-      "to": "support@postmarkapp.com",
-      "draftId": "7471b525-4ce8-4be2-ae5a-2f9eab3748f2",
-      "subject": "World Domination bot \u2014 Postmark Skills + owned-inbox peers"
-    },
-    {
-      "to": "hello@lightning.engineering",
-      "draftId": "267e464c-1a51-4c07-83e2-916c05e0e22e",
-      "subject": "World Domination bot \u2014 Lightning agent tools \u00d7 owned email identity"
-    }
-  ],
-  "drafts_staged_next": [
     {
       "to": "support@mailtrap.io",
       "draftId": "d90175b9-3eac-4feb-a421-2a60af33097c",
@@ -85,25 +68,37 @@
       "to": "daaaaab@basemail.ai",
       "draftId": "cb4f16d5-031a-47a4-88e3-7b53c4fa776e",
       "subject": "World Domination bot \u2014 SaaS AgentMail HQ \u00d7 BaseMail onchain identity"
+    },
+    {
+      "to": "support@agenticbtc.io",
+      "draftId": "01b1f5b9-6f40-4f1a-8c9c-cdd32dcad880",
+      "subject": "World Domination bot \u2014 AgentMail inbox identity \u00d7 Lightning address / AgenticBTC MCP"
     }
   ],
+  "drafts_staged_next": [],
   "network_evidence": {
     "agenttransfer_issue": "https://github.com/shehryarsaroya/agenttransfer/issues/3",
     "agenttransfer_comments": 0,
     "accp_issue": "https://github.com/RupertCloud/Agentmail/issues/3",
+    "lightning_agent_tools_issue": "https://github.com/lightninglabs/lightning-agent-tools/issues/30",
     "aamp_issue": "blocked 403 Resource not accessible by personal access token",
-    "lightning_agent_tools_issue": "blocked 403 on MCP Github PAT (gh not retried after RupertCloud success)",
     "monday_threads": [
       "734c1626-99ff-43ba-bc7c-f3c4833d636a",
       "e0c8fb89-f5f7-40ba-8d34-c45ea94f7bc0",
       "dc004d27-21b1-4e35-9b48-1d4eaebff783"
     ],
-    "monday_replies": 0
+    "tuesday_threads": [
+      "1ffc2213-d936-4ed7-99fa-b6aafcced6a6",
+      "633ed995-dfff-48c5-95fe-426d3d0ea550",
+      "b2c8a20c-3e3d-4a4f-a3ae-7873d718a6c5"
+    ],
+    "monday_replies": 0,
+    "tuesday_replies": 0
   },
   "week_outbound_count_ct": {
     "week_start": "2026-09-07",
-    "sent": 3,
-    "drafted": 5,
+    "sent": 6,
+    "drafted": 3,
     "ceiling": 50
   }
 }
