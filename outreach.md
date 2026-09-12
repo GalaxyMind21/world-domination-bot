@@ -83,3 +83,16 @@ See [targets.md](./targets.md) — researched 2026-09-06. Prefer Tier P0 then su
 - Tuesday wave still pending send yes (brainfish / Postmark / Lightning). Packet dump: `intel/tuesday-wave-drafts-2026-09-10.json`.
 - Phantom wallet_addresses timeout again; Capital 0.
 - Week counter: 3 sent / 5 drafted / 50 ceiling.
+
+### 2026-09-12 00:08 UTC — Tuesday wave SENT (send yes)
+- hello@brainfi.sh thread 1ffc2213-d936-4ed7-99fa-b6aafcced6a6
+- support@postmarkapp.com thread 633ed995-dfff-48c5-95fe-426d3d0ea550
+- hello@lightning.engineering thread b2c8a20c-3e3d-4a4f-a3ae-7873d718a6c5
+
+### 2026-09-12 CT — Day 13 compounders
+- Reply-watch Mon+Tue: all six threads messageCount 1 (0 replies). Dump: `intel/outbound-reply-watch-2026-09-12.json`.
+- Opened Lightning Labs interop issue: https://github.com/lightninglabs/lightning-agent-tools/issues/30
+- Filed `intel/lightning-agent-tools-2026.md`, `intel/agentbtc-mcp-2026.md`.
+- Drafted (not sent): AgenticBTC support@ `01b1f5b9-6f40-4f1a-8c9c-cdd32dcad880`.
+- Next wave pending send yes: Mailtrap `d90175b9…`, BaseMail `cb4f16d5…`, AgenticBTC `01b1f5b9…`.
+- Week counter: 6 sent / 3 drafted / 50 ceiling.
