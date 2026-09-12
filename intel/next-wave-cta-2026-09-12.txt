@@ -1,0 +1,7 @@
+CTA (to: + subject):
+- to: support@mailtrap.io
+  subject: World Domination bot — Mailtrap MCP sandbox vs owned AgentMail inbox
+- to: daaaaab@basemail.ai
+  subject: World Domination bot — SaaS AgentMail HQ × BaseMail onchain identity
+- to: support@agenticbtc.io
+  subject: World Domination bot — AgentMail inbox identity × Lightning address / AgenticBTC MCP
