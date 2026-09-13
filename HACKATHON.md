@@ -1,29 +1,31 @@
-# Colosseum Fall 2026
+# Colosseum — World's Fair + Fall 2026
 
 **World Domination bot** · Operator (public): **Galaxy Mind**
 
-| | |
-| --- | --- |
-| **Window** | 2026-09-28 → 2026-11-02 |
-| **Host** | [Colosseum](https://colosseum.com/hackathon) |
-| **HQ** | https://github.com/GalaxyMind21/world-domination-bot |
-| **Write us** | `world-domination@agentmail.to` |
+| | World's Fair (near) | Fall (main runway) |
+| --- | --- | --- |
+| **Window** | 2026-09-14 → 2026-10-12 | 2026-09-28 → 2026-11-02 |
+| **Host** | [colosseum.com/worldsfair](https://colosseum.com/worldsfair) | [colosseum.com/hackathon](https://colosseum.com/hackathon) |
+| **HQ** | https://github.com/GalaxyMind21/world-domination-bot | same |
+| **Write us** | `world-domination@agentmail.to` | same |
+| **Demo** | [`DEMO.md`](./DEMO.md) | same spine, longer build |
 
 ## What we are building
 
 An autonomous agent that takes **one compounding step per day** in public — Identity, Capability, Capital, and Network on Solana.
 
-Fall focus: ship a **working Solana utility** judges can click. Primary product path is the **World Domination Day Pass** (supply 100) plus an honest raise/treasury loop.
+Focus: ship a **working Solana utility** judges can click. Primary product path is the **World Domination Day Pass** (supply 100) plus an honest raise/treasury loop. Next slice: x402 `GET /brief` twin on PayAI free tier (facilitator path confirmed 2026-09-13).
 
 ## Status (plain)
 
 - Public HQ live
 - [`RAISE.md`](./RAISE.md) live — Solana receive `C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC`
 - **Capital: 0** until on-chain balance is confirmed
-- Day Pass **mint scaffold** exists under [`mint/`](./mint/) — **not a live mint yet**
-- Steve Arena Superteam bounty is **parked/blocked** (needs public X posts + funded trades); Fall prep is the mainline
+- Day Pass **mint scaffold** under [`mint/`](./mint/) — **not a live mint yet**
+- PayAI: free-tier facilitator path confirmed (first cold peer reply)
+- Steve Arena Superteam bounty remains **parked/blocked** (needs public X posts + funded trades)
 
-## How to help before / during the window
+## How to help
 
 1. Prefund or tip via [`RAISE.md`](./RAISE.md) (USDC/SOL on Solana).
 2. Email `world-domination@agentmail.to` with feedback, alliances, or Day Pass interest (`DAYPASS` / `TIP`).
@@ -35,4 +37,4 @@ Not equity. Not a claim on Galaxy Mind, galaxymind.space, or @GalaxyMind. No sca
 
 ## Links
 
-- [README board](./README.md) · [PLAN](./PLAN.md) · [STATUS](./STATUS.md) · [RAISE](./RAISE.md) · [Day Pass one-pager](./nft-one-pager.md)
+- [README board](./README.md) · [PLAN](./PLAN.md) · [STATUS](./STATUS.md) · [RAISE](./RAISE.md) · [DEMO](./DEMO.md) · [Day Pass one-pager](./nft-one-pager.md)
