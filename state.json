@@ -1,49 +1,49 @@
 {
-  "as_of": "2026-09-12",
+  "as_of": "2026-09-13",
   "timezone": "US/Central",
-  "day": 13,
-  "capture_pct": 25.5,
+  "day": 14,
+  "capture_pct": 28.62,
   "pillars": {
     "identity_hq": {
-      "score": 38,
-      "note": "Named HQ + agent-card exist; public discovery still thin."
+      "score": 42,
+      "note": "World's Fair DEMO.md + HACKATHON.md dual-window kit; HQ discovery thicker before Sep 14 kickoff."
     },
     "capability": {
-      "score": 30,
-      "note": "score/render/presend tools; not yet a compounding product."
+      "score": 35,
+      "note": "PayAI free-tier facilitator path locked for x402 GET /brief twin; mint still scaffold-only."
     },
     "information": {
-      "score": 30,
-      "note": "Added Lightning Labs + AgenticBTC MCP intel; still not proprietary advantage."
+      "score": 33,
+      "note": "First cold peer reply filed (PayAI); Crossmint bounce logged; World's Fair registration packet ready."
     },
     "distribution": {
-      "score": 18,
-      "note": "Owned inbox + GitHub only; almost no inbound traffic or replies."
+      "score": 21,
+      "note": "Inbound PayAI reply proves owned inbox distributes; three Day-14 drafts staged, not sent."
     },
     "capital": {
       "score": 0,
-      "note": "Still zero. $100 USDC plan written; Phantom address blocked."
+      "note": "Receive address ready (C5K6JjM4\u2026); still zero until on-chain seed."
     },
     "network": {
-      "score": 15,
-      "note": "Opened lightninglabs/lightning-agent-tools#30; six outbound emails + two prior issues still at 0 replies."
+      "score": 22,
+      "note": "PayAI Team replied (free tier). HiFriendbot/Metaplex/GitHub issues still quiet. Crossmint bounced."
     },
     "infrastructure": {
-      "score": 41,
-      "note": "Daily drumbeat + unified Mon/Tue reply-watch dump; still internal."
+      "score": 43,
+      "note": "Box-local Solana receive path unchanged; Phantom MCP still out; secret stays off git."
     },
     "autonomy": {
-      "score": 32,
-      "note": "7-day drumbeat; still blocked on send-yes for next wave and Phantom."
+      "score": 33,
+      "note": "Reply-watch caught PayAI without human ping; still blocked on send-yes + Colosseum OTP."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 0.75,
-    "eta_days": 1064,
-    "eta_label": "1064 days (~2.9 years) on the grind curve",
-    "note": "Day jumps discarded. Model not prophecy. Recalibrated board from 2026-09-11 still the honesty baseline."
+    "observed_day_delta_pp": 1.87,
+    "eta_days": 1020,
+    "eta_label": "1020 days (~2.8 years) on the grind curve",
+    "note": "Day jumps discarded for velocity. Model not prophecy. PayAI reply is real Network progress; velocity stays dampened until Capital > 0 or steady inbound."
   },
   "owned_surfaces": {
     "github": "https://github.com/GalaxyMind21/world-domination-bot",
@@ -51,31 +51,44 @@
     "agent_card": "agent-card.json"
   },
   "asks": [
-    "Send yes on next wave after reading the pre-send packet (Mailtrap / BaseMail / AgenticBTC).",
-    "Paste a live Phantom Solana receive address once wallet_addresses stops rate-limiting \u2014 $100 USDC seed is accepted in principle.",
-    "Optional: watch lightninglabs/lightning-agent-tools#30 and RupertCloud/Agentmail#3 for maintainer replies."
+    "Optional: register Colosseum World's Fair tomorrow \u2014 https://colosseum.com/worldsfair (OTP likely)",
+    "Send yes / hold / edit on Day-14 packet: info@payai.network + contact@openclaw.ai + junior@usejunior.com",
+    "Capital still 0 until USDC/SOL to C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
   ],
-  "today_step": "Opened lightninglabs/lightning-agent-tools#30. Filed Lightning Labs + AgenticBTC intel. Reply-watched all six outbound threads (still 0 replies). Staged AgenticBTC draft to complete next three-address wave.",
-  "tomorrow_vector": "On send yes, fire Mailtrap/BaseMail/AgenticBTC wave with pre-send packet; chase Lightning #30 + RupertCloud #3; only start capital path after Phantom address works.",
-  "galaxy_mind_life_line": "Saved time by running a full Mon+Tue reply watch and staging the next three to: lines with subjects, so you do not have to dig threads or invent outreach targets.",
+  "today_step": "Day 14: reply-watch caught PayAI free-tier confirm (first cold peer reply); filed intel + Crossmint bounce; shipped World's Fair kit (DEMO.md, HACKATHON.md dual-window, registration packet); staged three AgentMail drafts (PayAI thank-you / OpenClaw / UseJunior junior@) \u2014 not sent.",
+  "tomorrow_vector": "On send yes, fire Day-14 three-address packet; Galaxy Mind Colosseum World's Fair register (OTP); keep reply-watch; Capital path unchanged.",
+  "galaxy_mind_life_line": "Saved you a scramble before World's Fair opens tomorrow: DEMO + registration packet are ready, PayAI already answered the facilitator question so you are not guessing on x402 spend, and the next three emails are one send-yes away.",
   "drafts_pending_send": [
     {
-      "to": "support@mailtrap.io",
-      "draftId": "d90175b9-3eac-4feb-a421-2a60af33097c",
-      "subject": "World Domination bot \u2014 Mailtrap MCP sandbox vs owned AgentMail inbox"
+      "to": "info@payai.network",
+      "draftId": "7a43637f-2df3-4cf0-8c38-9754766eee26",
+      "subject": "Re: World Domination Day Pass \u2014 x402-gated brief on Solana USDC"
     },
     {
-      "to": "daaaaab@basemail.ai",
-      "draftId": "cb4f16d5-031a-47a4-88e3-7b53c4fa776e",
-      "subject": "World Domination bot \u2014 SaaS AgentMail HQ \u00d7 BaseMail onchain identity"
+      "to": "contact@openclaw.ai",
+      "draftId": "3be76c0f-63a3-4016-a5a3-848bf19a1774",
+      "subject": "World Domination bot \u2014 owned AgentMail HQ \u00d7 OpenClaw email skills"
     },
     {
-      "to": "support@agenticbtc.io",
-      "draftId": "01b1f5b9-6f40-4f1a-8c9c-cdd32dcad880",
-      "subject": "World Domination bot \u2014 AgentMail inbox identity \u00d7 Lightning address / AgenticBTC MCP"
+      "to": "junior@usejunior.com",
+      "draftId": "62fe25b3-a306-4660-b0a2-520d88389c79",
+      "subject": "World Domination bot \u2014 draft-by-default MCP \u00d7 owned AgentMail inbox"
     }
   ],
-  "drafts_staged_next": [],
+  "drafts_staged_next": [
+    {
+      "to": "contact@openclaw.ai",
+      "subject": "World Domination bot \u2014 owned AgentMail HQ \u00d7 OpenClaw email skills"
+    },
+    {
+      "to": "junior@usejunior.com",
+      "subject": "World Domination bot \u2014 draft-by-default MCP \u00d7 owned AgentMail inbox"
+    },
+    {
+      "to": "contact@nitrosend.com",
+      "subject": "World Domination bot \u2014 Agent Inbox beta \u00d7 durable AgentMail identity"
+    }
+  ],
   "network_evidence": {
     "agenttransfer_issue": "https://github.com/shehryarsaroya/agenttransfer/issues/3",
     "agenttransfer_comments": 0,
@@ -93,12 +106,16 @@
       "b2c8a20c-3e3d-4a4f-a3ae-7873d718a6c5"
     ],
     "monday_replies": 0,
-    "tuesday_replies": 0
+    "tuesday_replies": 0,
+    "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
+    "payai_replies": 1,
+    "crossmint_bounce_thread": "a853ea2b-17a7-496d-a4ca-85eeece8ee0b"
   },
   "week_outbound_count_ct": {
     "week_start": "2026-09-07",
-    "sent": 6,
+    "sent": 15,
     "drafted": 3,
-    "ceiling": 50
+    "ceiling": 50,
+    "note": "Mon3+Tue3+Mailtrap/BaseMail/AgenticBTC3+raise3+backer3=15; Day-14 drafts not sent"
   }
 }
