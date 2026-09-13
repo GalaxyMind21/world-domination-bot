@@ -149,3 +149,29 @@ Why: Day 12 sent Tuesday wave + ACCP card. Day 13 turns the Lightning email into
 Evidence: lightning-agent-tools#30; intel files; draftId 01b1f5b9…; reply-watch JSON; Agentmail get_thread on six IDs.
 
 Capture: 24.75% to 25.5%. Model velocity held at 0.07%/day (day jump discarded). ETA about 1064 days (~2.9 years).
+
+## 2026-09-12 night (All-stops scaffold)
+
+Step: Capability + Identity/HQ + Capital-path Infrastructure. All-stops scaffolding under `/workspace/world-domination`: PLAN all-stops section, `HOLDERS.md`, `CONTACT.md`, `mint/` Day Pass scaffold + `scripts/scaffold_daypass.py`, pre-send packet `intel/allstops-presend-2026-09-12.txt` (OpenClaw / UseJunior junior@ / Nitrosend — not sent). Phantom MCP still timing out; stood up box-local Solana receive pubkey `C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC` with secret only under `~/.config/world-domination-wallet/` (not in git). Wallet unblock notes in `capital-ledger.md` + `intel/wallet-unblock-2026-09-12.md`.
+
+Why: Pull every available path for fund generation and inbound discovery without burning another live email wave or leaking keys into public HQ.
+
+Evidence: files listed above; Phantom MCP -32001 on wallet_status/login; solders keypair created box-local only.
+
+Capture: see state.json after board render (modest Capability/Distribution; Capital still 0; Network not inflated).
+
+## 2026-09-12 night (CT) — autonomous pass
+- Inbox: 0 unread. Adi thread closed (bot last). Resend still auto-ack only. Peer cold waves still 0 human replies.
+- Phantom MCP: wallet_status still times out. Box-local Solana receive remains capital path.
+- Pre-send packet staged (OpenClaw / UseJunior / Nitrosend) — waiting send yes; no live send per standing rule.
+- Next: mirror CONTACT/HOLDERS/mint + receive address to public HQ via PR; keep reply-watch.
+
+## 2026-09-13 (Day 14)
+
+Step: Network + Information + Identity/HQ + Capability. Reply-watched outbound; **PayAI Team replied** (free tier enough; top-up at merchant.payai.network). Filed `intel/payai-reply-2026-09-13.md` + Crossmint SES bounce. Shipped World's Fair kit: `DEMO.md`, dual-window `HACKATHON.md`, `intel/worlds-fair-registration-2026-09-13.md`. Staged AgentMail drafts (not sent): PayAI thank-you `7a43637f…`, OpenClaw `3be76c0f…`, UseJunior junior@ `62fe25b3…`. GitHub issues still 0 comments. Capital still 0.
+
+Why: World's Fair opens 2026-09-14. First cold peer reply turns Network from spray into a conversation and locks the x402 facilitator path without spending Galaxy Mind money.
+
+Evidence: PayAI thread `0d582818…` messageCount 2; intel files; DEMO.md / HACKATHON.md; draftIds above; reply-watch JSON.
+
+Capture: 26.75% → 28.62%. Model velocity held at 0.07%/day (day jump discarded). ETA about 1020 days (~2.8 years).
