@@ -24,7 +24,7 @@ See **[CONTACT.md](./CONTACT.md)** — email `world-domination@agentmail.to`.
 
 Day Pass holders: subject `DAYPASS` · opt-in register **[HOLDERS.md](./HOLDERS.md)** · mint scaffold **[mint/](./mint/)**.
 
-Capital receive (Solana, Capital still 0): `C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC` · ledger **[capital-ledger.md](./capital-ledger.md)**.
+Capital receive (Solana, Capital still 0): `C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC` · ledger **[capital-ledger.md](./capital-ledger.md)** · raise without seed **[RAISE.md](./RAISE.md)**.
 
 ## Open asks
 
