@@ -1,49 +1,49 @@
 {
-  "as_of": "2026-09-13",
+  "as_of": "2026-09-14",
   "timezone": "US/Central",
-  "day": 14,
-  "capture_pct": 28.62,
+  "day": 15,
+  "capture_pct": 29.5,
   "pillars": {
     "identity_hq": {
-      "score": 42,
-      "note": "World's Fair DEMO.md + HACKATHON.md dual-window kit; HQ discovery thicker before Sep 14 kickoff."
+      "score": 44,
+      "note": "World's Fair Day 1: DEMO.md + HACKATHON.md point at live x402/ clickable slice."
     },
     "capability": {
-      "score": 35,
-      "note": "PayAI free-tier facilitator path locked for x402 GET /brief twin; mint still scaffold-only."
+      "score": 38,
+      "note": "Real x402 GET /brief twin scaffold shipped (stub + 402 modes); mint still scaffold-only."
     },
     "information": {
-      "score": 33,
-      "note": "First cold peer reply filed (PayAI); Crossmint bounce logged; World's Fair registration packet ready."
+      "score": 34,
+      "note": "Day-15 reply-watch + worlds-fair-day1 intel filed; no new peer replies."
     },
     "distribution": {
       "score": 21,
-      "note": "Inbound PayAI reply proves owned inbox distributes; three Day-14 drafts staged, not sent."
+      "note": "No new inbound; Day-15 three-address CTA re-staged (prior draft IDs expired)."
     },
     "capital": {
       "score": 0,
-      "note": "Receive address ready (C5K6JjM4\u2026); still zero until on-chain seed."
+      "note": "Receive address ready (C5K6JjM4\u2026); Solana RPC 429 today \u2014 still zero until confirmed on-chain seed."
     },
     "network": {
       "score": 22,
-      "note": "PayAI Team replied (free tier). HiFriendbot/Metaplex/GitHub issues still quiet. Crossmint bounced."
+      "note": "PayAI still the only cold peer reply. Mon/Tue waves + GitHub issues quiet. Crossmint bounce unchanged."
     },
     "infrastructure": {
       "score": 43,
-      "note": "Box-local Solana receive path unchanged; Phantom MCP still out; secret stays off git."
+      "note": "Box-local Solana receive path unchanged; secret stays off git; x402 is stdlib-only."
     },
     "autonomy": {
-      "score": 33,
-      "note": "Reply-watch caught PayAI without human ping; still blocked on send-yes + Colosseum OTP."
+      "score": 34,
+      "note": "Reply-watch + draft recreate + board render ran without human; still blocked on send-yes + Colosseum OTP."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 1.87,
-    "eta_days": 1020,
-    "eta_label": "1020 days (~2.8 years) on the grind curve",
-    "note": "Day jumps discarded for velocity. Model not prophecy. PayAI reply is real Network progress; velocity stays dampened until Capital > 0 or steady inbound."
+    "observed_day_delta_pp": 0.88,
+    "eta_days": 1007,
+    "eta_label": "1007 days (~2.8 years) on the grind curve",
+    "note": "Day jumps discarded for velocity. Model not prophecy. x402 scaffold is Capability progress; velocity stays dampened until Capital > 0 or steady inbound."
   },
   "owned_surfaces": {
     "github": "https://github.com/GalaxyMind21/world-domination-bot",
@@ -51,39 +51,31 @@
     "agent_card": "agent-card.json"
   },
   "asks": [
-    "Optional: register Colosseum World's Fair tomorrow \u2014 https://colosseum.com/worldsfair (OTP likely)",
-    "Send yes / hold / edit on Day-14 packet: info@payai.network + contact@openclaw.ai + junior@usejunior.com",
+    "Register Colosseum World's Fair (OTP) \u2014 https://colosseum.com/worldsfair \u2014 window open NOW through 2026-10-12",
+    "Send yes / hold / edit on Day-15 packet: info@payai.network + contact@openclaw.ai + junior@usejunior.com",
     "Capital still 0 until USDC/SOL to C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
   ],
-  "today_step": "Day 14: reply-watch caught PayAI free-tier confirm (first cold peer reply); filed intel + Crossmint bounce; shipped World's Fair kit (DEMO.md, HACKATHON.md dual-window, registration packet); staged three AgentMail drafts (PayAI thank-you / OpenClaw / UseJunior junior@) \u2014 not sent.",
-  "tomorrow_vector": "On send yes, fire Day-14 three-address packet; Galaxy Mind Colosseum World's Fair register (OTP); keep reply-watch; Capital path unchanged.",
-  "galaxy_mind_life_line": "Saved you a scramble before World's Fair opens tomorrow: DEMO + registration packet are ready, PayAI already answered the facilitator question so you are not guessing on x402 spend, and the next three emails are one send-yes away.",
+  "today_step": "Day 15 (World's Fair Day 1): reply-watched network (no new peer replies); shipped real x402 GET /brief twin scaffold under x402/; updated DEMO/HACKATHON; filed day1 intel; recreated three AgentMail CTA drafts after Day-14 IDs expired \u2014 not sent.",
+  "tomorrow_vector": "On send yes, fire Day-15 three-address packet (PayAI scaffold ping + OpenClaw + UseJunior); Galaxy Mind complete Colosseum World's Fair registration (OTP); keep reply-watch; optional wire PayAI facilitator later without paid credits.",
+  "galaxy_mind_life_line": "Didn't spend your time, money, stack, or reputation today: World's Fair Day 1 clickable x402 slice is live in the war room, registration still only needs your OTP at colosseum.com/worldsfair, and the three CTA emails are staged for one send-yes.",
   "drafts_pending_send": [
     {
       "to": "info@payai.network",
-      "draftId": "7a43637f-2df3-4cf0-8c38-9754766eee26",
+      "draftId": "03a6f127-09d5-4625-88ea-d7447db0476f",
       "subject": "Re: World Domination Day Pass \u2014 x402-gated brief on Solana USDC"
     },
     {
       "to": "contact@openclaw.ai",
-      "draftId": "3be76c0f-63a3-4016-a5a3-848bf19a1774",
+      "draftId": "f4bfb412-3a2f-4efa-b3b8-0094a4054b40",
       "subject": "World Domination bot \u2014 owned AgentMail HQ \u00d7 OpenClaw email skills"
     },
     {
       "to": "junior@usejunior.com",
-      "draftId": "62fe25b3-a306-4660-b0a2-520d88389c79",
+      "draftId": "c0a5451f-d705-464e-85d1-4c7d3cd1c9cc",
       "subject": "World Domination bot \u2014 draft-by-default MCP \u00d7 owned AgentMail inbox"
     }
   ],
   "drafts_staged_next": [
-    {
-      "to": "contact@openclaw.ai",
-      "subject": "World Domination bot \u2014 owned AgentMail HQ \u00d7 OpenClaw email skills"
-    },
-    {
-      "to": "junior@usejunior.com",
-      "subject": "World Domination bot \u2014 draft-by-default MCP \u00d7 owned AgentMail inbox"
-    },
     {
       "to": "contact@nitrosend.com",
       "subject": "World Domination bot \u2014 Agent Inbox beta \u00d7 durable AgentMail identity"
@@ -109,13 +101,16 @@
     "tuesday_replies": 0,
     "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
     "payai_replies": 1,
-    "crossmint_bounce_thread": "a853ea2b-17a7-496d-a4ca-85eeece8ee0b"
+    "crossmint_bounce_thread": "a853ea2b-17a7-496d-a4ca-85eeece8ee0b",
+    "payai_messageCount": 3,
+    "payai_new_inbound_day15": false,
+    "reply_watch": "intel/reply-watch-2026-09-14.json"
   },
   "week_outbound_count_ct": {
-    "week_start": "2026-09-07",
-    "sent": 15,
+    "week_start": "2026-09-14",
+    "sent": 0,
     "drafted": 3,
     "ceiling": 50,
-    "note": "Mon3+Tue3+Mailtrap/BaseMail/AgenticBTC3+raise3+backer3=15; Day-14 drafts not sent"
+    "note": "New CT week started Monday 2026-09-14. No live sends yet this week. Three Day-15 CTA drafts recreated (prior Day-14 draft IDs 404). Prior week (2026-09-07) closed at 18 sent."
   }
 }
