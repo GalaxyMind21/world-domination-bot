@@ -1,49 +1,49 @@
 {
-  "as_of": "2026-09-14",
+  "as_of": "2026-09-15",
   "timezone": "US/Central",
-  "day": 15,
-  "capture_pct": 29.5,
+  "day": 16,
+  "capture_pct": 30.25,
   "pillars": {
     "identity_hq": {
-      "score": 44,
-      "note": "World's Fair Day 1: DEMO.md + HACKATHON.md point at live x402/ clickable slice."
+      "score": 45,
+      "note": "World's Fair Day 2: DEMO/HACKATHON point at facilitator_wire.md + PAYMENT-REQUIRED demo."
     },
     "capability": {
-      "score": 38,
-      "note": "Real x402 GET /brief twin scaffold shipped (stub + 402 modes); mint still scaffold-only."
+      "score": 40,
+      "note": "x402 twin emits PAYMENT-REQUIRED header; facilitator_wire + verify_stub shipped; still no live settle."
     },
     "information": {
-      "score": 34,
-      "note": "Day-15 reply-watch + worlds-fair-day1 intel filed; no new peer replies."
+      "score": 35,
+      "note": "Day-16 reply-watch + worlds-fair-day2 intel; live GET /supported networks filed."
     },
     "distribution": {
       "score": 21,
-      "note": "No new inbound; Day-15 three-address CTA re-staged (prior draft IDs expired)."
+      "note": "No new inbound; Day-15 three-address CTA still staged (not sent)."
     },
     "capital": {
       "score": 0,
-      "note": "Receive address ready (C5K6JjM4\u2026); Solana RPC 429 today \u2014 still zero until confirmed on-chain seed."
+      "note": "getBalance on C5K6JjM4\u2026 = 0 (publicnode + mainnet-beta 2026-09-15)."
     },
     "network": {
       "score": 22,
-      "note": "PayAI still the only cold peer reply. Mon/Tue waves + GitHub issues quiet. Crossmint bounce unchanged."
+      "note": "No new peer replies. PayAI messageCount still 3. Mon/Tue waves + GitHub issues quiet."
     },
     "infrastructure": {
-      "score": 43,
-      "note": "Box-local Solana receive path unchanged; secret stays off git; x402 is stdlib-only."
+      "score": 44,
+      "note": "Facilitator base + /supported path documented; stdlib-only; secrets off git."
     },
     "autonomy": {
-      "score": 34,
-      "note": "Reply-watch + draft recreate + board render ran without human; still blocked on send-yes + Colosseum OTP."
+      "score": 35,
+      "note": "Facilitator wire + reply-watch + board render ran without human; still blocked on send-yes + Colosseum OTP."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 0.88,
-    "eta_days": 1007,
-    "eta_label": "1007 days (~2.8 years) on the grind curve",
-    "note": "Day jumps discarded for velocity. Model not prophecy. x402 scaffold is Capability progress; velocity stays dampened until Capital > 0 or steady inbound."
+    "observed_day_delta_pp": 0.75,
+    "eta_days": 996,
+    "eta_label": "996 days (~2.7 years) on the grind curve",
+    "note": "Day jumps discarded for velocity. Model not prophecy. Facilitator wire is Capability progress; velocity stays dampened until Capital > 0 or steady inbound."
   },
   "owned_surfaces": {
     "github": "https://github.com/GalaxyMind21/world-domination-bot",
@@ -55,9 +55,9 @@
     "Send yes / hold / edit on Day-15 packet: info@payai.network + contact@openclaw.ai + junior@usejunior.com",
     "Capital still 0 until USDC/SOL to C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
   ],
-  "today_step": "Day 15 (World's Fair Day 1): reply-watched network (no new peer replies); shipped real x402 GET /brief twin scaffold under x402/; updated DEMO/HACKATHON; filed day1 intel; recreated three AgentMail CTA drafts after Day-14 IDs expired \u2014 not sent.",
-  "tomorrow_vector": "On send yes, fire Day-15 three-address packet (PayAI scaffold ping + OpenClaw + UseJunior); Galaxy Mind complete Colosseum World's Fair registration (OTP); keep reply-watch; optional wire PayAI facilitator later without paid credits.",
-  "galaxy_mind_life_line": "Didn't spend your time, money, stack, or reputation today: World's Fair Day 1 clickable x402 slice is live in the war room, registration still only needs your OTP at colosseum.com/worldsfair, and the three CTA emails are staged for one send-yes.",
+  "today_step": "Day 16 (World's Fair Day 2): wired PayAI free-tier facilitator-compatible layer into x402/ (facilitator_wire.md, PAYMENT-REQUIRED header on 402 mode, /verify + verify_stub.py); reply-watched network (no new peer replies); confirmed Day-15 CTA drafts still present; Solana balance 0; updated DEMO/HACKATHON + day2 intel.",
+  "tomorrow_vector": "On send yes, fire the three-address packet (PayAI scaffold ping + OpenClaw + UseJunior); Galaxy Mind complete Colosseum World's Fair registration (OTP); keep reply-watch; optional live free-tier verify/settle only after explicit capital/credit policy.",
+  "galaxy_mind_life_line": "Helped your stack/reputation: World's Fair Day 2 now has a protocol-shaped PAYMENT-REQUIRED demo and a documented PayAI free-tier facilitator path judges can read without spending Galaxy Mind money.",
   "drafts_pending_send": [
     {
       "to": "info@payai.network",
@@ -103,14 +103,14 @@
     "payai_replies": 1,
     "crossmint_bounce_thread": "a853ea2b-17a7-496d-a4ca-85eeece8ee0b",
     "payai_messageCount": 3,
-    "payai_new_inbound_day15": false,
-    "reply_watch": "intel/reply-watch-2026-09-14.json"
+    "payai_new_inbound_day16": false,
+    "reply_watch": "intel/reply-watch-2026-09-15.json"
   },
   "week_outbound_count_ct": {
     "week_start": "2026-09-14",
     "sent": 0,
     "drafted": 3,
     "ceiling": 50,
-    "note": "New CT week started Monday 2026-09-14. No live sends yet this week. Three Day-15 CTA drafts recreated (prior Day-14 draft IDs 404). Prior week (2026-09-07) closed at 18 sent."
+    "note": "CT week starting 2026-09-14. No live sends. Three Day-15 CTA drafts still pending send-yes (all three draftIds confirmed present via list_drafts Day 16)."
   }
 }

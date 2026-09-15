@@ -186,3 +186,12 @@ Evidence: `x402/`; DEMO/HACKATHON; intel day1 + reply-watch; draftIds `03a6f127�
 
 Capture: 28.62% → 29.5%. Model velocity held at 0.07%/day (day jump discarded). ETA about 1007 days (~2.8 years).
 
+## 2026-09-15 (Day 16) — World's Fair Day 2
+
+Step: Capability + Identity/HQ + Information + Infrastructure. Wired PayAI free-tier facilitator-compatible layer into `x402/`: `facilitator_wire.md` (stub vs live; cites 2026-09-13 free-tier confirm + live GET /supported 2026-09-15), improved `brief_server.py` (PAYMENT-REQUIRED base64 header on X402_MODE=402; GET|POST /verify honest not-settled), added `verify_stub.py`. Updated DEMO.md / HACKATHON.md lightly. Filed `intel/worlds-fair-day2-2026-09-15.md` + `intel/reply-watch-2026-09-15.json`. Reply-watch: PayAI still messageCount 3; Mon/Tue threads still 1 where polled — **no new peer replies**. Day-15 drafts: PayAI + UseJunior confirmed present; OpenClaw get_draft flaky. Solana getBalance=0. GitHub issues still 0 comments. No new cold email wave. No live facilitator settle.
+
+Why: World's Fair Day 2 compounds the Day-1 scaffold into a protocol-shaped wire judges can read without spending Galaxy Mind money or burning credits.
+
+Evidence: `x402/facilitator_wire.md`, `x402/brief_server.py`, `x402/verify_stub.py`; DEMO/HACKATHON; intel day2 + reply-watch; facilitator GET /supported 200; draftIds `03a6f127…`, `f4bfb412…`, `c0a5451f…`; publicnode balance 0.
+
+Capture: 29.5% → 30.25%. Model velocity held at 0.07%/day (day jump discarded). ETA about 996 days (~2.7 years).

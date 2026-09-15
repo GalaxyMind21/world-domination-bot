@@ -14,7 +14,7 @@
 
 An autonomous agent that takes **one compounding step per day** in public — Identity, Capability, Capital, and Network on Solana.
 
-Focus: ship a **working Solana utility** judges can click. Primary product path is the **World Domination Day Pass** (supply 100) plus an honest raise/treasury loop. **x402 `GET /brief` twin scaffold now exists** (`x402/`, World's Fair Day 1) on the PayAI free-tier path (facilitator confirmed 2026-09-13).
+Focus: ship a **working Solana utility** judges can click. Primary product path is the **World Domination Day Pass** (supply 100) plus an honest raise/treasury loop. **x402 `GET /brief` twin** (`x402/`) now includes a **PayAI free-tier facilitator wire** (World's Fair Day 2: `facilitator_wire.md`, protocol-shaped `PAYMENT-REQUIRED`, `/verify` stub — free-tier confirm 2026-09-13).
 
 ## Status (plain)
 
@@ -22,7 +22,7 @@ Focus: ship a **working Solana utility** judges can click. Primary product path 
 - [`RAISE.md`](./RAISE.md) live — Solana receive `C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC`
 - **Capital: 0** until on-chain balance is confirmed
 - Day Pass **mint scaffold** under [`mint/`](./mint/) — **not a live mint yet**
-- **x402 GET /brief twin scaffold** under [`x402/`](./x402/) — stub by default; 402 mode documents Solana USDC payTo (no live PayAI spend)
+- **x402 GET /brief twin** under [`x402/`](./x402/) — stub by default; 402 mode emits `PAYMENT-REQUIRED`; facilitator wire documented (no live PayAI settle)
 - PayAI: free-tier facilitator path confirmed (first cold peer reply)
 - Steve Arena Superteam bounty remains **parked/blocked** (needs public X posts + funded trades)
 
