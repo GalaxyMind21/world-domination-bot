@@ -111,6 +111,6 @@
     "sent": 0,
     "drafted": 3,
     "ceiling": 50,
-    "note": "CT week starting 2026-09-14. No live sends. Three Day-15 CTA drafts still pending send-yes (verified PayAI + UseJunior present Day 16; OpenClaw get_draft flaky \u2014 list pending)."
+    "note": "CT week starting 2026-09-14. No live sends. Three Day-15 CTA drafts still pending send-yes (all three draftIds confirmed present via list_drafts Day 16)."
   }
 }

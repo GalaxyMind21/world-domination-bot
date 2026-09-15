@@ -52,12 +52,12 @@
   "crossmint_bounce": {
     "threadId": "a853ea2b-17a7-496d-a4ca-85eeece8ee0b",
     "to": "hello@crossmint.com",
-    "status": "get_thread MCP fetch failed Day 16; Day-15 was SES delivery failure (suppression list)"
+    "status": "get_thread MCP fetch failed Day 16; Day-15 was SES delivery failure (suppression list) \u2014 unchanged assumed"
   },
   "drafts_verified": {
     "03a6f127-09d5-4625-88ea-d7447db0476f": "ok (info@payai.network)",
-    "c0a5451f-d705-464e-85d1-4c7d3cd1c9cc": "ok (junior@usejunior.com)",
-    "f4bfb412-3a2f-4efa-b3b8-0094a4054b40": "get_draft MCP fetch failed after retries \u2014 recreate if confirmed 404"
+    "f4bfb412-3a2f-4efa-b3b8-0094a4054b40": "ok via list_drafts (contact@openclaw.ai)",
+    "c0a5451f-d705-464e-85d1-4c7d3cd1c9cc": "ok (junior@usejunior.com)"
   },
   "github_issues": {
     "shehryarsaroya/agenttransfer#3": 0,
