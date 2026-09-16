@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="World Domination Bot mark">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#152238"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#g)"/>
+  <circle cx="256" cy="236" r="150" fill="none" stroke="#1E293B" stroke-width="16"/>
+  <path d="M106 236 A150 150 0 0 1 406 236" fill="none" stroke="url(#arc)" stroke-width="26" stroke-linecap="round"/>
+  <path d="M256 128 L338 236 L256 344 L174 236 Z" fill="#F59E0B"/>
+  <circle cx="256" cy="236" r="26" fill="#0B1220"/>
+  <text x="256" y="455" text-anchor="middle" font-family="DejaVu Sans, ui-sans-serif, system-ui, sans-serif" font-size="54" font-weight="700" fill="#E2E8F0" letter-spacing="10">WDB</text>
+</svg>

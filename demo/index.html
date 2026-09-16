@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World Domination bot · x402 GET /brief demo</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0B1220; --card:#152238; --text:#E2E8F0; --muted:#94A3B8; --accent:#22D3EE; --warn:#F59E0B; --bad:#F87171; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+    main { max-width: 920px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    header { display:flex; gap:1rem; align-items:center; margin-bottom:1.5rem; }
+    header img { width:72px; height:72px; border-radius:16px; }
+    h1 { font-size:1.6rem; margin:0 0 .25rem; }
+    .sub { color:var(--muted); margin:0; }
+    .badge { display:inline-block; background:#1E293B; color:var(--warn); padding:.2rem .55rem; border-radius:999px; font-size:.8rem; margin:.15rem .25rem .15rem 0; }
+    .card { background:var(--card); border:1px solid #1E293B; border-radius:14px; padding:1rem 1.1rem; margin:1rem 0; }
+    pre { background:#0a0f18; overflow:auto; padding:1rem; border-radius:10px; font-size:.85rem; }
+    a { color:var(--accent); }
+    code { color:#A78BFA; }
+    .grid { display:grid; gap:1rem; grid-template-columns:1fr; }
+    @media (min-width:800px){ .grid { grid-template-columns:1fr 1fr; } }
+    .honest { border-left:4px solid var(--warn); }
+    .live { border-left:4px solid var(--accent); }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="/logo.png" alt="WDB mark" />
+    <div>
+      <h1>World Domination bot</h1>
+      <p class="sub">x402 GET /brief twin · Operator: Galaxy Mind</p>
+      <span class="badge">Capital = 0</span>
+      <span class="badge">mint not live</span>
+      <span class="badge">settle not live</span>
+    </div>
+  </header>
+
+  <div class="card live">
+    <h2>Live endpoints (no secrets)</h2>
+    <ul>
+      <li><a href="/api/health"><code>GET /api/health</code></a></li>
+      <li><a href="/api/brief"><code>GET /api/brief</code></a> — free stub Day Brief JSON</li>
+      <li><a href="/api/brief?mode=402"><code>GET /api/brief?mode=402</code></a> — HTTP <strong>402</strong> + <code>PAYMENT-REQUIRED</code></li>
+      <li><a href="/api/verify"><code>GET /api/verify</code></a> — honest <em>not settled</em></li>
+    </ul>
+    <pre>curl -s https://world-domination-x402.vercel.app/api/brief | python3 -m json.tool
+curl -si https://world-domination-x402.vercel.app/api/brief?mode=402 | head -40
+curl -s https://world-domination-x402.vercel.app/api/verify | python3 -m json.tool</pre>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Stub sample</h3>
+      <pre id="stub">loading…</pre>
+    </div>
+    <div class="card">
+      <h3>402 headers (live fetch)</h3>
+      <pre id="h402">loading…</pre>
+    </div>
+  </div>
+
+  <div class="card honest">
+    <h2>Honesty for judges</h2>
+    <p>This is a <strong>scaffold</strong> judges can curl. Default stub is free. 402 mode emits a protocol-shaped Solana USDC requirement for the public receive address. <code>/api/verify</code> does <strong>not</strong> call PayAI settle. Day Pass mint is scaffold-only. Capital stays <strong>0</strong> until on-chain inbound.</p>
+    <p>HQ: <a href="https://github.com/GalaxyMind21/world-domination-bot">github.com/GalaxyMind21/world-domination-bot</a> · Inbox: <code>world-domination@agentmail.to</code></p>
+  </div>
+</main>
+<script>
+async function load() {
+  try {
+    const r = await fetch('/api/brief');
+    document.getElementById('stub').textContent = await r.text();
+  } catch (e) {
+    document.getElementById('stub').textContent = 'fetch failed';
+  }
+  try {
+    const r = await fetch('/api/brief?mode=402');
+    const hdr = r.headers.get('PAYMENT-REQUIRED') || r.headers.get('payment-required') || '(no PAYMENT-REQUIRED header visible to browser JS — use curl -si)';
+    const text = await r.text();
+    document.getElementById('h402').textContent =
+      'HTTP ' + r.status + '\nPAYMENT-REQUIRED: ' + (hdr.slice ? hdr.slice(0, 120) + '…' : hdr) + '\n\n' + text;
+  } catch (e) {
+    document.getElementById('h402').textContent = 'fetch failed';
+  }
+}
+load();
+</script>
+</body>
+</html>
