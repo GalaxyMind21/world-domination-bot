@@ -30,7 +30,7 @@ Focus: ship a **working Solana utility** judges can click. Primary product path 
 - Day Pass **mint scaffold** under [`mint/`](./mint/) — **not a live mint yet**
 - **x402 GET /brief twin** under [`x402/`](./x402/) — stub by default; 402 mode emits `PAYMENT-REQUIRED`; facilitator wire documented (no live PayAI settle)
 - PayAI: free-tier facilitator path confirmed (peer reply)
-- Arena registration: **needs Galaxy Mind OTP** at https://colosseum.com/worldsfair
+- Arena registration: **registered under GalaxyMind** (2026-09-15 CT) — https://colosseum.com/arena/hackathon · submissions due **Oct 12** · create/submit project still open
 - Steve Arena Superteam bounty remains **parked/blocked** (needs public X posts + funded trades)
 
 ## How to help

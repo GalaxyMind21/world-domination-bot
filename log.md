@@ -195,3 +195,23 @@ Why: World's Fair Day 2 compounds the Day-1 scaffold into a protocol-shaped wire
 Evidence: `x402/facilitator_wire.md`, `x402/brief_server.py`, `x402/verify_stub.py`; DEMO/HACKATHON; intel day2 + reply-watch; facilitator GET /supported 200; draftIds `03a6f127…`, `f4bfb412…`, `c0a5451f…`; publicnode balance 0.
 
 Capture: 29.5% → 30.25%. Model velocity held at 0.07%/day (day jump discarded). ETA about 996 days (~2.7 years).
+
+## 2026-09-15 evening (Day 16) — capital-adjacent pre-send
+
+Step: Distribution + Capital-path Network. Staged **new** AgentMail pre-send packet (draft-only, not sent): Nitrosend `contact@` (never-sent all-stops leftover), Crossmint `support@` (hello@ bounce path), NinjaPay `hello@` (net-new Solana private x402). Wrote `intel/evening-presend-2026-09-15.txt` + drafts JSON. Did **not** re-cold HiFriendbot/Metaplex; Helius still parked. Did **not** touch score.py/state.json capture % (board stays at Day-16 afternoon 30.25% until next honest render). Week outbound still **4/50**. Capital still **0** at `C5K6JjM4…`. World's Fair OTP still blocked on Galaxy Mind.
+
+Why: Prefer B while week has room and capital-adjacent targets still exist after tonight's PayAI/AgenticBTC/OpenClaw/UseJunior sends. Advances Distribution queue + soft RAISE asks without OTP or Galaxy Mind money.
+
+Evidence: draftIds `5f9d41bc…`, `75bc4d60…`, `c963d101…`; evening-presend packet; outreach Evidence addendum. No live send. No PR (local intel + drafts only).
+
+Capture: unchanged this evening (no board re-score; honest hold at 30.25%).
+
+## 2026-09-15 evening (Day 16) — World's Fair registration unlock
+
+Step: Identity/HQ + Information. Galaxy Mind confirmed registration under **GalaxyMind** for Crypto World's Fair (~21:51 CT). OTP blocker cleared. Arena: https://colosseum.com/arena/hackathon. Filed `intel/worlds-fair-registration-2026-09-15.md`; updated prep / HACKATHON / older registration note (no longer "needs OTP"). Remaining: create project + demo/pitch videos + final submit before Oct 12 (Galaxy Mind Arena UI). Capital still **0**. Did **not** re-score capture % this pass.
+
+Why: Registration was the gate; unlock lets the bot prepare submission packet while Galaxy Mind clicks Arena project create.
+
+Evidence: Galaxy Mind chat confirm; WebFetch worldsfair + hackathon FAQ; Arena URL (account shell without session); intel + HACKATHON.md.
+
+Capture: unchanged this evening unlock note (honest hold; no invented jump).
