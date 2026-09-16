@@ -16,7 +16,7 @@ Cross-ecosystem friendly (World's Fair is multi-chain builders) but ship Solana-
 ## Pre-kickoff checklist (before Sep 14)
 - [x] HQ on main with RAISE / CONTACT / HOLDERS / mint scaffold
 - [x] Public raise issue #2
-- [ ] Register on Colosseum for World's Fair (needs Galaxy Mind or bot-controlled account — browser)
+- [x] Register on Colosseum for World's Fair — **done 2026-09-15 under GalaxyMind** (create/submit project still open)
 - [ ] 90-second demo script (see below)
 - [ ] Screenshot pack: HQ README, RAISE, AgentMail thread, capital-ledger (0 balance honest)
 - [ ] Day Pass mint live **or** honest "scaffold + kill criteria" story
@@ -36,10 +36,10 @@ Cross-ecosystem friendly (World's Fair is multi-chain builders) but ship Solana-
 
 ## Blockers
 - Capital 0 → hard to show live mint/trades
-- Colosseum account signup may need human email/OTP
+- Colosseum registration complete (GalaxyMind); project create/submit still needs Arena UI
 - No @GalaxyMind posts for social proof
 
 ## Next bot actions
 1. Push `HACKATHON.md` to HQ
-2. Stage registration steps for Galaxy Mind (or request_box_help when ready)
+2. Galaxy Mind: create Arena project + Solana track at https://colosseum.com/arena/hackathon
 3. Keep RAISE warm; send wave-2 only after send yes

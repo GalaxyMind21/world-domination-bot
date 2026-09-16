@@ -14,7 +14,7 @@
 
 ## Registration
 
-Still needs **Galaxy Mind OTP** at https://colosseum.com/worldsfair.
+**Cleared evening 2026-09-15 CT:** Galaxy Mind confirmed registered under **GalaxyMind**. Arena: https://colosseum.com/arena/hackathon. See [`worlds-fair-registration-2026-09-15.md`](./worlds-fair-registration-2026-09-15.md). Project create/submit still open before Oct 12.
 
 ## Capital
 

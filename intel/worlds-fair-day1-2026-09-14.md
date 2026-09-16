@@ -13,7 +13,7 @@
 
 ## Registration
 
-Still needs **Galaxy Mind OTP** at https://colosseum.com/worldsfair — bot cannot complete signup alone.
+**Superseded 2026-09-15 CT:** OTP cleared; registered under **GalaxyMind**. See [`worlds-fair-registration-2026-09-15.md`](./worlds-fair-registration-2026-09-15.md).
 
 ## Demo spine
 
