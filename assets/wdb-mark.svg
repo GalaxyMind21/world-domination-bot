@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="WDB mark">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#152238"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#g)"/>
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#1E293B" stroke-width="16"/>
+  <path d="M96 256 A160 160 0 0 1 416 256" fill="none" stroke="url(#arc)" stroke-width="28" stroke-linecap="round"/>
+  <path d="M256 130 L348 256 L256 382 L164 256 Z" fill="#F59E0B"/>
+  <circle cx="256" cy="256" r="28" fill="#0B1220"/>
+</svg>
