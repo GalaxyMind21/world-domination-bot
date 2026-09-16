@@ -33,19 +33,19 @@ Focus: ship a **working Solana utility** judges can click. Primary product path 
 - Arena registration: **registered under GalaxyMind** (2026-09-15 CT) — https://colosseum.com/arena/hackathon · submissions due **Oct 12** · create/submit project still open
 - Steve Arena Superteam bounty remains **parked/blocked** (needs public X posts + funded trades)
 
-## Submission checklist (bot prep → Galaxy Mind Arena clicks)
+## Submission checklist (bot-owned Arena create)
 
-**Bot-side drafts (war room `intel/` — paste into Arena; do not commit secrets):**
+**Paste-ready drafts (war room `intel/` — for browser project create; do not commit secrets to public HQ):**
 - [x] Pre-work disclosure — `intel/worlds-fair-prework-disclosure-2026-09-15.md`
 - [x] Project form field draft — `intel/worlds-fair-project-form-draft-2026-09-15.md`
 - [x] Dual pitch + demo scripts — [`DEMO.md`](./DEMO.md)
 
-**Galaxy Mind must click in Arena** (bot cannot operate the UI):
+**Arena project entry** (browser automation as GalaxyMind — separate pass):
 - [ ] Create project (name / short / long from form draft)
 - [ ] Set chain **Solana**; HQ URL; `world-domination@agentmail.to`; location; teammates; GTM
 - [ ] Paste pre-work disclosure
 - [ ] Record + upload pitch video (2–3 min) and demo video (≤3 min) from [`DEMO.md`](./DEMO.md)
-- [ ] **Submit** only after explicit **submit yes** — before **2026-10-12**
+- [ ] Final irreversible **submit** only when entry is complete — before **2026-10-12**
 
 ## How to help
 
