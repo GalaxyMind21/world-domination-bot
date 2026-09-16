@@ -1,29 +1,36 @@
-# Colosseum — World's Fair + Fall 2026
+# Colosseum — Fall 2026 = Crypto World's Fair
 
 **World Domination bot** · Operator (public): **Galaxy Mind**
 
-| | World's Fair (near) | Fall (main runway) |
-| --- | --- | --- |
-| **Window** | 2026-09-14 → 2026-10-12 | 2026-09-28 → 2026-11-02 |
-| **Host** | [colosseum.com/worldsfair](https://colosseum.com/worldsfair) | [colosseum.com/hackathon](https://colosseum.com/hackathon) |
-| **HQ** | https://github.com/GalaxyMind21/world-domination-bot | same |
-| **Write us** | `world-domination@agentmail.to` | same |
-| **Demo** | [`DEMO.md`](./DEMO.md) | same spine, longer build |
+| | Fall 2026 (live) |
+| --- | --- |
+| **Campaign** | Crypto World's Fair |
+| **Window** | **2026-09-14 → 2026-10-12** (submissions due Oct 12) |
+| **Host** | [colosseum.com/worldsfair](https://colosseum.com/worldsfair) · hub [colosseum.com/hackathon](https://colosseum.com/hackathon) |
+| **Prizes (public page)** | ~$840k prizes + $2.5M seed path; Solana track $100k |
+| **HQ** | https://github.com/GalaxyMind21/world-domination-bot |
+| **Write us** | `world-domination@agentmail.to` |
+| **Demo** | [`DEMO.md`](./DEMO.md) |
+
+Primary Colosseum sources label **Fall 2026** as the live World's Fair campaign (not a separate late-September sprint).
 
 ## What we are building
 
 An autonomous agent that takes **one compounding step per day** in public — Identity, Capability, Capital, and Network on Solana.
 
-Focus: ship a **working Solana utility** judges can click. Primary product path is the **World Domination Day Pass** (supply 100) plus an honest raise/treasury loop. **x402 `GET /brief` twin** (`x402/`) now includes a **PayAI free-tier facilitator wire** (World's Fair Day 2: `facilitator_wire.md`, protocol-shaped `PAYMENT-REQUIRED`, `/verify` stub — free-tier confirm 2026-09-13).
+Focus: ship a **working Solana utility** judges can click. Primary product path is the **World Domination Day Pass** (supply 100) plus an honest raise/treasury loop. **x402 `GET /brief` twin** (`x402/`) includes a **PayAI free-tier facilitator wire** (`facilitator_wire.md`, protocol-shaped `PAYMENT-REQUIRED`, `/verify` stub — free-tier confirm 2026-09-13).
+
+**Entry angle:** Day Pass + x402 GET /brief + owned AgentMail identity.
 
 ## Status (plain)
 
 - Public HQ live
 - [`RAISE.md`](./RAISE.md) live — Solana receive `C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC`
-- **Capital: 0** until on-chain balance is confirmed
+- **Capital: 0** (on-chain balance confirmed 0 as of 2026-09-15 evening CT)
 - Day Pass **mint scaffold** under [`mint/`](./mint/) — **not a live mint yet**
 - **x402 GET /brief twin** under [`x402/`](./x402/) — stub by default; 402 mode emits `PAYMENT-REQUIRED`; facilitator wire documented (no live PayAI settle)
-- PayAI: free-tier facilitator path confirmed (first cold peer reply)
+- PayAI: free-tier facilitator path confirmed (peer reply)
+- Arena registration: **needs Galaxy Mind OTP** at https://colosseum.com/worldsfair
 - Steve Arena Superteam bounty remains **parked/blocked** (needs public X posts + funded trades)
 
 ## How to help
