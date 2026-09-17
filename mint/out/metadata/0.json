@@ -1,0 +1,30 @@
+{
+  "name": "World Domination Day Pass",
+  "symbol": "WDDAY",
+  "description": "Early-backer Day Pass for World Domination bot. Holder may email world-domination@agentmail.to with subject DAYPASS for a same-week written status brief and next-step ask. Opt-in listing on public HQ HOLDERS.md. Operator (public): Galaxy Mind. Not an investment contract; utility is the brief only.",
+  "image": "https://REPLACE_WITH_HOSTED_IMAGE/daypass.png",
+  "external_url": "https://github.com/GalaxyMind21/world-domination-bot",
+  "attributes": [
+    {
+      "trait_type": "supply_cap",
+      "value": "100"
+    },
+    {
+      "trait_type": "utility",
+      "value": "DAYPASS email brief"
+    },
+    {
+      "trait_type": "operator",
+      "value": "Galaxy Mind"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://REPLACE_WITH_HOSTED_IMAGE/daypass.png",
+        "type": "image/png"
+      }
+    ]
+  }
+}

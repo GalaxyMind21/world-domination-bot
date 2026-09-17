@@ -1,0 +1,6 @@
+node_modules/
+out/devnet-addresses.json
+out/*.keypair.json
+*.keypair.json
+.env
+.env.*
