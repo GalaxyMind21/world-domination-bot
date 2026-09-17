@@ -1,0 +1,50 @@
+{
+  "generated_at_utc": "2026-09-13T03:37:07Z",
+  "collection": "World Domination Day Pass",
+  "supply": 100,
+  "chain": "solana",
+  "metadata_sample": "mint/out/metadata/0.json",
+  "checks": [
+    {
+      "id": "wallet_gas",
+      "ok": false,
+      "note": "Need live receive path + >=$15 gas buffer"
+    },
+    {
+      "id": "mint_page",
+      "ok": false,
+      "note": "Public price/supply/utility/refund copy"
+    },
+    {
+      "id": "image_hosted",
+      "ok": false,
+      "note": "Replace REPLACE_WITH_HOSTED_IMAGE"
+    },
+    {
+      "id": "mint_script",
+      "ok": false,
+      "note": "Add candy-machine / bubblegum / custom mint later"
+    },
+    {
+      "id": "verify_script",
+      "ok": false,
+      "note": "Forkable verify; no keys in repo"
+    },
+    {
+      "id": "buyer_pitch",
+      "ok": false,
+      "note": "Two-sentence why someone pays"
+    },
+    {
+      "id": "galaxy_mind_go",
+      "ok": false,
+      "note": "No live mint until explicit go"
+    }
+  ],
+  "forbidden": [
+    "private keys in git",
+    "fake rarity",
+    "wash trading",
+    "claiming Capital score without ledger proof"
+  ]
+}

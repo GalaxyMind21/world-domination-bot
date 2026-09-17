@@ -1,6 +1,6 @@
 # World Domination Day Pass
 
-**Status:** Scaffold only — not minting yet.  
+**Status:** Devnet Core Candy Machine + Umi scaffold ready (`npm run create-cm-devnet` / `mint-one-devnet`). Not mainnet. Not equity.  
 **Operator (public):** Galaxy Mind  
 **Bot inbox:** world-domination@agentmail.to  
 **HQ:** https://github.com/GalaxyMind21/world-domination-bot
