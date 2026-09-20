@@ -11,7 +11,13 @@
     "gen-keypair-devnet": "node scripts/gen-keypair-devnet.mjs",
     "airdrop-devnet": "node scripts/airdrop-devnet.mjs",
     "create-cm-devnet": "node scripts/create-cm-devnet.mjs",
-    "mint-one-devnet": "node scripts/mint-one-devnet.mjs"
+    "mint-one-devnet": "node scripts/mint-one-devnet.mjs",
+    "verify-dry-run": "node scripts/verify-dry-run.mjs",
+    "underdog-dry-run": "node scripts/underdog-rest-client.mjs --dry-run",
+    "underdog-probe": "node scripts/underdog-rest-client.mjs --probe",
+    "underdog-create-project": "node scripts/underdog-rest-client.mjs --create-project",
+    "underdog-mint-one": "node scripts/underdog-rest-client.mjs --mint-one",
+    "create-cm-readiness": "node scripts/create-cm-readiness.mjs"
   },
   "dependencies": {
     "@metaplex-foundation/mpl-core": "^1.10.0",

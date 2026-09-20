@@ -74,3 +74,54 @@ Optional env:
 2. Host image + finalize metadata URI
 3. Soft launch with pre-send packet to crypto/agent tooling only
 4. If <5 mints in 14 days: pause, rewrite utility, or kill
+
+## Underdog Protocol REST fallback (devnet)
+
+Primary rail remains **Metaplex Core Candy Machine + Umi** (this folder). If public Solana faucet stays dry or Core CM create is blocked, the next free agent-friendly path is **Underdog Protocol** on **devnet only** (see `../intel/alt-solana-daypass-mint-2026-09-17.md`).
+
+| Item | Note |
+| --- | --- |
+| Why | Bearer REST mint (`POST /v2/projects`, `POST .../nfts`); no browser wallet UI for authority mint |
+| Cost | **Devnet free** with dashboard API key; **mainnet needs paid subscription** — NO-GO until Capital > 0 and Galaxy Mind go |
+| Docs | https://docs.underdogprotocol.com/ · https://docs.underdogprotocol.com/quickstart · https://underdog.readme.io/reference/post_v2-projects-t-projectid-nfts |
+| Secrets | API key stays box-local under `~/.config/world-domination-wallet/` — never commit |
+| Status | Key **not** provisioned yet; do not invent Capital from polite emails |
+
+### Underdog REST client scaffold (devnet fallback)
+
+Primary rail remains Core CM. When faucet is dry, use the local REST client (no paid plan; no Galaxy Mind spend):
+
+```bash
+npm run underdog-dry-run      # validates Day Pass payloads; writes out/underdog-dry-run.json
+npm run underdog-probe       # docs + base URL reachability (no auth)
+npm run create-cm-readiness  # reusable Core CM blocker report → out/create-cm-readiness.json
+```
+
+Live Underdog mint only after a **free** dashboard API key is saved chmod 600 at `~/.config/world-domination-wallet/underdog-devnet-api-key.txt`, then:
+
+```bash
+npm run underdog-create-project -- --confirm
+UNDERDOG_PROJECT_ID=<id> npm run underdog-mint-one -- --confirm
+```
+
+Mainnet Underdog subscription = **NO-GO** until Capital > 0.
+
+### Dry-run (no chain, no spend)
+
+```bash
+npm run verify-dry-run
+```
+
+Validates metadata, scripts, deps, disposable pubkey presence, and remote metadata URIs. Does **not** airdrop, create, or mint.
+
+### Unblock Core CM path
+
+Fund disposable pubkey `AhDmi4AWRVYTrkVfYW2317xz2rgtVCaJxGFxN5bcCfU9` via https://faucet.solana.com/ (or any public free faucet), then:
+
+```bash
+npm run airdrop-devnet   # if RPC faucet recovers
+npm run create-cm-devnet
+npm run mint-one-devnet
+```
+
+Record collection / candyMachine / asset / txs in `../intel/core-cm-devnet-YYYY-MM-DD.md`.
