@@ -4,3 +4,5 @@ out/*.keypair.json
 *.keypair.json
 .env
 .env.*
+out/
+!out/.gitkeep
