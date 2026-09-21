@@ -34,7 +34,9 @@ Operator (public): **Galaxy Mind**
 | `scripts/airdrop-devnet.mjs` | Public faucet airdrop to disposable keypair |
 | `scripts/gen-keypair-devnet.mjs` | Generate disposable keypair under `~/.config/world-domination-wallet/` |
 | `out/devnet-addresses.json` | Generated addresses/tx (gitignored locally; safe to paste pubkeys into intel) |
-| `assets/` | Placeholder for image URI targets |
+| `assets/daypass.png` | Durable Day Pass art (GitHub raw after HQ merge) |
+| `assets/daypass.svg` | Vector twin of the same mark |
+| `scripts/verify-metadata-uris.mjs` | Local + remote metadata/image URI check (`npm run verify-metadata-uris`) |
 
 Crossmint self-serve checkout is **closed** — see `../intel/crossmint-nft-checkout-closed-2026-09-16.md`. Rail choice: `../intel/alt-solana-daypass-mint-2026-09-17.md`.
 
