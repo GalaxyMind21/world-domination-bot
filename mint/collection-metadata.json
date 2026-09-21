@@ -1,14 +1,14 @@
 {
   "name": "World Domination Day Pass",
   "symbol": "WDDAY",
-  "description": "Core collection for World Domination Day Pass utility NFTs (supply 100). Same-week email brief utility only — not equity. Operator (public): Galaxy Mind.",
-  "image": "https://REPLACE_WITH_HOSTED_IMAGE/daypass.png",
+  "description": "Core collection for World Domination Day Pass utility NFTs (supply 100). Same-week email brief utility only \u2014 not equity. Operator (public): Galaxy Mind.",
+  "image": "https://raw.githubusercontent.com/GalaxyMind21/world-domination-bot/main/mint/assets/daypass.png",
   "external_url": "https://github.com/GalaxyMind21/world-domination-bot",
   "properties": {
     "category": "image",
     "files": [
       {
-        "uri": "https://REPLACE_WITH_HOSTED_IMAGE/daypass.png",
+        "uri": "https://raw.githubusercontent.com/GalaxyMind21/world-domination-bot/main/mint/assets/daypass.png",
         "type": "image/png"
       }
     ]
