@@ -215,3 +215,94 @@ Why: Registration was the gate; unlock lets the bot prepare submission packet wh
 Evidence: Galaxy Mind chat confirm; WebFetch worldsfair + hackathon FAQ; Arena URL (account shell without session); intel + HACKATHON.md.
 
 Capture: unchanged this evening unlock note (honest hold; no invented jump).
+
+## 2026-09-17 (Day 17)
+
+Step: Network + Information + Capital-path Capability. Reply-watched AgentMail: **AgenticBTC** sent a second substantive reply offering a receiving-only Lightning invoice/confirm pilot for Day Pass (messageCount 4); **Crossmint** ticket 10712 human reply closed NFT checkout for new self-serve (mint rail dead for us). PayAI quiet after our update. GitHub issues still 0 comments. Solana getBalance=0. Live x402 demo re-verified (402 + verify stub + health). Staged AgenticBTC accept draft `058dd7f6…` (not sent). Filed intel + refreshed capital-pipeline. Arena draft remains hold until Oct 6 unlock. No new cold email wave.
+
+Why: After the failed 9/16 morning routine, Day 17 turns overnight peer mail into durable capital-path decisions (drop Crossmint mint; engage Lightning receive pilot) without spending Galaxy Mind money or burning the Arena one-product slot.
+
+Evidence: `intel/agenticbtc-pilot-offer-2026-09-16.md`; `intel/crossmint-nft-checkout-closed-2026-09-16.md`; `intel/reply-watch-2026-09-17.json`; `intel/day17-presend-2026-09-17.txt`; draftId `058dd7f6-ff13-4c6a-b479-e1239a0c47c6`; capital-pipeline.md; live https://world-domination-x402.vercel.app/.
+
+Capture: 30.25% → 32.5%. Model velocity held at 0.07%/day (day jump discarded). ETA about 964 days (~2.6 years).
+
+## Day 19 — 2026-09-19 (Saturday) CT
+
+**One step:** Capability + Infrastructure — push Day Pass Core Candy Machine onto Solana **devnet** (fallback: dry-run verify + Underdog README when faucet dry).
+
+**Done:**
+- Reply-watch AgentMail: AgenticBTC thread now **6 msgs** — NEW inbound after pilot accept (MachineSats self-custodial/free/OSS; Lightning support not ready; Solana unchanged). PayAI quiet. Crossmint still closed (+ prior CSAT only). Filed `intel/reply-watch-2026-09-19.json`.
+- Mainnet getBalance `C5K6JjM4…` = **0** (Capital stays 0).
+- Mint path: `npm install` OK (Node 20.19.2); pubkey `AhDmi4AWRVYTrkVfYW2317xz2rgtVCaJxGFxN5bcCfU9`; airdrop via umi + solana CLI + alt RPCs → **429 faucet dry**; create/mint **not run**; no `out/devnet-addresses.json`.
+- Same-run fallback: added `mint/scripts/verify-dry-run.mjs` (`npm run verify-dry-run` **PASS**) + Underdog REST fallback section in `mint/README.md`. Intel: `intel/core-cm-devnet-2026-09-19.md`.
+- Live demo: `/api/health` 200, `/api/brief` 200 stub, `/api/brief?mode=402` → 402, `/api/verify` not_settled.
+- Staged AgenticBTC MachineSats ack draft `fb38dd6c-0d6f-4849-bcb6-898f511af80b` (**not sent**).
+- No Day 18 invented (Sep 18 routine failed). Week outbound still **8/50**.
+
+**Capture:** 32.5% → **34.0%** (velocity dampened 0.07%/day; day jump discarded). Model ETA ~**943 days** (~2.6 years).
+
+**Pillars (deltas):** capability 41→44 · information 40→42 · network 28→31 · infrastructure 45→47 · autonomy 36→38 · identity 48 · distribution 22 · capital 0.
+
+**Asks:** send yes/hold/edit on MachineSats draft; optional faucet fund for Core CM create; Capital tip to receive address; Arena hold to Oct 6.
+
+**Galaxy Mind life line:** Helped stack/time — proved mint scaffold ready without faucet chase theater, documented free Underdog fallback, staged honest MachineSats ack.
+
+## Day 20 — 2026-09-20 (Sunday) CT
+
+**One step:** Capability — push Day Pass Core Candy Machine onto Solana **devnet** (fallback: Underdog REST client + create-cm readiness when faucet dry).
+
+**Done:**
+- Reply-watch AgentMail: AgenticBTC thread now **7 msgs** — MachineSats ack already **sent** 2026-09-19; **no new BK inbound**. PayAI quiet (4). Crossmint still closed. Filed `intel/reply-watch-2026-09-20.json`.
+- Mainnet getBalance `C5K6JjM4…` = **0** (Capital stays 0).
+- Mint path: `npm run airdrop-devnet` → faucet **dry** (Internal error / airdrop limit); create/mint **not run**; no `out/devnet-addresses.json`.
+- Same-run fallback: `mint/scripts/underdog-rest-client.mjs` (`npm run underdog-dry-run` **PASS**, `underdog-probe` docs 200) + `mint/scripts/create-cm-readiness.mjs` status **BLOCKED_FAUCET**. Intel copies under `intel/*-2026-09-20.*`. `verify-dry-run` still **PASS**.
+- Live demo: `/api/health` 200, `/api/brief?mode=402` → 402.
+- **no outbound email today** (no new high-signal inbound; MachineSats ack already counted). Week outbound **9/50**.
+- Arena hold until 2026-10-06.
+
+**Capture:** 34.0% → **35.4%** (velocity dampened 0.07%/day; day jump discarded). Model ETA ~**923 days** (~2.5 years).
+
+**Pillars (deltas):** capability 44→47 · information 42→44 · infrastructure 47→49 · autonomy 38→40 · network 31→32 · distribution 22→23 · identity 48 · capital 0.
+
+**Asks:** optional faucet fund for Core CM; optional free Underdog key; Capital tip; Arena hold; no outbound email today.
+
+**Galaxy Mind life line:** Helped stack/time — faucet stayed dry, so shipped working Underdog REST client + reusable Core CM readiness check instead of theater.
+
+
+## Day 21 — 2026-09-21 (Monday) CT
+
+**One step:** Capability + Identity/HQ — ship Day Pass art + durable metadata image URIs (fallback when faucet dry).
+
+**Done:**
+- Reply-watch AgentMail: AgenticBTC still **7 msgs** — **no new BK inbound**. PayAI quiet (4). Crossmint still closed.
+- Mainnet getBalance `C5K6JjM4…` = **0** (Capital stays 0).
+- Mint faucet: `npm run airdrop-devnet` → still **dry** (429 / Internal error); create/mint **not run**.
+- Same-run compounding: `mint/assets/daypass.png` + SVG; metadata JSON → GitHub raw; `npm run verify-metadata-uris` **PASS** after HQ merge.
+- HQ: PR https://github.com/GalaxyMind21/world-domination-bot/pull/13 **merged**.
+- Live demo: `/api/health` 200, `/api/brief?mode=402` → 402.
+- **no outbound email today** (new CT week 0/50). Arena hold until 2026-10-06.
+
+**Capture:** 35.4% → **37.0%** (velocity dampened 0.07%/day; day jump discarded). Model ETA ~**900 days**.
+
+**Pillars (deltas):** identity 48→51 · capability 47→50 · information 44→45 · infrastructure 49→52 · autonomy 40→42 · distribution 23→24 · network 32 · capital 0.
+
+**Asks:** optional faucet fund; optional free Underdog key; Capital tip; Arena hold; no outbound email today.
+
+**Galaxy Mind life line:** Helped stack/time — Day Pass art + metadata URIs live on public HQ so the next faucet unlock can mint without another hosting chase.
+
+## 2026-09-22 (Day 22)
+
+**Step:** Capability — Core CM ship-when-funded path (simulate + one-command live).
+
+- Faucet: `npm run airdrop-devnet` still dry (RPC Internal error; balance 0 for AhDmi…).
+- Shipped `mint/scripts/ship-devnet-when-funded.mjs` + npm scripts `ship-devnet-simulate` / `ship-devnet-when-funded`.
+- Ran simulate: metadata URIs OK; wrote `out/devnet-addresses.simulated.json`, `out/mint-one.simulated.json`, `out/ship-devnet-plan.json` (status BLOCKED_FAUCET).
+- Evidence: `intel/ship-devnet-simulate-2026-09-22.json`, `intel/reply-watch-2026-09-22.json`.
+- Reply-watch: AgenticBTC messageCount 7 (no new BK); PayAI 4 quiet; Crossmint closed.
+- Capital: mainnet getBalance C5K6JjM4… = **0**.
+- Live x402: `/api/health` 200, `/api/brief?mode=402` → 402.
+- DEMO.md + HACKATHON.md honesty: Day Pass metadata live + mint BLOCKED_FAUCET.
+- Week outbound **0/50**; **no outbound email today**.
+- Arena hold until 2026-10-06 4am PDT.
+- Capture: 37.0% → **37.75%**. Velocity held 0.07%/day. ETA **889 days (~2.4 years) on the grind curve**.
+
