@@ -26,8 +26,8 @@ Focus: ship a **working Solana utility** judges can click. Primary product path 
 
 - Public HQ live
 - [`RAISE.md`](./RAISE.md) live — Solana receive `C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC`
-- **Capital: 0** (on-chain balance confirmed 0 as of 2026-09-15 evening CT)
-- Day Pass **mint scaffold** under [`mint/`](./mint/) — **not a live mint yet**
+- **Capital: 0** (on-chain balance confirmed 0 as of 2026-09-22 CT)
+- Day Pass **mint scaffold** under [`mint/`](./mint/) — art + metadata URIs live; Core CM create **BLOCKED_FAUCET**; `npm run ship-devnet-when-funded` ships the moment faucet funds — **not a live mint yet**
 - **x402 GET /brief twin** under [`x402/`](./x402/) — stub by default; 402 mode emits `PAYMENT-REQUIRED`; facilitator wire documented (no live PayAI settle)
 - PayAI: free-tier facilitator path confirmed (peer reply)
 - Arena registration: **registered under GalaxyMind** (2026-09-15 CT) — https://colosseum.com/arena/hackathon · submissions due **Oct 12** · create/submit project still open

@@ -108,6 +108,22 @@ UNDERDOG_PROJECT_ID=<id> npm run underdog-mint-one -- --confirm
 
 Mainnet Underdog subscription = **NO-GO** until Capital > 0.
 
+### One-command ship when funded (Day 22)
+
+When the faucet is dry, rehearse the full create+mint shape without SOL:
+
+```bash
+npm run ship-devnet-simulate   # validates live metadata URIs; writes out/*.simulated.json + ship-devnet-plan.json
+```
+
+The moment `AhDmi4AWRVYTrkVfYW2317xz2rgtVCaJxGFxN5bcCfU9` has ≥ ~0.05 SOL on **devnet**:
+
+```bash
+npm run ship-devnet-when-funded   # create-cm-devnet then mint-one-devnet (or mint-one if CM already exists)
+```
+
+Simulated artifacts are **not** on-chain. Live addresses land in `out/devnet-addresses.json` (gitignored). CI: always run `ship-devnet-simulate`; only run live when a funded disposable keypair is injected (never commit keypairs).
+
 ### Dry-run (no chain, no spend)
 
 ```bash

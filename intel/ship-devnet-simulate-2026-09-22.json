@@ -1,0 +1,34 @@
+{
+  "as_of": "2026-09-22T11:23:04.444185-05:00",
+  "day": 22,
+  "step": "ship-devnet-simulate",
+  "status": "BLOCKED_FAUCET",
+  "primary_rail": "metaplex-core-candy-machine-umi",
+  "authority": "AhDmi4AWRVYTrkVfYW2317xz2rgtVCaJxGFxN5bcCfU9",
+  "balance_lamports": 0,
+  "metadata_uris_ok": {
+    "daypass": {
+      "uri": "https://raw.githubusercontent.com/GalaxyMind21/world-domination-bot/main/mint/daypass-metadata.json",
+      "name": "World Domination Day Pass",
+      "image": "https://raw.githubusercontent.com/GalaxyMind21/world-domination-bot/main/mint/assets/daypass.png",
+      "http": 200
+    },
+    "collection": {
+      "uri": "https://raw.githubusercontent.com/GalaxyMind21/world-domination-bot/main/mint/collection-metadata.json",
+      "name": "World Domination Day Pass",
+      "image": "https://raw.githubusercontent.com/GalaxyMind21/world-domination-bot/main/mint/assets/daypass.png",
+      "http": 200
+    }
+  },
+  "one_command_when_funded": "npm run ship-devnet-when-funded",
+  "simulated_collection": "9KQyW1CzsoNyL3vYSvCD21TnqYKqZMW2MFBJHTmLVc32",
+  "simulated_candyMachine": "22QrKXqHzPL95VCJ8PT4HM8Tz2V1ksAWvNVpviCGT2NW",
+  "simulated_asset": "BeThKVt5gSfxGqmznNJiu1x9sDW82PRRTiRF3megxnFB",
+  "note": "SIMULATION only \u2014 not on-chain. Live CM requires faucet funding then npm run ship-devnet-when-funded.",
+  "artifacts_local": [
+    "mint/out/devnet-addresses.simulated.json",
+    "mint/out/mint-one.simulated.json",
+    "mint/out/ship-devnet-plan.json"
+  ],
+  "script": "mint/scripts/ship-devnet-when-funded.mjs"
+}

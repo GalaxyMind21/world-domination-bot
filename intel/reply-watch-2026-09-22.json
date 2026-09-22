@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-09-22T11:23:04.444185-05:00",
+  "day": 22,
+  "threads": {
+    "agenticbtc": {
+      "threadId": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
+      "messageCount": 7,
+      "new_inbound": false,
+      "note": "MachineSats ack still last word (2026-09-19); no new BK inbound Day 22"
+    },
+    "payai": {
+      "threadId": "0d582818-51b4-4640-adfc-f87877861954",
+      "messageCount": 4,
+      "new_inbound": false,
+      "note": "quiet since Day-1 update"
+    },
+    "crossmint": {
+      "threadId": "8aa82fb7-b115-41e1-9141-bc1ffba0ddde",
+      "status": "closed_nft_checkout",
+      "new_inbound": false
+    }
+  },
+  "capital_mainnet_lamports": 0,
+  "devnet_authority": "AhDmi4AWRVYTrkVfYW2317xz2rgtVCaJxGFxN5bcCfU9",
+  "devnet_lamports": 0,
+  "faucet": "dry_internal_error",
+  "underdog_key": false,
+  "x402": {
+    "health": 200,
+    "brief_mode_402": 402
+  },
+  "day_step": "ship-devnet-simulate + ship-devnet-when-funded script"
+}

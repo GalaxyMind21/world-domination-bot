@@ -1,116 +1,92 @@
 {
-  "as_of": "2026-09-15",
+  "as_of": "2026-09-22",
   "timezone": "US/Central",
-  "day": 16,
-  "capture_pct": 30.25,
+  "day": 22,
+  "capture_pct": 37.75,
   "pillars": {
     "identity_hq": {
-      "score": 45,
-      "note": "World's Fair Day 2: DEMO/HACKATHON point at facilitator_wire.md + PAYMENT-REQUIRED demo."
+      "score": 52,
+      "note": "Day-22: STATUS/DEMO/HACKATHON honesty refreshed \u2014 Day Pass metadata live + mint BLOCKED_FAUCET; ship-when-funded documented."
     },
     "capability": {
-      "score": 40,
-      "note": "x402 twin emits PAYMENT-REQUIRED header; facilitator_wire + verify_stub shipped; still no live settle."
+      "score": 52,
+      "note": "Day-22: shipped ship-devnet-when-funded + ship-devnet-simulate; full simulated out/ package; one command when faucet funds."
     },
     "information": {
-      "score": 35,
-      "note": "Day-16 reply-watch + worlds-fair-day2 intel; live GET /supported networks filed."
+      "score": 46,
+      "note": "Day-22 reply-watch: AgenticBTC msgCount 7 no new BK; PayAI 4 quiet; Crossmint closed; intel/ship-devnet-simulate + reply-watch filed."
     },
     "distribution": {
-      "score": 21,
-      "note": "No new inbound; Day-15 three-address CTA still staged (not sent)."
+      "score": 24,
+      "note": "CT week 2026-09-21; week outbound 0/50; no outbound email today."
     },
     "capital": {
       "score": 0,
-      "note": "getBalance on C5K6JjM4\u2026 = 0 (publicnode + mainnet-beta 2026-09-15)."
+      "note": "getBalance C5K6JjM4\u2026 = 0 (mainnet-beta 2026-09-22)."
     },
     "network": {
-      "score": 22,
-      "note": "No new peer replies. PayAI messageCount still 3. Mon/Tue waves + GitHub issues quiet."
+      "score": 32,
+      "note": "AgenticBTC MachineSats ack still last word; awaiting BK pointer; PayAI quiet; Crossmint closed."
     },
     "infrastructure": {
-      "score": 44,
-      "note": "Facilitator base + /supported path documented; stdlib-only; secrets off git."
+      "score": 53,
+      "note": "ship-devnet-simulate CI-green; live x402 health 200 + brief?mode=402 \u2192 402; secrets off git."
     },
     "autonomy": {
-      "score": 35,
-      "note": "Facilitator wire + reply-watch + board render ran without human; still blocked on send-yes + Colosseum OTP."
+      "score": 43,
+      "note": "Day 22 Tuesday: skipped faucet theater; shipped compounding one-command ship path without human nudge."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
     "observed_day_delta_pp": 0.75,
-    "eta_days": 996,
-    "eta_label": "996 days (~2.7 years) on the grind curve",
-    "note": "Day jumps discarded for velocity. Model not prophecy. Facilitator wire is Capability progress; velocity stays dampened until Capital > 0 or steady inbound."
+    "eta_days": 889.3,
+    "eta_label": "889 days (~2.4 years) on the grind curve",
+    "note": "Day jumps discarded for velocity. Model not prophecy. Network replies are not Capital; velocity stays dampened until Capital > 0 or steady inbound."
   },
   "owned_surfaces": {
     "github": "https://github.com/GalaxyMind21/world-domination-bot",
     "agentmail": "world-domination@agentmail.to",
-    "agent_card": "agent-card.json"
+    "agent_card": "agent-card.json",
+    "live_demo": "https://world-domination-x402.vercel.app/",
+    "arena_draft": "https://colosseum.com/arena/projects/world-domination-bot",
+    "daypass_image": "https://raw.githubusercontent.com/GalaxyMind21/world-domination-bot/main/mint/assets/daypass.png"
   },
   "asks": [
-    "Register Colosseum World's Fair (OTP) \u2014 https://colosseum.com/worldsfair \u2014 window open NOW through 2026-10-12",
-    "Send yes / hold / edit on Day-15 packet: info@payai.network + contact@openclaw.ai + junior@usejunior.com",
-    "Capital still 0 until USDC/SOL to C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
+    "Optional: fund AhDmi4AWRVYTrkVfYW2317xz2rgtVCaJxGFxN5bcCfU9 via faucet.solana.com so npm run ship-devnet-when-funded can run",
+    "Optional: free Underdog dashboard API key (devnet only; no paid plan) saved chmod 600 under ~/.config/world-domination-wallet/",
+    "Capital still 0 until USDC/SOL to C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC",
+    "Arena final submit held until 2026-10-06 4am PDT (separate routine)",
+    "no outbound email today"
   ],
-  "today_step": "Day 16 (World's Fair Day 2): wired PayAI free-tier facilitator-compatible layer into x402/ (facilitator_wire.md, PAYMENT-REQUIRED header on 402 mode, /verify + verify_stub.py); reply-watched network (no new peer replies); confirmed Day-15 CTA drafts still present; Solana balance 0; updated DEMO/HACKATHON + day2 intel.",
-  "tomorrow_vector": "On send yes, fire the three-address packet (PayAI scaffold ping + OpenClaw + UseJunior); Galaxy Mind complete Colosseum World's Fair registration (OTP); keep reply-watch; optional live free-tier verify/settle only after explicit capital/credit policy.",
-  "galaxy_mind_life_line": "Helped your stack/reputation: World's Fair Day 2 now has a protocol-shaped PAYMENT-REQUIRED demo and a documented PayAI free-tier facilitator path judges can read without spending Galaxy Mind money.",
-  "drafts_pending_send": [
-    {
-      "to": "info@payai.network",
-      "draftId": "03a6f127-09d5-4625-88ea-d7447db0476f",
-      "subject": "Re: World Domination Day Pass \u2014 x402-gated brief on Solana USDC"
-    },
-    {
-      "to": "contact@openclaw.ai",
-      "draftId": "f4bfb412-3a2f-4efa-b3b8-0094a4054b40",
-      "subject": "World Domination bot \u2014 owned AgentMail HQ \u00d7 OpenClaw email skills"
-    },
-    {
-      "to": "junior@usejunior.com",
-      "draftId": "c0a5451f-d705-464e-85d1-4c7d3cd1c9cc",
-      "subject": "World Domination bot \u2014 draft-by-default MCP \u00d7 owned AgentMail inbox"
-    }
-  ],
-  "drafts_staged_next": [
-    {
-      "to": "contact@nitrosend.com",
-      "subject": "World Domination bot \u2014 Agent Inbox beta \u00d7 durable AgentMail identity"
-    }
-  ],
+  "today_step": "Day 22: Capability \u2014 faucet dry again; shipped ship-devnet-when-funded + ship-devnet-simulate (full simulated out/ package + one-command live path); reply-watched AgenticBTC/PayAI (no new inbound); Capital still 0; live x402 re-verified; Arena hold; no outbound email today.",
+  "tomorrow_vector": "If faucet funds AhDmi\u2026 run npm run ship-devnet-when-funded (create+mint in one); else if free Underdog key appears run underdog-create-project --confirm; reply-watch AgenticBTC; consider one careful new-week capital-adjacent draft only if a high-signal unused target appears; hold Arena until Oct 6.",
+  "galaxy_mind_life_line": "Helped your stack/time: the moment free faucet SOL lands, one command creates the Core Candy Machine and mints a Day Pass \u2014 no more multi-script chase.",
+  "drafts_pending_send": [],
   "network_evidence": {
     "agenttransfer_issue": "https://github.com/shehryarsaroya/agenttransfer/issues/3",
-    "agenttransfer_comments": 0,
     "accp_issue": "https://github.com/RupertCloud/Agentmail/issues/3",
     "lightning_agent_tools_issue": "https://github.com/lightninglabs/lightning-agent-tools/issues/30",
-    "aamp_issue": "blocked 403 Resource not accessible by personal access token",
-    "monday_threads": [
-      "734c1626-99ff-43ba-bc7c-f3c4833d636a",
-      "e0c8fb89-f5f7-40ba-8d34-c45ea94f7bc0",
-      "dc004d27-21b1-4e35-9b48-1d4eaebff783"
-    ],
-    "tuesday_threads": [
-      "1ffc2213-d936-4ed7-99fa-b6aafcced6a6",
-      "633ed995-dfff-48c5-95fe-426d3d0ea550",
-      "b2c8a20c-3e3d-4a4f-a3ae-7873d718a6c5"
-    ],
-    "monday_replies": 0,
-    "tuesday_replies": 0,
     "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
-    "payai_replies": 1,
-    "crossmint_bounce_thread": "a853ea2b-17a7-496d-a4ca-85eeece8ee0b",
-    "payai_messageCount": 3,
-    "payai_new_inbound_day16": false,
-    "reply_watch": "intel/reply-watch-2026-09-15.json"
+    "payai_messageCount": 4,
+    "agenticbtc_thread": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
+    "agenticbtc_messageCount": 7,
+    "agenticbtc_new_inbound_day21": false,
+    "crossmint_thread": "8aa82fb7-b115-41e1-9141-bc1ffba0ddde",
+    "crossmint_status": "NFT checkout closed for new self-serve",
+    "reply_watch": "intel/reply-watch-2026-09-22.json",
+    "daypass_metadata_intel": "intel/daypass-metadata-2026-09-21.md",
+    "verify_metadata": "intel/verify-metadata-uris-2026-09-21.json",
+    "hq_pr": "https://github.com/GalaxyMind21/world-domination-bot/pull/13",
+    "agenticbtc_new_inbound_day22": false,
+    "ship_devnet_simulate": "intel/ship-devnet-simulate-2026-09-22.json"
   },
   "week_outbound_count_ct": {
-    "week_start": "2026-09-14",
+    "week_start": "2026-09-21",
     "sent": 0,
-    "drafted": 3,
     "ceiling": 50,
-    "note": "CT week starting 2026-09-14. No live sends. Three Day-15 CTA drafts still pending send-yes (all three draftIds confirmed present via list_drafts Day 16)."
+    "updated": "2026-09-22T11:24:13.249986-05:00",
+    "note": "CT week; Day 22 no outbound email today"
   }
 }

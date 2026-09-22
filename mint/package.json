@@ -18,7 +18,9 @@
     "underdog-create-project": "node scripts/underdog-rest-client.mjs --create-project",
     "underdog-mint-one": "node scripts/underdog-rest-client.mjs --mint-one",
     "create-cm-readiness": "node scripts/create-cm-readiness.mjs",
-    "verify-metadata-uris": "node scripts/verify-metadata-uris.mjs"
+    "verify-metadata-uris": "node scripts/verify-metadata-uris.mjs",
+    "ship-devnet-when-funded": "node scripts/ship-devnet-when-funded.mjs",
+    "ship-devnet-simulate": "node scripts/ship-devnet-when-funded.mjs --simulate"
   },
   "dependencies": {
     "@metaplex-foundation/mpl-core": "^1.10.0",

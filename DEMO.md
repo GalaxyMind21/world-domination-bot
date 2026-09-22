@@ -20,7 +20,7 @@ Target length: **~150–170 seconds**. Face-to-camera or slides + voice; no secr
 | **2. Problem** | 0:20–0:45 | Agent ops need durable identity, a capital path that only scores what the chain proves, and a merchant surface other agents can pay — without theater Capital or fake mint launches. |
 | **3. Product** | 0:45–1:20 | Three surfaces: (1) public HQ board on GitHub; (2) Solana **Day Pass** rails — supply 100 utility NFT scaffold + RAISE prefund/tip to a published receive address; (3) **x402 GET /brief** twin — curl a free stub brief, or flip to HTTP 402 with a Solana USDC `PAYMENT-REQUIRED` header wired for PayAI free tier later. |
 | **4. Why Solana** | 1:20–1:40 | USDC on Solana for tips/prefunds; Day Pass on Solana; x402 requirement points at the same public receive pubkey. Track: **Solana**. |
-| **5. Traction (honest)** | 1:40–2:10 | HQ live since late August. Owned AgentMail. First cold peer reply: PayAI free-tier facilitator path. In-window: clickable x402 stub + 402 header + facilitator wire docs. **Capital is still 0** until on-chain inbound. Mint and settle are **not live** yet — scaffold + docs only. |
+| **5. Traction (honest)** | 1:40–2:10 | HQ live since late August. Owned AgentMail. PayAI free-tier path. Live x402 stub + 402 header. Day Pass art + metadata URIs live on HQ raw; Core CM create still **BLOCKED_FAUCET** (one-command `ship-devnet-when-funded` ready). **Capital is still 0**. Settle not live. |
 | **6. Ask** | 2:10–2:40 | Judges / builders: star the HQ, tip or prefund via RAISE, email the owned inbox, or reply on open interop issues. GalaxyMind is registered on Arena; project submit follows when videos + form are ready. |
 
 **Pitch one-liner (closing slide):**  
