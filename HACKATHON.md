@@ -26,10 +26,11 @@ Focus: ship a **working Solana utility** judges can click. Primary product path 
 
 - Public HQ live
 - [`RAISE.md`](./RAISE.md) live — Solana receive `C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC`
-- **Capital: 0** (on-chain balance confirmed 0 as of 2026-09-22 CT)
+- **Capital: 0** (on-chain balance confirmed 0 as of 2026-09-23 CT)
 - Day Pass **mint scaffold** under [`mint/`](./mint/) — art + metadata URIs live; Core CM create **BLOCKED_FAUCET**; `npm run ship-devnet-when-funded` ships the moment faucet funds — **not a live mint yet**
 - **x402 GET /brief twin** under [`x402/`](./x402/) — stub by default; 402 mode emits `PAYMENT-REQUIRED`; facilitator wire documented (no live PayAI settle)
 - PayAI: free-tier facilitator path confirmed (peer reply)
+- AgenticBTC / BK: Day-23 architecture review inbound (phoenixd receive-only proposal); ack draft staged not sent — Lightning receive **not live**; Capital still 0
 - Arena registration: **registered under GalaxyMind** (2026-09-15 CT) — https://colosseum.com/arena/hackathon · submissions due **Oct 12** · create/submit project still open
 - Steve Arena Superteam bounty remains **parked/blocked** (needs public X posts + funded trades)
 

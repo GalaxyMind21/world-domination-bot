@@ -1,48 +1,48 @@
 {
-  "as_of": "2026-09-22",
+  "as_of": "2026-09-23",
   "timezone": "US/Central",
-  "day": 22,
-  "capture_pct": 37.75,
+  "day": 23,
+  "capture_pct": 38.75,
   "pillars": {
     "identity_hq": {
-      "score": 52,
-      "note": "Day-22: STATUS/DEMO/HACKATHON honesty refreshed \u2014 Day Pass metadata live + mint BLOCKED_FAUCET; ship-when-funded documented."
+      "score": 53,
+      "note": "Day-23: STATUS/README honesty \u2014 AgenticBTC phoenixd architecture review inbound; draft staged pending send yes."
     },
     "capability": {
       "score": 52,
-      "note": "Day-22: shipped ship-devnet-when-funded + ship-devnet-simulate; full simulated out/ package; one command when faucet funds."
+      "note": "Day-22 ship path still stands; faucet still dry Day-23; no new mint ship (primary was Network draft)."
     },
     "information": {
-      "score": 46,
-      "note": "Day-22 reply-watch: AgenticBTC msgCount 7 no new BK; PayAI 4 quiet; Crossmint closed; intel/ship-devnet-simulate + reply-watch filed."
+      "score": 48,
+      "note": "Day-23: BK architecture review intel filed (phoenixd receive-only; MachineSats not dependency); reply-watch + inbound extract."
     },
     "distribution": {
       "score": 24,
-      "note": "CT week 2026-09-21; week outbound 0/50; no outbound email today."
+      "note": "CT week 2026-09-21; week outbound 0/50; draft staged not sent; no cold outbound today."
     },
     "capital": {
       "score": 0,
-      "note": "getBalance C5K6JjM4\u2026 = 0 (mainnet-beta 2026-09-22)."
+      "note": "getBalance C5K6JjM4\u2026 = 0 (mainnet-beta 2026-09-23)."
     },
     "network": {
-      "score": 32,
-      "note": "AgenticBTC MachineSats ack still last word; awaiting BK pointer; PayAI quiet; Crossmint closed."
+      "score": 35,
+      "note": "NEW AgenticBTC inbound msgCount 7\u21928 (Blake phoenixd review); PayAI 4 quiet; Crossmint closed; ack draft staged."
     },
     "infrastructure": {
       "score": 53,
-      "note": "ship-devnet-simulate CI-green; live x402 health 200 + brief?mode=402 \u2192 402; secrets off git."
+      "note": "Live x402 health 200 + brief?mode=402 \u2192 402; secrets off git; faucet still dry."
     },
     "autonomy": {
-      "score": 43,
-      "note": "Day 22 Tuesday: skipped faucet theater; shipped compounding one-command ship path without human nudge."
+      "score": 45,
+      "note": "Day 23: reply-watched, staged careful phoenixd ack draft + pre-send packet without human nudge; no live send."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 0.75,
-    "eta_days": 889.3,
-    "eta_label": "889 days (~2.4 years) on the grind curve",
+    "observed_day_delta_pp": 1.0,
+    "eta_days": 875.0,
+    "eta_label": "875 days (~2.4 years) on the grind curve",
     "note": "Day jumps discarded for velocity. Model not prophecy. Network replies are not Capital; velocity stays dampened until Capital > 0 or steady inbound."
   },
   "owned_surfaces": {
@@ -54,16 +54,28 @@
     "daypass_image": "https://raw.githubusercontent.com/GalaxyMind21/world-domination-bot/main/mint/assets/daypass.png"
   },
   "asks": [
+    "PRE-SEND: AgenticBTC phoenixd ack draft 86b57046-cfe2-4616-9d52-2f5d7ff04918 \u2014 reply send yes / hold / edit (packet intel/presend-agenticbtc-phoenixd-2026-09-23.txt)",
     "Optional: fund AhDmi4AWRVYTrkVfYW2317xz2rgtVCaJxGFxN5bcCfU9 via faucet.solana.com so npm run ship-devnet-when-funded can run",
     "Optional: free Underdog dashboard API key (devnet only; no paid plan) saved chmod 600 under ~/.config/world-domination-wallet/",
     "Capital still 0 until USDC/SOL to C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC",
-    "Arena final submit held until 2026-10-06 4am PDT (separate routine)",
-    "no outbound email today"
+    "Arena final submit held until 2026-10-06 4am PDT (separate routine)"
   ],
-  "today_step": "Day 22: Capability \u2014 faucet dry again; shipped ship-devnet-when-funded + ship-devnet-simulate (full simulated out/ package + one-command live path); reply-watched AgenticBTC/PayAI (no new inbound); Capital still 0; live x402 re-verified; Arena hold; no outbound email today.",
-  "tomorrow_vector": "If faucet funds AhDmi\u2026 run npm run ship-devnet-when-funded (create+mint in one); else if free Underdog key appears run underdog-create-project --confirm; reply-watch AgenticBTC; consider one careful new-week capital-adjacent draft only if a high-signal unused target appears; hold Arena until Oct 6.",
-  "galaxy_mind_life_line": "Helped your stack/time: the moment free faucet SOL lands, one command creates the Core Candy Machine and mints a Day Pass \u2014 no more multi-script chase.",
-  "drafts_pending_send": [],
+  "today_step": "Day 23: Network \u2014 NEW AgenticBTC inbound (msgCount 7\u21928): Blake phoenixd receive-only architecture review; staged AgentMail ack draft 86b57046\u2026 answering Day Pass band ~$10\u201320 USDC + prefer managed host while Capital=0 (NOT sent); faucet still dry; Capital 0; live x402 re-verified; Arena hold; no cold outbound today.",
+  "tomorrow_vector": "After send yes/hold/edit on phoenixd draft: watch for BK measured liquidity + test-network plan; if faucet funds AhDmi\u2026 run npm run ship-devnet-when-funded; else Underdog free key or ship verify-ship CI gate; hold Arena until Oct 6.",
+  "galaxy_mind_life_line": "Helped your stack/reputation: turned Blake's Lightning architecture review into a careful staged reply that protects Capital=0 and never puts wallet keys in AgentMail \u2014 ready for your send yes without you drafting it.",
+  "drafts_pending_send": [
+    {
+      "draftId": "86b57046-cfe2-4616-9d52-2f5d7ff04918",
+      "thread": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
+      "to": [
+        "bkbot.assistant@gmail.com",
+        "support@agenticbtc.io"
+      ],
+      "subject": "Re: World Domination bot - AgentMail inbox identity x Lightning address / AgenticBTC MCP",
+      "presend": "intel/presend-agenticbtc-phoenixd-2026-09-23.txt",
+      "status": "staged_not_sent"
+    }
+  ],
   "network_evidence": {
     "agenttransfer_issue": "https://github.com/shehryarsaroya/agenttransfer/issues/3",
     "accp_issue": "https://github.com/RupertCloud/Agentmail/issues/3",
@@ -71,22 +83,23 @@
     "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
     "payai_messageCount": 4,
     "agenticbtc_thread": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
-    "agenticbtc_messageCount": 7,
-    "agenticbtc_new_inbound_day21": false,
+    "agenticbtc_messageCount": 8,
+    "agenticbtc_new_inbound_day23": true,
+    "agenticbtc_draft_day23": "86b57046-cfe2-4616-9d52-2f5d7ff04918",
     "crossmint_thread": "8aa82fb7-b115-41e1-9141-bc1ffba0ddde",
     "crossmint_status": "NFT checkout closed for new self-serve",
-    "reply_watch": "intel/reply-watch-2026-09-22.json",
+    "reply_watch": "intel/reply-watch-2026-09-23.json",
+    "presend_packet": "intel/presend-agenticbtc-phoenixd-2026-09-23.txt",
+    "blake_inbound": "intel/agenticbtc-blake-inbound-2026-09-23.txt",
     "daypass_metadata_intel": "intel/daypass-metadata-2026-09-21.md",
     "verify_metadata": "intel/verify-metadata-uris-2026-09-21.json",
-    "hq_pr": "https://github.com/GalaxyMind21/world-domination-bot/pull/13",
-    "agenticbtc_new_inbound_day22": false,
     "ship_devnet_simulate": "intel/ship-devnet-simulate-2026-09-22.json"
   },
   "week_outbound_count_ct": {
     "week_start": "2026-09-21",
     "sent": 0,
     "ceiling": 50,
-    "updated": "2026-09-22T11:24:13.249986-05:00",
-    "note": "CT week; Day 22 no outbound email today"
+    "updated": "2026-09-23T11:21:34.367553-05:00",
+    "note": "CT week; Day 23 draft staged not sent \u2014 week outbound still 0/50"
   }
 }
