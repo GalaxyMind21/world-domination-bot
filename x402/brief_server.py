@@ -4,7 +4,8 @@
 Default X402_MODE=stub returns a free sample brief.
 X402_MODE=402 returns HTTP 402 with PAYMENT-REQUIRED header (base64 JSON)
 plus a human-readable JSON body. Does not call PayAI verify/settle by default.
-Optional read-only GET /supported docs live in facilitator_wire.md.
+Day 26: primary accept is Base Sepolia → EVM receive (testnet first);
+Solana USDC remains a secondary accept.
 """
 from __future__ import annotations
 
@@ -13,57 +14,89 @@ import json
 import os
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
-RECEIVE = "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
-USDC_MINT = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+RECEIVE_SOLANA = "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
+USDC_SOLANA = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+NETWORK_SOLANA_V1 = "solana"
+NETWORK_SOLANA_V2 = "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp"
+
+RECEIVE_EVM = os.environ.get(
+    "X402_PAYTO", "0xD8436B7afD09E10704931E17FBC79dE71BF944C9"
+)
+NETWORK_BASE_SEPOLIA = "base-sepolia"
+NETWORK_BASE_SEPOLIA_CAIP2 = "eip155:84532"
+USDC_BASE_SEPOLIA = "0x036CbD53842c5426634e7929541eC2318f3dCF7e"
+
+RECEIVE = RECEIVE_EVM  # primary
+USDC_MINT = USDC_BASE_SEPOLIA
 HOST = os.environ.get("X402_HOST", "127.0.0.1")
 PORT = int(os.environ.get("X402_PORT", "8787"))
 MODE = os.environ.get("X402_MODE", "stub").strip().lower()
 
-# Observed 2026-09-15 via free GET https://facilitator.payai.network/supported
-NETWORK_V1 = "solana"
-NETWORK_V2 = "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp"
+NETWORK_V1 = os.environ.get("X402_NETWORK", NETWORK_BASE_SEPOLIA).strip().lower()
+NETWORK_V2 = NETWORK_BASE_SEPOLIA_CAIP2
 FACILITATOR_BASE = "https://facilitator.payai.network"
 
 DAY_BRIEF = {
     "title": "World Domination Day Brief",
-    "as_of": "2026-09-15",
+    "as_of": "2026-09-26",
     "operator": "Galaxy Mind",
     "inbox": "world-domination@agentmail.to",
     "hq": "https://github.com/GalaxyMind21/world-domination-bot",
     "body": (
-        "World's Fair Day 2: World Domination bot wires a PayAI free-tier "
-        "facilitator-compatible layer into the x402 scaffold (PAYMENT-REQUIRED "
-        "header + /verify stub). Stub mode still serves this free sample; 402 mode "
-        "emits protocol-shaped headers without calling POST /verify or /settle. "
-        "PayAI free-tier confirm stands from 2026-09-13. Capital stays 0 until "
+        "Day 26: World Domination bot points the live x402 demo payTo at the "
+        "Coinbase agentic EVM receive wallet on Base Sepolia (testnet first). "
+        "Solana USDC accept remains as a second rail. Stub mode still serves "
+        "this free sample; 402 mode emits protocol-shaped headers without "
+        "calling POST /verify or /settle. Capital stays 0 until intentional "
         "on-chain seed lands."
     ),
     "mode": "stub",
     "note": "Sample payload for judges/builders. Not a paid settlement receipt.",
     "facilitator_wire": "see x402/facilitator_wire.md",
+    "receive": {"evm_base_sepolia": RECEIVE_EVM, "solana": RECEIVE_SOLANA},
 }
 
-# Protocol-shaped payment requirement (x402 v1 exact / solana) — for header + body.
 PAYMENT_REQUIRED = {
     "x402Version": 1,
     "error": "Payment Required",
     "accepts": [
         {
             "scheme": "exact",
-            "network": NETWORK_V1,
+            "network": NETWORK_BASE_SEPOLIA,
             "maxAmountRequired": "1000000",
             "resource": "/brief",
             "description": "World Domination Day Brief (HTTP twin of DAYPASS email utility)",
             "mimeType": "application/json",
-            "payTo": RECEIVE,
+            "payTo": RECEIVE_EVM,
             "maxTimeoutSeconds": 60,
-            "asset": USDC_MINT,
+            "asset": USDC_BASE_SEPOLIA,
             "extra": {
                 "assetSymbol": "USDC",
                 "maxAmountRequiredHuman": "1.00 USDC",
-                "networkV2": NETWORK_V2,
+                "name": "USDC",
+                "version": "2",
+                "networkV2": NETWORK_BASE_SEPOLIA_CAIP2,
+                "rail": "base-sepolia",
+                "note": "Base Sepolia testnet first (Day 26). Mainnet Base next after settle path proves.",
             },
-        }
+        },
+        {
+            "scheme": "exact",
+            "network": NETWORK_SOLANA_V1,
+            "maxAmountRequired": "1000000",
+            "resource": "/brief",
+            "description": "World Domination Day Brief (Solana USDC secondary rail)",
+            "mimeType": "application/json",
+            "payTo": RECEIVE_SOLANA,
+            "maxTimeoutSeconds": 60,
+            "asset": USDC_SOLANA,
+            "extra": {
+                "assetSymbol": "USDC",
+                "maxAmountRequiredHuman": "1.00 USDC",
+                "networkV2": NETWORK_SOLANA_V2,
+                "rail": "solana-mainnet",
+            },
+        },
     ],
     "facilitator_path": {
         "provider": "PayAI",
@@ -81,11 +114,10 @@ PAYMENT_REQUIRED = {
         ],
         "note": (
             "Default scaffold mode does not call POST /verify or /settle. "
-            "Wire live facilitator later per facilitator_wire.md."
+            "Day 26 primary accept is Base Sepolia → EVM receive."
         ),
     },
 }
-
 
 def _payment_required_b64() -> str:
     raw = json.dumps(PAYMENT_REQUIRED, separators=(",", ":")).encode("utf-8")

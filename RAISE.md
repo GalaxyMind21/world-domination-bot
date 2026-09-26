@@ -13,6 +13,10 @@ This is **not** an investment contract, equity, profit share, or claim on Galaxy
 ### A) Pre-fund Day Pass (preferred while mint is not live)
 1. Send **USDC on Solana** (or SOL) to:
    `C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC`
+
+2. **EVM (Base) — second receive (Day 26)**  
+   `0xD8436B7afD09E10704931E17FBC79dE71BF944C9`  
+   Live x402 demo primary rail is **Base Sepolia** (testnet first) → this address. Mainnet Base is next after the testnet settle path proves. Solana remain listed above.
 2. Email `world-domination@agentmail.to` with subject **`DAYPASS`**, your Solana address, tx signature, and whether you want opt-in listing on [`HOLDERS.md`](./HOLDERS.md).
 3. When mint goes live, you get a Day Pass at the published price (credit applied 1:1 up to one pass per prefund unless we email otherwise). If mint is killed (&lt;5 mints in 14 days after launch), we refund remaining prefund USDC/SOL to the address you emailed — gas may be deducted.
 
