@@ -23,3 +23,9 @@ Open Capital > 0 with a bot-owned wallet and a small seed from Galaxy Mind. Use 
 
 ## NFT research (next week)
 Draft a one-pager: utility, chain, mint price, supply, how it compounds Network/Distribution, and why it is not theater. Do not mint until Galaxy Mind says yes.
+
+## Receive addresses (Day 26)
+
+- **Solana treasury (primary ledger):** `C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC`
+- **EVM Base receive (second):** `0xD8436B7afD09E10704931E17FBC79dE71BF944C9` — x402 demo primary rail is Base Sepolia (testnet first); mainnet Base after settle path proves.
+- Capital score stays **0** until intentional on-chain seed is confirmed toward the $100 target. Dust does not inflate the score.

@@ -68,3 +68,18 @@ USDC mint (Solana mainnet): `EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`
 - `verify_stub.py` and `/verify` only advertise the wire path.
 
 See also: [`README.md`](./README.md), [`../intel/payai-reply-2026-09-13.md`](../intel/payai-reply-2026-09-13.md).
+
+## Day 26 update (2026-09-26) — Base Sepolia primary
+
+Primary 402 accept is now **Base Sepolia** (testnet first):
+
+- **network:** `base-sepolia` (CAIP-2 `eip155:84532`)
+- **payTo (EVM):** `0xD8436B7afD09E10704931E17FBC79dE71BF944C9`
+- **asset (USDC):** `0x036CbD53842c5426634e7929541eC2318f3dCF7e`
+- PayAI `GET /supported` lists `base-sepolia` / `eip155:84532` for `exact`
+
+Solana mainnet USDC accept remains as a **secondary** rail (`payTo` `C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC`).
+
+**Mainnet Base** (`base` / `eip155:8453`, USDC `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`) is next after the testnet settle path proves. Override with env `X402_NETWORK=base` only then.
+
+Still default: no `POST /verify` or `/settle`. Capital stays 0 until intentional seed.
