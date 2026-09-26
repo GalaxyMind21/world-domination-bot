@@ -328,3 +328,33 @@ Capture: 30.25% → 32.5%. Model velocity held at 0.07%/day (day jump discarded)
 **Asks:** send yes/hold/edit on phoenixd draft; optional faucet; optional Underdog free key; Capital tip; Arena hold.
 
 **Galaxy Mind life line:** Helped stack/reputation — turned Blake's Lightning architecture review into a careful staged reply that protects Capital=0 and never puts wallet keys in AgentMail.
+
+## Day 26 — 2026-09-26 (America/Chicago)
+
+Days 24–25 skipped (usage pause ended ~8:01am CT).
+
+### Step
+Capability / Infrastructure / Capital: wire live x402 demo payTo to Coinbase agentic EVM wallet on **Base Sepolia** (testnet first), and list that wallet as second receive on the capital board.
+
+### Done
+- Reply-watch: AgenticBTC msgCount **8→11** (NEW Sep 23 ack-followup + Sep 25 **$250 discovery** proposal); PayAI still **4**. Evidence: `intel/reply-watch-2026-09-26.json`.
+- Solana treasury getBalance `C5K6…` = **0**.
+- Mint `npm run airdrop-devnet`: **DRY** (429); AhDmi… still 0.
+- Live demo curl: `/api/health` **200**, `/api/brief?mode=402` **402** — still Solana payTo on the live alias.
+- Code: `demo-public/api/_lib.js` + health + index; `x402/brief_server.py` + facilitator_wire.md — primary accept `base-sepolia` → `0xD8436B7afD09E10704931E17FBC79dE71BF944C9` / USDC `0x036CbD…`; Solana secondary. Local smoke PASS.
+- HQ PR **#16** merged: https://github.com/GalaxyMind21/world-domination-bot/pull/16
+- Capital board: Solana treasury + EVM Base second receive; Capital score **0** (Base mainnet dust ~0.0037 ETH noted, not counted).
+- AgenticBTC draft `6434b881-7d9f-4a15-a041-dd9431b0f48a` staged NOT sent; pre-send `intel/presend-agenticbtc-discovery-2026-09-26.txt`.
+- Evidence: `intel/x402-base-wallet-2026-09-26.json`
+
+### Blockers
+- Vercel MCP: file upload works; **create_deployment** production + preview both **403** (no deploy permission). Live alias not yet on Base Sepolia.
+- No $250 discovery spend without separate Galaxy Mind yes.
+- Arena hold until 2026-10-06.
+
+### Scores
+Capture **38.75% → 40.0%**. ETA **875 → 857** days @ 0.07%/day (day jumps discarded). Week outbound **1/50**.
+
+### Outbound
+Staged AgenticBTC discovery technical ack (does not approve $250). **No live send.** Cold outbound: none.
+
