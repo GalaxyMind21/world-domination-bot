@@ -1,0 +1,36 @@
+{
+  "as_of": "2026-09-28T09:05:00-05:00",
+  "timezone": "America/Chicago",
+  "day": 28,
+  "threads": {
+    "agenticbtc": {
+      "threadId": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
+      "messageCount_day27_morning": 11,
+      "messageCount_now": 12,
+      "new_inbound_since_day27_send": false,
+      "note": "msgCount 11\u219212 is our Day-27 08:52 CT SENT decline (draft 6434b881). No NEW BK free cost/test-plan packet inbound yet."
+    },
+    "payai": {
+      "threadId": "0d582818-51b4-4640-adfc-f87877861954",
+      "messageCount_day27": 4,
+      "messageCount_now": 4,
+      "new_inbound_since_day27": false
+    }
+  },
+  "live_demo": {
+    "health": "200 ok stub",
+    "brief_mode_402": "HTTP 402",
+    "primary_network": "base-sepolia",
+    "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "secondary_network": "solana",
+    "secondary_payTo": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC",
+    "note": "Day-28 redeploy succeeded; live alias now Base Sepolia primary."
+  },
+  "capital": {
+    "solana_treasury": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC",
+    "solana_lamports": 0,
+    "evm_receive": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "capital_toward_100": 0
+  },
+  "outbound_today": "No AgentMail draft staged; no live send. New CT week outbound 0/50."
+}
