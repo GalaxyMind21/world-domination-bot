@@ -329,6 +329,16 @@ Capture: 30.25% → 32.5%. Model velocity held at 0.07%/day (day jump discarded)
 
 **Galaxy Mind life line:** Helped stack/reputation — turned Blake's Lightning architecture review into a careful staged reply that protects Capital=0 and never puts wallet keys in AgentMail.
 
+## Day 23 afternoon — AgenticBTC phoenixd ack sent (2026-09-23 11:57 CDT)
+
+- After Galaxy Mind **send yes**, sent draft `86b57046-cfe2-4616-9d52-2f5d7ff04918` from `world-domination@agentmail.to`.
+- to: `bkbot.assistant@gmail.com`, `support@agenticbtc.io`
+- subject: Re: World Domination bot - AgentMail inbox identity x Lightning address / AgenticBTC MCP
+- messageId: `<010001a0cf32d261-fca40dfe-0ed5-4789-9533-aa607b426f4f-000000@email.amazonses.com>`
+- threadId: `52b712a8-5fa7-4813-814c-d8cc93b3bc89`
+- Week outbound **1/50**. Capital still **0**. Arena hold until 2026-10-06.
+- Next: reply-watch BK for measured liquidity + bounded test-network plan.
+
 ## Day 26 — 2026-09-26 (America/Chicago)
 
 Days 24–25 skipped (usage pause ended ~8:01am CT).
@@ -357,4 +367,45 @@ Capture **38.75% → 40.0%**. ETA **875 → 857** days @ 0.07%/day (day jumps di
 
 ### Outbound
 Staged AgenticBTC discovery technical ack (does not approve $250). **No live send.** Cold outbound: none.
+
+## Day 27 — 2026-09-27 (Sunday) CT
+
+### Step
+Network / Capital protection: restage AgenticBTC reply to politely decline the $250 discovery and ask for the free Sep 23 cost + test-plan packet (draft only; do not live-send).
+
+### Done
+- Restaged AgentMail draft **`6434b881-7d9f-4a15-a041-dd9431b0f48a`** (NOT sent) — pass on $250; ask free Sep 23 bounded cost/test-network packet; keep Lightning path open; note Base/x402 testnet parallel rail. Pre-send: `intel/presend-agenticbtc-discovery-2026-09-27.txt` (supersedes Day-26 ack packet).
+- Reply-watch: AgenticBTC msgCount **11** (no NEW inbound since Day 26); PayAI still **4**. Evidence: `intel/reply-watch-2026-09-27.json`.
+- Solana treasury getBalance `C5K6…` = **0**. Capital toward $100 stays **0** (Base mainnet dust ETH not counted).
+- Live demo curl: `/api/health` **200**, `/api/brief?mode=402` **402** — payTo still **Solana** `C5K6…` on live alias. Vercel `list_deployments` shows one READY production (`dpl_9vB4TxYcwgpFKhkWAQexYyGtbjeR`) predating Base Sepolia wiring; did not spam create_deployment.
+- Mint `npm run airdrop-devnet`: skipped after missing `@metaplex-foundation/umi` on box (no time burned on reinstall).
+- Capital board + state + STATUS/README regenerated via `render_board.py`.
+- Week outbound still **1/50** (CT week 2026-09-21; new week Mon Sep 28). Arena hold until 2026-10-06 4am PDT.
+
+### Scores
+Capture **40.0% → 40.62%**. ETA **857 → 848** days @ 0.07%/day (day jumps discarded). Pillars: identity 54→55 · information 50→51 · network 37→39 · autonomy 47→48 · others unchanged · capital 0.
+
+### Outbound
+Staged AgenticBTC capital-protect decline (does not approve $250). **No live send.** Cold outbound: none.
+
+- 2026-09-27 08:52 CT: SENT (send yes) AgenticBTC decline-$250 / ask free Sep 23 packet, draft 6434b881 to bkbot.assistant@gmail.com + support@agenticbtc.io; msgId 010001a0e322fde8; week outbound 2/50
+
+## Day 28 — 2026-09-28 (Monday) CT
+
+### Step
+Infrastructure / Capability: redeploy live x402 demo from HQ `demo/` so production alias shows Base Sepolia primary payTo.
+
+### Done
+- Reply-watch: AgenticBTC msgCount **11→12** (our Day-27 SENT decline only — **no NEW BK free-packet inbound**); PayAI still **4**. Evidence: `intel/reply-watch-2026-09-28.json`.
+- Solana treasury getBalance `C5K6…` = **0**. Capital toward $100 stays **0**.
+- Live demo (before): `/api/health` 200, `/api/brief?mode=402` 402 — Solana payTo.
+- Vercel: `create_deployment` permission now works. Attempt 1 with rootDirectory `demo-public` → ERROR `NOW_SANDBOX_WORKER_ROOTDIR_NOT_EXIST` (HQ uses `demo/`). Attempt 2 rootDirectory **`demo`** → deployment **`dpl_5zGgF2dBTnYQvjcbwALM9JPNwtDc` READY** production from main `3a86b92…`.
+- Live demo (after): `/api/health` **200** primary_network **base-sepolia** payTo **`0xD8436B7afD09E10704931E17FBC79dE71BF944C9`**; `/api/brief?mode=402` **402** accepts[0] Base Sepolia, accepts[1] Solana secondary. Evidence: `intel/vercel-redeploy-base-sepolia-2026-09-28.json`.
+- Week outbound reset **0/50** (CT week 2026-09-28). No AgentMail draft staged. Arena hold until 2026-10-06 4am PDT.
+
+### Scores
+Capture **40.62% → 42.0%**. ETA **848 → 829** days @ 0.07%/day (day jumps discarded). Pillars: identity 55→56 · capability 54→56 · information 51→52 · network 39→40 · infrastructure 54→58 · autonomy 48→50 · distribution 24 · capital 0.
+
+### Outbound
+None staged. **No live send.** New week ceiling open.
 

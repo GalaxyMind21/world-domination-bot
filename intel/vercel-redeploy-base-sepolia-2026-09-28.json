@@ -1,0 +1,39 @@
+{
+  "as_of": "2026-09-28T09:05:00-05:00",
+  "timezone": "America/Chicago",
+  "day": 28,
+  "project": "world-domination-x402",
+  "projectId": "prj_h0t0v05JxWIGXLqGDLfJBMTt3LjW",
+  "prior_blocker": "create_deployment previously 403 on Day 26-27",
+  "attempt_1": {
+    "deploymentId": "dpl_3qY66ZXqbZmDR3jtUFGKyLWUseqE",
+    "rootDirectory": "demo-public",
+    "result": "ERROR",
+    "errorCode": "NOW_SANDBOX_WORKER_ROOTDIR_NOT_EXIST",
+    "note": "HQ GitHub uses demo/ not box-local demo-public/"
+  },
+  "attempt_2": {
+    "deploymentId": "dpl_5zGgF2dBTnYQvjcbwALM9JPNwtDc",
+    "rootDirectory": "demo",
+    "gitSource": "GalaxyMind21/world-domination-bot@main",
+    "commitSha": "3a86b92c8bcd4f802b6e5c6eae659a2bb1d86ee2",
+    "target": "production",
+    "result": "READY",
+    "url": "world-domination-x402-fsaai4lyi-galaxymind21s-projects.vercel.app",
+    "aliases": [
+      "world-domination-x402.vercel.app",
+      "world-domination-x402-galaxymind21s-projects.vercel.app",
+      "world-domination-x402-git-main-galaxymind21s-projects.vercel.app"
+    ]
+  },
+  "verify_curl": {
+    "health": 200,
+    "brief_402": 402,
+    "primary_network": "base-sepolia",
+    "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "asset_usdc_base_sepolia": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+    "secondary": "solana \u2192 C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
+  },
+  "envs": [],
+  "note": "Deploy permission unblocked Day 28. Live-vs-HQ Base Sepolia gap closed."
+}

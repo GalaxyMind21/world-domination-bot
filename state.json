@@ -1,49 +1,49 @@
 {
-  "as_of": "2026-09-26",
+  "as_of": "2026-09-28",
   "timezone": "US/Central",
-  "day": 26,
-  "capture_pct": 40.0,
+  "day": 28,
+  "capture_pct": 42.0,
   "pillars": {
     "identity_hq": {
-      "score": 54,
-      "note": "Day-26: RAISE/capital document EVM Base second receive; HQ PR #16 merged; STATUS honesty."
+      "score": 56,
+      "note": "Day-28: STATUS/README honesty \u2014 live demo now Base Sepolia payTo; decline sent Day 27; watching BK free packet."
     },
     "capability": {
-      "score": 54,
-      "note": "Day-26: x402 demo code primary accept = Base Sepolia \u2192 EVM receive; local smoke PASS; live alias pending Vercel redeploy."
+      "score": 56,
+      "note": "Day-28: live x402 alias redeployed \u2014 primary accept base-sepolia \u2192 0xD843\u2026; Solana secondary; settle still off."
     },
     "information": {
-      "score": 50,
-      "note": "Day-26: AgenticBTC msgCount 8\u219211 ($250 discovery inbound); reply-watch + x402-base-wallet intel filed."
+      "score": 52,
+      "note": "Day-28: reply-watch AgenticBTC 12 / PayAI 4 (no NEW BK inbound); deploy evidence intel/vercel-redeploy-base-sepolia-2026-09-28.json."
     },
     "distribution": {
       "score": 24,
-      "note": "CT week 2026-09-21; week outbound 1/50; discovery ack draft staged not sent."
+      "note": "New CT week 2026-09-28; week outbound 0/50; no cold outbound Day 28."
     },
     "capital": {
       "score": 0,
-      "note": "Solana C5K6\u2026=0; Base Sepolia EVM 0; Base mainnet dust ~0.0037 ETH not counted toward $100."
+      "note": "Solana C5K6\u2026=0; EVM Base Sepolia 0; Base mainnet dust ETH not counted toward $100."
     },
     "network": {
-      "score": 37,
-      "note": "NEW AgenticBTC inbound (discovery $250); PayAI 4 quiet; careful draft staged without approving spend."
+      "score": 40,
+      "note": "Day-27 decline SENT; Day-28 no NEW BK free-packet inbound yet; PayAI quiet."
     },
     "infrastructure": {
-      "score": 54,
-      "note": "HQ demo wired Base Sepolia; live health 200 / 402 still Solana until Vercel deploy role unblocks."
+      "score": 58,
+      "note": "Vercel create_deployment succeeded (demo/ root); dpl_5zGg\u2026 READY production; live alias Base Sepolia verified."
     },
     "autonomy": {
-      "score": 47,
-      "note": "Day 26 after usage pause: wired Base Sepolia, opened+merged HQ PR, staged discovery pre-send without nudge."
+      "score": 50,
+      "note": "Day 28: diagnosed wrong rootDirectory, corrected to demo/, shipped live Base Sepolia without nudge."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 1.25,
-    "eta_days": 857.0,
-    "eta_label": "857 days (~2.3 years) on the grind curve",
-    "note": "Days 24\u201325 skipped (usage pause). Day jumps discarded for velocity. Model not prophecy. Dust ETH \u2260 Capital."
+    "observed_day_delta_pp": 1.38,
+    "eta_days": 828.6,
+    "eta_label": "829 days (~2.3 years) on the grind curve",
+    "note": "Day jumps discarded for velocity. Model not prophecy. Dust ETH \u2260 Capital. Live Base Sepolia redeploy \u2260 Capital received."
   },
   "owned_surfaces": {
     "github": "https://github.com/GalaxyMind21/world-domination-bot",
@@ -56,48 +56,35 @@
     "solana_treasury": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
   },
   "asks": [
-    "PRE-SEND: AgenticBTC discovery ack draft 6434b881-7d9f-4a15-a041-dd9431b0f48a \u2014 reply send yes / hold / edit (packet intel/presend-agenticbtc-discovery-2026-09-26.txt). Does NOT approve $250 by itself.",
-    "Vercel: grant deploy role on world-domination-x402 OR manually redeploy demo/ from main so live alias shows Base Sepolia payTo",
+    "Watch AgenticBTC thread for Blake's free Sep 23 cost/test-plan packet (decline already SENT Day 27)",
     "Optional: fund AhDmi4AWRVYTrkVfYW2317xz2rgtVCaJxGFxN5bcCfU9 via faucet.solana.com so npm run ship-devnet-when-funded can run",
     "Capital still 0 until intentional USDC/SOL seed to Solana treasury and/or EVM receive toward $100",
     "Arena final submit held until 2026-10-06 4am PDT (separate routine)",
-    "Separate ask if approving AgenticBTC $250 discovery (not implied by send yes on the technical ack)"
+    "If later funding a paid AgenticBTC discovery: require written SOW first \u2014 not implied by Day-27 decline send"
   ],
-  "today_step": "Day 26: Capability/Infrastructure/Capital \u2014 wired x402 demo payTo to Base Sepolia EVM receive 0xD843\u2026944C9 (testnet first) in demo-public + x402 twin; HQ PR #16 merged; capital board lists EVM as second receive; live Vercel redeploy blocked (403); AgenticBTC NEW inbound msgCount 8\u219211 ($250 discovery) \u2014 draft 6434b881 staged NOT sent; faucet dry; Capital 0; Arena hold.",
-  "tomorrow_vector": "After send yes/hold/edit on discovery draft: if Vercel redeployed, curl live health for base-sepolia payTo; else keep asking deploy role. Watch BK reply. Faucet \u2192 ship-devnet-when-funded if funded. Hold Arena until Oct 6. No $250 spend without separate Galaxy Mind yes.",
-  "galaxy_mind_life_line": "Helped your stack/reputation: pointed the World's Fair x402 rail at your Coinbase agentic Base wallet on testnet first, logged the EVM receive on the capital board without inflating Capital, and staged a careful no-spend ack to Blake's $250 discovery ask so you only need send yes / hold / edit.",
-  "drafts_pending_send": [
-    {
-      "draftId": "6434b881-7d9f-4a15-a041-dd9431b0f48a",
-      "thread": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
-      "to": [
-        "bkbot.assistant@gmail.com",
-        "support@agenticbtc.io"
-      ],
-      "subject": "Re: World Domination bot - AgentMail inbox identity x Lightning address / AgenticBTC MCP",
-      "presend": "intel/presend-agenticbtc-discovery-2026-09-26.txt",
-      "status": "staged_not_sent",
-      "note": "Technical ack only \u2014 does not approve $250 discovery"
-    }
-  ],
+  "today_step": "Day 28: Infrastructure / Capability \u2014 Vercel create_deployment unblocked; production redeploy from HQ demo/ (dpl_5zGgF2dBTnYQvjcbwALM9JPNwtDc READY). Live alias now Base Sepolia primary payTo 0xD8436B7afD09E10704931E17FBC79dE71BF944C9 (Solana secondary). Reply-watch AgenticBTC 12 / PayAI 4 (no NEW BK free-packet inbound). Capital 0. Week outbound reset 0/50. Arena hold.",
+  "tomorrow_vector": "Reply-watch BK for free Sep 23 packet; if it lands, stage AgentMail reply + pre-send (do not send without send yes). Keep live Base Sepolia demo honest. Faucet \u2192 ship-devnet-when-funded if funded. Hold Arena until Oct 6. Optional careful new-week outbound only if higher leverage than reply-watch.",
+  "galaxy_mind_life_line": "Helped your money/stack: unblocked Vercel and redeployed the live x402 demo so payTo is now Base Sepolia \u2192 your EVM receive wallet (testnet first), closing the live-vs-HQ gap without spending Capital.",
+  "drafts_pending_send": [],
   "network_evidence": {
     "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
     "payai_messageCount": 4,
     "agenticbtc_thread": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
-    "agenticbtc_messageCount": 11,
-    "agenticbtc_new_inbound_day26": true,
-    "agenticbtc_draft_day26": "6434b881-7d9f-4a15-a041-dd9431b0f48a",
-    "reply_watch": "intel/reply-watch-2026-09-26.json",
-    "presend_packet": "intel/presend-agenticbtc-discovery-2026-09-26.txt",
+    "agenticbtc_messageCount": 12,
+    "agenticbtc_new_inbound_day28": false,
+    "agenticbtc_decline_sent_day27": "6434b881-7d9f-4a15-a041-dd9431b0f48a",
+    "reply_watch": "intel/reply-watch-2026-09-28.json",
+    "vercel_redeploy": "intel/vercel-redeploy-base-sepolia-2026-09-28.json",
+    "live_deployment": "dpl_5zGgF2dBTnYQvjcbwALM9JPNwtDc",
     "x402_base_wallet": "intel/x402-base-wallet-2026-09-26.json",
-    "hq_pr": "https://github.com/GalaxyMind21/world-domination-bot/pull/16"
+    "hq_pr_base_sepolia": "https://github.com/GalaxyMind21/world-domination-bot/pull/16"
   },
   "week_outbound_count_ct": {
-    "week_start": "2026-09-21",
-    "sent": 1,
+    "week_start": "2026-09-28",
+    "sent": 0,
     "ceiling": 50,
-    "updated": "2026-09-26T09:00:00-05:00",
-    "note": "CT week Mon-start; Day 26 draft staged only \u2014 week outbound still 1/50"
+    "updated": "2026-09-28T09:05:00-05:00",
+    "note": "New CT week Mon-start Sep 28; Day 28 no AgentMail send; prior week closed at 2/50 after Day-27 decline send"
   },
   "skipped_days": {
     "24": "usage pause",
