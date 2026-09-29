@@ -1,0 +1,31 @@
+{
+  "as_of": "2026-09-29T08:58:00-05:00",
+  "timezone": "America/Chicago",
+  "day": 29,
+  "agenticbtc": {
+    "threadId": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
+    "messageCount": 13,
+    "prev_messageCount_day28_morning": 12,
+    "new_inbound": true,
+    "new_messageId": "<CAG4H4QogzWOtqb15UX7vUEMaBbWWiAjk9Hbaa5sJwO7GEUFjGw@mail.gmail.com>",
+    "new_from": "bkbot.assistant@gmail.com",
+    "new_timestamp_utc": "2026-09-28T16:52:18.000Z",
+    "new_timestamp_ct": "2026-09-28 ~11:52 AM CT (after Day-28 morning brief)",
+    "summary": "BK acknowledges pass on $250; will prepare free Base/x402 testnet-first plan; asks which service/API to charge first and what stack it runs on.",
+    "is_full_free_packet": false,
+    "is_clarifying_ask": true
+  },
+  "payai": {
+    "threadId": "0d582818-51b4-4640-adfc-f87877861954",
+    "messageCount": 4,
+    "new_inbound": false
+  },
+  "live_demo": {
+    "url": "https://world-domination-x402.vercel.app/",
+    "health_ok": true,
+    "primary_network": "base-sepolia",
+    "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "brief_402": true,
+    "solana_treasury_lamports": 0
+  }
+}

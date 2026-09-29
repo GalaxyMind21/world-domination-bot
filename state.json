@@ -1,49 +1,49 @@
 {
-  "as_of": "2026-09-28",
+  "as_of": "2026-09-29",
   "timezone": "US/Central",
-  "day": 28,
-  "capture_pct": 42.0,
+  "day": 29,
+  "capture_pct": 42.62,
   "pillars": {
     "identity_hq": {
-      "score": 56,
-      "note": "Day-28: STATUS/README honesty \u2014 live demo now Base Sepolia payTo; decline sent Day 27; watching BK free packet."
+      "score": 57,
+      "note": "Day-29: STATUS honesty \u2014 BK clarify inbound captured; live Base Sepolia still true; draft staged not sent."
     },
     "capability": {
       "score": 56,
-      "note": "Day-28: live x402 alias redeployed \u2014 primary accept base-sepolia \u2192 0xD843\u2026; Solana secondary; settle still off."
+      "note": "Day-29: live x402 still Base Sepolia primary; settle still off; no settle wire ship today (Network step took the slot)."
     },
     "information": {
-      "score": 52,
-      "note": "Day-28: reply-watch AgenticBTC 12 / PayAI 4 (no NEW BK inbound); deploy evidence intel/vercel-redeploy-base-sepolia-2026-09-28.json."
+      "score": 53,
+      "note": "Day-29: AgenticBTC msgCount 12\u219213 NEW BK clarify; PayAI 4; intel/reply-watch-2026-09-29.json."
     },
     "distribution": {
       "score": 24,
-      "note": "New CT week 2026-09-28; week outbound 0/50; no cold outbound Day 28."
+      "note": "CT week 2026-09-28; week outbound 0/50; Day-29 draft staged only."
     },
     "capital": {
       "score": 0,
-      "note": "Solana C5K6\u2026=0; EVM Base Sepolia 0; Base mainnet dust ETH not counted toward $100."
+      "note": "Solana C5K6\u2026=0; EVM Base Sepolia not Capital; Base mainnet dust ETH not counted toward $100."
     },
     "network": {
-      "score": 40,
-      "note": "Day-27 decline SENT; Day-28 no NEW BK free-packet inbound yet; PayAI quiet."
+      "score": 42,
+      "note": "Day-29: NEW BK free-plan clarify inbound; technical reply draft 292406ad staged + pre-send; awaiting send yes."
     },
     "infrastructure": {
       "score": 58,
-      "note": "Vercel create_deployment succeeded (demo/ root); dpl_5zGg\u2026 READY production; live alias Base Sepolia verified."
+      "note": "Day-29 re-verify: live alias health 200 Base Sepolia payTo 0xD843\u2026; brief 402 dual-accept."
     },
     "autonomy": {
-      "score": 50,
-      "note": "Day 28: diagnosed wrong rootDirectory, corrected to demo/, shipped live Base Sepolia without nudge."
+      "score": 51,
+      "note": "Day 29: caught post-Day28 BK inbound without nudge; staged clarify + pre-send same run."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 1.38,
-    "eta_days": 828.6,
-    "eta_label": "829 days (~2.3 years) on the grind curve",
-    "note": "Day jumps discarded for velocity. Model not prophecy. Dust ETH \u2260 Capital. Live Base Sepolia redeploy \u2260 Capital received."
+    "observed_day_delta_pp": 0.62,
+    "eta_days": 819.7,
+    "eta_label": "820 days (~2.2 years) on the grind curve",
+    "note": "Day jumps discarded for velocity. Model not prophecy. Polite BK clarify \u2260 Capital received. Draft \u2260 sent."
   },
   "owned_surfaces": {
     "github": "https://github.com/GalaxyMind21/world-domination-bot",
@@ -56,35 +56,47 @@
     "solana_treasury": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
   },
   "asks": [
-    "Watch AgenticBTC thread for Blake's free Sep 23 cost/test-plan packet (decline already SENT Day 27)",
+    "SEND YES / hold / edit: Day-29 AgenticBTC clarify draft 292406ad-4701-4dee-8824-c3e3c26a1570 (pre-send intel/presend-agenticbtc-clarify-2026-09-29.txt)",
     "Optional: fund AhDmi4AWRVYTrkVfYW2317xz2rgtVCaJxGFxN5bcCfU9 via faucet.solana.com so npm run ship-devnet-when-funded can run",
     "Capital still 0 until intentional USDC/SOL seed to Solana treasury and/or EVM receive toward $100",
     "Arena final submit held until 2026-10-06 4am PDT (separate routine)",
-    "If later funding a paid AgenticBTC discovery: require written SOW first \u2014 not implied by Day-27 decline send"
+    "If later funding a paid AgenticBTC discovery: require written SOW first \u2014 not implied by free-plan clarify"
   ],
-  "today_step": "Day 28: Infrastructure / Capability \u2014 Vercel create_deployment unblocked; production redeploy from HQ demo/ (dpl_5zGgF2dBTnYQvjcbwALM9JPNwtDc READY). Live alias now Base Sepolia primary payTo 0xD8436B7afD09E10704931E17FBC79dE71BF944C9 (Solana secondary). Reply-watch AgenticBTC 12 / PayAI 4 (no NEW BK free-packet inbound). Capital 0. Week outbound reset 0/50. Arena hold.",
-  "tomorrow_vector": "Reply-watch BK for free Sep 23 packet; if it lands, stage AgentMail reply + pre-send (do not send without send yes). Keep live Base Sepolia demo honest. Faucet \u2192 ship-devnet-when-funded if funded. Hold Arena until Oct 6. Optional careful new-week outbound only if higher leverage than reply-watch.",
-  "galaxy_mind_life_line": "Helped your money/stack: unblocked Vercel and redeployed the live x402 demo so payTo is now Base Sepolia \u2192 your EVM receive wallet (testnet first), closing the live-vs-HQ gap without spending Capital.",
-  "drafts_pending_send": [],
+  "today_step": "Day 29: Network \u2014 reply-watch caught NEW AgenticBTC inbound (msgCount 13) after Day-28 morning brief; BK will draft free Base/x402 testnet plan and asked which API + stack. Staged AgentMail clarify draft 292406ad (NOT sent) answering GET /api/brief + Vercel demo/ Base Sepolia stack; pre-send packet written. PayAI still 4. Capital 0. Live demo re-verified. Arena hold.",
+  "tomorrow_vector": "If send yes: send clarify, then watch for free packet. If hold: keep draft. No cold spray while BK thread is hot. Faucet \u2192 ship-devnet-when-funded if funded. Hold Arena until Oct 6. Settle path only after free packet or explicit Capability slot.",
+  "galaxy_mind_life_line": "Helped your time/stack: caught Blake's clarifying ask the morning after it landed and staged an accurate technical reply so you do not have to reconstruct the live Base Sepolia /api/brief stack yourself \u2014 still needs your send yes before it goes out.",
+  "drafts_pending_send": [
+    {
+      "draftId": "292406ad-4701-4dee-8824-c3e3c26a1570",
+      "to": [
+        "bkbot.assistant@gmail.com",
+        "support@agenticbtc.io"
+      ],
+      "subject": "Re: World Domination bot - AgentMail inbox identity x Lightning address / AgenticBTC MCP",
+      "presend": "intel/presend-agenticbtc-clarify-2026-09-29.txt",
+      "status": "NOT_SENT_awaiting_send_yes"
+    }
+  ],
   "network_evidence": {
     "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
     "payai_messageCount": 4,
     "agenticbtc_thread": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
-    "agenticbtc_messageCount": 12,
-    "agenticbtc_new_inbound_day28": false,
+    "agenticbtc_messageCount": 13,
+    "agenticbtc_new_inbound_day29": true,
+    "agenticbtc_new_messageId": "<CAG4H4QogzWOtqb15UX7vUEMaBbWWiAjk9Hbaa5sJwO7GEUFjGw@mail.gmail.com>",
+    "agenticbtc_clarify_draft": "292406ad-4701-4dee-8824-c3e3c26a1570",
     "agenticbtc_decline_sent_day27": "6434b881-7d9f-4a15-a041-dd9431b0f48a",
-    "reply_watch": "intel/reply-watch-2026-09-28.json",
-    "vercel_redeploy": "intel/vercel-redeploy-base-sepolia-2026-09-28.json",
+    "reply_watch": "intel/reply-watch-2026-09-29.json",
+    "presend": "intel/presend-agenticbtc-clarify-2026-09-29.txt",
     "live_deployment": "dpl_5zGgF2dBTnYQvjcbwALM9JPNwtDc",
-    "x402_base_wallet": "intel/x402-base-wallet-2026-09-26.json",
-    "hq_pr_base_sepolia": "https://github.com/GalaxyMind21/world-domination-bot/pull/16"
+    "x402_base_wallet": "intel/x402-base-wallet-2026-09-26.json"
   },
   "week_outbound_count_ct": {
     "week_start": "2026-09-28",
     "sent": 0,
     "ceiling": 50,
-    "updated": "2026-09-28T09:05:00-05:00",
-    "note": "New CT week Mon-start Sep 28; Day 28 no AgentMail send; prior week closed at 2/50 after Day-27 decline send"
+    "updated": "2026-09-29T09:00:00-05:00",
+    "note": "Day 29 draft staged not sent; week still 0/50"
   },
   "skipped_days": {
     "24": "usage pause",
