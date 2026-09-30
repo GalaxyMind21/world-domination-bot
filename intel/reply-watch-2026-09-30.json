@@ -1,0 +1,30 @@
+{
+  "as_of": "2026-09-30T08:45:00-05:00",
+  "timezone": "America/Chicago",
+  "day": 30,
+  "agenticbtc": {
+    "threadId": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
+    "messageCount": 14,
+    "prev_messageCount_day29_morning": 13,
+    "new_inbound": false,
+    "msgCount_delta_reason": "Day-29 clarify SENT (~09:03 CT) is message 14 (outbound). No NEW BK free cost/test-plan packet since that send.",
+    "clarify_sent_messageId": "<010001a0ed7a6b90-64ba8c22-abbf-4cf0-a862-e48a62839029-000000@email.amazonses.com>",
+    "clarify_draftId": "292406ad-4701-4dee-8824-c3e3c26a1570",
+    "is_full_free_packet": false,
+    "awaiting": "free Base/x402 testnet-first cost/test-plan packet from BK"
+  },
+  "payai": {
+    "threadId": "0d582818-51b4-4640-adfc-f87877861954",
+    "messageCount": 4,
+    "new_inbound": false
+  },
+  "live_demo": {
+    "url": "https://world-domination-x402.vercel.app/",
+    "health_ok": true,
+    "primary_network": "base-sepolia",
+    "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "brief_402": true,
+    "solana_treasury_lamports": 0
+  },
+  "primary_step": "Capability/Infrastructure — x402 settle_readiness.md + settle_readiness.json (no live settle, no email send)"
+}

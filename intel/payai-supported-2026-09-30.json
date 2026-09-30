@@ -1,0 +1,59 @@
+{
+  "as_of": "2026-09-30T08:45:00-05:00",
+  "facilitator": "https://facilitator.payai.network",
+  "endpoint": "GET /supported",
+  "http": 200,
+  "exact_networks_of_interest": [
+    {
+      "x402Version": 1,
+      "scheme": "exact",
+      "network": "base-sepolia"
+    },
+    {
+      "x402Version": 1,
+      "scheme": "exact",
+      "network": "base"
+    },
+    {
+      "x402Version": 1,
+      "scheme": "exact",
+      "network": "skale-base"
+    },
+    {
+      "x402Version": 1,
+      "scheme": "exact",
+      "network": "skale-base-sepolia"
+    },
+    {
+      "x402Version": 2,
+      "scheme": "exact",
+      "network": "eip155:8453"
+    },
+    {
+      "x402Version": 2,
+      "scheme": "exact",
+      "network": "eip155:84532"
+    },
+    {
+      "x402Version": 1,
+      "scheme": "exact",
+      "network": "solana"
+    },
+    {
+      "x402Version": 1,
+      "scheme": "exact",
+      "network": "solana-devnet"
+    },
+    {
+      "x402Version": 2,
+      "scheme": "exact",
+      "network": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp"
+    },
+    {
+      "x402Version": 2,
+      "scheme": "exact",
+      "network": "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1"
+    }
+  ],
+  "note": "Read-only. No POST /verify or /settle called. Day 30 settle readiness evidence."
+}

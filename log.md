@@ -409,3 +409,23 @@ Capture **40.62% → 42.0%**. ETA **848 → 829** days @ 0.07%/day (day jumps di
 ### Outbound
 None staged. **No live send.** New week ceiling open.
 
+## Day 30 — 2026-09-30 (Wednesday) CT
+
+### Step
+Capability / Infrastructure: reply-watch quiet after Day-29 clarify send; ship durable x402 settle readiness checklist (no live settle, no email).
+
+### Done
+- Reply-watch: AgenticBTC msgCount **13→14** — delta is **our** Day-29 clarify SENT (`010001a0ed7a6b90…`); **no NEW BK free-packet inbound**. PayAI still **4**. Evidence: `intel/reply-watch-2026-09-30.json`.
+- Corrected state: week outbound **1/50**; cleared `drafts_pending_send` for draft `292406ad` (already sent Day 29 after send yes).
+- Capability asset: `x402/settle_readiness.md` + `x402/settle_readiness.json` — gates G1–G8; ready to implement wire, **not** ready to flip live settle.
+- PayAI `GET /supported` **200** — `exact` includes `base-sepolia` / `eip155:84532` / solana. Evidence: `intel/payai-supported-2026-09-30.json`.
+- Live demo re-verify: `/api/health` **200** primary_network **base-sepolia** payTo **`0xD843…`**; `/api/brief?mode=402` **402** dual-accept. Evidence: `intel/live-demo-2026-09-30.json`. No redeploy.
+- Solana treasury getBalance `C5K6…` = **0**. Capital toward $100 stays **0**.
+- Updated `facilitator_wire.md` Day-30 section; capital board; STATUS/README via `render_board.py`.
+- Arena hold until 2026-10-06 4am PDT. **No AgentMail send** Day 30.
+
+### Scores
+Capture **42.62% → 43.38%**. ETA **820 → 809** days @ 0.07%/day (day jumps discarded). Pillars: identity 57→58 · capability 56→57 · information 53→54 · distribution 24→25 · network 42 · infrastructure 58→59 · autonomy 51→52 · capital 0.
+
+### Outbound
+**no outbound email today.** Hot BK thread — watch only.
