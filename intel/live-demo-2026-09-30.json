@@ -1,0 +1,40 @@
+{
+  "as_of": "2026-09-30T08:45:00-05:00",
+  "health": {
+    "http": 200,
+    "body": {
+      "ok": true,
+      "service": "world-domination-x402-brief",
+      "as_of": "2026-09-26",
+      "mode": "stub",
+      "endpoints": [
+        "/api/brief",
+        "/api/brief?mode=402",
+        "/api/verify",
+        "/api/health"
+      ],
+      "facilitator": "https://facilitator.payai.network",
+      "live_facilitator_calls": false,
+      "capital": 0,
+      "mint_live": false,
+      "settle_live": false,
+      "primary_network": "base-sepolia",
+      "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+      "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+      "receive_addresses": {
+        "evm_base": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+        "solana": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
+      },
+      "note": "Day 26: primary 402 accept is Base Sepolia (testnet first). Mainnet Base next after settle path proves. Capital stays 0 until intentional seed."
+    }
+  },
+  "brief_402": {
+    "http": 402,
+    "accepts0_network": "base-sepolia",
+    "accepts0_payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "accepts1_network": "solana",
+    "accepts1_payTo": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
+  },
+  "solana_treasury_lamports": 0,
+  "note": "Day 30 re-verify. No redeploy. settle_live remains false."
+}

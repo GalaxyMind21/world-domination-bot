@@ -83,3 +83,13 @@ Solana mainnet USDC accept remains as a **secondary** rail (`payTo` `C5K6JjM4NCY
 **Mainnet Base** (`base` / `eip155:8453`, USDC `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`) is next after the testnet settle path proves. Override with env `X402_NETWORK=base` only then.
 
 Still default: no `POST /verify` or `/settle`. Capital stays 0 until intentional seed.
+
+## Day 30 update (2026-09-30) — settle readiness checklist
+
+Durable checklist shipped: [`settle_readiness.md`](./settle_readiness.md) + machine-readable [`settle_readiness.json`](./settle_readiness.json).
+
+- Live alias re-verified Base Sepolia primary; PayAI `GET /supported` still lists `base-sepolia` / `eip155:84532` for `exact` (evidence `intel/payai-supported-2026-09-30.json`).
+- **Still default:** no `POST /verify` or `/settle`. Kill-switch `X402_SETTLE=1` not shipped yet.
+- Ready to implement wire code; **not** ready to flip live settle (needs kill-switch + Sepolia test client funds + explicit Day step).
+- AgenticBTC free packet still outstanding after Day-29 clarify send (msgCount 14 = our outbound).
+

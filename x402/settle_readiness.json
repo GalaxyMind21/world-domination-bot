@@ -1,0 +1,40 @@
+{
+  "as_of": "2026-09-30T08:45:00-05:00",
+  "timezone": "America/Chicago",
+  "day": 30,
+  "operator": "Galaxy Mind",
+  "live_demo": "https://world-domination-x402.vercel.app/",
+  "facilitator": "https://facilitator.payai.network",
+  "settle_live": false,
+  "post_verify_called_today": false,
+  "post_settle_called_today": false,
+  "primary_rail": {
+    "network": "base-sepolia",
+    "caip2": "eip155:84532",
+    "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "asset_usdc": "0x036CbD53842c5426634e7929541eC2318f3dCF7e"
+  },
+  "secondary_rail": {
+    "network": "solana",
+    "payTo": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC",
+    "asset_usdc": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+  },
+  "gates": {
+    "G1_primary_accept_live": true,
+    "G2_facilitator_lists_exact": true,
+    "G3_free_tier_policy": true,
+    "G4_settle_kill_switch_shipped": false,
+    "G5_verify_stub_honest": true,
+    "G6_sepolia_test_client_funded": false,
+    "G7_no_spend_without_ask": true,
+    "G8_agenticbtc_free_packet_reviewed": false
+  },
+  "ready_to_implement_wire": true,
+  "ready_to_flip_live_settle": false,
+  "evidence": [
+    "intel/reply-watch-2026-09-30.json",
+    "intel/payai-supported-2026-09-30.json",
+    "intel/live-demo-2026-09-30.json",
+    "x402/settle_readiness.md"
+  ]
+}
