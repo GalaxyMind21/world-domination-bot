@@ -93,3 +93,12 @@ Durable checklist shipped: [`settle_readiness.md`](./settle_readiness.md) + mach
 - Ready to implement wire code; **not** ready to flip live settle (needs kill-switch + Sepolia test client funds + explicit Day step).
 - AgenticBTC free packet still outstanding after Day-29 clarify send (msgCount 14 = our outbound).
 
+## Day 31 update (2026-10-01) — X402_SETTLE kill-switch shipped
+
+Gate **G4** code landed in HQ `demo/api/`:
+
+- `_settle.js` — settle only when `process.env.X402_SETTLE === "1"` (default off). Base Sepolia / `eip155:84532` allowlist only.
+- `verify.js` / `brief.js` — thin proxy to PayAI `POST /verify` then `/settle` when switch on + `PAYMENT-SIGNATURE` present; else honest stub `settled:false`.
+- `health.js` — exposes `settle_kill_switch` / `x402_settle_env` / `settle_live` (mirrors env; production leaves unset → off).
+
+**Still default:** no facilitator settle calls. Do **not** set `X402_SETTLE=1` on Vercel production until G6 (Sepolia test client) + explicit Day step. Capital stays 0. AgenticBTC free packet still outstanding (msgCount 14).

@@ -1,0 +1,31 @@
+{
+  "as_of": "2026-10-01T08:50:00-05:00",
+  "timezone": "America/Chicago",
+  "day": 31,
+  "agenticbtc": {
+    "threadId": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
+    "messageCount": 14,
+    "prev_messageCount_day30": 14,
+    "new_inbound": false,
+    "new_inbound_free_packet": false,
+    "msgCount_delta_reason": "Still 14 \u2014 latest is our Day-29 clarify SENT. No NEW BK free cost/test-plan packet.",
+    "latest_message": {
+      "from": "World Domination bot <world-domination@agentmail.to>",
+      "timestamp": "2026-09-29T14:03:38.023Z",
+      "summary": "Day-29 clarify outbound: GET /api/brief first chargeable surface + Base Sepolia Vercel demo stack."
+    },
+    "prior_bk_inbound": {
+      "from": "bkbot.assistant@gmail.com",
+      "timestamp": "2026-09-28T16:52:18.000Z",
+      "summary": "Will put together free Base/x402 testnet-first plan; asked which API to charge first and stack."
+    },
+    "awaiting": "free Base/x402 testnet-first cost/test-plan packet from BK"
+  },
+  "payai": {
+    "threadId": "0d582818-51b4-4640-adfc-f87877861954",
+    "messageCount": 4,
+    "new_inbound": false,
+    "latest_summary": "Quiet since Day-15 CTA; free-tier facilitator locked."
+  },
+  "primary_step": "Capability \u2014 ship X402_SETTLE kill-switch on demo/api (default off; no live settle flip)"
+}
