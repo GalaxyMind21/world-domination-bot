@@ -443,6 +443,7 @@ Capability: reply-watch quiet after Day-29 clarify; ship X402_SETTLE kill-switch
 - Solana treasury getBalance `C5K6…` = **0**. Capital toward $100 stays **0**.
 - Capability: shipped `demo/api/_settle.js` + updated `verify.js` / `brief.js` / `health.js` — settle only when `X402_SETTLE=1` (default off); Base Sepolia allowlist; thin PayAI `/verify`→`/settle` proxy. Local smoke: default off, sig+off no facilitator, wrong-network rejected locally.
 - Updated `x402/settle_readiness.md` + `.json` **G4 → SHIPPED** (still not ready to flip live — G6 blocked); `facilitator_wire.md` Day-31 note.
+- Vercel production redeploy **`dpl_6udGGXafyyJD9RKxEbX2B5mYE1Bk` READY** from main (PR #22); live `/api/health` shows `settle_kill_switch=off` / `x402_settle_env=0` / `settle_live=false`. Project envs have no X402_SETTLE.
 - Week outbound still **1/50**. Arena hold until 2026-10-06 4am PDT. **No AgentMail send** Day 31.
 
 ### Scores

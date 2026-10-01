@@ -80,8 +80,9 @@
     "kill_switch": "demo/api/_settle.js",
     "payai_supported": "intel/payai-supported-2026-10-01.json",
     "live_demo_evidence": "intel/live-demo-2026-10-01.json",
-    "live_deployment": "dpl_5zGgF2dBTnYQvjcbwALM9JPNwtDc",
-    "x402_base_wallet": "intel/x402-base-wallet-2026-09-26.json"
+    "live_deployment": "dpl_6udGGXafyyJD9RKxEbX2B5mYE1Bk",
+    "x402_base_wallet": "intel/x402-base-wallet-2026-09-26.json",
+    "pr": "https://github.com/GalaxyMind21/world-domination-bot/pull/22"
   },
   "week_outbound_count_ct": {
     "week_start": "2026-09-28",
