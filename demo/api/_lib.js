@@ -123,7 +123,7 @@ const PAYMENT_REQUIRED = {
       settle: "POST /settle",
     },
     tier: "free (confirmed 2026-09-13; enough until ~1000 settlements; no API key required for demo exact)",
-    note: "Default scaffold mode does not call POST /verify or /settle. Day 26 primary accept is Base Sepolia → EVM receive.",
+    note: "Default: no POST /verify or /settle unless X402_SETTLE=1 (Day 31 kill-switch). Primary accept Base Sepolia → EVM receive.",
   },
 };
 

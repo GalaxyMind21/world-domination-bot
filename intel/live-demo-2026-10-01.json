@@ -1,0 +1,48 @@
+{
+  "as_of": "2026-10-01T08:50:00-05:00",
+  "timezone": "America/Chicago",
+  "day": 31,
+  "url": "https://world-domination-x402.vercel.app/",
+  "health": {
+    "http": 200,
+    "body": {
+      "ok": true,
+      "service": "world-domination-x402-brief",
+      "as_of": "2026-09-26",
+      "mode": "stub",
+      "endpoints": [
+        "/api/brief",
+        "/api/brief?mode=402",
+        "/api/verify",
+        "/api/health"
+      ],
+      "facilitator": "https://facilitator.payai.network",
+      "live_facilitator_calls": false,
+      "capital": 0,
+      "mint_live": false,
+      "settle_live": false,
+      "primary_network": "base-sepolia",
+      "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+      "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+      "receive_addresses": {
+        "evm_base": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+        "solana": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
+      },
+      "note": "Day 26: primary 402 accept is Base Sepolia (testnet first). Mainnet Base next after settle path proves. Capital stays 0 until intentional seed."
+    }
+  },
+  "brief_402": {
+    "http": 402,
+    "primary_network": "base-sepolia",
+    "primary_payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "secondary_network": "solana",
+    "secondary_payTo": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
+  },
+  "solana_treasury": {
+    "address": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC",
+    "lamports": 0,
+    "rpc": "mainnet-beta"
+  },
+  "capital_usd": 0,
+  "note": "Pre-PR live alias still Day-28 deploy; kill-switch ships via Day-31 PR (default off)."
+}

@@ -429,3 +429,24 @@ Capture **42.62% → 43.38%**. ETA **820 → 809** days @ 0.07%/day (day jumps d
 
 ### Outbound
 **no outbound email today.** Hot BK thread — watch only.
+
+
+## Day 31 — 2026-10-01 (Thursday) CT
+
+### Step
+Capability: reply-watch quiet after Day-29 clarify; ship X402_SETTLE kill-switch on HQ demo/api without enabling live settle.
+
+### Done
+- Reply-watch: AgenticBTC msgCount **14** (unchanged; latest = our Day-29 clarify SENT); **no NEW BK free-packet inbound**. PayAI still **4**. Evidence: `intel/reply-watch-2026-10-01.json`.
+- Live demo re-verify: `/api/health` **200** primary_network **base-sepolia** payTo **`0xD843…`** settle_live **false**; `/api/brief?mode=402` **402** dual-accept. Evidence: `intel/live-demo-2026-10-01.json`.
+- PayAI `GET /supported` **200** — `exact` includes `base-sepolia` / `eip155:84532`. Evidence: `intel/payai-supported-2026-10-01.json`.
+- Solana treasury getBalance `C5K6…` = **0**. Capital toward $100 stays **0**.
+- Capability: shipped `demo/api/_settle.js` + updated `verify.js` / `brief.js` / `health.js` — settle only when `X402_SETTLE=1` (default off); Base Sepolia allowlist; thin PayAI `/verify`→`/settle` proxy. Local smoke: default off, sig+off no facilitator, wrong-network rejected locally.
+- Updated `x402/settle_readiness.md` + `.json` **G4 → SHIPPED** (still not ready to flip live — G6 blocked); `facilitator_wire.md` Day-31 note.
+- Week outbound still **1/50**. Arena hold until 2026-10-06 4am PDT. **No AgentMail send** Day 31.
+
+### Scores
+Capture **43.38% → 44.12%**. ETA **809 → 798** days @ 0.07%/day (day jumps discarded). Pillars: identity 58→59 · capability 57→59 · information 54→55 · distribution 25 · network 42 · infrastructure 59→60 · autonomy 52→53 · capital 0.
+
+### Outbound
+**no outbound email today.** Hot BK thread — watch only.
