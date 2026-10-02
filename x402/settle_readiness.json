@@ -1,7 +1,7 @@
 {
-  "as_of": "2026-10-01T08:55:00-05:00",
+  "as_of": "2026-10-02T08:55:00-05:00",
   "timezone": "America/Chicago",
-  "day": 31,
+  "day": 32,
   "operator": "Galaxy Mind",
   "live_demo": "https://world-domination-x402.vercel.app/",
   "facilitator": "https://facilitator.payai.network",
@@ -30,7 +30,7 @@
     "G5_verify_stub_honest": true,
     "G6_sepolia_test_client_funded": false,
     "G7_no_spend_without_ask": true,
-    "G8_agenticbtc_free_packet_reviewed": false
+    "G8_agenticbtc_free_packet_reviewed": true
   },
   "ready_to_implement_wire": true,
   "ready_to_flip_live_settle": false,
@@ -41,9 +41,12 @@
     "demo/api/health.js"
   ],
   "evidence": [
-    "intel/reply-watch-2026-10-01.json",
-    "intel/payai-supported-2026-10-01.json",
-    "intel/live-demo-2026-10-01.json",
+    "intel/reply-watch-2026-10-02.json",
+    "intel/payai-supported-2026-10-02.json",
+    "intel/live-demo-2026-10-02.json",
+    "intel/agenticbtc-free-packet-inbound-2026-10-01.txt",
+    "intel/presend-agenticbtc-free-packet-2026-10-02.txt",
     "x402/settle_readiness.md"
-  ]
+  ],
+  "g8_note": "BK free packet reviewed Day 32; draft dd821031 staged; not sent; G6 still blocked; settle still off"
 }
