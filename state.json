@@ -86,7 +86,9 @@
     "live_demo_evidence": "intel/live-demo-2026-10-03.json",
     "x402_base_wallet": "intel/x402-base-wallet-2026-09-26.json",
     "pr_day31_kill_switch": "https://github.com/GalaxyMind21/world-domination-bot/pull/22",
-    "pr_day32": "https://github.com/GalaxyMind21/world-domination-bot/pull/23"
+    "pr_day32": "https://github.com/GalaxyMind21/world-domination-bot/pull/23",
+    "pr_day33": "https://github.com/GalaxyMind21/world-domination-bot/pull/24",
+    "pr": "https://github.com/GalaxyMind21/world-domination-bot/pull/24"
   },
   "week_outbound_count_ct": {
     "week_start": "2026-09-28",
