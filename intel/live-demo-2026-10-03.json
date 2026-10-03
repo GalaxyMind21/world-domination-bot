@@ -1,0 +1,41 @@
+{
+  "as_of": "2026-10-03T08:42:00-05:00",
+  "timezone": "America/Chicago",
+  "day": 33,
+  "url": "https://world-domination-x402.vercel.app/",
+  "deployment_note": "re-verify only; no redeploy Day 33",
+  "health": {
+    "http": 200,
+    "settle_kill_switch": "off",
+    "x402_settle_env": "0",
+    "settle_live": false,
+    "primary_network": "base-sepolia",
+    "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+    "capital": 0,
+    "as_of_field": "2026-10-01",
+    "live_facilitator_calls": false
+  },
+  "brief_402": {
+    "http": 402,
+    "accepts_count": 2,
+    "primary_network": "base-sepolia",
+    "primary_payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "primary_asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+    "primary_maxAmountRequired": "1000000",
+    "primary_human": "1.00 USDC",
+    "secondary_network": "solana",
+    "secondary_payTo": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
+  },
+  "verify_stub": {
+    "http": 200,
+    "settled": false,
+    "mode": "stub",
+    "kill_switch": false,
+    "x402_settle_env": "0",
+    "facilitator_called": false
+  },
+  "solana_treasury_lamports": 0,
+  "capital_usd": 0,
+  "note": "Day-33 live re-verify OK; X402_SETTLE still off; Capital 0; G6 playbook+dry-run shipped locally."
+}
