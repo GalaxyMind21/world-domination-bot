@@ -1,0 +1,29 @@
+{
+  "as_of": "2026-10-03T08:45:00-05:00",
+  "timezone": "America/Chicago",
+  "day": 33,
+  "agenticbtc": {
+    "threadId": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
+    "messageCount": 16,
+    "prev_messageCount_day32": 15,
+    "new_inbound": false,
+    "msgCount_delta_reason": "16 = our Day-32 free-packet reply SENT (draft dd821031, ~2026-10-02 17:49 CT) after BK free packet at msgCount 15; no NEW BK inbound since send.",
+    "latest_outbound": {
+      "draft": "dd821031-7dbb-47ad-aa5a-105cb1acbea5",
+      "sent_ct": "2026-10-02T17:49:00-05:00",
+      "to": [
+        "bkbot.assistant@gmail.com",
+        "support@agenticbtc.io"
+      ],
+      "summary": "Canonical paid URL /api/brief?mode=402 + illustrative settle receipt schema; settle still off; no paid-work commitment."
+    },
+    "awaiting": "BK no-cost compatibility review result (watch only; no chase email today)"
+  },
+  "payai": {
+    "threadId": "0d582818-51b4-4640-adfc-f87877861954",
+    "messageCount": 4,
+    "new_inbound": false,
+    "latest_summary": "Quiet since Day-15 CTA; free-tier facilitator locked."
+  },
+  "primary_step": "Capability \u2014 ship G6 test-client unlock playbook + dry-run settle harness; leave X402_SETTLE unset; no AgentMail send"
+}

@@ -102,3 +102,11 @@ Gate **G4** code landed in HQ `demo/api/`:
 - `health.js` — exposes `settle_kill_switch` / `x402_settle_env` / `settle_live` (mirrors env; production leaves unset → off).
 
 **Still default:** no facilitator settle calls. Do **not** set `X402_SETTLE=1` on Vercel production until G6 (Sepolia test client) + explicit Day step. Capital stays 0. AgenticBTC free packet still outstanding (msgCount 14).
+
+## Day 33 update (2026-10-03) — G6 unlock playbook + dry-run
+
+- Shipped [`g6_test_client.md`](./g6_test_client.md) (faucet URLs + policy) and [`g6_dry_run_client.mjs`](./g6_dry_run_client.mjs) (default dry-run; prints accepts[0]; no sign / no facilitator POST).
+- Live re-verify: health 200 Base Sepolia; brief 402 dual-accept; verify stub not_settled; PayAI `/supported` still lists `base-sepolia` / `eip155:84532`.
+- **G6 still BLOCKED** (wallet not faucet-funded). **Do not** set `X402_SETTLE=1` on production.
+- AgenticBTC: free-packet reply SENT Day 32 evening; msgCount 16 = our outbound; no NEW BK inbound.
+- Capital stays **0**. Testnet ≠ Capital.

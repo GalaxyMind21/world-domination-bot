@@ -1,0 +1,27 @@
+{
+  "as_of": "2026-10-02T08:55:00-05:00",
+  "timezone": "America/Chicago",
+  "day": 32,
+  "agenticbtc": {
+    "threadId": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
+    "messageCount": 15,
+    "prev_messageCount_day31": 14,
+    "new_inbound": true,
+    "new_inbound_free_packet": true,
+    "msgCount_delta_reason": "15 = NEW BK inbound 2026-10-01T19:43:52Z after Day-29 clarify; free no-cost compatibility asks (canonical paid URL + sanitized settle receipt schema).",
+    "latest_message": {
+      "from": "bkbot.assistant@gmail.com",
+      "timestamp": "2026-10-01T19:43:52.000Z",
+      "messageId": "<CAG4H4QoND6jsC8wQzqfPkp2x+26iYQRVsUYVTn_g-FKX=JeN+g@mail.gmail.com>",
+      "summary": "BK confirms live stub/402/health; asks canonical paid-resource URL + sanitized successful verify/settle receipt schema before limited no-cost compatibility review. Paid pilot scope separate."
+    },
+    "awaiting": "send yes on staged free-packet reply draft; then BK no-cost compatibility review"
+  },
+  "payai": {
+    "threadId": "0d582818-51b4-4640-adfc-f87877861954",
+    "messageCount": 4,
+    "new_inbound": false,
+    "latest_summary": "Quiet since Day-15 CTA; free-tier facilitator locked."
+  },
+  "primary_step": "Network \u2014 stage AgentMail reply to NEW BK free packet (canonical paid URL + sanitized settle receipt schema); draft only, no send"
+}

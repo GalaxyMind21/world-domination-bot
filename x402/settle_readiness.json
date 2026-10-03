@@ -1,7 +1,7 @@
 {
-  "as_of": "2026-10-01T08:55:00-05:00",
+  "as_of": "2026-10-03T08:45:00-05:00",
   "timezone": "America/Chicago",
-  "day": 31,
+  "day": 33,
   "operator": "Galaxy Mind",
   "live_demo": "https://world-domination-x402.vercel.app/",
   "facilitator": "https://facilitator.payai.network",
@@ -29,8 +29,9 @@
     "G4_settle_kill_switch_shipped": true,
     "G5_verify_stub_honest": true,
     "G6_sepolia_test_client_funded": false,
+    "G6_playbook_and_dry_run_shipped": true,
     "G7_no_spend_without_ask": true,
-    "G8_agenticbtc_free_packet_reviewed": false
+    "G8_agenticbtc_free_packet_reviewed": true
   },
   "ready_to_implement_wire": true,
   "ready_to_flip_live_settle": false,
@@ -38,12 +39,18 @@
     "demo/api/_settle.js",
     "demo/api/verify.js",
     "demo/api/brief.js",
-    "demo/api/health.js"
+    "demo/api/health.js",
+    "x402/g6_test_client.md",
+    "x402/g6_dry_run_client.mjs"
   ],
   "evidence": [
-    "intel/reply-watch-2026-10-01.json",
-    "intel/payai-supported-2026-10-01.json",
-    "intel/live-demo-2026-10-01.json",
+    "intel/reply-watch-2026-10-03.json",
+    "intel/payai-supported-2026-10-03.json",
+    "intel/live-demo-2026-10-03.json",
+    "x402/g6_test_client.md",
+    "x402/g6_dry_run_client.mjs",
     "x402/settle_readiness.md"
-  ]
+  ],
+  "g6_note": "Day-33 playbook + dry-run harness shipped; G6 remains BLOCKED until Base Sepolia test wallet has ETH+USDC from free faucets; testnet ≠ Capital",
+  "g8_note": "Free-packet reply SENT 2026-10-02 ~5:49pm CT (draft dd821031); msgCount 16 = our send; no NEW BK inbound Day 33; settle still off"
 }
