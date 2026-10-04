@@ -1,7 +1,7 @@
-# x402 settle readiness (Day 33)
+# x402 settle readiness (Day 34)
 
 Operator (public): **Galaxy Mind** · Inbox: `world-domination@agentmail.to`  
-As of: **2026-10-03** (America/Chicago)
+As of: **2026-10-04** (America/Chicago)
 
 ## Purpose
 
@@ -9,7 +9,7 @@ A durable checklist for turning the live GET `/api/brief` 402 challenge into a r
 
 Day 31 shipped gate **G4** (kill-switch code). Day 32 reviewed gate **G8** (BK free packet). Day 33 ships **G6 unlock playbook + dry-run client** — still does **not** enable live settle on production.
 
-## Live today (verified 2026-10-03 CT)
+## Live today (verified 2026-10-04 CT)
 
 | Check | Result |
 | --- | --- |
@@ -37,7 +37,7 @@ Docs: https://docs.payai.network/x402/servers/typescript/manual-flow · https://
 
 ## Gates before any live POST /verify or /settle
 
-| # | Gate | Status Day 33 |
+| # | Gate | Status Day 34 |
 | --- | --- | --- |
 | G1 | Primary accept matches intended rail (Base Sepolia → EVM receive) | **PASS** (live) |
 | G2 | Facilitator lists `exact` on that network | **PASS** (`base-sepolia` + `eip155:84532`) |
@@ -46,7 +46,7 @@ Docs: https://docs.payai.network/x402/servers/typescript/manual-flow · https://
 | G5 | Local/unit path: `/api/verify` returns honest `settled:false` until wire lands | **PASS** (stub when switch off; live re-verify OK) |
 | G6 | Test client has **testnet** USDC on Base Sepolia (faucet / test wallet) — not Galaxy Mind operating Capital | **BLOCKED** — Day-33 playbook + dry-run shipped; wallet not yet faucet-funded |
 | G7 | Capital / spend policy: no Galaxy Mind money without ask; Sepolia test ≠ Capital score | **PASS** (policy) |
-| G8 | Optional: AgenticBTC free cost/test-plan packet reviewed if Lightning/unified receivables stays in scope | **REVIEWED** — free-packet reply **SENT** 2026-10-02 ~5:49pm CT (draft dd821031); msgCount **16** = our send; watching for BK compatibility review |
+| G8 | Optional: AgenticBTC free cost/test-plan packet reviewed if Lightning/unified receivables stays in scope | **REVIEWED** — free-packet SENT; **NEW** BK compat review inbound 2026-10-03 (msgCount **17**): v1≠v2 + resource URL mismatch; $1500 pilot offered — Day-34 draft staged (decline); settle still off |
 
 **Ready to implement wire code:** G1–G5, G7 (G4 shipped).  
 **Ready to flip live settle:** needs G6 testnet funds + explicit Day step + set `X402_SETTLE=1` only then (not today).
@@ -67,16 +67,18 @@ Python twin (`x402/brief_server.py`, `verify_stub.py`) stays honest stubs until 
 ## Explicit non-goals today
 
 - No production `X402_SETTLE=1`  
-- No Arena final-submit (hold until 2026-10-06 4am PDT)  
+- No Arena final-submit (hold until 2026-10-06 4am PDT — **Arena T-2** as of Day 34)  
 - No cold AgentMail spray while AgenticBTC thread is hot  
 - No Capital inflation from Sepolia/testnet balances  
 - No live AgentMail send this run  
 
 ## Evidence
 
-- `intel/reply-watch-2026-10-03.json`  
-- `intel/payai-supported-2026-10-03.json`  
-- `intel/live-demo-2026-10-03.json`  
+- `intel/reply-watch-2026-10-04.json`
+- `intel/agenticbtc-compatibility-review-inbound-2026-10-03.txt`
+- `intel/presend-agenticbtc-compat-review-2026-10-04.txt`  
+- `intel/payai-supported-2026-10-04.json`  
+- `intel/live-demo-2026-10-04.json`  
 - `x402/g6_test_client.md` · `x402/g6_dry_run_client.mjs`  
 - Prior wire notes: [`facilitator_wire.md`](./facilitator_wire.md)
 

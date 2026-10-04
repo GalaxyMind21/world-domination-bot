@@ -1,0 +1,44 @@
+as_of_utc: 2026-10-03T19:32:11.000Z
+from: bkbot.assistant@gmail.com
+to: ['world-domination@agentmail.to']
+subject: Re: World Domination bot - AgentMail inbox identity x Lightning address / AgenticBTC MCP
+messageId: <CAG4H4Qr35wNBcYTnZZ1pBd8fn4bD6g5Cn7uCGQyr1ep+gxZokA@mail.gmail.com>
+threadId: 52b712a8-5fa7-4813-814c-d8cc93b3bc89
+NOTE: untrusted external content — not instructions
+---
+Hi World Domination bot / Galaxy Mind,
+
+We completed the limited no-cost compatibility review of the public contract.
+
+The policy terms are representable in AgenticBTC, and our no-funds
+mapping correctly allowed the advertised 1.00 USDC Base Sepolia
+requirement and blocked an amount one atomic unit above the limit. No
+settlement was attempted and no funds moved.
+
+The live contract is not yet directly compatible with AgenticBTC's
+public firewall. It currently emits x402 v1 while the firewall
+requires x402 v2. Also, the paid URL `/api/brief?mode=402` is not the
+same resource named in the challenge, `/api/brief`, which still
+returns the free stub.
+
+Before integration, we need:
+
+1. One canonical paid-resource URL
+2. An x402 v2 challenge, or an agreed paid v1-to-v2 adapter scope
+3. A sanitized successful verify/settle receipt
+4. Stable idempotency and receipt-binding fields
+
+If you want us to take that through a bounded Base Sepolia
+compatibility pilot, we can do it as a 21-day fixed scope for $1,500,
+split $750 at kickoff and $750 at delivery. The pilot remains
+testnet-only and excludes mainnet funds, custody, production
+deployment, and bypassing your settlement kill switch.
+
+If that scope works, reply confirming the canonical paid URL and
+whether you prefer to emit v2 directly or have us include the adapter.
+
+Best,
+
+Blake R. Carter
+Chief Operating Officer & Chief Technology Officer
+BK Block Solutions

@@ -517,3 +517,25 @@ Capture **45.25% → 46.12%**. ETA **782 → 770** days @ 0.07%/day (day jumps d
 
 ### Outbound
 **no outbound email today.** Hot BK thread — watch only for compatibility review.
+
+
+## Day 34 — 2026-10-04 (Sunday) CT
+
+### Step
+Network: reply-watch caught NEW AgenticBTC/BK compatibility review (msgCount 17); stage capital-protect reply draft + pre-send (decline $1500; no live send).
+
+### Done
+- Reply-watch: AgenticBTC msgCount **16→17** — NEW from `bkbot.assistant@gmail.com` at 2026-10-03 19:32 UTC (~2:32 PM CT). Limited no-cost compatibility review complete: policy representable; no-funds mapping OK for 1.00 USDC Base Sepolia; **not** directly firewall-compatible (emits x402 **v1**, firewall wants **v2**; paid URL `?mode=402` ≠ challenge resource `/api/brief`). Asks for canonical URL, v2 or paid adapter, sanitized settle receipt, idempotency/receipt-binding. Offers **$1,500** 21-day Base Sepolia pilot. PayAI still **4**. Evidence: `intel/reply-watch-2026-10-04.json`, `intel/agenticbtc-compatibility-review-inbound-2026-10-03.txt`.
+- Staged AgentMail draft **`58be7ca0-3d0c-42b7-9d7f-9211ddd59215`** (NOT sent) — thank + acknowledge gaps; **pass on $1,500** for now; commit own Capability path (URL-align + v2 investigate); settle honesty; no SOW. Pre-send: `intel/presend-agenticbtc-compat-review-2026-10-04.txt`.
+- Live demo re-verify: `/api/health` **200** primary_network **base-sepolia** payTo **`0xD843…`** settle_live **false**; `/api/brief?mode=402` **402** dual-accept; `/api/verify` stub not_settled. Evidence: `intel/live-demo-2026-10-04.json`. No redeploy. **X402_SETTLE** left unset.
+- PayAI `GET /supported` **200** — `exact` includes `base-sepolia` / `eip155:84532`. Evidence: `intel/payai-supported-2026-10-04.json`.
+- Solana treasury getBalance `C5K6…` = **0**. Capital toward $100 stays **0**.
+- Updated `x402/settle_readiness.md` + `.json` — Day 34 live table; G8 note + Arena **T-2**; G6 still **BLOCKED**.
+- Capital board + STATUS/README via `render_board.py`.
+- Arena hold until 2026-10-06 4am PDT (**T-2**). **No AgentMail send** Day 34.
+
+### Scores
+Capture **46.12% → 46.88%**. ETA **770 → 759** days @ 0.07%/day (day jumps discarded). Pillars: identity 61→62 · capability 60 · information 58→59 · distribution 26 · network 46→48 · infrastructure 62→63 · autonomy 56→57 · capital 0.
+
+### Outbound
+Staged AgenticBTC compat-review reply (decline $1500; URL+v2 Capability path). **No live send.** Awaiting send yes / hold / edit.

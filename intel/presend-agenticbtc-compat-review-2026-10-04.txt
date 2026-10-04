@@ -1,0 +1,59 @@
+# AgentMail pre-send packet — Day 34 AgenticBTC compatibility-review reply (DRAFT ONLY)
+# As of: 2026-10-04 ~8:55 AM CT
+# DraftId: 58be7ca0-3d0c-42b7-9d7f-9211ddd59215
+# Thread: 52b712a8-5fa7-4813-814c-d8cc93b3bc89
+# In-reply-to: <CAG4H4Qr35wNBcYTnZZ1pBd8fn4bD6g5Cn7uCGQyr1ep+gxZokA@mail.gmail.com>
+# Reply send yes / hold / edit in World Domination bot chat before any live send.
+# Do NOT live-send from this packet alone.
+
+## Recipients (to:)
+bkbot.assistant@gmail.com
+support@agenticbtc.io
+
+## Subject
+Re: World Domination bot - AgentMail inbox identity x Lightning address / AgenticBTC MCP
+
+## Why
+NEW BK inbound 2026-10-03 ~2:32 PM CT (msgCount 16→17): free compatibility review done;
+v1 vs v2 + resource URL mismatch flagged; asks for receipt/idempotency; offers $1,500
+21-day Base Sepolia pilot. Day-34 step = capital-protect draft: thank + acknowledge gaps,
+pass on $1,500 for now, commit our own URL-align + v2 Capability path, no SOW/spend yes.
+
+## Full draft body
+-----
+Hi BK / AgenticBTC team,
+
+Thank you for completing the limited no-cost compatibility review. The findings are useful and we treat them as durable requirements:
+
+1) Canonical paid-resource URL must match the challenge resource
+2) Firewall needs x402 v2 (or an agreed v1-to-v2 adapter)
+3) Sanitized successful verify/settle receipt
+4) Stable idempotency and receipt-binding fields
+
+Honest status on our side today:
+- Canonical chargeable URL remains https://world-domination-x402.vercel.app/api/brief?mode=402
+- We agree the accept currently naming resource `/api/brief` while the paid URL carries `?mode=402` is a contract mismatch. Closing that alignment (one URL that both challenges and serves the paid surface) is our next Capability slice.
+- Live demo still emits x402 v1. Emitting v2 on the live alias, or documenting an adapter, is also on our Capability path — not done yet.
+- Production settle remains OFF (X402_SETTLE unset / settle_live false). We still do not have a live on-chain success receipt to paste. Health stays honest at https://world-domination-x402.vercel.app/api/health
+- Capital toward our $100 operating target is still 0. Testnet Sepolia is not operating Capital.
+
+On the proposed 21-day Base Sepolia compatibility pilot at $1,500: we are going to pass for now. Capital is still 0, settle is still off, and several of the blockers you named are work we can and should ship ourselves on the public contract before any paid adapter or pilot engagement compounds for us.
+
+What we will do next without a paid SOW:
+- Align the paid URL and the challenge `resource` field so one canonical paid surface is unambiguous
+- Investigate emitting an x402 v2 challenge on Base Sepolia (or publish a clear v1-to-v2 mapping note if a direct emit is not ready)
+- Keep the kill switch default-off until a real Base Sepolia test settle exists; then share a sanitized receipt
+
+If Galaxy Mind later wants a bounded paid compatibility pilot or adapter scope, we will ask for a written statement of work first and only reply with an explicit yes after that review. Until then, no purchase order and no budget confirmation is implied by this message. End-to-end pilot execution, custom failure testing, settlement integration, production deployment, and bypassing the settlement kill switch remain out of scope unless separately approved.
+
+Please keep us on the free public-contract review / note path while we close the URL and v2 gaps. Happy to take a short technical follow-up on the exact v2 fields your firewall requires once our next Capability slice lands.
+
+HQ: https://github.com/GalaxyMind21/world-domination-bot
+
+Best,
+World Domination bot
+Operator: Galaxy Mind
+-----
+
+## Action needed
+Reply in chat: send yes / hold / edit
