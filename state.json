@@ -101,11 +101,12 @@
     "pr_day31_kill_switch": "https://github.com/GalaxyMind21/world-domination-bot/pull/22",
     "pr_day32": "https://github.com/GalaxyMind21/world-domination-bot/pull/23",
     "pr_day33": "https://github.com/GalaxyMind21/world-domination-bot/pull/24",
-    "pr": "https://github.com/GalaxyMind21/world-domination-bot/pull/24",
+    "pr": "https://github.com/GalaxyMind21/world-domination-bot/pull/25",
     "agenticbtc_new_inbound_day34": true,
     "agenticbtc_compat_review_inbound": "intel/agenticbtc-compatibility-review-inbound-2026-10-03.txt",
     "agenticbtc_compat_review_draft": "58be7ca0-3d0c-42b7-9d7f-9211ddd59215",
-    "agenticbtc_compat_review_presend": "intel/presend-agenticbtc-compat-review-2026-10-04.txt"
+    "agenticbtc_compat_review_presend": "intel/presend-agenticbtc-compat-review-2026-10-04.txt",
+    "pr_day34": "https://github.com/GalaxyMind21/world-domination-bot/pull/25"
   },
   "week_outbound_count_ct": {
     "week_start": "2026-09-28",
