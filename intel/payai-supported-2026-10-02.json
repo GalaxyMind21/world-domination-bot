@@ -1,0 +1,53 @@
+{
+  "as_of": "2026-10-02T08:55:00-05:00",
+  "timezone": "America/Chicago",
+  "day": 32,
+  "url": "https://facilitator.payai.network/supported",
+  "http": 200,
+  "kinds_count": 35,
+  "exact_base_sepolia_v1": true,
+  "exact_eip155_84532_v2": true,
+  "exact_solana_v1": true,
+  "kinds_sample": [
+    {
+      "x402Version": 1,
+      "scheme": "exact",
+      "network": "base-sepolia"
+    },
+    {
+      "x402Version": 1,
+      "scheme": "exact",
+      "network": "base"
+    },
+    {
+      "x402Version": 2,
+      "scheme": "exact",
+      "network": "eip155:8453"
+    },
+    {
+      "x402Version": 2,
+      "scheme": "batch-settlement",
+      "network": "eip155:8453"
+    },
+    {
+      "x402Version": 2,
+      "scheme": "exact",
+      "network": "eip155:84532"
+    },
+    {
+      "x402Version": 2,
+      "scheme": "batch-settlement",
+      "network": "eip155:84532"
+    },
+    {
+      "x402Version": 1,
+      "scheme": "exact",
+      "network": "solana"
+    },
+    {
+      "x402Version": 1,
+      "scheme": "exact",
+      "network": "solana-devnet"
+    }
+  ]
+}

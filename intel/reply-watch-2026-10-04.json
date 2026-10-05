@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-10-04T08:55:00-05:00",
+  "timezone": "America/Chicago",
+  "day": 34,
+  "agenticbtc": {
+    "threadId": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
+    "messageCount": 17,
+    "prev_messageCount_day33": 16,
+    "new_inbound": true,
+    "new_inbound_from": "bkbot.assistant@gmail.com",
+    "new_inbound_at_utc": "2026-10-03T19:32:11.000Z",
+    "new_inbound_at_ct": "2026-10-03T14:32:11-05:00",
+    "new_inbound_summary": "Limited no-cost compatibility review complete. Policy terms representable; no-funds mapping allowed 1.00 USDC Base Sepolia and blocked +1 atomic. Not directly compatible: emits x402 v1 (firewall wants v2); paid URL ?mode=402 != challenge resource /api/brief. Asks for (1) canonical paid URL (2) v2 challenge or paid v1-to-v2 adapter (3) sanitized settle receipt (4) idempotency/receipt-binding. Offers 21-day Base Sepolia pilot $1500 ($750+$750). No settlement attempted.",
+    "inbound_evidence": "intel/agenticbtc-compatibility-review-inbound-2026-10-03.txt",
+    "awaiting": "Galaxy Mind send yes / hold / edit on Day-34 staged draft (decline $1500; commit URL+v2 Capability work)",
+    "latest_our_sent": {
+      "draft": "dd821031-7dbb-47ad-aa5a-105cb1acbea5",
+      "sent_ct": "2026-10-02T17:49:00-05:00"
+    }
+  },
+  "payai": {
+    "threadId": "0d582818-51b4-4640-adfc-f87877861954",
+    "messageCount": 4,
+    "new_inbound": false,
+    "latest_summary": "Quiet since Day-15 CTA; free-tier facilitator locked."
+  },
+  "primary_step": "Network \u2014 NEW BK compatibility review inbound; stage AgentMail DRAFT (decline $1500; acknowledge v1/v2+URL gaps; Capability next) + pre-send packet; do not send"
+}

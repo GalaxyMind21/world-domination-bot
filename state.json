@@ -1,49 +1,49 @@
 {
-  "as_of": "2026-10-01",
+  "as_of": "2026-10-04",
   "timezone": "US/Central",
-  "day": 31,
-  "capture_pct": 44.12,
+  "day": 34,
+  "capture_pct": 46.88,
   "pillars": {
     "identity_hq": {
-      "score": 59,
-      "note": "Day-31: STATUS + settle_readiness G4 SHIPPED reflected; kill-switch docs mirrored to HQ."
+      "score": 62,
+      "note": "Day-34: BK compat-review reply staged + pre-send; STATUS/board refreshed."
     },
     "capability": {
-      "score": 59,
-      "note": "Day-31: X402_SETTLE kill-switch shipped (demo/api/_settle.js + verify/brief/health); default off; local smoke OK."
+      "score": 60,
+      "note": "Day-34: no new settle code; G4 still default-off; G6 funded still blocked; URL-align + v2 noted as next Capability."
     },
     "information": {
-      "score": 55,
-      "note": "Day-31: AgenticBTC msgCount 14 (no NEW free packet); PayAI 4; intel/reply-watch + payai-supported + live-demo evidence."
+      "score": 59,
+      "note": "Day-34: reply-watch + live-demo + payai-supported + BK inbound transcript filed."
     },
     "distribution": {
-      "score": 25,
-      "note": "CT week 2026-09-28; week outbound 1/50; no new outbound Day 31 (draft-by-default automation)."
+      "score": 26,
+      "note": "CT week 2026-09-28; week outbound 2/50; Day 34 draft staged not sent."
     },
     "capital": {
       "score": 0,
       "note": "Solana C5K6\u2026=0; EVM Base Sepolia not Capital; Base mainnet dust ETH not counted toward $100."
     },
     "network": {
-      "score": 42,
-      "note": "Day-31: quiet; awaiting BK free cost/test-plan packet; PayAI still 4. No draft staged."
+      "score": 48,
+      "note": "Day-34: AgenticBTC msgCount 17 NEW BK compat review; draft 58be7ca0 staged (decline $1500); PayAI still 4."
     },
     "infrastructure": {
-      "score": 60,
-      "note": "Day-31: live alias health 200 Base Sepolia payTo 0xD843\u2026; brief 402 dual-accept; kill-switch code on HQ branch (prod env unset \u2192 off)."
+      "score": 63,
+      "note": "Day-34: live alias health 200 Base Sepolia payTo 0xD843\u2026; brief 402 dual-accept; settle off; PayAI /supported OK."
     },
     "autonomy": {
-      "score": 53,
-      "note": "Day 31: quiet inbox \u2192 Capability kill-switch per tomorrow_vector; no cold spray on hot BK thread; no live send."
+      "score": 57,
+      "note": "Day 34: NEW BK inbound \u2192 Network capital-protect draft without cold spray, settle flip, or spend yes."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 0.74,
-    "eta_days": 798.3,
-    "eta_label": "798 days (~2.2 years) on the grind curve",
-    "note": "Day jumps discarded for velocity. Model not prophecy. Quiet inbox \u2260 Capital. Kill-switch shipped \u2260 settle live. Sepolia/testnet \u2260 Capital."
+    "observed_day_delta_pp": 0.76,
+    "eta_days": 758.9,
+    "eta_label": "759 days (~2.1 years) on the grind curve",
+    "note": "Day jumps discarded for velocity. Model not prophecy. Quiet inbox \u2260 Capital. Testnet \u2260 Capital. Draft \u2260 sent. Free packet \u2260 Capital. Sepolia/testnet \u2260 Capital. Paid pilot offer \u2260 spend yes."
   },
   "owned_surfaces": {
     "github": "https://github.com/GalaxyMind21/world-domination-bot",
@@ -56,40 +56,64 @@
     "solana_treasury": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC"
   },
   "asks": [
-    "Watch AgenticBTC thread 52b712a8 for free Base/x402 cost/test-plan packet (clarify already SENT Day 29)",
+    "SEND YES / HOLD / EDIT: Day-34 AgenticBTC draft 58be7ca0 (decline $1500; URL+v2 Capability path) \u2014 see intel/presend-agenticbtc-compat-review-2026-10-04.txt",
+    "Optional: faucet-fund a Base Sepolia test wallet (ETH + USDC via g6_test_client.md) so a later Day can gated-flip X402_SETTLE \u2014 testnet \u2260 Capital; ask before any operating spend",
     "Optional: fund AhDmi4AWRVYTrkVfYW2317xz2rgtVCaJxGFxN5bcCfU9 via faucet.solana.com so npm run ship-devnet-when-funded can run",
     "Capital still 0 until intentional USDC/SOL seed to Solana treasury and/or EVM receive toward $100",
     "Arena final submit held until 2026-10-06 4am PDT (separate routine)",
-    "G6 still blocked: need Base Sepolia testnet USDC client before flipping X402_SETTLE=1 anywhere \u2014 do not spend Galaxy Mind money without ask"
+    "G6 still blocked on funds: playbook+dry-run ready; do not set X402_SETTLE=1 on production yet"
   ],
-  "today_step": "Day 31: Capability \u2014 reply-watch quiet (AgenticBTC msgCount 14; no NEW free packet; PayAI 4). Shipped X402_SETTLE kill-switch on HQ demo/api (_settle.js + verify/brief/health), default off, Base Sepolia only; updated settle_readiness G4\u2192SHIPPED; local smoke OK. Capital 0. Arena hold. No AgentMail send.",
-  "tomorrow_vector": "If BK free packet arrives: Network \u2014 stage reply draft + pre-send (do not send). Else: keep watching; optional merge/redeploy kill-switch with X402_SETTLE unset; do not flip settle live until G6. Hold Arena until Oct 6. No cold spray while BK thread is hot.",
-  "galaxy_mind_life_line": "Helped your stack/time: shipped the X402_SETTLE kill-switch so a future settle day is one env flip away instead of rewriting verify/settle proxy logic, while leaving production settle off so you are not exposed to accidental facilitator calls or Capital confusion from testnet.",
-  "drafts_pending_send": [],
+  "today_step": "Day 34: Network \u2014 NEW BK compatibility review (msgCount 17); staged capital-protect draft declining $1500 pilot; acknowledge v1/v2 + URL mismatch; live re-verify OK; settle still off; Capital 0; no AgentMail send.",
+  "tomorrow_vector": "Await Galaxy Mind send yes / hold / edit on draft 58be7ca0. Next Capability: align paid URL with challenge resource; investigate x402 v2 emit. Keep X402_SETTLE unset. Arena final submit unlocks 2026-10-06 4am PDT. Watch thread after send.",
+  "galaxy_mind_life_line": "Helped your stack/time/money/reputation: caught BK's post-Day-33 compatibility review (v1\u2260v2 + resource URL mismatch + $1,500 pilot ask) and staged a capital-protect reply so you do not accidentally approve spend while still getting a clear free path to close the public-contract gaps yourself.",
+  "drafts_pending_send": [
+    {
+      "draftId": "58be7ca0-3d0c-42b7-9d7f-9211ddd59215",
+      "threadId": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
+      "to": [
+        "bkbot.assistant@gmail.com",
+        "support@agenticbtc.io"
+      ],
+      "subject": "Re: World Domination bot - AgentMail inbox identity x Lightning address / AgenticBTC MCP",
+      "presend": "intel/presend-agenticbtc-compat-review-2026-10-04.txt",
+      "purpose": "Decline $1500 Base Sepolia pilot; acknowledge v1/v2 + URL gaps; commit own Capability path; no SOW"
+    }
+  ],
   "network_evidence": {
     "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
     "payai_messageCount": 4,
     "agenticbtc_thread": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
-    "agenticbtc_messageCount": 14,
-    "agenticbtc_new_inbound_day31": false,
+    "agenticbtc_messageCount": 17,
+    "agenticbtc_new_inbound_day33": false,
+    "agenticbtc_free_packet_reply_sent": "dd821031-7dbb-47ad-aa5a-105cb1acbea5",
+    "agenticbtc_free_packet_sent_ct": "2026-10-02T17:49:00-05:00",
     "agenticbtc_clarify_sent_day29": "292406ad-4701-4dee-8824-c3e3c26a1570",
-    "agenticbtc_clarify_sent_msgId": "010001a0ed7a6b90-64ba8c22-abbf-4cf0-a862-e48a62839029-000000",
-    "agenticbtc_decline_sent_day27": "6434b881-7d9f-4a15-a041-dd9431b0f48a",
-    "reply_watch": "intel/reply-watch-2026-10-01.json",
+    "reply_watch": "intel/reply-watch-2026-10-04.json",
     "settle_readiness": "x402/settle_readiness.md",
-    "kill_switch": "demo/api/_settle.js",
-    "payai_supported": "intel/payai-supported-2026-10-01.json",
-    "live_demo_evidence": "intel/live-demo-2026-10-01.json",
-    "live_deployment": "dpl_6udGGXafyyJD9RKxEbX2B5mYE1Bk",
+    "g6_playbook": "x402/g6_test_client.md",
+    "g6_dry_run": "x402/g6_dry_run_client.mjs",
+    "g4": "SHIPPED",
+    "g6": "BLOCKED",
+    "g8": "REVIEWED",
+    "payai_supported": "intel/payai-supported-2026-10-04.json",
+    "live_demo_evidence": "intel/live-demo-2026-10-04.json",
     "x402_base_wallet": "intel/x402-base-wallet-2026-09-26.json",
-    "pr": "https://github.com/GalaxyMind21/world-domination-bot/pull/22"
+    "pr_day31_kill_switch": "https://github.com/GalaxyMind21/world-domination-bot/pull/22",
+    "pr_day32": "https://github.com/GalaxyMind21/world-domination-bot/pull/23",
+    "pr_day33": "https://github.com/GalaxyMind21/world-domination-bot/pull/24",
+    "pr": "https://github.com/GalaxyMind21/world-domination-bot/pull/25",
+    "agenticbtc_new_inbound_day34": true,
+    "agenticbtc_compat_review_inbound": "intel/agenticbtc-compatibility-review-inbound-2026-10-03.txt",
+    "agenticbtc_compat_review_draft": "58be7ca0-3d0c-42b7-9d7f-9211ddd59215",
+    "agenticbtc_compat_review_presend": "intel/presend-agenticbtc-compat-review-2026-10-04.txt",
+    "pr_day34": "https://github.com/GalaxyMind21/world-domination-bot/pull/25"
   },
   "week_outbound_count_ct": {
     "week_start": "2026-09-28",
-    "sent": 1,
+    "sent": 2,
     "ceiling": 50,
-    "updated": "2026-10-01T08:55:00-05:00",
-    "note": "Day-29 clarify SENT; Day 31 no new outbound \u2014 week 1/50"
+    "updated": "2026-10-04T08:55:00-05:00",
+    "note": "Day-29 clarify SENT; Day-32 free-packet SENT; Day 34 draft staged not sent \u2014 week still 2/50"
   },
   "skipped_days": {
     "24": "usage pause",
