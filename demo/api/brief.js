@@ -1,4 +1,4 @@
-const { DAY_BRIEF, PAYMENT_REQUIRED, paymentRequiredB64 } = require("./_lib");
+const { DAY_BRIEF, PAYMENT_REQUIRED, paymentRequiredB64, CANONICAL_V2_URL } = require("./_lib");
 const { SETTLE_ON, tryVerifySettle, headerGet } = require("./_settle");
 
 module.exports = async (req, res) => {
@@ -12,6 +12,9 @@ module.exports = async (req, res) => {
   const q = (req.query && (req.query.mode || req.query.X402_MODE)) || "";
   const mode = String(q || process.env.X402_MODE || "stub").toLowerCase();
   const want402 = mode === "402" || mode === "payment" || mode === "paid";
+  if (want402) {
+    res.setHeader("Link", "<" + CANONICAL_V2_URL + '>; rel="canonical"');
+  }
   const sig =
     headerGet(req, "payment-signature") ||
     headerGet(req, "PAYMENT-SIGNATURE");

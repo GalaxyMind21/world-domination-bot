@@ -29,6 +29,12 @@ const ACTIVE_ASSET =
 const AMOUNT = process.env.X402_AMOUNT || "1000000"; // 1.00 USDC (6 decimals)
 
 const FACILITATOR_BASE = "https://facilitator.payai.network";
+const PUBLIC_BASE = (
+  process.env.X402_PUBLIC_BASE || "https://world-domination-x402.vercel.app"
+).replace(/\/$/, "");
+// Day 35: legacy v1 challenge names the URL that actually challenges.
+const LEGACY_V1_RESOURCE = PUBLIC_BASE + "/api/brief?mode=402";
+const CANONICAL_V2_URL = PUBLIC_BASE + "/api/paid-brief";
 
 const DAY_BRIEF = {
   title: "World Domination Day Brief",
@@ -59,7 +65,7 @@ function buildAccepts() {
     network:
       ACTIVE_NETWORK === "base" ? NETWORK_BASE_MAINNET : NETWORK_BASE_SEPOLIA,
     maxAmountRequired: AMOUNT,
-    resource: "/api/brief",
+    resource: LEGACY_V1_RESOURCE,
     description:
       "World Domination Day Brief (HTTP twin of DAYPASS email utility)",
     mimeType: "application/json",
@@ -87,7 +93,7 @@ function buildAccepts() {
     scheme: "exact",
     network: NETWORK_SOLANA_V1,
     maxAmountRequired: AMOUNT,
-    resource: "/api/brief",
+    resource: LEGACY_V1_RESOURCE,
     description:
       "World Domination Day Brief (Solana USDC secondary rail)",
     mimeType: "application/json",
@@ -114,6 +120,13 @@ const PAYMENT_REQUIRED = {
   x402Version: 1,
   error: "Payment Required",
   accepts: buildAccepts(),
+  deprecated: true,
+  canonical_paid_resource: CANONICAL_V2_URL,
+  canonical_x402Version: 2,
+  migration_note:
+    "Legacy v1 challenge kept for back-compat. Canonical paid resource is " +
+    CANONICAL_V2_URL +
+    " (x402 v2, Base Sepolia only; resource.url matches the URL that challenges and serves).",
   facilitator_path: {
     provider: "PayAI",
     base: FACILITATOR_BASE,
@@ -147,6 +160,9 @@ module.exports = {
   NETWORK_BASE_SEPOLIA,
   NETWORK_SOLANA_V1,
   FACILITATOR_BASE,
+  PUBLIC_BASE,
+  LEGACY_V1_RESOURCE,
+  CANONICAL_V2_URL,
   DAY_BRIEF,
   PAYMENT_REQUIRED,
   paymentRequiredB64,
