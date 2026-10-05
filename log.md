@@ -409,6 +409,26 @@ Capture **40.62% → 42.0%**. ETA **848 → 829** days @ 0.07%/day (day jumps di
 ### Outbound
 None staged. **No live send.** New week ceiling open.
 
+
+## Day 29 — 2026-09-29 (Tuesday) CT
+
+### Step
+Network: reply-watch caught NEW AgenticBTC/BK inbound (msgCount 13) asking which API to charge first and what stack; stage clarifying reply + pre-send (draft only).
+
+### Done
+- Reply-watch: AgenticBTC msgCount **12→13** — NEW from `bkbot.assistant@gmail.com` at 2026-09-28 16:52 UTC (~11:52 AM CT, after Day-28 morning brief). BK will put together free Base/x402 testnet-first plan; asks (1) which service/API to charge first (2) what stack. PayAI still **4**. Evidence: `intel/reply-watch-2026-09-29.json`.
+- Staged AgentMail draft **`292406ad-4701-4dee-8824-c3e3c26a1570`** (NOT sent) — answers GET `/api/brief` as first chargeable surface; Vercel `demo/` Base Sepolia primary stack; corrects Sep-27 “still Solana payTo” note. Pre-send: `intel/presend-agenticbtc-clarify-2026-09-29.txt`.
+- Solana treasury getBalance `C5K6…` = **0**. Capital toward $100 stays **0**.
+- Live demo re-verify: `/api/health` **200** primary_network **base-sepolia** payTo **`0xD843…`**; `/api/brief?mode=402` **402** dual-accept.
+- Week outbound still **0/50**. Arena hold until 2026-10-06 4am PDT.
+
+### Scores
+Capture **42.0% → 42.62%**. ETA **829 → 820** days @ 0.07%/day (day jumps discarded). Pillars: identity 56→57 · information 52→53 · network 40→42 · autonomy 50→51 · others unchanged · capital 0.
+
+### Outbound
+Staged AgenticBTC free-plan clarify (does not approve paid discovery). **No live send.** Awaiting send yes / hold / edit.
+- 2026-09-29 09:03 CT: SENT (send yes) AgenticBTC Day-29 clarify (GET /api/brief + Base Sepolia stack), draft 292406ad to bkbot.assistant@gmail.com + support@agenticbtc.io; msgId 010001a0ed7a6b90; week outbound 1/50
+
 ## Day 30 — 2026-09-30 (Wednesday) CT
 
 ### Step
@@ -451,3 +471,98 @@ Capture **43.38% → 44.12%**. ETA **809 → 798** days @ 0.07%/day (day jumps d
 
 ### Outbound
 **no outbound email today.** Hot BK thread — watch only.
+
+
+## Day 32 — 2026-10-02 (Friday) CT
+
+### Step
+Network: reply-watch caught NEW AgenticBTC/BK free packet (msgCount 15); stage clarifying reply + pre-send (draft only).
+
+### Done
+- Reply-watch: AgenticBTC msgCount **14→15** — NEW from `bkbot.assistant@gmail.com` at 2026-10-01 19:43 UTC (~2:43 PM CT, after Day-31 morning brief). Asks (1) canonical paid-resource URL (2) sanitized successful verify/settle receipt schema before limited no-cost compatibility review; paid pilot scope separate. PayAI still **4**. Evidence: `intel/reply-watch-2026-10-02.json`, `intel/agenticbtc-free-packet-inbound-2026-10-01.txt`.
+- Staged AgentMail draft **`dd821031-7dbb-47ad-aa5a-105cb1acbea5`** (NOT sent) — answers URL `https://world-domination-x402.vercel.app/api/brief?mode=402` + sanitized settle schema; honesty that production settle is still off; no paid SOW implied. Pre-send: `intel/presend-agenticbtc-free-packet-2026-10-02.txt`.
+- Live demo re-verify: `/api/health` **200** primary_network **base-sepolia** payTo **`0xD843…`** settle_live **false**; `/api/brief?mode=402` **402** dual-accept; `/api/verify` stub not_settled. Evidence: `intel/live-demo-2026-10-02.json`.
+- PayAI `GET /supported` **200** — `exact` includes `base-sepolia` / `eip155:84532`. Evidence: `intel/payai-supported-2026-10-02.json`.
+- Solana treasury getBalance `C5K6…` = **0**. Capital toward $100 stays **0**.
+- Updated `x402/settle_readiness.md` + `.json` **G8 → REVIEWED** (still not ready to flip live — G6 blocked).
+- Week outbound still **1/50**. Arena hold until 2026-10-06 4am PDT. **No AgentMail send** Day 32.
+
+### Scores
+Capture **44.12% → 45.25%**. ETA **798 → 782** days @ 0.07%/day (day jumps discarded). Pillars: identity 59→60 · capability 59 · information 55→57 · distribution 25 · network 42→45 · infrastructure 60→61 · autonomy 53→55 · capital 0.
+
+### Outbound
+Staged AgenticBTC free-packet reply (canonical URL + sanitized settle schema; no paid commitment). **No live send.** Awaiting send yes / hold / edit.
+- 2026-10-02 17:49 CT: SENT (send yes) AgenticBTC free-packet reply (paid URL + settle schema), draft dd821031 to bkbot.assistant@gmail.com + support@agenticbtc.io; msgId 010001a0fecf493f; week outbound 2/50
+
+
+## Day 33 — 2026-10-03 (Saturday) CT
+
+### Step
+Capability / Information: reply-watch quiet after Day-32 free-packet SENT; ship G6 test-client unlock playbook + dry-run settle harness (no live settle, no email).
+
+### Done
+- Reply-watch: AgenticBTC msgCount **15→16** — delta is **our** Day-32 free-packet SENT (draft `dd821031`, ~5:49pm CT 2026-10-02); **no NEW BK inbound**. PayAI still **4**. Evidence: `intel/reply-watch-2026-10-03.json`.
+- Corrected state: week outbound **2/50**; cleared `drafts_pending_send` for draft `dd821031` (already sent Day 32 after send yes).
+- Capability: `x402/g6_test_client.md` (faucet playbook; testnet ≠ Capital) + `x402/g6_dry_run_client.mjs` (dry-run executed OK — prints accepts[0]; no sign / no facilitator POST).
+- Updated `x402/settle_readiness.md` + `.json` — G6 still **BLOCKED** (playbook+dry-run shipped); G8 note SENT + msgCount 16; live verification table refreshed.
+- Updated `x402/facilitator_wire.md` Day-33 section.
+- PayAI `GET /supported` **200** — `exact` includes `base-sepolia` / `eip155:84532`. Evidence: `intel/payai-supported-2026-10-03.json`.
+- Live demo re-verify: `/api/health` **200** primary_network **base-sepolia** payTo **`0xD843…`** settle_live **false**; `/api/brief?mode=402` **402** dual-accept; `/api/verify` stub not_settled. Evidence: `intel/live-demo-2026-10-03.json`. No redeploy. **X402_SETTLE** left unset.
+- Solana treasury getBalance `C5K6…` = **0**. Capital toward $100 stays **0**.
+- Capital board + STATUS/README via `render_board.py`.
+- Arena hold until 2026-10-06 4am PDT. **No AgentMail send** Day 33.
+
+### Scores
+Capture **45.25% → 46.12%**. ETA **782 → 770** days @ 0.07%/day (day jumps discarded). Pillars: identity 60→61 · capability 59→60 · information 57→58 · distribution 25→26 · network 45→46 · infrastructure 61→62 · autonomy 55→56 · capital 0.
+
+### Outbound
+**no outbound email today.** Hot BK thread — watch only for compatibility review.
+
+
+## Day 34 — 2026-10-04 (Sunday) CT
+
+### Step
+Network: reply-watch caught NEW AgenticBTC/BK compatibility review (msgCount 17); stage capital-protect reply draft + pre-send (decline $1500; no live send).
+
+### Done
+- Reply-watch: AgenticBTC msgCount **16→17** — NEW from `bkbot.assistant@gmail.com` at 2026-10-03 19:32 UTC (~2:32 PM CT). Limited no-cost compatibility review complete: policy representable; no-funds mapping OK for 1.00 USDC Base Sepolia; **not** directly firewall-compatible (emits x402 **v1**, firewall wants **v2**; paid URL `?mode=402` ≠ challenge resource `/api/brief`). Asks for canonical URL, v2 or paid adapter, sanitized settle receipt, idempotency/receipt-binding. Offers **$1,500** 21-day Base Sepolia pilot. PayAI still **4**. Evidence: `intel/reply-watch-2026-10-04.json`, `intel/agenticbtc-compatibility-review-inbound-2026-10-03.txt`.
+- Staged AgentMail draft **`58be7ca0-3d0c-42b7-9d7f-9211ddd59215`** (NOT sent) — thank + acknowledge gaps; **pass on $1,500** for now; commit own Capability path (URL-align + v2 investigate); settle honesty; no SOW. Pre-send: `intel/presend-agenticbtc-compat-review-2026-10-04.txt`.
+- Live demo re-verify: `/api/health` **200** primary_network **base-sepolia** payTo **`0xD843…`** settle_live **false**; `/api/brief?mode=402` **402** dual-accept; `/api/verify` stub not_settled. Evidence: `intel/live-demo-2026-10-04.json`. No redeploy. **X402_SETTLE** left unset.
+- PayAI `GET /supported` **200** — `exact` includes `base-sepolia` / `eip155:84532`. Evidence: `intel/payai-supported-2026-10-04.json`.
+- Solana treasury getBalance `C5K6…` = **0**. Capital toward $100 stays **0**.
+- Updated `x402/settle_readiness.md` + `.json` — Day 34 live table; G8 note + Arena **T-2**; G6 still **BLOCKED**.
+- Capital board + STATUS/README via `render_board.py`.
+- Arena hold until 2026-10-06 4am PDT (**T-2**). **No AgentMail send** Day 34.
+
+### Scores
+Capture **46.12% → 46.88%**. ETA **770 → 759** days @ 0.07%/day (day jumps discarded). Pillars: identity 61→62 · capability 60 · information 58→59 · distribution 26 · network 46→48 · infrastructure 62→63 · autonomy 56→57 · capital 0.
+
+### Outbound
+Staged AgenticBTC compat-review reply (decline $1500; URL+v2 Capability path). **No live send.** Awaiting send yes / hold / edit.
+- 2026-10-04 08:57 CT: SENT (send yes) AgenticBTC pass on $1500 pilot, draft 58be7ca0 to bkbot.assistant@gmail.com + support@agenticbtc.io; msgId 010001a10734255d; week outbound 3/50
+
+
+## Day 35 — 2026-10-05 (Monday) CT
+
+### Step
+Capability: ship the canonical x402 v2 paid resource on the live demo, closing both public-contract gaps from BK's no-cost compatibility review ourselves (no paid adapter, no settle flip).
+
+### Done
+- Reply-watch: AgenticBTC msgCount **17→18** — delta is **our** Day-34 send (draft `58be7ca0`, 08:57 CT 2026-10-04); **no NEW BK inbound**. PayAI still **4**. Evidence: `intel/reply-watch-2026-10-05.json`.
+- Read x402 v2 spec (PaymentRequired: `x402Version 2`, `resource{url,description,mimeType}`, `accepts[].amount`, CAIP-2 `network`, `extensions`). PayAI `/supported` lists **v2 exact eip155:84532**. Evidence: `intel/payai-supported-2026-10-05.json`.
+- Code (HQ `demo/api/`): new `_v2.js` + `paid-brief.js` → **`GET /api/paid-brief`** = canonical paid URL; unpaid → **402** + v2 `PAYMENT-REQUIRED` whose `resource.url` is that exact URL; Base Sepolia only; `wd-receipt-binding` extension (idempotency key = EIP-3009 nonce; receipt id = sha256 over resource/network/asset/payTo/amount/nonce). Paid retry: server-authoritative match check before any facilitator call; v2 `/verify`→`/settle` only when `X402_SETTLE=1`.
+- Security fix: legacy v1 settle proxy (`_settle.js`) used to adopt client-supplied payTo/asset/amount; now rejects mismatched terms (`requirements_mismatch`). Dormant in prod (kill-switch off) but closed before settle ever goes live.
+- Legacy `/api/brief?mode=402` (v1) kept, now names its own absolute URL as `resource`, marked deprecated, sends `Link: <…/api/paid-brief>; rel="canonical"`. `/api/health` lists canonical v2 + legacy v1.
+- Local smoke `demo/test/smoke_v2.mjs` (mocked facilitator): unpaid 402 v2 OK; kill-switch-off signed retry → 402 no facilitator call; evil payTo rejected with 0 facilitator calls; v1 payload rejected on v2 path; mocked settle → 200 + PAYMENT-RESPONSE + stable receipt id; legacy evil payTo rejected.
+- PR **#26** opened and merged (main `a4b5974`). Vercel production deploy **`dpl_9SJKWFhhnxMFJmW2w9Buze8MQFyk`** from main, root `demo`.
+- Live verify: `/api/paid-brief` **402** v2, resource.url canonical, accepts[0] eip155:84532 / 1000000 / payTo `0xD843…`; signed retry → `kill_switch_off`, no facilitator call; `/api/health` settle_live **false**; legacy v1 402 with Link canonical. Evidence: `intel/live-demo-2026-10-05.json`.
+- Docs: `x402/v2_canonical.md` (HQ + war room); demo README updated.
+- Staged AgentMail draft **`ffb3f1c0-02b9-4d71-9dbb-95f05a4fbe5f`** (NOT sent) to BK: v2 canonical live, asks only yes/no on firewall no-funds mapping, no paid scope. Pre-send: `intel/presend-agenticbtc-v2-live-2026-10-05.txt`.
+- Solana treasury `C5K6…` = **0**; Base mainnet USDC on `0xD843…` = **0**. Capital toward $100 stays **0**.
+- New CT week 2026-10-05: outbound **0/50** (prior week closed 3/50). Arena final submit routine fires Oct 6 5:47 AM CT.
+
+### Scores
+Capture **46.88% → 47.88%**. ETA **759 → 745** days @ 0.07%/day (day jumps discarded). Pillars: identity 62→63 · capability 60→63 · information 59→60 · distribution 26 · network 48→49 · infrastructure 63→64 · autonomy 57→58 · capital 0.
+
+### Outbound
+Staged AgenticBTC v2-live follow-up (draft `ffb3f1c0`). **No live send.** Awaiting send yes / hold / edit.
