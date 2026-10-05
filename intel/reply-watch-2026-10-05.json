@@ -1,0 +1,9 @@
+{
+  "as_of": "2026-10-05T08:55:00-05:00",
+  "agenticbtc_thread": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
+  "agenticbtc_messageCount": 18,
+  "agenticbtc_delta": "16->17 was BK compat review (Day 34); 17->18 is OUR Day-34 send (draft 58be7ca0, 2026-10-04 08:57 CT). No NEW BK inbound.",
+  "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
+  "payai_messageCount": 4,
+  "new_inbound": false
+}
