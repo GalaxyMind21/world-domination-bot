@@ -165,22 +165,24 @@ async function tryVerifySettle(req) {
   }
 
   const paymentRequirements = primaryBaseSepoliaRequirements();
-  // Prefer client's accepted fields when they match our Base Sepolia rail.
-  if (accepted.scheme) paymentRequirements.scheme = accepted.scheme;
-  if (accepted.network) paymentRequirements.network = accepted.network;
-  if (accepted.asset) paymentRequirements.asset = accepted.asset;
-  if (accepted.payTo) paymentRequirements.payTo = accepted.payTo;
-  if (accepted.amount || accepted.maxAmountRequired) {
-    const a = accepted.amount || accepted.maxAmountRequired;
-    paymentRequirements.amount = a;
-    paymentRequirements.maxAmountRequired = a;
-  }
-  if (accepted.extra) {
-    paymentRequirements.extra = Object.assign(
-      {},
-      paymentRequirements.extra || {},
-      accepted.extra
-    );
+  // Day 35: requirements are server-authoritative. Never adopt client-supplied
+  // payTo / asset / amount; reject any payload whose terms differ from the challenge.
+  const same = (x, y) => String(x || "").toLowerCase() === String(y || "").toLowerCase();
+  const clientAmount = accepted.amount || accepted.maxAmountRequired;
+  if (
+    (accepted.payTo && !same(accepted.payTo, paymentRequirements.payTo)) ||
+    (accepted.asset && !same(accepted.asset, paymentRequirements.asset)) ||
+    (clientAmount && String(clientAmount) !== String(paymentRequirements.amount))
+  ) {
+    return {
+      ok: false,
+      settled: false,
+      kill_switch: true,
+      payment_signature_header_seen: true,
+      facilitator_called: false,
+      status: "requirements_mismatch",
+      message: "Payload terms (payTo/asset/amount) do not match this challenge.",
+    };
   }
 
   const body = { paymentPayload, paymentRequirements };

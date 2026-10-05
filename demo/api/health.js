@@ -6,6 +6,7 @@ const {
   USDC_MINT,
 } = require("./_lib");
 const { SETTLE_ON } = require("./_settle");
+const { CANONICAL_URL, REQUIREMENTS } = require("./_v2");
 
 module.exports = (req, res) => {
   res.setHeader("Content-Type", "application/json; charset=utf-8");
@@ -17,14 +18,20 @@ module.exports = (req, res) => {
       {
         ok: true,
         service: "world-domination-x402-brief",
-        as_of: "2026-10-01",
+        as_of: "2026-10-05",
         mode: process.env.X402_MODE || "stub",
         endpoints: [
+          "/api/paid-brief",
           "/api/brief",
           "/api/brief?mode=402",
           "/api/verify",
           "/api/health",
         ],
+        canonical_paid_resource: CANONICAL_URL,
+        x402: {
+          canonical: { version: 2, url: CANONICAL_URL, network: REQUIREMENTS.network, amount: REQUIREMENTS.amount },
+          legacy: { version: 1, url: "/api/brief?mode=402", deprecated: true },
+        },
         facilitator: FACILITATOR_BASE,
         live_facilitator_calls: settleOn,
         x402_settle_env: process.env.X402_SETTLE || "0",
@@ -40,7 +47,7 @@ module.exports = (req, res) => {
           evm_base: RECEIVE_EVM,
           solana: RECEIVE_SOLANA,
         },
-        note: "Day 31: X402_SETTLE kill-switch shipped (default off). Live settle only when X402_SETTLE=1 and PAYMENT-SIGNATURE present on Base Sepolia. Capital stays 0 until intentional seed.",
+        note: "Day 35: canonical paid resource /api/paid-brief emits x402 v2 (resource.url matches the challenging URL); legacy v1 /api/brief?mode=402 kept and marked deprecated. Settle kill-switch still default off; Base Sepolia only. Capital stays 0 until intentional seed.",
       },
       null,
       2
