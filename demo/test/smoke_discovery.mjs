@@ -18,7 +18,7 @@ assert(/^\d+$/.test(pr.accepts[0].amount), "atomic amount");
 r = await call(require(p + "openapi.js"));
 const op = r.body.paths["/api/paid-brief"].get;
 assert(r.body.openapi && r.body.info.title && r.body.info.version, "openapi top-level");
-assert(op["x-payment-info"].protocols.includes("x402") && op["x-payment-info"].price.amount === "1.00", "x-payment-info");
+assert(op["x-payment-info"].protocols.some((x) => x.x402) && op["x-payment-info"].price.amount === "1.00", "x-payment-info");
 assert(op.responses["402"], "402 response");
 r = await call(require(p + "well-known-x402.js"));
 assert(r.body.version === 1 && r.body.resources[0] === v2.CANONICAL_URL, "well-known");
