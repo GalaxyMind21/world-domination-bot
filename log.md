@@ -566,3 +566,27 @@ Capture **46.88% → 47.88%**. ETA **759 → 745** days @ 0.07%/day (day jumps d
 
 ### Outbound
 Staged AgenticBTC v2-live follow-up (draft `ffb3f1c0`). **No live send.** Awaiting send yes / hold / edit.
+- Board mirrored to HQ via PR **#27** (merged; supersedes board-only #23–#25). Demo unchanged by #27, no redeploy.
+- 2026-10-05 23:15 CT: SENT (send yes) AgenticBTC v2-live follow-up, draft ffb3f1c0 to bkbot.assistant@gmail.com + support@agenticbtc.io; msgId 010001a10f6c62b2; week outbound 1/50
+
+
+## Day 37 — 2026-10-07 (Wednesday) CT
+
+### Step
+Distribution/Capability: make the canonical x402 v2 paid resource machine-discoverable (bazaar extension, OpenAPI-first discovery, `/.well-known/x402`) and ship it live.
+
+### Done
+- Found that the Day-36 discovery build (local commits on `day36-x402-discovery`, unpushed during the DNS/egress outage) did not survive the box recovery: branch and commit `ae12a56` gone, war-room state still at Day 35. Egress is back (GitHub + Vercel reachable).
+- Rebuilt on HQ branch `day37-x402-discovery`: `bazaar` extension on the `/api/paid-brief` v2 challenge (input `http` GET, no params; JSON output example + JSON Schema), `demo/api/openapi.js` served at `/openapi.json` (OpenAPI 3.1, `x-payment-info` price fixed 1.00 USD, protocols `[{x402:{v2, eip155:84532, testnet}}]`, 402 response, `info.x-guidance`), `demo/api/well-known-x402.js` at `/.well-known/x402` (`version 1`, resources = canonical URL), vercel.json rewrites, health lists discovery. `wd-receipt-binding` kept.
+- Local `test/smoke_discovery.mjs` PASS; `smoke_v2.mjs` results unchanged (evil payTo 0 facilitator calls, settle mocked OK).
+- PR **#28** (discovery) and PR **#29** (lint fixes) merged; main `c8498ec`. Prod deploys `dpl_CJZAof1sekTsHNJVVJFgsAaBhMXw` then **`dpl_GK8Zq4yf2hRB13q2FjenMTkYPAhd`**.
+- Live verify: `/api/paid-brief` 402 v2 with extensions `bazaar` + `wd-receipt-binding`; `/openapi.json` 200; `/.well-known/x402` 200; `/api/health` settle_live **false**. Evidence `intel/live-discovery-2026-10-07.json`.
+- `npx @agentcash/discovery` audit: 8 warnings → **1** (L3_INPUT_SCHEMA_MISSING, route genuinely takes no params). Detected as `GET /api/paid-brief paid 1.00 USD [x402]`. Evidence `intel/discovery-audit-2026-10-07.txt`.
+- Reply-watch: AgenticBTC msgCount **20**. BK replied 2026-10-06 09:40 CT: they will run the free no-funds firewall mapping check on the v2 URL and report mismatches; no settlement; custom integration/settle testing/pilot stay paid scope. Courtesy/commitment, not Capital. No reply needed.
+- Capital still **$0 / $100**. No AgentMail send Day 37. Week outbound 1/50.
+
+### Scores
+Capture **47.88% → 48.75%** (vs last saved Day 35; Day 36's reported 48.25% was never persisted). ETA **~732 days** @ 0.07%/day. Pillars: identity 63 · capability 63→64 · information 60→61 · distribution 26→28 · network 49→50 · infrastructure 64→65 · autonomy 58→59 · capital 0.
+
+### Outbound
+No outbound email today.
