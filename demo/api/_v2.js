@@ -57,13 +57,53 @@ const RECEIPT_EXTENSION = {
   },
 };
 
+
+// Day 37: x402 v2 `bazaar` discovery extension (specs/extensions/bazaar.md) so facilitators
+// and indexers (e.g. x402scan) can catalog this endpoint as invocable: GET, no params, JSON out.
+const BAZAAR_EXTENSION = {
+  info: {
+    input: { type: "http", method: "GET", queryParams: {} },
+    output: {
+      type: "json",
+      example: {
+        title: "World Domination Day Brief",
+        operator: "Galaxy Mind",
+        mode: "settled",
+        receipt: { id: "<sha256 hex>", network: NETWORK, amount: AMOUNT },
+      },
+    },
+  },
+  schema: {
+    $schema: "https://json-schema.org/draft/2020-12/schema",
+    type: "object",
+    properties: {
+      input: {
+        type: "object",
+        properties: {
+          type: { type: "string", const: "http" },
+          method: { type: "string", enum: ["GET"] },
+          queryParams: { type: "object", properties: {}, additionalProperties: false },
+        },
+        required: ["type", "method"],
+        additionalProperties: false,
+      },
+      output: {
+        type: "object",
+        properties: { type: { type: "string" }, example: { type: "object" } },
+        required: ["type"],
+      },
+    },
+    required: ["input"],
+  },
+};
+
 function paymentRequired(error) {
   return {
     x402Version: 2,
     error: error || "PAYMENT-SIGNATURE header is required",
     resource: RESOURCE,
     accepts: [REQUIREMENTS],
-    extensions: { [EXT_NAME]: RECEIPT_EXTENSION },
+    extensions: { bazaar: BAZAAR_EXTENSION, [EXT_NAME]: RECEIPT_EXTENSION },
   };
 }
 
@@ -195,6 +235,10 @@ module.exports = {
   RESOURCE,
   REQUIREMENTS,
   EXT_NAME,
+  BAZAAR_EXTENSION,
+  NETWORK,
+  AMOUNT,
+  PUBLIC_BASE,
   paymentRequired,
   b64,
   receiptId,

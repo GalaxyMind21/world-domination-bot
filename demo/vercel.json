@@ -5,9 +5,25 @@
     {
       "source": "/api/(.*)",
       "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Cache-Control", "value": "no-store" }
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/openapi.json",
+      "destination": "/api/openapi"
+    },
+    {
+      "source": "/.well-known/x402",
+      "destination": "/api/well-known-x402"
     }
   ]
 }
