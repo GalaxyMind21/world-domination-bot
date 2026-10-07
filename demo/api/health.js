@@ -18,7 +18,7 @@ module.exports = (req, res) => {
       {
         ok: true,
         service: "world-domination-x402-brief",
-        as_of: "2026-10-05",
+        as_of: "2026-10-07",
         mode: process.env.X402_MODE || "stub",
         endpoints: [
           "/api/paid-brief",
@@ -26,7 +26,10 @@ module.exports = (req, res) => {
           "/api/brief?mode=402",
           "/api/verify",
           "/api/health",
+          "/openapi.json",
+          "/.well-known/x402",
         ],
+        discovery: { openapi: "/openapi.json", well_known: "/.well-known/x402", bazaar_extension: true },
         canonical_paid_resource: CANONICAL_URL,
         x402: {
           canonical: { version: 2, url: CANONICAL_URL, network: REQUIREMENTS.network, amount: REQUIREMENTS.amount },
