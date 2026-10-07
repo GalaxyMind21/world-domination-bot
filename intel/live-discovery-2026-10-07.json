@@ -1,0 +1,48 @@
+{
+  "as_of": "2026-10-07T09:10:00-05:00",
+  "deployment": "dpl_CJZAof1sekTsHNJVVJFgsAaBhMXw",
+  "commit": "a5d979e",
+  "pr": "https://github.com/GalaxyMind21/world-domination-bot/pull/28",
+  "paid_brief": {
+    "status": 402,
+    "x402Version": 2,
+    "resource": "https://world-domination-x402.vercel.app/api/paid-brief",
+    "extensions": [
+      "bazaar",
+      "wd-receipt-binding"
+    ],
+    "bazaar_input": {
+      "type": "http",
+      "method": "GET",
+      "queryParams": {}
+    },
+    "amount": "1000000",
+    "network": "eip155:84532"
+  },
+  "/openapi.json": {
+    "status": 200,
+    "ctype": "application/json; charset=utf-8",
+    "x-payment-info": {
+      "mode": "fixed",
+      "currency": "USD",
+      "amount": "1.00"
+    }
+  },
+  "/.well-known/x402": {
+    "status": 200,
+    "ctype": "application/json; charset=utf-8",
+    "resources": [
+      "https://world-domination-x402.vercel.app/api/paid-brief"
+    ]
+  },
+  "/api/health": {
+    "status": 200,
+    "ctype": "application/json; charset=utf-8",
+    "settle_live": false,
+    "discovery": {
+      "openapi": "/openapi.json",
+      "well_known": "/.well-known/x402",
+      "bazaar_extension": true
+    }
+  }
+}

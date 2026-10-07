@@ -1,48 +1,48 @@
 {
-  "as_of": "2026-10-05",
+  "as_of": "2026-10-07",
   "timezone": "US/Central",
-  "day": 35,
-  "capture_pct": 47.88,
+  "day": 37,
+  "capture_pct": 48.75,
   "pillars": {
     "identity_hq": {
       "score": 63,
       "note": "Day-35: v2 contract notes (x402/v2_canonical.md) + README/health public; PR #26 merged."
     },
     "capability": {
-      "score": 63,
-      "note": "Day-35: SHIPPED canonical x402 v2 paid resource /api/paid-brief (resource.url = challenging URL), wd-receipt-binding (nonce idempotency, deterministic receipt id), server-authoritative requirements (fixed v1 proxy adopting client payTo). Settle still off; G6 still blocked."
+      "score": 64,
+      "note": "Day-37: x402 discovery live: bazaar extension on the v2 challenge (GET, no params, JSON out), OpenAPI /openapi.json with structured x-payment-info, /.well-known/x402 fan-out. Settle still off; G6 still blocked."
     },
     "information": {
-      "score": 60,
-      "note": "Day-35: x402 v2 spec read; PayAI /supported lists v2 exact eip155:84532; reply-watch filed."
+      "score": 61,
+      "note": "Day-37: read x402 bazaar extension spec + x402scan DISCOVERY.md; @agentcash/discovery audit 8 warnings -> 1 (intel/discovery-audit-2026-10-07.txt)."
     },
     "distribution": {
-      "score": 26,
-      "note": "CT week 2026-10-05 starts 0/50; Day 35 draft staged not sent."
+      "score": 28,
+      "note": "Day-37: first machine-discoverable surface: indexers/agents can find and price /api/paid-brief via OpenAPI + .well-known/x402 + bazaar. Not yet registered on x402scan. Week outbound 1/50."
     },
     "capital": {
       "score": 0,
-      "note": "Solana C5K6\u2026=0; Base mainnet USDC on 0xD843\u2026=0; testnet \u2260 Capital."
+      "note": "Capital $0 of $100. Testnet/Sepolia, discovery listings and courtesy replies are not Capital."
     },
     "network": {
-      "score": 49,
-      "note": "Day-35: closed BK's two contract gaps ourselves; follow-up draft ffb3f1c0 staged (yes/no firewall check, no paid scope). AgenticBTC msgCount 18 (our send); PayAI 4."
+      "score": 50,
+      "note": "Day-37: BK (AgenticBTC) replied 2026-10-06 9:40 AM CT: will run the free no-funds firewall mapping check on the v2 URL and report mismatches; paid scope unchanged. No reply needed."
     },
     "infrastructure": {
-      "score": 64,
-      "note": "Day-35: prod deploy dpl_9SJKWFhhnxMFJmW2w9Buze8MQFyk READY from main a4b5974; /api/paid-brief 402 v2 live; legacy v1 Link rel=canonical; settle_live false."
+      "score": 65,
+      "note": "Day-37: prod deploys dpl_CJZAof1sekTsHNJVVJFgsAaBhMXw then dpl_GK8Zq4yf2hRB13q2FjenMTkYPAhd from main c8498ec; box egress restored after computer update; settle_live false."
     },
     "autonomy": {
-      "score": 58,
-      "note": "Day-35: executed board action #2 (URL-align + v2) end-to-end: code, smoke, PR, merge, deploy, live verify \u2014 no spend, no settle flip."
+      "score": 59,
+      "note": "Day-37: detected that Day-36 local commits were lost in the box recovery and rebuilt, shipped, deployed and audited them end-to-end without a nudge."
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 1.0,
-    "eta_days": 744.6,
-    "eta_label": "745 days (~2.0 years) on the grind curve",
+    "observed_day_delta_pp": 0.87,
+    "eta_days": 732.1,
+    "eta_label": "732 days (~2.0 years) on the grind curve",
     "note": "Day jumps discarded for velocity. Model not prophecy. Quiet inbox \u2260 Capital. Testnet \u2260 Capital. Draft \u2260 sent. Free packet \u2260 Capital. Sepolia/testnet \u2260 Capital. Paid pilot offer \u2260 spend yes."
   },
   "owned_surfaces": {
@@ -54,36 +54,24 @@
     "daypass_image": "https://raw.githubusercontent.com/GalaxyMind21/world-domination-bot/main/mint/assets/daypass.png",
     "evm_receive": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
     "solana_treasury": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC",
-    "canonical_paid_resource": "https://world-domination-x402.vercel.app/api/paid-brief"
+    "canonical_paid_resource": "https://world-domination-x402.vercel.app/api/paid-brief",
+    "openapi": "https://world-domination-x402.vercel.app/openapi.json",
+    "well_known_x402": "https://world-domination-x402.vercel.app/.well-known/x402"
   },
   "asks": [
-    "SEND YES / HOLD / EDIT: Day-35 AgenticBTC follow-up draft ffb3f1c0 (v2 canonical live; asks yes/no firewall check; no paid scope) \u2014 intel/presend-agenticbtc-v2-live-2026-10-05.txt",
-    "Optional: faucet-fund a Base Sepolia test wallet (ETH + USDC via x402/g6_test_client.md) so a later Day can do the first real v2 test settle and produce a sanitized receipt \u2014 testnet \u2260 Capital",
-    "Capital still 0 until intentional USDC/SOL seed to Solana treasury and/or EVM receive toward $100",
-    "Arena final submit unlocks 2026-10-06 4am PDT (separate routine, 5:47 AM CT)",
-    "Stale board PRs #23\u2013#25 still open (superseded by Day-35 board PR); OK to close"
+    "Arena final survey answers (10 opinion questions) so the separate Arena routine can final-submit before Oct 12 11:59 PM PT",
+    "Optional: faucet-fund a Base Sepolia burner (testnet != Capital) for the first G6 test settle",
+    "Capital still 0 until an intentional seed lands toward $100"
   ],
-  "today_step": "Day 35: Capability \u2014 shipped canonical x402 v2 paid resource /api/paid-brief (resource.url matches the challenging URL), receipt-binding extension, server-authoritative requirements; PR #26 merged; prod deploy dpl_9SJKWF\u2026 live-verified; settle still off; follow-up draft ffb3f1c0 staged.",
-  "tomorrow_vector": "Arena final submit (Oct 6 routine) \u2014 point the entry at /api/paid-brief as the canonical v2 surface. Await send yes/hold/edit on draft ffb3f1c0. Next Capability: G6 funded Base Sepolia test settle once a test wallet is faucet-funded; keep X402_SETTLE unset until then.",
-  "galaxy_mind_life_line": "Helped your stack: the paid demo now speaks the current x402 v2 standard on one clean URL, and a payTo-override hole in the dormant settle code is closed before settle ever goes live; it also shuts down the $1,500 pilot rationale for free, so no money or time from you.",
-  "drafts_pending_send": [
-    {
-      "draftId": "ffb3f1c0-02b9-4d71-9dbb-95f05a4fbe5f",
-      "threadId": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
-      "to": [
-        "bkbot.assistant@gmail.com",
-        "support@agenticbtc.io"
-      ],
-      "subject": "Re: World Domination bot - AgentMail inbox identity x Lightning address / AgenticBTC MCP",
-      "presend": "intel/presend-agenticbtc-v2-live-2026-10-05.txt",
-      "purpose": "Tell BK v2 canonical URL is live; ask yes/no on firewall no-funds mapping; no paid scope"
-    }
-  ],
+  "today_step": "Day 37: Distribution/Capability: rebuilt the Day-36 x402 discovery work lost in the box recovery and shipped it live: bazaar extension on /api/paid-brief, /openapi.json with x-payment-info, /.well-known/x402; PRs #28 + #29 merged; prod dpl_GK8Zq4yf2hRB13q2FjenMTkYPAhd; discovery audit 8 warnings -> 1; settle still off.",
+  "tomorrow_vector": "Register the origin on x402scan (Add Server) and check whether testnet resources index; watch BK thread for the firewall mapping verdict; G6 Base Sepolia test settle once a burner is faucet-funded; Arena final submit still waits on Galaxy Mind's survey answers (separate routine).",
+  "galaxy_mind_life_line": "It didn't directly help your life today: no time, money, or stack change for you, and it cost nothing; the only side benefit is that the bot's paid demo is now findable by agent indexers without you lifting a finger.",
+  "drafts_pending_send": [],
   "network_evidence": {
     "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
     "payai_messageCount": 4,
     "agenticbtc_thread": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
-    "agenticbtc_messageCount": 18,
+    "agenticbtc_messageCount": 20,
     "agenticbtc_new_inbound_day33": false,
     "agenticbtc_free_packet_reply_sent": "dd821031-7dbb-47ad-aa5a-105cb1acbea5",
     "agenticbtc_free_packet_sent_ct": "2026-10-02T17:49:00-05:00",
@@ -114,17 +102,27 @@
     "v2_canonical": "x402/v2_canonical.md",
     "pr_day35_v2": "https://github.com/GalaxyMind21/world-domination-bot/pull/26",
     "deploy_day35": "dpl_9SJKWFhhnxMFJmW2w9Buze8MQFyk",
-    "x402_v2": "SHIPPED"
+    "x402_v2": "SHIPPED",
+    "pr_day35_board": "https://github.com/GalaxyMind21/world-domination-bot/pull/27",
+    "agenticbtc_new_inbound_day37": true,
+    "agenticbtc_ack_2026_10_06": "BK will run free no-funds firewall mapping check on v2 URL; no settlement; paid scope separate",
+    "pr_day37_discovery": "https://github.com/GalaxyMind21/world-domination-bot/pull/28",
+    "pr_day37_lint": "https://github.com/GalaxyMind21/world-domination-bot/pull/29",
+    "deploy_day37": "dpl_GK8Zq4yf2hRB13q2FjenMTkYPAhd",
+    "live_discovery": "intel/live-discovery-2026-10-07.json",
+    "discovery_audit": "intel/discovery-audit-2026-10-07.txt",
+    "x402_discovery": "SHIPPED"
   },
   "week_outbound_count_ct": {
     "week_start": "2026-10-05",
-    "sent": 0,
+    "sent": 1,
     "ceiling": 50,
-    "updated": "2026-10-05T08:58:00-05:00",
-    "note": "New CT week. Prior week closed 3/50. Day 35 draft ffb3f1c0 staged not sent."
+    "updated": "2026-10-07T09:20:00-05:00",
+    "note": "1 send this week (ffb3f1c0, 2026-10-05 23:15 CT). No outbound Day 37."
   },
   "skipped_days": {
     "24": "usage pause",
-    "25": "usage pause"
+    "25": "usage pause",
+    "36": "work done 2026-10-06 but local-only and lost in box recovery; rebuilt Day 37 (no double count)"
   }
 }
