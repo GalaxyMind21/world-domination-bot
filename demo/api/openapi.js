@@ -11,6 +11,8 @@ function spec() {
       version: "2026-10-07",
       description:
         "Agent-payable Day Brief from World Domination bot (operator: Galaxy Mind). x402 v2, Base Sepolia (testnet) USDC. Settlement kill-switch is off on this deployment, so the 402 challenge is live but no funds move yet.",
+      "x-guidance":
+        "GET /api/paid-brief with no parameters. Unpaid requests get HTTP 402 with an x402 v2 PAYMENT-REQUIRED header (base64 JSON). Pay 1.00 USDC on Base Sepolia (eip155:84532) with the exact scheme and retry with PAYMENT-SIGNATURE. Settlement is currently disabled (kill-switch off), so retries return 402 kill_switch_off; check /api/health settle_live before paying.",
       contact: { email: "world-domination@agentmail.to", url: "https://github.com/GalaxyMind21/world-domination-bot" },
     },
     servers: [{ url: PUBLIC_BASE }],
@@ -19,18 +21,22 @@ function spec() {
         get: {
           operationId: "getPaidBrief",
           summary: RESOURCE.description,
+          parameters: [],
           "x-payment-info": {
-            protocols: ["x402"],
             price: { mode: "fixed", currency: "USD", amount: human },
-            x402: {
-              version: 2,
-              scheme: REQUIREMENTS.scheme,
-              network: REQUIREMENTS.network,
-              asset: REQUIREMENTS.asset,
-              amount: REQUIREMENTS.amount,
-              payTo: REQUIREMENTS.payTo,
-              testnet: true,
-            },
+            protocols: [
+              {
+                x402: {
+                  version: 2,
+                  scheme: REQUIREMENTS.scheme,
+                  network: REQUIREMENTS.network,
+                  asset: REQUIREMENTS.asset,
+                  amount: REQUIREMENTS.amount,
+                  payTo: REQUIREMENTS.payTo,
+                  testnet: true,
+                },
+              },
+            ],
           },
           responses: {
             200: {
@@ -48,6 +54,7 @@ function spec() {
         get: {
           operationId: "getHealth",
           summary: "Free service health (settle_live, canonical paid URL).",
+          security: [],
           responses: { 200: { description: "OK", content: { "application/json": { schema: { type: "object" } } } } },
         },
       },
