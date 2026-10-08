@@ -1,0 +1,19 @@
+
+Discovering https://world-domination-x402.vercel.app...
+
+Source:   openapi
+Spec:     https://world-domination-x402.vercel.app/openapi.json
+API:      World Domination bot x402 Day Brief
+Routes:   2
+
+  GET     /api/paid-brief  paid  1.00 USD  [x402]
+  GET     /api/health  unprotected
+
+Guidance: 90 tokens
+
+GET /api/paid-brief with no parameters. Unpaid requests get HTTP 402 with an x402 v2 PAYMENT-REQUIRED header (base64 JSON). Pay 1.00 USDC on Base Sepolia (eip155:84532) with the exact scheme and retry with PAYMENT-SIGNATURE. Settlement is currently disabled (kill-switch off), so retries return 402 kill_switch_off; check /api/health settle_live before paying.
+
+Warnings (1):
+  [warn] L3_INPUT_SCHEMA_MISSING
+           Paid endpoint is missing an input schema.
+           Hint: Add a requestBody or parameters schema so agents can construct valid payloads.

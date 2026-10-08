@@ -8,6 +8,7 @@ const crypto = require("crypto");
 const {
   RECEIVE_EVM,
   USDC_BASE_SEPOLIA,
+  USDC_BASE_MAINNET,
   FACILITATOR_BASE,
   DAY_BRIEF,
 } = require("./_lib");
@@ -17,13 +18,20 @@ const PUBLIC_BASE = (
 ).replace(/\/$/, "");
 const CANONICAL_PATH = "/api/paid-brief";
 const CANONICAL_URL = PUBLIC_BASE + CANONICAL_PATH;
-const NETWORK = "eip155:84532"; // Base Sepolia (CAIP-2)
+// Day 38: mainnet-ready, default OFF. x402scan only indexes Base mainnet + Solana
+// ("No supported networks. Got: [base_sepolia]"). X402_V2_NETWORK=base switches the
+// canonical accept to Base mainnet USDC (eip155:8453). Settlement still needs X402_SETTLE=1.
+const MAINNET = String(process.env.X402_V2_NETWORK || "").toLowerCase() === "base";
+const NETWORK = MAINNET ? "eip155:8453" : "eip155:84532"; // CAIP-2
+const ASSET = MAINNET ? USDC_BASE_MAINNET : USDC_BASE_SEPOLIA;
+const TESTNET = !MAINNET;
+const NETWORK_LABEL = MAINNET ? "Base" : "Base Sepolia";
 const AMOUNT = process.env.X402_AMOUNT || "1000000"; // 1.00 USDC, 6 decimals
 const EXT_NAME = "wd-receipt-binding";
 
 const RESOURCE = {
   url: CANONICAL_URL,
-  description: "World Domination Day Brief (paid, x402 v2, Base Sepolia USDC)",
+  description: "World Domination Day Brief (paid, x402 v2, " + NETWORK_LABEL + " USDC)",
   mimeType: "application/json",
 };
 
@@ -31,7 +39,7 @@ const REQUIREMENTS = {
   scheme: "exact",
   network: NETWORK,
   amount: AMOUNT,
-  asset: USDC_BASE_SEPOLIA,
+  asset: ASSET,
   payTo: RECEIVE_EVM,
   maxTimeoutSeconds: 60,
   extra: { name: "USDC", version: "2" },
@@ -224,7 +232,9 @@ async function verifyAndSettle(payload) {
 function paidBrief(result) {
   return Object.assign({}, DAY_BRIEF, {
     mode: "settled",
-    note: "Settled via PayAI facilitator on Base Sepolia (testnet). Not operating Capital.",
+    note: MAINNET
+      ? "Settled via PayAI facilitator on Base mainnet USDC."
+      : "Settled via PayAI facilitator on Base Sepolia (testnet). Not operating Capital.",
     receipt: result.receipt,
   });
 }
@@ -237,6 +247,9 @@ module.exports = {
   EXT_NAME,
   BAZAAR_EXTENSION,
   NETWORK,
+  ASSET,
+  TESTNET,
+  NETWORK_LABEL,
   AMOUNT,
   PUBLIC_BASE,
   paymentRequired,
