@@ -10,15 +10,15 @@
     },
     "capability": {
       "score": 65,
-      "note": "Day-38: mainnet-ready x402 v2 accept behind X402_V2_NETWORK=base (default off, Base Sepolia); cross-network payloads rejected pre-facilitator; smoke_mainnet passes. Settle still off."
+      "note": "Day-38 (9:50 CT, Galaxy Mind yes): paid brief now advertises Base mainnet USDC (eip155:8453, payTo 0xD843…44C9) via X402_V2_NETWORK=base; prod dpl_FcC196f7So2f3jvo5xn6GdJbegjx live-verified; X402_SETTLE unset, settle_live false."
     },
     "information": {
       "score": 62,
-      "note": "Day-38: x402scan Add-your-API refused the origin: \"No supported networks. Got: [base_sepolia]. Supported: [base, solana]\" (x402/x402scan.md). PayAI /supported lists v2 exact on eip155:8453."
+      "note": "Day-38: x402scan Add-your-API preview after mainnet switch: 2 valid resources (/api/health, /api/paid-brief), no network error (intel/live-mainnet-2026-10-08.json). Not yet registered."
     },
     "distribution": {
       "score": 28,
-      "note": "Day-38: x402scan registration attempted; discovery parsed both routes but listing refused because Base Sepolia is unsupported. Not listed. Week outbound 1/50."
+      "note": "Day-38: x402scan preview now passes on Base mainnet (was refused on Sepolia); registration is one public click (no wallet) awaiting go. Not listed yet. Week outbound 1/50."
     },
     "capital": {
       "score": 0,
@@ -43,7 +43,7 @@
     "observed_day_delta_pp": 0.25,
     "eta_days": 728.6,
     "eta_label": "729 days (~2.0 years) on the grind curve",
-    "note": "Day jumps discarded for velocity. Model not prophecy. Quiet inbox \u2260 Capital. Testnet \u2260 Capital. Draft \u2260 sent. Free packet \u2260 Capital. Sepolia/testnet \u2260 Capital. Paid pilot offer \u2260 spend yes."
+    "note": "Day jumps discarded for velocity. Model not prophecy. Quiet inbox ≠ Capital. Testnet ≠ Capital. Draft ≠ sent. Free packet ≠ Capital. Sepolia/testnet ≠ Capital. Paid pilot offer ≠ spend yes."
   },
   "owned_surfaces": {
     "github": "https://github.com/GalaxyMind21/world-domination-bot",
@@ -60,13 +60,13 @@
     "x402scan_register": "https://www.x402scan.com/resources/register"
   },
   "asks": [
-    "Decision: allow the x402 paid brief to advertise Base mainnet USDC (X402_V2_NETWORK=base, settle still off) so x402scan can list it; real funds would only move after a separate settle yes",
+    "Go/no-go: click Add API on x402scan for world-domination-x402.vercel.app (public form, no wallet sign-in; preview shows 2 valid resources). Settle stays off; real funds only after a separate settle yes",
     "Arena final survey answers (10 opinion questions) so the separate Arena routine can final-submit before Oct 12 11:59 PM PT",
     "Capital still 0 until an intentional seed lands toward $100"
   ],
-  "today_step": "Day 38: Distribution/Capability: tried to list the paid brief on x402scan; discovery parsed both routes but registration was refused because Base Sepolia is unsupported (Base mainnet + Solana only). Shipped a default-off Base mainnet switch (X402_V2_NETWORK=base) with tests; PR #31 merged; prod dpl_CBdZSDCiUingXvEeReWqmHJhMhmJ live-verified (still Sepolia, settle off).",
-  "tomorrow_vector": "If Galaxy Mind says yes, flip X402_V2_NETWORK=base (settle stays off) and register on x402scan; otherwise keep watching BK for the firewall mapping verdict, and Arena final submit still waits on the survey answers.",
-  "galaxy_mind_life_line": "It didn't help your life today: no time, money, or stack change, and it cost nothing. It just turned listing on x402scan into a yes or no for you instead of an engineering project.",
+  "today_step": "Day 38: Distribution/Capability: x402scan refused the Sepolia listing, so shipped a Base mainnet switch (PR #31). On Galaxy Mind's yes (9:48 CT) set X402_V2_NETWORK=base in production and redeployed (dpl_FcC196f7So2f3jvo5xn6GdJbegjx): live 402 now eip155:8453 Base USDC to 0xD843…44C9, settle still off. x402scan preview shows 2 valid resources; not registered yet.",
+  "tomorrow_vector": "On go, click Add API on x402scan (no wallet) and confirm the listing; keep settle off. Watch BK for the firewall mapping verdict; Arena final submit still waits on the survey answers.",
+  "galaxy_mind_life_line": "Nothing changed for you: no money moved and settlement is still off. The paid brief now advertises real Base USDC, so x402scan accepts it; listing is one click away.",
   "drafts_pending_send": [],
   "network_evidence": {
     "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
@@ -115,10 +115,13 @@
     "x402_discovery": "SHIPPED",
     "pr_day38_mainnet_ready": "https://github.com/GalaxyMind21/world-domination-bot/pull/31",
     "deploy_day38": "dpl_CBdZSDCiUingXvEeReWqmHJhMhmJ",
-    "x402scan": "REFUSED_TESTNET",
+    "x402scan": "PREVIEW_OK_NOT_REGISTERED",
     "x402scan_doc": "x402/x402scan.md",
     "live_day38": "intel/live-mainnet-ready-2026-10-08.json",
-    "agenticbtc_new_inbound_day38": false
+    "agenticbtc_new_inbound_day38": false,
+    "deploy_day38_mainnet": "dpl_FcC196f7So2f3jvo5xn6GdJbegjx",
+    "x402_v2_network": "base (eip155:8453) since 2026-10-08 09:50 CT; X402_SETTLE unset",
+    "live_day38_mainnet": "intel/live-mainnet-2026-10-08.json"
   },
   "week_outbound_count_ct": {
     "week_start": "2026-10-05",

@@ -22,3 +22,11 @@ payTo stays `0xD8436B7afD09E10704931E17FBC79dE71BF944C9`. OpenAPI `testnet`, wel
 Settlement remains a separate switch (`X402_SETTLE=1`). Going live on mainnet is two operator decisions: list on mainnet (accept advertised, settle still off) and later turn settle on. Neither is flipped without an explicit yes from Galaxy Mind.
 
 Test: `node test/smoke_mainnet.mjs` (no network).
+
+## Mainnet flip (Day 38, 2026-10-08 ~9:50 CT)
+
+Galaxy Mind said yes. Production now has `X402_V2_NETWORK=base` (`X402_SETTLE` unset). Deploy `dpl_FcC196f7So2f3jvo5xn6GdJbegjx`. Live 402 accepts `eip155:8453` Base USDC → `0xD843…44C9`; settle_live false.
+
+x402scan preview re-run (no wallet): **Add API (2 resources)**, both `/api/health` and `/api/paid-brief` valid. Not registered yet.
+
+Registering = clicking **Add API**: x402scan's `registerFromOrigin` is a public tRPC procedure, no wallet sign-in. (The programmatic registration API and the optional "verified owner" badge are the parts that need a wallet signature.)

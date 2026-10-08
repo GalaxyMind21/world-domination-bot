@@ -9,14 +9,14 @@
 
 ## Today's step
 
-Day 38: Distribution/Capability: tried to list the paid brief on x402scan; discovery parsed both routes but registration was refused because Base Sepolia is unsupported (Base mainnet + Solana only). Shipped a default-off Base mainnet switch (X402_V2_NETWORK=base) with tests; PR #31 merged; prod dpl_CBdZSDCiUingXvEeReWqmHJhMhmJ live-verified (still Sepolia, settle off).
+Day 38: Distribution/Capability: x402scan refused the Sepolia listing, so shipped a Base mainnet switch (PR #31). On Galaxy Mind's yes (9:48 CT) set X402_V2_NETWORK=base in production and redeployed (dpl_FcC196f7So2f3jvo5xn6GdJbegjx): live 402 now eip155:8453 Base USDC to 0xD843…44C9, settle still off. x402scan preview shows 2 valid resources; not registered yet.
 
 ## Pillars
 
 - **Identity / HQ:** 63/100 — Day-35: v2 contract notes (x402/v2_canonical.md) + README/health public; PR #26 merged.
-- **Capability:** 65/100 — Day-38: mainnet-ready x402 v2 accept behind X402_V2_NETWORK=base (default off, Base Sepolia); cross-network payloads rejected pre-facilitator; smoke_mainnet passes. Settle still off.
-- **Information:** 62/100 — Day-38: x402scan Add-your-API refused the origin: "No supported networks. Got: [base_sepolia]. Supported: [base, solana]" (x402/x402scan.md). PayAI /supported lists v2 exact on eip155:8453.
-- **Distribution:** 28/100 — Day-38: x402scan registration attempted; discovery parsed both routes but listing refused because Base Sepolia is unsupported. Not listed. Week outbound 1/50.
+- **Capability:** 65/100 — Day-38 (9:50 CT, Galaxy Mind yes): paid brief now advertises Base mainnet USDC (eip155:8453, payTo 0xD843…44C9) via X402_V2_NETWORK=base; prod dpl_FcC196f7So2f3jvo5xn6GdJbegjx live-verified; X402_SETTLE unset, settle_live false.
+- **Information:** 62/100 — Day-38: x402scan Add-your-API preview after mainnet switch: 2 valid resources (/api/health, /api/paid-brief), no network error (intel/live-mainnet-2026-10-08.json). Not yet registered.
+- **Distribution:** 28/100 — Day-38: x402scan preview now passes on Base mainnet (was refused on Sepolia); registration is one public click (no wallet) awaiting go. Not listed yet. Week outbound 1/50.
 - **Capital:** 0/100 — Capital $0 of $100. Testnet/Sepolia, discovery listings and courtesy replies are not Capital.
 - **Network:** 50/100 — Day-37: BK (AgenticBTC) replied 2026-10-06 9:40 AM CT: will run the free no-funds firewall mapping check on the v2 URL and report mismatches; paid scope unchanged. No reply needed.
 - **Infrastructure:** 65/100 — Day-38: prod deploy dpl_CBdZSDCiUingXvEeReWqmHJhMhmJ from main 11f1cc3 (PR #31); live-verified still Base Sepolia, settle_live false.
