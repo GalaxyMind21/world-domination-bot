@@ -1,6 +1,6 @@
 // Day 37: OpenAPI-first x402 discovery (x402scan docs/DISCOVERY.md precedence #1).
 // Served at /openapi.json via vercel.json rewrite. Runtime 402 stays authoritative.
-const { CANONICAL_PATH, REQUIREMENTS, RESOURCE, PUBLIC_BASE } = require("./_v2");
+const { CANONICAL_PATH, REQUIREMENTS, RESOURCE, PUBLIC_BASE, TESTNET, NETWORK_LABEL } = require("./_v2");
 
 function spec() {
   const human = (Number(REQUIREMENTS.amount) / 1e6).toFixed(2);
@@ -8,11 +8,15 @@ function spec() {
     openapi: "3.1.0",
     info: {
       title: "World Domination bot x402 Day Brief",
-      version: "2026-10-07",
+      version: "2026-10-08",
       description:
-        "Agent-payable Day Brief from World Domination bot (operator: Galaxy Mind). x402 v2, Base Sepolia (testnet) USDC. Settlement kill-switch is off on this deployment, so the 402 challenge is live but no funds move yet.",
+        "Agent-payable Day Brief from World Domination bot (operator: Galaxy Mind). x402 v2, " +
+        NETWORK_LABEL + (TESTNET ? " (testnet)" : "") +
+        " USDC. Check /api/health settle_live: while the settlement kill-switch is off the 402 challenge is live but no funds move.",
       "x-guidance":
-        "GET /api/paid-brief with no parameters. Unpaid requests get HTTP 402 with an x402 v2 PAYMENT-REQUIRED header (base64 JSON). Pay 1.00 USDC on Base Sepolia (eip155:84532) with the exact scheme and retry with PAYMENT-SIGNATURE. Settlement is currently disabled (kill-switch off), so retries return 402 kill_switch_off; check /api/health settle_live before paying.",
+        "GET /api/paid-brief with no parameters. Unpaid requests get HTTP 402 with an x402 v2 PAYMENT-REQUIRED header (base64 JSON). Pay " +
+        human + " USDC on " + NETWORK_LABEL + " (" + REQUIREMENTS.network +
+        ") with the exact scheme and retry with PAYMENT-SIGNATURE. Check /api/health settle_live before paying; when it is false, retries return 402 kill_switch_off and no funds move.",
       contact: { email: "world-domination@agentmail.to", url: "https://github.com/GalaxyMind21/world-domination-bot" },
     },
     servers: [{ url: PUBLIC_BASE }],
@@ -33,7 +37,7 @@ function spec() {
                   asset: REQUIREMENTS.asset,
                   amount: REQUIREMENTS.amount,
                   payTo: REQUIREMENTS.payTo,
-                  testnet: true,
+                  testnet: TESTNET,
                 },
               },
             ],

@@ -6,7 +6,7 @@ const {
   USDC_MINT,
 } = require("./_lib");
 const { SETTLE_ON } = require("./_settle");
-const { CANONICAL_URL, REQUIREMENTS } = require("./_v2");
+const { CANONICAL_URL, REQUIREMENTS, TESTNET } = require("./_v2");
 
 module.exports = (req, res) => {
   res.setHeader("Content-Type", "application/json; charset=utf-8");
@@ -18,7 +18,7 @@ module.exports = (req, res) => {
       {
         ok: true,
         service: "world-domination-x402-brief",
-        as_of: "2026-10-07",
+        as_of: "2026-10-08",
         mode: process.env.X402_MODE || "stub",
         endpoints: [
           "/api/paid-brief",
@@ -32,7 +32,7 @@ module.exports = (req, res) => {
         discovery: { openapi: "/openapi.json", well_known: "/.well-known/x402", bazaar_extension: true },
         canonical_paid_resource: CANONICAL_URL,
         x402: {
-          canonical: { version: 2, url: CANONICAL_URL, network: REQUIREMENTS.network, amount: REQUIREMENTS.amount },
+          canonical: { version: 2, url: CANONICAL_URL, network: REQUIREMENTS.network, asset: REQUIREMENTS.asset, amount: REQUIREMENTS.amount, testnet: TESTNET },
           legacy: { version: 1, url: "/api/brief?mode=402", deprecated: true },
         },
         facilitator: FACILITATOR_BASE,
@@ -50,7 +50,8 @@ module.exports = (req, res) => {
           evm_base: RECEIVE_EVM,
           solana: RECEIVE_SOLANA,
         },
-        note: "Day 35: canonical paid resource /api/paid-brief emits x402 v2 (resource.url matches the challenging URL); legacy v1 /api/brief?mode=402 kept and marked deprecated. Settle kill-switch still default off; Base Sepolia only. Capital stays 0 until intentional seed.",
+        mainnet_ready: { env: "X402_V2_NETWORK=base", active: !TESTNET, note: "x402scan indexes Base mainnet + Solana only; default stays Base Sepolia until the operator says go." },
+        note: "Day 38: canonical v2 accept is mainnet-ready behind X402_V2_NETWORK=base (default off, Base Sepolia). Settle kill-switch still default off. Capital stays 0 until intentional seed.",
       },
       null,
       2
