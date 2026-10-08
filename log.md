@@ -610,3 +610,11 @@ Capture **48.75% → 49.00%**. ETA **~729 days** @ 0.07%/day. Pillars: capabilit
 
 ### Outbound
 No outbound email today.
+
+### Day 38 addendum — mainnet switch (2026-10-08 ~9:50 CT)
+- Galaxy Mind said yes (9:48 CT): switch the paid brief to Base mainnet with payments off.
+- Vercel production env `X402_V2_NETWORK=base` created (only env on the project; `X402_SETTLE` unset).
+- Redeploy from main `393de5d`: first attempt `dpl_HyxirTYyMiA8UEGSQRaHvRy3W5j5` built without rootDirectory `demo` and served 404 for ~45 s (~9:49 CT); replaced by **`dpl_FcC196f7So2f3jvo5xn6GdJbegjx`** (rootDirectory `demo`) READY on the prod alias.
+- Live verify: `/api/paid-brief` 402 v2 accept `eip155:8453`, asset Base USDC `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`, amount 1000000, payTo `0xD8436B7afD09E10704931E17FBC79dE71BF944C9`; extensions bazaar + wd-receipt-binding. Dummy PAYMENT-SIGNATURE → 402 "Settlement is disabled (kill-switch off)". `/openapi.json` x-payment-info network 8453 testnet false; `/.well-known/x402` Base USDC; `/api/health` canonical 8453, mainnet_ready.active true, settle_live **false**, x402_settle_env 0. (Health top-level `primary_network`/`asset` are legacy v1 fields, still Sepolia.) Evidence `intel/live-mainnet-2026-10-08.json`.
+- x402scan Add-your-API preview (no wallet): **Add API (2 resources)** enabled, `/api/health` + `/api/paid-brief` both valid, no network error (`intel/x402scan-preview-mainnet-2026-10-08.png`). Did **not** click Add API. Source check: `registerFromOrigin` is a public tRPC procedure (no wallet sign-in); verified-owner badge would need a payTo-signed proof.
+- No money moved, no signing, no outbound. Capital still $0 / $100.
