@@ -1,24 +1,24 @@
 {
-  "as_of": "2026-10-07",
+  "as_of": "2026-10-08",
   "timezone": "US/Central",
-  "day": 37,
-  "capture_pct": 48.75,
+  "day": 38,
+  "capture_pct": 49.0,
   "pillars": {
     "identity_hq": {
       "score": 63,
       "note": "Day-35: v2 contract notes (x402/v2_canonical.md) + README/health public; PR #26 merged."
     },
     "capability": {
-      "score": 64,
-      "note": "Day-37: x402 discovery live: bazaar extension on the v2 challenge (GET, no params, JSON out), OpenAPI /openapi.json with structured x-payment-info, /.well-known/x402 fan-out. Settle still off; G6 still blocked."
+      "score": 65,
+      "note": "Day-38: mainnet-ready x402 v2 accept behind X402_V2_NETWORK=base (default off, Base Sepolia); cross-network payloads rejected pre-facilitator; smoke_mainnet passes. Settle still off."
     },
     "information": {
-      "score": 61,
-      "note": "Day-37: read x402 bazaar extension spec + x402scan DISCOVERY.md; @agentcash/discovery audit 8 warnings -> 1 (intel/discovery-audit-2026-10-07.txt)."
+      "score": 62,
+      "note": "Day-38: x402scan Add-your-API refused the origin: \"No supported networks. Got: [base_sepolia]. Supported: [base, solana]\" (x402/x402scan.md). PayAI /supported lists v2 exact on eip155:8453."
     },
     "distribution": {
       "score": 28,
-      "note": "Day-37: first machine-discoverable surface: indexers/agents can find and price /api/paid-brief via OpenAPI + .well-known/x402 + bazaar. Not yet registered on x402scan. Week outbound 1/50."
+      "note": "Day-38: x402scan registration attempted; discovery parsed both routes but listing refused because Base Sepolia is unsupported. Not listed. Week outbound 1/50."
     },
     "capital": {
       "score": 0,
@@ -30,7 +30,7 @@
     },
     "infrastructure": {
       "score": 65,
-      "note": "Day-37: prod deploys dpl_CJZAof1sekTsHNJVVJFgsAaBhMXw then dpl_GK8Zq4yf2hRB13q2FjenMTkYPAhd from main c8498ec; box egress restored after computer update; settle_live false."
+      "note": "Day-38: prod deploy dpl_CBdZSDCiUingXvEeReWqmHJhMhmJ from main 11f1cc3 (PR #31); live-verified still Base Sepolia, settle_live false."
     },
     "autonomy": {
       "score": 59,
@@ -40,9 +40,9 @@
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 0.87,
-    "eta_days": 732.1,
-    "eta_label": "732 days (~2.0 years) on the grind curve",
+    "observed_day_delta_pp": 0.25,
+    "eta_days": 728.6,
+    "eta_label": "729 days (~2.0 years) on the grind curve",
     "note": "Day jumps discarded for velocity. Model not prophecy. Quiet inbox \u2260 Capital. Testnet \u2260 Capital. Draft \u2260 sent. Free packet \u2260 Capital. Sepolia/testnet \u2260 Capital. Paid pilot offer \u2260 spend yes."
   },
   "owned_surfaces": {
@@ -56,16 +56,17 @@
     "solana_treasury": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC",
     "canonical_paid_resource": "https://world-domination-x402.vercel.app/api/paid-brief",
     "openapi": "https://world-domination-x402.vercel.app/openapi.json",
-    "well_known_x402": "https://world-domination-x402.vercel.app/.well-known/x402"
+    "well_known_x402": "https://world-domination-x402.vercel.app/.well-known/x402",
+    "x402scan_register": "https://www.x402scan.com/resources/register"
   },
   "asks": [
+    "Decision: allow the x402 paid brief to advertise Base mainnet USDC (X402_V2_NETWORK=base, settle still off) so x402scan can list it; real funds would only move after a separate settle yes",
     "Arena final survey answers (10 opinion questions) so the separate Arena routine can final-submit before Oct 12 11:59 PM PT",
-    "Optional: faucet-fund a Base Sepolia burner (testnet != Capital) for the first G6 test settle",
     "Capital still 0 until an intentional seed lands toward $100"
   ],
-  "today_step": "Day 37: Distribution/Capability: rebuilt the Day-36 x402 discovery work lost in the box recovery and shipped it live: bazaar extension on /api/paid-brief, /openapi.json with x-payment-info, /.well-known/x402; PRs #28 + #29 merged; prod dpl_GK8Zq4yf2hRB13q2FjenMTkYPAhd; discovery audit 8 warnings -> 1; settle still off.",
-  "tomorrow_vector": "Register the origin on x402scan (Add Server) and check whether testnet resources index; watch BK thread for the firewall mapping verdict; G6 Base Sepolia test settle once a burner is faucet-funded; Arena final submit still waits on Galaxy Mind's survey answers (separate routine).",
-  "galaxy_mind_life_line": "It didn't directly help your life today: no time, money, or stack change for you, and it cost nothing; the only side benefit is that the bot's paid demo is now findable by agent indexers without you lifting a finger.",
+  "today_step": "Day 38: Distribution/Capability: tried to list the paid brief on x402scan; discovery parsed both routes but registration was refused because Base Sepolia is unsupported (Base mainnet + Solana only). Shipped a default-off Base mainnet switch (X402_V2_NETWORK=base) with tests; PR #31 merged; prod dpl_CBdZSDCiUingXvEeReWqmHJhMhmJ live-verified (still Sepolia, settle off).",
+  "tomorrow_vector": "If Galaxy Mind says yes, flip X402_V2_NETWORK=base (settle stays off) and register on x402scan; otherwise keep watching BK for the firewall mapping verdict, and Arena final submit still waits on the survey answers.",
+  "galaxy_mind_life_line": "It didn't help your life today: no time, money, or stack change, and it cost nothing. It just turned listing on x402scan into a yes or no for you instead of an engineering project.",
   "drafts_pending_send": [],
   "network_evidence": {
     "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
@@ -111,14 +112,20 @@
     "deploy_day37": "dpl_GK8Zq4yf2hRB13q2FjenMTkYPAhd",
     "live_discovery": "intel/live-discovery-2026-10-07.json",
     "discovery_audit": "intel/discovery-audit-2026-10-07.txt",
-    "x402_discovery": "SHIPPED"
+    "x402_discovery": "SHIPPED",
+    "pr_day38_mainnet_ready": "https://github.com/GalaxyMind21/world-domination-bot/pull/31",
+    "deploy_day38": "dpl_CBdZSDCiUingXvEeReWqmHJhMhmJ",
+    "x402scan": "REFUSED_TESTNET",
+    "x402scan_doc": "x402/x402scan.md",
+    "live_day38": "intel/live-mainnet-ready-2026-10-08.json",
+    "agenticbtc_new_inbound_day38": false
   },
   "week_outbound_count_ct": {
     "week_start": "2026-10-05",
     "sent": 1,
     "ceiling": 50,
-    "updated": "2026-10-07T09:20:00-05:00",
-    "note": "1 send this week (ffb3f1c0, 2026-10-05 23:15 CT). No outbound Day 37."
+    "updated": "2026-10-08T09:10:00-05:00",
+    "note": "1 send this week (ffb3f1c0, 2026-10-05 23:15 CT). No outbound Day 37 or Day 38."
   },
   "skipped_days": {
     "24": "usage pause",
