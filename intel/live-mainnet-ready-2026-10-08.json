@@ -1,0 +1,44 @@
+{
+  "checked_ct": "2026-10-08",
+  "deploy": "dpl_CBdZSDCiUingXvEeReWqmHJhMhmJ",
+  "paid_brief_status": 402,
+  "accept": {
+    "scheme": "exact",
+    "network": "eip155:84532",
+    "amount": "1000000",
+    "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+    "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "maxTimeoutSeconds": 60,
+    "extra": {
+      "name": "USDC",
+      "version": "2"
+    }
+  },
+  "resource": "https://world-domination-x402.vercel.app/api/paid-brief",
+  "health": {
+    "as_of": "2026-10-08",
+    "settle_live": false,
+    "canonical": {
+      "version": 2,
+      "url": "https://world-domination-x402.vercel.app/api/paid-brief",
+      "network": "eip155:84532",
+      "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+      "amount": "1000000",
+      "testnet": true
+    },
+    "mainnet_ready": {
+      "env": "X402_V2_NETWORK=base",
+      "active": false,
+      "note": "x402scan indexes Base mainnet + Solana only; default stays Base Sepolia until the operator says go."
+    }
+  },
+  "openapi_version": "2026-10-08",
+  "openapi_testnet": true,
+  "well_known": {
+    "version": 1,
+    "resources": [
+      "https://world-domination-x402.vercel.app/api/paid-brief"
+    ],
+    "instructions": "Canonical x402 v2 paid resource. Base Sepolia (testnet) USDC; check /api/health settle_live before paying. OpenAPI at /openapi.json."
+  }
+}
