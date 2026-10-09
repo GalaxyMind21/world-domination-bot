@@ -9,7 +9,7 @@ const v2=require(p+"_v2.js");
 const good={x402Version:2,resource:v2.RESOURCE,accepted:v2.REQUIREMENTS,payload:{authorization:{to:v2.REQUIREMENTS.payTo,value:v2.REQUIREMENTS.amount,nonce:"0x1"}}};
 const wrongNet=JSON.parse(JSON.stringify(good));wrongNet.accepted.network=v2.TESTNET?"eip155:8453":"eip155:84532";
 console.log(JSON.stringify({status:pb.s,network:pr.accepts[0].network,asset:pr.accepts[0].asset,payTo:pr.accepts[0].payTo,
- oaTestnet:oa.b.paths["/api/paid-brief"].get["x-payment-info"].protocols[0].x402.testnet,settle_live:hl.b.settle_live,
+ oaTestnet:oa.b.paths["/api/paid-brief"].get["x-payment-info"].protocols[0].x402.testnet,settle_live:hl.b.settle_live,hlNet:hl.b.primary_network,hlAsset:hl.b.asset,hlPayTo:hl.b.payTo,
  goodMismatch:v2.mismatch(good),wrongNet:v2.mismatch(wrongNet)}));})();`;
 const run = (env) => JSON.parse(execFileSync("node", ["-e", probe], { env: { ...process.env, X402_SETTLE: "", ...env } }).toString());
 const assert = (c, m) => { if (!c) { console.error("FAIL:", m); process.exit(1); } };
@@ -20,6 +20,7 @@ assert(main.network === "eip155:8453" && main.asset === "0x833589fCD6eDb6E08f4c7
 for (const m of [def, main]) {
   assert(m.status === 402 && m.settle_live === false, "402 + settle off");
   assert(m.payTo === "0xD8436B7afD09E10704931E17FBC79dE71BF944C9", "payTo");
+  assert(m.hlNet === m.network && m.hlAsset === m.asset && m.hlPayTo === m.payTo, "health top-level mirrors canonical v2 accept");
   assert(m.goodMismatch === null && m.wrongNet === "network_mismatch", "cross-network payload rejected");
 }
 console.log("smoke_mainnet: PASS", JSON.stringify({ default: def.network, mainnet: main.network }));
