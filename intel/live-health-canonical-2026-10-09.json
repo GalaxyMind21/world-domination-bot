@@ -1,0 +1,36 @@
+{
+  "checked_ct": "2026-10-09 09:36 CT",
+  "deploy": "dpl_4qetocrKNzAHspBsPKNi5Y8gV1ay",
+  "main": "e5f7253",
+  "pr": "https://github.com/GalaxyMind21/world-domination-bot/pull/34",
+  "health": {
+    "as_of": "2026-10-09",
+    "primary_network": "eip155:8453",
+    "primary_network_label": "Base mainnet",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "settle_live": false,
+    "x402_settle_env": "0",
+    "note": "Canonical v2 accept on Base mainnet USDC, listed on x402scan. Settle kill-switch off: payments are advertised but not executed. Capital stays 0 until intentional seed."
+  },
+  "health_legacy": {
+    "version": 1,
+    "url": "/api/brief?mode=402",
+    "deprecated": true,
+    "network": "base-sepolia",
+    "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e"
+  },
+  "health_listings": {
+    "x402scan": "https://www.x402scan.com/server/792302a9-0547-43f5-8bcf-471b10d7dc10"
+  },
+  "paid_brief": {
+    "status": "402",
+    "network": "eip155:8453",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "amount": "1000000"
+  },
+  "openapi_status": "200",
+  "well_known_status": "200",
+  "health_matches_402": true
+}

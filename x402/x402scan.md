@@ -30,3 +30,7 @@ Galaxy Mind said yes. Production now has `X402_V2_NETWORK=base` (`X402_SETTLE` u
 x402scan preview re-run (no wallet): **Add API (2 resources)**, both `/api/health` and `/api/paid-brief` valid. Not registered yet.
 
 Registering = clicking **Add API**: x402scan's `registerFromOrigin` is a public tRPC procedure, no wallet sign-in. (The programmatic registration API and the optional "verified owner" badge are the parts that need a wallet signature.)
+
+## Registered — 2026-10-08
+- Listing: https://www.x402scan.com/server/792302a9-0547-43f5-8bcf-471b10d7dc10 (2 resources, 0 tx). Public Add API click; no wallet, nothing signed.
+- Day 39: `/api/health` top-level network/asset/payTo now mirror the live 402 (PR #34), so the listed health resource no longer says Base Sepolia.
