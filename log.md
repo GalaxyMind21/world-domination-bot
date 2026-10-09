@@ -618,3 +618,30 @@ No outbound email today.
 - Live verify: `/api/paid-brief` 402 v2 accept `eip155:8453`, asset Base USDC `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`, amount 1000000, payTo `0xD8436B7afD09E10704931E17FBC79dE71BF944C9`; extensions bazaar + wd-receipt-binding. Dummy PAYMENT-SIGNATURE → 402 "Settlement is disabled (kill-switch off)". `/openapi.json` x-payment-info network 8453 testnet false; `/.well-known/x402` Base USDC; `/api/health` canonical 8453, mainnet_ready.active true, settle_live **false**, x402_settle_env 0. (Health top-level `primary_network`/`asset` are legacy v1 fields, still Sepolia.) Evidence `intel/live-mainnet-2026-10-08.json`.
 - x402scan Add-your-API preview (no wallet): **Add API (2 resources)** enabled, `/api/health` + `/api/paid-brief` both valid, no network error (`intel/x402scan-preview-mainnet-2026-10-08.png`). Did **not** click Add API. Source check: `registerFromOrigin` is a public tRPC procedure (no wallet sign-in); verified-owner badge would need a payTo-signed proof.
 - No money moved, no signing, no outbound. Capital still $0 / $100.
+
+
+### Day 38 addendum 2 — x402scan registered (2026-10-08, after board)
+- On Galaxy Mind's "ok", clicked Add API on x402scan (public form, no wallet, nothing signed). Listing: https://www.x402scan.com/server/792302a9-0547-43f5-8bcf-471b10d7dc10 — 2 resources (`/api/health` free, `/api/paid-brief` $1.00 Base mainnet USDC → `0xD843…44C9`), 0 tx. Settle still off.
+
+## Day 39 — 2026-10-09 (Friday) CT
+
+Morning routine was held by the fleet pause (8:18–9:33 CT); run at ~9:35 CT after the fleet resume. One step, no double count.
+
+### Step
+Identity/Infrastructure: make the public `/api/health` agree with the live 402 after the mainnet switch.
+
+### Done
+- Problem: after Day 38's `X402_V2_NETWORK=base`, `/api/health` top-level `primary_network`/`asset` still read the legacy v1 values (`base-sepolia`, Sepolia USDC `0x036C…`) and the note still said "default off, Base Sepolia" — contradicting the 402 and the x402scan listing, which links `/api/health`.
+- HQ branch `day39-health-canonical`: top-level `primary_network`/`asset`/`payTo` now mirror the canonical v2 accept (`REQUIREMENTS`), plus `primary_network_label`; legacy v1 network/asset moved under `x402.legacy`; `discovery.listings.x402scan` added; notes are now mode-aware. `smoke_mainnet.mjs` asserts health == 402 in both modes. `smoke_mainnet`, `smoke_discovery`, `smoke_v2` PASS.
+- PR **#34** merged (main `e5f7253`). Prod **`dpl_4qetocrKNzAHspBsPKNi5Y8gV1ay`** READY first try (rootDirectory `demo`; no 404 window).
+- Live verify ~9:36 CT: `/api/health` primary_network `eip155:8453`, asset Base USDC `0x8335…2913`, payTo `0xD843…44C9`, settle_live **false**, x402_settle_env 0; `/api/paid-brief` 402 same network/asset/payTo, amount 1000000; `/openapi.json` 200; `/.well-known/x402` 200; health_matches_402 **true**. Evidence `intel/live-health-canonical-2026-10-09.json`.
+- x402scan listing page 200, shows both resources.
+- Reply-watch: AgenticBTC thread 52b712a8 still 20 messages; no verdict from BK (last inbound 2026-10-06 9:40 CT). Note: BK's check was framed against the Base Sepolia accept; live accept is now Base mainnet — if BK flags a network mismatch, that's why.
+- Capital: Base mainnet USDC on `0xD843…` = 0; Solana treasury SOL 0, no USDC account. $0 / $100.
+- Arena: still waiting on Galaxy Mind's 10 survey answers (deadline Oct 12 11:59 PM PT; separate routine).
+
+### Scores
+Capture **49.00% → 49.25%**. ETA **~725 days** @ 0.07%/day (model, not prophecy). Pillars: identity_hq 63→64 · distribution 28→29 (x402scan listed, 0 tx) · others unchanged · capital 0.
+
+### Outbound
+No outbound email today. Week 1/50.
