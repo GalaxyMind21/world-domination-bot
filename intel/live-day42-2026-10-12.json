@@ -1,0 +1,167 @@
+{
+  "day": 42,
+  "checked_ct": "2026-10-12 9:10 AM CT",
+  "checked_utc": "2026-10-12T14:10:08Z",
+  "live_origin": "https://world-domination-x402.vercel.app",
+  "health_ok": true,
+  "health": {
+    "http_status": 200,
+    "ok": true,
+    "as_of": "2026-10-09",
+    "primary_network": "eip155:8453",
+    "primary_network_label": "Base mainnet",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "settle_live": false,
+    "x402_settle_env": "0",
+    "settle_kill_switch": "off",
+    "live_facilitator_calls": false,
+    "capital": 0,
+    "mainnet_ready": {
+      "env": "X402_V2_NETWORK=base",
+      "active": true,
+      "note": "Canonical v2 accept is on Base mainnet USDC (operator yes 2026-10-08). Code default without the env stays Base Sepolia."
+    },
+    "listings": {
+      "x402scan": "https://www.x402scan.com/server/792302a9-0547-43f5-8bcf-471b10d7dc10"
+    },
+    "canonical": {
+      "version": 2,
+      "url": "https://world-domination-x402.vercel.app/api/paid-brief",
+      "network": "eip155:8453",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "amount": "1000000",
+      "testnet": false
+    },
+    "legacy": {
+      "version": 1,
+      "url": "/api/brief?mode=402",
+      "deprecated": true,
+      "network": "base-sepolia",
+      "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e"
+    }
+  },
+  "paid_brief": {
+    "http_status": 402,
+    "x402Version": 2,
+    "accept": {
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "amount": "1000000",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+      "maxTimeoutSeconds": 60,
+      "extra": {
+        "name": "USDC",
+        "version": "2"
+      }
+    },
+    "extensions": [
+      "bazaar",
+      "wd-receipt-binding"
+    ],
+    "resource_url": "https://world-domination-x402.vercel.app/api/paid-brief"
+  },
+  "health_matches_402": {
+    "network": true,
+    "asset": true,
+    "payTo": true
+  },
+  "openapi": {
+    "http_status": 200,
+    "note": "openapi 3.1.0; x-payment-info Base eip155:8453 USDC 1.00; settle_live guidance present"
+  },
+  "well_known_x402": {
+    "http_status": 200,
+    "version": 1,
+    "resources": [
+      "https://world-domination-x402.vercel.app/api/paid-brief"
+    ]
+  },
+  "x402scan": {
+    "url": "https://www.x402scan.com/server/792302a9-0547-43f5-8bcf-471b10d7dc10",
+    "origin_id": "792302a9-0547-43f5-8bcf-471b10d7dc10",
+    "listed": true,
+    "createdAt": "2026-10-08T15:16:33.706Z",
+    "updatedAt": "2026-10-08T15:16:34.481Z",
+    "resource_count": 2,
+    "resources": [
+      "https://world-domination-x402.vercel.app/api/health",
+      "https://world-domination-x402.vercel.app/api/paid-brief"
+    ],
+    "total_transactions": 0,
+    "total_amount": 0,
+    "unique_buyers": 0,
+    "unique_sellers": 0,
+    "hasX402V2Resource": true,
+    "paid_accept_network": "base / eip155:8453",
+    "paid_maxAmountRequired": "1000000",
+    "indexing_status": "listed; stats overallByOrigin timeframe=30 show 0 tx; no public REST API found (HTML/RSC hydrate used)",
+    "source": "Next.js dehydrated query state from public server page HTML"
+  },
+  "capital": {
+    "usdc_base_raw": "0x0",
+    "usdc_base": "0",
+    "usdc_contract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "rpc": [
+      "https://mainnet.base.org",
+      "https://1rpc.io/base"
+    ],
+    "solana_treasury": "C5K6JjM4NCYFUgmWDsMujQGqxDa9PzjjQhgUFJAPSSGC",
+    "sol_lamports": 0,
+    "sol": "0",
+    "sol_rpc": [
+      "https://api.mainnet-beta.solana.com",
+      "https://solana-rpc.publicnode.com"
+    ],
+    "operating_capital_toward_100": 0,
+    "note": "Balances are zero; Capital only counts intentional operating $ toward $100"
+  },
+  "agentmail": {
+    "inbox": "world-domination@agentmail.to",
+    "bk_thread": "52b712a8-5fa7-4813-814c-d8cc93b3bc89",
+    "bk_messageCount": 20,
+    "bk_last_inbound_utc": "2026-10-06T14:40:44.000Z",
+    "bk_last_inbound_ct": "2026-10-06 9:40 AM CT",
+    "bk_new_inbound_since_last_known": false,
+    "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
+    "payai_messageCount": 4,
+    "payai_last_activity_utc": "2026-09-16T01:04:17.710Z",
+    "payai_new_inbound": false,
+    "other_new_inbound_after_2026-10-06T14:40Z": false,
+    "threads_after_cutoff_count": 1,
+    "threads_after_cutoff_note": "Only the BK thread itself (last msg = known 9:40 CT inbound); no newer threads",
+    "drafts_count": 0,
+    "drafts_pending_send": []
+  },
+  "week_outbound": {
+    "week_start_ct": "2026-10-12",
+    "this_week_sent": 0,
+    "ceiling": 50,
+    "previous_week_start_ct": "2026-10-05",
+    "previous_week_sent": 1,
+    "state_json_stale": {
+      "week_start": "2026-10-05",
+      "sent": 1,
+      "note": "week_outbound.py maxes state.sent without rolling week_start; treat CT week 2026-10-12 as 0/50 until state is refreshed"
+    },
+    "agentmail_drafts_count": 0,
+    "drafts_pending_send": false
+  },
+  "stale_docs_contradicting_mainnet": [
+    "RAISE.md: still says live x402 primary rail is Base Sepolia",
+    "x402/discovery.md: still documents eip155:84532 testnet and 'Base Sepolia testnet only'",
+    "x402/settle_readiness.md: health table still primary_network=base-sepolia; canonical v2 still eip155:84532"
+  ],
+  "recommended_step": {
+    "id": "fix_stale_hq_mainnet_truth",
+    "title": "Align judge-facing HQ docs to live Base mainnet + settle_off",
+    "rationale": "Live health/402/x402scan already green and consistent (eip155:8453, USDC, payTo 0xD843\u202644C9, settle_live false). Arena submitted. Capital $0. No new BK/PayAI inbound. Best compounding asset: remove Sepolia-as-primary contradictions in RAISE.md, x402/discovery.md, and x402/settle_readiness.md (and lightly DEMO.md if it still demos Sepolia as live). Keeps judges/agents from distrusting the listing. No spend, no send, no settle flip, no wallet signing.",
+    "do_not_execute_today": true
+  },
+  "connector_failures": [
+    "base.llamarpc.com eth_call returned Cloudflare/error 525 (other Base RPCs OK)",
+    "No working JSON REST for x402scan server detail (tried /api/server/... and /api/v1/servers/...); used HTML/RSC hydrate instead"
+  ]
+}

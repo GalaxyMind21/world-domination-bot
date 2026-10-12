@@ -1,98 +1,78 @@
-# x402 settle readiness (Day 34)
+# x402 settle readiness (Day 42 — Base mainnet aware)
 
 Operator (public): **Galaxy Mind** · Inbox: `world-domination@agentmail.to`  
-As of: **2026-10-04** (America/Chicago)
+As of: **2026-10-12** (America/Chicago)
 
 ## Purpose
 
-A durable checklist for turning the live GET `/api/brief` 402 challenge into a real PayAI free-tier **verify → settle** loop on **Base Sepolia first**, without spending Galaxy Mind money and without calling facilitator settle until gates clear.
+A durable checklist that must be green before the live v2 paid resource `GET /api/paid-brief` moves from **402 challenge only** to a real PayAI **verify → settle** loop. The live accept is already **Base mainnet USDC** (operator yes 2026-10-08), so any settle now moves real funds. Flipping settle still needs an explicit **Galaxy Mind yes** and a dedicated Day step. Nothing in this file flips it.
 
-Day 31 shipped gate **G4** (kill-switch code). Day 32 reviewed gate **G8** (BK free packet). Day 33 ships **G6 unlock playbook + dry-run client** — still does **not** enable live settle on production.
+History: Day 31 shipped gate G4 (kill-switch code). Day 33 shipped the G6 playbook + dry-run client. Day 35 shipped canonical v2 (`/api/paid-brief`). Day 38 switched the v2 accept to Base mainnet (`X402_V2_NETWORK=base`, settle off) and listed on x402scan. Day 39 aligned `/api/health` to the live 402.
 
-## Live today (verified 2026-10-04 CT)
+## Live today (verified 2026-10-12 ~9:10 AM CT)
 
 | Check | Result |
 | --- | --- |
-| `GET /api/health` | **200** · `primary_network=base-sepolia` · `payTo=0xD8436B7afD09E10704931E17FBC79dE71BF944C9` · `settle_live=false` (prod env unset) |
-| `GET /api/brief?mode=402` | **402** · accepts[0] Base Sepolia USDC · accepts[1] Solana USDC secondary |
-| `GET /api/verify` | **200** stub · `settled:false` · `facilitator_called:false` |
-| PayAI `GET /supported` | **200** · `exact` includes `base-sepolia`, `eip155:84532` (see `intel/payai-supported-2026-10-03.json`) |
-| Solana treasury `C5K6…` | **0** lamports — Capital still **$0 / $100** |
-| Live facilitator POST | **Not called** (kill-switch default off) |
-| G6 dry-run client | **Ran** — prints accepts[0]; no sign / no facilitator POST |
+| `GET /api/health` | **200** · `primary_network=eip155:8453` (Base mainnet) · asset `0x8335…2913` (Base USDC) · `payTo=0xD8436B7afD09E10704931E17FBC79dE71BF944C9` · `settle_live=false` · `x402_settle_env=0` |
+| `GET /api/paid-brief` | **402** · x402 v2 · `exact` · `eip155:8453` · amount `1000000` (1.00 USDC) · same asset/payTo as health · extensions `bazaar`, `wd-receipt-binding` |
+| Health ↔ 402 match | network ✅ · asset ✅ · payTo ✅ |
+| `GET /openapi.json` | **200** · `x-payment-info` `eip155:8453`, `testnet: false`; guidance says check `settle_live` first |
+| `GET /.well-known/x402` | **200** · lists `/api/paid-brief` |
+| x402scan | [Listed](https://www.x402scan.com/server/792302a9-0547-43f5-8bcf-471b10d7dc10) · 2 resources · **0 tx** |
+| PayAI `GET /supported` | **200** · `exact` on `eip155:8453` (v2) and `base` (v1) present (`intel/payai-supported-2026-10-12.json`) |
+| Legacy v1 `/api/brief?mode=402` | Base Sepolia · **deprecated** |
+| Live facilitator POST | **Not called** (kill-switch off) |
+| Capital | Base USDC **0** · Solana treasury **0** → **$0 / $100** |
 
 Live demo: https://world-domination-x402.vercel.app/  
-HQ code: `demo/api/_settle.js` + `verify.js` / `brief.js` / `health.js` (X402_SETTLE).  
-G6 unlock: [`g6_test_client.md`](./g6_test_client.md) · [`g6_dry_run_client.mjs`](./g6_dry_run_client.mjs)
+HQ code: `demo/api/_settle.js` + `paid-brief.js` / `verify.js` / `health.js` (`X402_SETTLE`).  
+G6 playbook: [`g6_test_client.md`](./g6_test_client.md) · [`g6_dry_run_client.mjs`](./g6_dry_run_client.mjs)
 
 ## What “settle ready” means
 
-Unpaid client → **402** + `PAYMENT-REQUIRED` (done) → client retries with **`PAYMENT-SIGNATURE`** → merchant server:
+Unpaid client → **402** + `PAYMENT-REQUIRED` (done, Base mainnet) → client retries with **`PAYMENT-SIGNATURE`** → merchant server:
 
 1. `POST https://facilitator.payai.network/verify` with the payment payload  
 2. On success → `POST https://facilitator.payai.network/settle`  
-3. Return Day Brief JSON + optional `PAYMENT-RESPONSE`
+3. Return Day Brief JSON + `PAYMENT-RESPONSE`
 
 Docs: https://docs.payai.network/x402/servers/typescript/manual-flow · https://docs.payai.network/x402/reference
 
 ## Gates before any live POST /verify or /settle
 
-| # | Gate | Status Day 34 |
+| # | Gate | Status Day 42 |
 | --- | --- | --- |
-| G1 | Primary accept matches intended rail (Base Sepolia → EVM receive) | **PASS** (live) |
-| G2 | Facilitator lists `exact` on that network | **PASS** (`base-sepolia` + `eip155:84532`) |
-| G3 | Free-tier policy still holds (PayAI confirmed enough until ~1000 settlements; no API key for ordinary exact demo) | **PASS** (re-affirm if BK free packet changes scope) |
-| G4 | Env kill-switch: settle only when `X402_SETTLE=1` (or equivalent) — default off | **SHIPPED** — `demo/api/_settle.js`; prod must leave unset/0 |
-| G5 | Local/unit path: `/api/verify` returns honest `settled:false` until wire lands | **PASS** (stub when switch off; live re-verify OK) |
-| G6 | Test client has **testnet** USDC on Base Sepolia (faucet / test wallet) — not Galaxy Mind operating Capital | **BLOCKED** — Day-33 playbook + dry-run shipped; wallet not yet faucet-funded |
-| G7 | Capital / spend policy: no Galaxy Mind money without ask; Sepolia test ≠ Capital score | **PASS** (policy) |
-| G8 | Optional: AgenticBTC free cost/test-plan packet reviewed if Lightning/unified receivables stays in scope | **REVIEWED** — free-packet SENT; **NEW** BK compat review inbound 2026-10-03 (msgCount **17**): v1≠v2 + resource URL mismatch; $1500 pilot offered — Day-34 draft staged (decline); settle still off |
+| G1 | Primary accept matches intended rail (Base mainnet USDC → EVM receive `0xD843…44C9`) | **PASS** (live 402 + health + OpenAPI agree) |
+| G2 | Facilitator lists `exact` on that network | **PASS** — PayAI `/supported` re-checked 2026-10-12: `eip155:8453` (v2) + `base` (v1) |
+| G3 | Free-tier policy still holds (PayAI free tier for ordinary exact demo volume) | **PASS** (re-affirm before flip; no new PayAI inbound since 2026-09-16) |
+| G4 | Env kill-switch: settle only when `X402_SETTLE=1` — default off | **SHIPPED** — prod unset/0; `settle_live=false` |
+| G5 | `/api/verify` + paid retries stay honest (`settled:false` / `402 kill_switch_off`) while switch is off | **PASS** |
+| G6 | One **mainnet** funded test payment from a separate test wallet (small, e.g. 1.00 USDC) — test funds are **not** Galaxy Mind operating Capital | **BLOCKED** — no funded test client; any test spend needs Galaxy Mind yes; do not flip settle to get around it |
+| G7 | Capital / spend policy: no Galaxy Mind money without ask; test payments ≠ Capital score | **PASS** (policy) |
+| G8 | Optional: AgenticBTC compatibility review (v1≠v2, resource URL) | **ADDRESSED** — canonical v2 URL shipped Day 35; no new BK inbound since 2026-10-06 |
+| G9 | Settle proxy allows the live network | **BLOCKED** — `demo/api/_settle.js` allowlist + requirements are still Base Sepolia only (`base-sepolia` / `eip155:84532`); a mainnet payment would get `network_not_allowed`. Needs a separate reviewed code PR (allow `eip155:8453`, build requirements from the live v2 accept) before any flip |
 
-**Ready to implement wire code:** G1–G5, G7 (G4 shipped).  
-**Ready to flip live settle:** needs G6 testnet funds + explicit Day step + set `X402_SETTLE=1` only then (not today).
+**Ready to flip live settle:** **No.** Needs G6 + G9 + an explicit Galaxy Mind yes + a dedicated Day step that sets `X402_SETTLE=1`. Not today.
 
-## Implementation (Day 31)
+## Explicit non-goals today (Day 42)
 
-Target surfaces (HQ `demo/api/`):
+- No production `X402_SETTLE=1` (do not touch env)  
+- No code change or Vercel redeploy — docs only  
+- Arena already submitted (project 13731, 2026-10-10, entered for judging) — no re-submit  
+- No cold AgentMail spray; no live AgentMail send this run  
+- No wallet signing; no Galaxy Mind spend  
+- No Capital inflation from listings, test payments, or 402 challenges — Capital stays **$0 / $100**
 
-- `_settle.js` — `SETTLE_ON()` only when `X402_SETTLE==="1"`; Base Sepolia network allowlist; thin `POST /verify` then `/settle`.
-- `verify.js` — stub when off; proxy when on + signature.
-- `brief.js` — on 402 mode + switch on + signature + settle success → Day Brief `mode:"settled"` + `PAYMENT-RESPONSE`.
-- `health.js` — reports `settle_kill_switch` / `x402_settle_env` / `settle_live` (mirrors env; default false).
+## Next Capability slice (when Galaxy Mind says yes)
 
-Never default-on. Never burn paid facilitator credits. Prefer Base Sepolia until one successful settle proves the path; then consider mainnet Base (`X402_NETWORK=base`) as a separate gated step.
-
-Python twin (`x402/brief_server.py`, `verify_stub.py`) stays honest stubs until the Vercel path proves with G6.
-
-## Explicit non-goals today
-
-- No production `X402_SETTLE=1`  
-- No Arena final-submit (hold until 2026-10-06 4am PDT — **Arena T-2** as of Day 34)  
-- No cold AgentMail spray while AgenticBTC thread is hot  
-- No Capital inflation from Sepolia/testnet balances  
-- No live AgentMail send this run  
+1. Code PR for G9: settle allowlist + requirements follow the live v2 accept (`eip155:8453`), still behind `X402_SETTLE`.  
+2. G6: fund a separate test client with a small amount of Base USDC (Galaxy Mind yes required; not Capital).  
+3. One gated settle against `/api/paid-brief` (v2), then turn settle back off unless the yes covers staying on.  
+4. Log the tx hash + `PAYMENT-RESPONSE` in `intel/`; bump Capability only after a real settle. x402scan tx count should go from 0 → 1.
 
 ## Evidence
 
-- `intel/reply-watch-2026-10-04.json`
-- `intel/agenticbtc-compatibility-review-inbound-2026-10-03.txt`
-- `intel/presend-agenticbtc-compat-review-2026-10-04.txt`  
-- `intel/payai-supported-2026-10-04.json`  
-- `intel/live-demo-2026-10-04.json`  
-- `x402/g6_test_client.md` · `x402/g6_dry_run_client.mjs`  
-- Prior wire notes: [`facilitator_wire.md`](./facilitator_wire.md)
-
-## Next Capability slice (when gates clear)
-
-1. Fund a **testnet** Sepolia ETH + USDC client via faucets in `g6_test_client.md` (not operating Capital).  
-2. One testnet settle with `X402_SETTLE=1` in a non-prod or carefully gated env.  
-3. Log receipt hash in `intel/` + bump Capability/Infrastructure only after a real settle.  
-4. Ping PayAI thread with live endpoint (optional courtesy — not Capital).
-
-## Day 35 update (2026-10-05 CT)
-
-- **Canonical v2 paid resource live:** `GET https://world-domination-x402.vercel.app/api/paid-brief` → 402 with v2 `PAYMENT-REQUIRED`; `resource.url` equals that URL; Base Sepolia `eip155:84532` only. See [`v2_canonical.md`](./v2_canonical.md).
-- Server-authoritative requirements on both v1 and v2 paths (client-supplied payTo/asset/amount no longer adopted).
-- Receipt binding: idempotency key = EIP-3009 nonce; deterministic receipt id.
-- Deploy `dpl_9SJKWFhhnxMFJmW2w9Buze8MQFyk` (main `a4b5974`, PR #26). `settle_live=false`.
-- G6 (funded Base Sepolia test client) still **BLOCKED**; first real receipt waits on it. When G6 clears, run the settle test against `/api/paid-brief` (v2), not the legacy v1 URL.
+- `intel/live-day42-2026-10-12.json` (health, 402, OpenAPI, well-known, x402scan, balances)  
+- `intel/payai-supported-2026-10-12.json`  
+- `intel/live-mainnet-2026-10-08.json` · `intel/live-mainnet-ready-2026-10-08.json`  
+- [`v2_canonical.md`](./v2_canonical.md) · [`x402scan.md`](./x402scan.md) · [`facilitator_wire.md`](./facilitator_wire.md)
