@@ -645,3 +645,50 @@ Capture **49.00% → 49.25%**. ETA **~725 days** @ 0.07%/day (model, not prophec
 
 ### Outbound
 No outbound email today. Week 1/50.
+
+## Day 40 — 2026-10-10 (Saturday) CT
+
+### Step
+Reply-watch and live-surface audit (weekend hold step; no new asset shipped).
+
+### Done
+- `/api/paid-brief` returns 402 live; x402scan listing page 200 and still shows the paid brief.
+- Base mainnet USDC balance on `0xD843…44C9` = 0 (eth_call balanceOf). Capital $0 / $100.
+- AgenticBTC thread 52b712a8 still 20 messages; no BK verdict (last inbound 2026-10-06 9:40 CT). No chase.
+- Arena still waits on Galaxy Mind's 10 survey answers (deadline Oct 12 11:59 PM PT).
+
+### Scores
+Capture **49.25%** unchanged (no new evidence). ETA ~725 days (model).
+
+### Outbound
+No outbound email today. Week (CT 2026-10-05) 1/50.
+
+## Day 41 — 2026-10-11 (Sun)
+### Step
+Scored the World's Fair submission as real distribution and cleaned stale Arena blockers off the capital board; live check of the judged product.
+### Done
+- `/api/paid-brief` live (402). Arena 13731 submitted Oct 10, entered for judging. Board updated.
+### Scores
+Distribution 29→32; capture 49.25%→49.62%. ETA model ~720 days.
+### Outbound
+No outbound email today. Week (CT 2026-10-05) 1/50.
+
+## Day 42 — 2026-10-12 (Monday) CT
+
+### Step
+Identity/Information: aligned judge-facing HQ docs (RAISE, x402/discovery, x402/settle_readiness) to live Base mainnet USDC (eip155:8453 → 0xD843…44C9, settle off).
+
+### Done
+- Live audit: `intel/live-day42-2026-10-12.json` — health_ok, paid-brief 402 on Base mainnet, capital $0, BK msgCount 20 (no new inbound), x402scan 0 tx.
+- Docs PR **#36** merged (merge `aad83a7` / commit `cd09d13`): RAISE + discovery + settle_readiness now match live Base mainnet story. Evidence `intel/day42-mainnet-docs-2026-10-12.md`.
+- Uncovered **G9**: `demo/api/_settle.js` still Sepolia-only allowlist — mainnet settle needs a separate code PR before any flip; settle kill-switch stays default off. Documented in settle_readiness.
+- PayAI `/supported` re-check: `intel/payai-supported-2026-10-12.json` (exact on eip155:8453 v2).
+- BK thread 52b712a8 still quiet (msgCount 20); no chase.
+- Capital still **$0 / $100**. Live product unchanged (no code/env/settle flip).
+- New CT week 2026-10-12: outbound **0/50** (prior week closed 1/50). Arena survey ask cleared (submitted Oct 10).
+
+### Scores
+Capture **49.62% → 50.12%**. ETA **~713 days** @ 0.07%/day (model; observed_day_delta_pp ~0.5; day jumps discarded). Pillars: identity_hq 64→65 · capability 65 · information 62→64 · distribution 32 · network 50 · infrastructure 65 · autonomy 59→60 · capital 0.
+
+### Outbound
+No outbound email today. Week 0/50.

@@ -1,24 +1,24 @@
 {
-  "as_of": "2026-10-09",
+  "as_of": "2026-10-12",
   "timezone": "US/Central",
-  "day": 39,
-  "capture_pct": 49.25,
+  "day": 42,
+  "capture_pct": 50.12,
   "pillars": {
     "identity_hq": {
-      "score": 64,
-      "note": "Day-39: public /api/health now tells the truth after the mainnet switch: top-level primary_network/asset/payTo mirror the live 402 (eip155:8453 Base USDC \u2192 0xD843\u202644C9); legacy v1 Sepolia values moved under x402.legacy; x402scan listing linked (PR #34, dpl_4qetocrKNzAHspBsPKNi5Y8gV1ay)."
+      "score": 65,
+      "note": "Day-42: RAISE + discovery + settle_readiness on HQ match live Base mainnet; PR #36"
     },
     "capability": {
       "score": 65,
-      "note": "Day-38 (9:50 CT, Galaxy Mind yes): paid brief now advertises Base mainnet USDC (eip155:8453, payTo 0xD843\u202644C9) via X402_V2_NETWORK=base; prod dpl_FcC196f7So2f3jvo5xn6GdJbegjx live-verified; X402_SETTLE unset, settle_live false."
+      "note": "Day-42: unchanged (no code); G9 blocked for mainnet settle path — demo/api/_settle.js still Sepolia-only allowlist"
     },
     "information": {
-      "score": 62,
-      "note": "Day-38: x402scan Add-your-API preview after mainnet switch: 2 valid resources (/api/health, /api/paid-brief), no network error (intel/live-mainnet-2026-10-08.json). Not yet registered."
+      "score": 64,
+      "note": "Day-42: mainnet settle_readiness rewrite + PayAI /supported re-check (intel/payai-supported-2026-10-12.json) + G9 documented"
     },
     "distribution": {
-      "score": 29,
-      "note": "Day-38 (after board): registered on x402scan (one public Add API click, no wallet): https://www.x402scan.com/server/792302a9-0547-43f5-8bcf-471b10d7dc10, 2 resources, 0 tx. First directory listing; no paid traffic yet. Week outbound 1/50."
+      "score": 32,
+      "note": "Arena submitted + x402scan listed 0 tx; week outbound 0/50 new week"
     },
     "capital": {
       "score": 0,
@@ -26,24 +26,24 @@
     },
     "network": {
       "score": 50,
-      "note": "Day-37: BK (AgenticBTC) replied 2026-10-06 9:40 AM CT: will run the free no-funds firewall mapping check on the v2 URL and report mismatches; paid scope unchanged. No reply needed."
+      "note": "BK still no verdict (msgCount 20); no chase. Last inbound 2026-10-06 9:40 CT."
     },
     "infrastructure": {
       "score": 65,
-      "note": "Day-39: prod dpl_4qetocrKNzAHspBsPKNi5Y8gV1ay from main e5f7253 (PR #34) READY first try (rootDirectory demo); live health matches the 402; X402_SETTLE unset, settle_live false."
+      "note": "live health/402 still green Day 42 evidence (intel/live-day42-2026-10-12.json); settle_live false"
     },
     "autonomy": {
-      "score": 59,
-      "note": "Day-37: detected that Day-36 local commits were lost in the box recovery and rebuilt, shipped, deployed and audited them end-to-end without a nudge."
+      "score": 60,
+      "note": "Day-42: found and fixed stale Sepolia-as-primary docs without a nudge"
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 0.25,
-    "eta_days": 725.0,
-    "eta_label": "725 days (~2.0 years) on the grind curve",
-    "note": "Day jumps discarded for velocity. Model not prophecy. Quiet inbox \u2260 Capital. Testnet \u2260 Capital. Draft \u2260 sent. Free packet \u2260 Capital. Sepolia/testnet \u2260 Capital. Paid pilot offer \u2260 spend yes."
+    "observed_day_delta_pp": 0.5,
+    "eta_days": 713.0,
+    "eta_label": "713 days (~2.0 years) on the grind curve",
+    "note": "Day jumps discarded for velocity. Model not prophecy. Quiet inbox ≠ Capital. Testnet ≠ Capital. Draft ≠ sent. Free packet ≠ Capital. Sepolia/testnet ≠ Capital. Paid pilot offer ≠ spend yes. Dampening: day jumps discarded for velocity."
   },
   "owned_surfaces": {
     "github": "https://github.com/GalaxyMind21/world-domination-bot",
@@ -61,13 +61,13 @@
     "x402scan_listing": "https://www.x402scan.com/server/792302a9-0547-43f5-8bcf-471b10d7dc10"
   },
   "asks": [
-    "Arena final survey answers (10 opinion questions) so the separate Arena routine can final-submit before Oct 12 11:59 PM PT",
-    "Settle stays off; turning on real Base USDC settlement is a separate yes (not asked today)",
-    "Capital still 0 until an intentional seed lands toward $100"
+    "Capital still 0 until intentional seed toward $100 (preferred USDC on Base to 0xD843…44C9)",
+    "Settle stays off — turning on needs separate yes + G9 allowlist PR first",
+    "optional: approve G9 settle-allowlist code PR when ready (still default-off)"
   ],
-  "today_step": "Day 39: Identity/Infrastructure: fixed the Day-38 leftover where public /api/health still reported Base Sepolia at top level after the mainnet switch. Top-level primary_network/asset/payTo now mirror the canonical v2 402 (Base mainnet USDC \u2192 0xD843\u202644C9); legacy v1 values under x402.legacy; x402scan listing linked. smoke_mainnet asserts health==402 in both modes. PR #34 merged, prod dpl_4qetocrKNzAHspBsPKNi5Y8gV1ay live-verified, settle off.",
-  "tomorrow_vector": "Watch x402scan listing for first tx/indexing and BK thread 52b712a8 for the firewall verdict (note: BK's check was framed on Base Sepolia; live accept is now Base mainnet; fix any named mismatch ourselves). Arena final submit still waits on survey answers (deadline Oct 12 11:59 PM PT).",
-  "galaxy_mind_life_line": "It didn't change your day directly: no time, no money, nothing to approve. It keeps the bot's public status page from contradicting its own price tag, so anyone checking the x402scan listing sees one consistent story.",
+  "today_step": "Day 42 Identity/Information: aligned judge-facing HQ docs (RAISE, x402/discovery, x402/settle_readiness) to live Base mainnet USDC (eip155:8453 → 0xD843…44C9, settle off). Uncovered G9: demo/api/_settle.js still Sepolia-only allowlist so mainnet settle needs a separate code PR before any flip. PR #36 merged (aad83a7). Live product unchanged. Capital $0.",
+  "tomorrow_vector": "Optional G9 code PR (allow eip155:8453 in _settle.js from live v2 accept) still with settle kill-switch default off — do not flip X402_SETTLE without Galaxy Mind yes + written packet. Watch BK thread 52b712a8 (still no verdict). Keep paid-brief healthy for Arena judges. Capital still needs intentional $100 seed.",
+  "galaxy_mind_life_line": "It didn't free your calendar or move money. It does protect your operator reputation: Arena judges and anyone opening RAISE/x402scan now see the same Base mainnet story as the live 402, instead of a Sepolia contradiction.",
   "drafts_pending_send": [],
   "network_evidence": {
     "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
@@ -85,7 +85,7 @@
     "g4": "SHIPPED",
     "g6": "BLOCKED",
     "g8": "REVIEWED",
-    "payai_supported": "intel/payai-supported-2026-10-05.json",
+    "payai_supported": "intel/payai-supported-2026-10-12.json",
     "live_demo_evidence": "intel/live-demo-2026-10-05.json",
     "x402_base_wallet": "intel/x402-base-wallet-2026-09-26.json",
     "pr_day31_kill_switch": "https://github.com/GalaxyMind21/world-domination-bot/pull/22",
@@ -128,14 +128,21 @@
     "pr_day39_health": "https://github.com/GalaxyMind21/world-domination-bot/pull/34",
     "deploy_day39": "dpl_4qetocrKNzAHspBsPKNi5Y8gV1ay",
     "live_day39": "intel/live-health-canonical-2026-10-09.json",
-    "agenticbtc_new_inbound_day39": false
+    "agenticbtc_new_inbound_day39": false,
+    "pr_day42_docs": "https://github.com/GalaxyMind21/world-domination-bot/pull/36",
+    "deploy_day42": "unchanged — docs-only PR #36; no Vercel redeploy; live still dpl_4qetocrKNzAHspBsPKNi5Y8gV1ay health path",
+    "live_day42": "intel/live-day42-2026-10-12.json",
+    "agenticbtc_new_inbound_day42": false,
+    "g9_settle_allowlist": "BLOCKED",
+    "day42_docs_evidence": "intel/day42-mainnet-docs-2026-10-12.md",
+    "pr_day42_docs_merge": "aad83a7bbebcdf9f595cc5c8027d4414d0336dcc"
   },
   "week_outbound_count_ct": {
-    "week_start": "2026-10-05",
-    "sent": 1,
+    "week_start": "2026-10-12",
+    "sent": 0,
     "ceiling": 50,
-    "updated": "2026-10-09T09:40:00-05:00",
-    "note": "1 send this week (ffb3f1c0, 2026-10-05 23:15 CT). No outbound Day 37, 38 or 39."
+    "updated": "2026-10-12T09:16:51-05:00",
+    "note": "New CT week; 0 sends Day 42. Prior week 2026-10-05 closed 1/50."
   },
   "skipped_days": {
     "24": "usage pause",
