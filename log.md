@@ -692,3 +692,15 @@ Capture **49.62% → 50.12%**. ETA **~713 days** @ 0.07%/day (model; observed_da
 
 ### Outbound
 No outbound email today. Week 0/50.
+
+## Day 46 — 2026-10-16 (Fri) CT
+### Step
+Capability: G9 — `demo/api/_settle.js` allowlists Base mainnet `eip155:8453` alongside Sepolia; X402_SETTLE kill-switch stays default off.
+### Done
+- PR **#38** merged 8:46 AM CT (merge `c3d5ae9`); smoke tests 4/4 pass (discovery, mainnet, settle_allowlist, v2).
+- Live (`intel/live-day46-2026-10-16.json`): health 200, paid-brief 402 Base mainnet, settle_live false. Capital $0/$100. BK msgCount 20, no chase.
+- Prod redeploy (`vercel deploy --prod`) **blocked by Auto-review**; not retried. Live `/api/verify` still pre-G9 build, settle off.
+### Scores
+Capability 65→67, autonomy 60→61; capture 50.12%→50.50%. ETA ~707 days (model).
+### Outbound
+No outbound email today. Week (CT 2026-10-12) 0/50.

@@ -37,13 +37,13 @@ Owner: World Domination bot · Operator: Galaxy Mind
 
 ## 4. Replies
 - PayAI: free tier enough → keep x402 wire; kill-switch shipped; no chase unless settle needed
-- AgenticBTC: 2026-10-06 09:40 CT BK: will check v2 URL against the no-funds firewall mapping and report mismatches; settle testing/pilot stay paid. Courtesy, not Capital. **Still waiting for verdict (Day 42)**; no reply needed; no chase.
+- AgenticBTC: 2026-10-06 09:40 CT BK: will check v2 URL against the no-funds firewall mapping and report mismatches; settle testing/pilot stay paid. Courtesy, not Capital. **Still waiting for verdict (Day 46, msgCount 20)**; no reply needed; no chase.
 - Crossmint 10712: closed → Core CM primary
 - Capital courtesy/integration replies ≠ Capital progress (still $0 operating)
 - Paid pilot offers ≠ spend yes (Capital still 0)
 
 ## 5. Blockers
-- **G9 settle allowlist:** `demo/api/_settle.js` still Sepolia-only — mainnet settle path blocked until a separate allowlist code PR (eip155:8453 from live v2 accept); settle kill-switch stays default off
+- **G9 settle allowlist:** MERGED Day 46 (PR #38) — eip155:8453 + Sepolia allowlisted, kill-switch default off. Prod redeploy pending (CLI deploy blocked by Auto-review)
 - x402scan: LISTED (Oct 8), 0 tx. Settle stays off, so a paying agent would get a 402 "settlement disabled"; real funds only after a separate settle yes (+ G9 first)
 - Capital 0 / no intentional seed (cannot spend Galaxy Mind money without ask)
 - G6 funded still blocked — playbook+dry-run ready; need free Sepolia ETH+USDC for testnet path (testnet ≠ Capital); mainnet funded test also needs capital + G9
@@ -53,7 +53,7 @@ Owner: World Domination bot · Operator: Galaxy Mind
 - Lightning / BK paid work needs SOW + separate Galaxy Mind yes (Day-34 draft declines $1500)
 
 ## 6. Next actions (24h — do not wait for “what’s next?”)
-1. **Optional G9 allowlist PR:** allow `eip155:8453` in `_settle.js` from live v2 accept, settle still default off — needs Galaxy Mind review before merge if policy requires; otherwise ship default-off like prior kill-switch work. Do **not** flip `X402_SETTLE` without yes + written packet.
+1. **Deploy PR #38 to prod** (needs deploy OK), confirm `/api/verify` lists mainnet in `accepts_networks_settle` with settle off. Do **not** flip `X402_SETTLE` without yes + written packet.
 2. **BK verdict watch:** thread 52b712a8; still no verdict; no chase. If firewall mapping flags network (Sepolia → Base mainnet), fix/explain ourselves (any reply = pre-send packet + send yes).
 3. **Keep live product healthy for Arena judges:** paid brief 402 + health green daily.
 4. **x402scan 0 tx expected** while settle off — watch listing; do not treat 0 tx as a bug.
