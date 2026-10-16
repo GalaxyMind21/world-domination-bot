@@ -1,11 +1,13 @@
-// X402_SETTLE kill-switch + thin PayAI verify→settle proxy (Base Sepolia only).
+// X402_SETTLE kill-switch + thin PayAI verify→settle proxy (Base Sepolia + Base mainnet).
 // Default OFF: never POST facilitator /verify or /settle unless process.env.X402_SETTLE === "1".
-// Day 31 — G4 shipped; G6 (testnet client funds) still blocked → do not flip live in prod.
+// Day 31 — G4 shipped; Day 46 — G9 allowlist ships eip155:8453 alongside Sepolia.
+// G6 (funded test client) still blocked → do not flip live in prod.
 
 const {
   FACILITATOR_BASE,
   RECEIVE_EVM,
   USDC_BASE_SEPOLIA,
+  USDC_BASE_MAINNET,
   NETWORK_BASE_SEPOLIA,
   NETWORK_V2,
   PAYMENT_REQUIRED,
@@ -13,11 +15,19 @@ const {
 
 const SETTLE_ON = () => String(process.env.X402_SETTLE || "").trim() === "1";
 
+// Day 46 G9: allow live v2 accept (Base mainnet) as well as legacy Sepolia.
+const NETWORK_BASE_MAINNET = "base";
+const NETWORK_BASE_MAINNET_CAIP2 = "eip155:8453";
+const NETWORK_BASE_SEPOLIA_CAIP2 = "eip155:84532";
+
 const ALLOWED_NETWORKS = new Set([
   "base-sepolia",
-  "eip155:84532",
+  NETWORK_BASE_SEPOLIA_CAIP2,
   NETWORK_BASE_SEPOLIA,
-  NETWORK_V2,
+  "base",
+  NETWORK_BASE_MAINNET,
+  NETWORK_BASE_MAINNET_CAIP2,
+  NETWORK_V2, // follows X402_NETWORK; may be sepolia or mainnet
 ]);
 
 function headerGet(req, name) {
@@ -42,17 +52,61 @@ function decodePaymentSignature(raw) {
   }
 }
 
-function primaryBaseSepoliaRequirements() {
+function isMainnetNetwork(network) {
+  const n = String(network || "").toLowerCase();
+  return n === "base" || n === "eip155:8453";
+}
+
+function primaryRequirementsFor(network) {
   const accepts = (PAYMENT_REQUIRED && PAYMENT_REQUIRED.accepts) || [];
+  const wantMainnet = isMainnetNetwork(network);
   const primary =
+    accepts.find((a) => {
+      if (!a) return false;
+      const net = String(a.network || "").toLowerCase();
+      const v2 = a.extra && a.extra.networkV2;
+      if (wantMainnet) {
+        return (
+          net === "base" ||
+          net === "eip155:8453" ||
+          v2 === "eip155:8453"
+        );
+      }
+      return (
+        net === "base-sepolia" ||
+        net === "eip155:84532" ||
+        v2 === "eip155:84532"
+      );
+    }) ||
     accepts.find(
       (a) =>
         a &&
         (a.network === "base-sepolia" ||
           a.network === "eip155:84532" ||
-          (a.extra && a.extra.networkV2 === "eip155:84532"))
-    ) || accepts[0];
+          a.network === "base" ||
+          a.network === "eip155:8453" ||
+          (a.extra &&
+            (a.extra.networkV2 === "eip155:84532" ||
+              a.extra.networkV2 === "eip155:8453")))
+    ) ||
+    accepts[0];
+
   if (!primary) {
+    if (wantMainnet) {
+      return {
+        scheme: "exact",
+        network: NETWORK_BASE_MAINNET,
+        maxAmountRequired: "1000000",
+        amount: "1000000",
+        resource: "/api/brief",
+        description: "World Domination Day Brief",
+        mimeType: "application/json",
+        payTo: RECEIVE_EVM,
+        maxTimeoutSeconds: 60,
+        asset: USDC_BASE_MAINNET,
+        extra: { name: "USDC", version: "2", networkV2: NETWORK_BASE_MAINNET_CAIP2 },
+      };
+    }
     return {
       scheme: "exact",
       network: "base-sepolia",
@@ -64,18 +118,46 @@ function primaryBaseSepoliaRequirements() {
       payTo: RECEIVE_EVM,
       maxTimeoutSeconds: 60,
       asset: USDC_BASE_SEPOLIA,
-      extra: { name: "USDC", version: "2", networkV2: "eip155:84532" },
+      extra: { name: "USDC", version: "2", networkV2: NETWORK_BASE_SEPOLIA_CAIP2 },
     };
   }
   // Facilitator v2 often wants `amount`; our 402 body uses maxAmountRequired.
   const amount = primary.maxAmountRequired || primary.amount || "1000000";
+  // When payment is mainnet but primary accept is still Sepolia-shaped (legacy
+  // PAYMENT_REQUIRED default), force mainnet asset/network from constants.
+  if (wantMainnet && !isMainnetNetwork(primary.network)) {
+    return {
+      scheme: primary.scheme || "exact",
+      network: NETWORK_BASE_MAINNET,
+      maxAmountRequired: amount,
+      amount,
+      resource: primary.resource || "/api/brief",
+      description: primary.description || "World Domination Day Brief",
+      mimeType: primary.mimeType || "application/json",
+      payTo: RECEIVE_EVM,
+      maxTimeoutSeconds: primary.maxTimeoutSeconds || 60,
+      asset: USDC_BASE_MAINNET,
+      extra: Object.assign({}, primary.extra || {}, {
+        name: "USDC",
+        version: "2",
+        networkV2: NETWORK_BASE_MAINNET_CAIP2,
+      }),
+    };
+  }
   return Object.assign({}, primary, { amount, maxAmountRequired: amount });
+}
+
+/** @deprecated use primaryRequirementsFor — kept name for any external callers */
+function primaryBaseSepoliaRequirements() {
+  return primaryRequirementsFor("base-sepolia");
 }
 
 function networkAllowed(network) {
   if (!network) return false;
-  return ALLOWED_NETWORKS.has(String(network).toLowerCase()) ||
-    ALLOWED_NETWORKS.has(String(network));
+  return (
+    ALLOWED_NETWORKS.has(String(network).toLowerCase()) ||
+    ALLOWED_NETWORKS.has(String(network))
+  );
 }
 
 async function facilitatorPost(path, body) {
@@ -118,7 +200,7 @@ async function tryVerifySettle(req) {
       status: "not_settled",
       message:
         "settle kill-switch OFF (X402_SETTLE!=1). Honest stub — no PayAI POST /verify or /settle.",
-      rail: "base-sepolia-only-when-enabled",
+      rail: "base-sepolia-and-base-mainnet-when-enabled",
     };
   }
 
@@ -158,13 +240,13 @@ async function tryVerifySettle(req) {
       facilitator_called: false,
       status: "network_not_allowed",
       message:
-        "Live settle proxy only allows Base Sepolia (base-sepolia / eip155:84532). Got: " +
+        "Live settle proxy allows Base Sepolia (base-sepolia / eip155:84532) and Base mainnet (base / eip155:8453). Got: " +
         String(net),
       network: net,
     };
   }
 
-  const paymentRequirements = primaryBaseSepoliaRequirements();
+  const paymentRequirements = primaryRequirementsFor(net);
   // Day 35: requirements are server-authoritative. Never adopt client-supplied
   // payTo / asset / amount; reject any payload whose terms differ from the challenge.
   const same = (x, y) => String(x || "").toLowerCase() === String(y || "").toLowerCase();
@@ -210,6 +292,7 @@ async function tryVerifySettle(req) {
     const success =
       settle.json &&
       (settle.json.success === true || settle.json.settled === true);
+    const railLabel = isMainnetNetwork(net) ? "Base mainnet" : "Base Sepolia";
     return {
       ok: Boolean(success),
       settled: Boolean(success),
@@ -222,7 +305,7 @@ async function tryVerifySettle(req) {
       verify: { isValid: true, payer: verify.json && verify.json.payer },
       settle: settle.json,
       message: success
-        ? "Facilitator verify+settle succeeded on Base Sepolia."
+        ? "Facilitator verify+settle succeeded on " + railLabel + "."
         : "Facilitator /settle did not return success:true.",
       payment_response: success
         ? {
@@ -265,6 +348,12 @@ function stubBody(req) {
       "/verify then /settle). Default does not call PayAI.",
     accepts_network_v1: NETWORK_BASE_SEPOLIA,
     accepts_network_v2: NETWORK_V2,
+    accepts_networks_settle: [
+      "base-sepolia",
+      NETWORK_BASE_SEPOLIA_CAIP2,
+      "base",
+      NETWORK_BASE_MAINNET_CAIP2,
+    ],
     payTo: RECEIVE_EVM,
     asset: USDC_BASE_SEPOLIA,
   };
@@ -277,4 +366,7 @@ module.exports = {
   headerGet,
   decodePaymentSignature,
   networkAllowed,
+  primaryRequirementsFor,
+  primaryBaseSepoliaRequirements,
+  isMainnetNetwork,
 };
