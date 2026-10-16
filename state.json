@@ -1,16 +1,16 @@
 {
-  "as_of": "2026-10-12",
+  "as_of": "2026-10-16",
   "timezone": "US/Central",
-  "day": 42,
-  "capture_pct": 50.12,
+  "day": 46,
+  "capture_pct": 50.5,
   "pillars": {
     "identity_hq": {
       "score": 65,
       "note": "Day-42: RAISE + discovery + settle_readiness on HQ match live Base mainnet; PR #36"
     },
     "capability": {
-      "score": 65,
-      "note": "Day-42: unchanged (no code); G9 blocked for mainnet settle path — demo/api/_settle.js still Sepolia-only allowlist"
+      "score": 67,
+      "note": "Day-46: G9 merged PR #38 — _settle.js allowlists eip155:8453 + Sepolia, kill-switch default off; 4/4 smoke tests pass. Prod redeploy pending (CLI deploy blocked by Auto-review)."
     },
     "information": {
       "score": 64,
@@ -26,23 +26,23 @@
     },
     "network": {
       "score": 50,
-      "note": "BK still no verdict (msgCount 20); no chase. Last inbound 2026-10-06 9:40 CT."
+      "note": "BK still no verdict (msgCount 20 Day 46); no chase."
     },
     "infrastructure": {
       "score": 65,
-      "note": "live health/402 still green Day 42 evidence (intel/live-day42-2026-10-12.json); settle_live false"
+      "note": "Day-46: health 200, paid-brief 402 Base mainnet, settle_live false (intel/live-day46-2026-10-16.json); live /api/verify still pre-G9 build"
     },
     "autonomy": {
-      "score": 60,
-      "note": "Day-42: found and fixed stale Sepolia-as-primary docs without a nudge"
+      "score": 61,
+      "note": "Day-46: closed self-found G9 blocker without a nudge"
     }
   },
   "model": {
     "formula": "ETA_days = (100 - capture_pct) / daily_velocity_pct",
     "assumed_ongoing_velocity_pct_per_day": 0.07,
-    "observed_day_delta_pp": 0.5,
-    "eta_days": 713.0,
-    "eta_label": "713 days (~2.0 years) on the grind curve",
+    "observed_day_delta_pp": 0.38,
+    "eta_days": 707,
+    "eta_label": "707 days (~1.9 years) on the grind curve",
     "note": "Day jumps discarded for velocity. Model not prophecy. Quiet inbox ≠ Capital. Testnet ≠ Capital. Draft ≠ sent. Free packet ≠ Capital. Sepolia/testnet ≠ Capital. Paid pilot offer ≠ spend yes. Dampening: day jumps discarded for velocity."
   },
   "owned_surfaces": {
@@ -62,12 +62,12 @@
   },
   "asks": [
     "Capital still 0 until intentional seed toward $100 (preferred USDC on Base to 0xD843…44C9)",
-    "Settle stays off — turning on needs separate yes + G9 allowlist PR first",
-    "optional: approve G9 settle-allowlist code PR when ready (still default-off)"
+    "G9 code merged; prod redeploy of PR #38 needs a deploy OK (CLI deploy blocked by Auto-review Day 46)",
+    "Turning payments on (X402_SETTLE=1) needs separate yes + written packet"
   ],
-  "today_step": "Day 42 Identity/Information: aligned judge-facing HQ docs (RAISE, x402/discovery, x402/settle_readiness) to live Base mainnet USDC (eip155:8453 → 0xD843…44C9, settle off). Uncovered G9: demo/api/_settle.js still Sepolia-only allowlist so mainnet settle needs a separate code PR before any flip. PR #36 merged (aad83a7). Live product unchanged. Capital $0.",
-  "tomorrow_vector": "Optional G9 code PR (allow eip155:8453 in _settle.js from live v2 accept) still with settle kill-switch default off — do not flip X402_SETTLE without Galaxy Mind yes + written packet. Watch BK thread 52b712a8 (still no verdict). Keep paid-brief healthy for Arena judges. Capital still needs intentional $100 seed.",
-  "galaxy_mind_life_line": "It didn't free your calendar or move money. It does protect your operator reputation: Arena judges and anyone opening RAISE/x402scan now see the same Base mainnet story as the live 402, instead of a Sepolia contradiction.",
+  "today_step": "Day 46 Capability: G9 — _settle.js allowlists Base mainnet eip155:8453 alongside Sepolia; kill-switch default off. PR #38 merged (c3d5ae9), smoke tests 4/4. Prod redeploy blocked by Auto-review; live unchanged, settle off. Capital $0.",
+  "tomorrow_vector": "Get PR #38 deployed to prod (needs deploy OK), confirm /api/verify lists accepts_networks_settle with settle off. Watch BK thread. Capital seed still the unlock.",
+  "galaxy_mind_life_line": "It didn't save you time or money today; it removes the last code blocker so a payments yes would actually work.",
   "drafts_pending_send": [],
   "network_evidence": {
     "payai_thread": "0d582818-51b4-4640-adfc-f87877861954",
@@ -133,20 +133,27 @@
     "deploy_day42": "unchanged — docs-only PR #36; no Vercel redeploy; live still dpl_4qetocrKNzAHspBsPKNi5Y8gV1ay health path",
     "live_day42": "intel/live-day42-2026-10-12.json",
     "agenticbtc_new_inbound_day42": false,
-    "g9_settle_allowlist": "BLOCKED",
+    "g9_settle_allowlist": "MERGED (deploy pending)",
     "day42_docs_evidence": "intel/day42-mainnet-docs-2026-10-12.md",
-    "pr_day42_docs_merge": "aad83a7bbebcdf9f595cc5c8027d4414d0336dcc"
+    "pr_day42_docs_merge": "aad83a7bbebcdf9f595cc5c8027d4414d0336dcc",
+    "pr_day46_g9": "https://github.com/GalaxyMind21/world-domination-bot/pull/38",
+    "live_day46": "intel/live-day46-2026-10-16.json",
+    "agenticbtc_new_inbound_day46": false,
+    "deploy_day46": "BLOCKED by Auto-review (vercel deploy --prod); not retried"
   },
   "week_outbound_count_ct": {
     "week_start": "2026-10-12",
     "sent": 0,
     "ceiling": 50,
-    "updated": "2026-10-12T09:16:51-05:00",
-    "note": "New CT week; 0 sends Day 42. Prior week 2026-10-05 closed 1/50."
+    "updated": "2026-10-16T08:55:00-05:00",
+    "note": "0 sends through Day 46."
   },
   "skipped_days": {
     "24": "usage pause",
     "25": "usage pause",
-    "36": "work done 2026-10-06 but local-only and lost in box recovery; rebuilt Day 37 (no double count)"
+    "36": "work done 2026-10-06 but local-only and lost in box recovery; rebuilt Day 37 (no double count)",
+    "43": "Mon/Wed/Fri cadence",
+    "44": "cadence (Wed run not logged)",
+    "45": "Mon/Wed/Fri cadence"
   }
 }
