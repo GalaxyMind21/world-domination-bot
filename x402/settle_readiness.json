@@ -1,7 +1,7 @@
 {
-  "as_of": "2026-10-05",
+  "as_of": "2026-10-16",
   "timezone": "America/Chicago",
-  "day": 34,
+  "day": 46,
   "operator": "Galaxy Mind",
   "live_demo": "https://world-domination-x402.vercel.app/",
   "facilitator": "https://facilitator.payai.network",
@@ -12,10 +12,11 @@
   "post_verify_called_today": false,
   "post_settle_called_today": false,
   "primary_rail": {
-    "network": "base-sepolia",
-    "caip2": "eip155:84532",
+    "network": "base",
+    "caip2": "eip155:8453",
     "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
-    "asset_usdc": "0x036CbD53842c5426634e7929541eC2318f3dCF7e"
+    "asset_usdc": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "note": "Live v2 accept since 2026-10-08; settle still off"
   },
   "secondary_rail": {
     "network": "solana",
@@ -31,7 +32,8 @@
     "G6_sepolia_test_client_funded": false,
     "G6_playbook_and_dry_run_shipped": true,
     "G7_no_spend_without_ask": true,
-    "G8_agenticbtc_free_packet_reviewed": true
+    "G8_agenticbtc_free_packet_reviewed": true,
+    "G9_settle_allowlist_mainnet": true
   },
   "ready_to_implement_wire": true,
   "ready_to_flip_live_settle": false,
@@ -63,5 +65,18 @@
     "pr": 26,
     "g6": "BLOCKED",
     "settle_live": false
+  },
+  "legacy_sepolia_rail": {
+    "network": "base-sepolia",
+    "caip2": "eip155:84532",
+    "payTo": "0xD8436B7afD09E10704931E17FBC79dE71BF944C9",
+    "asset_usdc": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+    "note": "Still allowed by settle proxy for legacy /api/brief"
+  },
+  "g9_note": "Day-46 SHIPPED: _settle.js allows eip155:8453/base alongside Sepolia; kill-switch default off; G6 still BLOCKED",
+  "day46": {
+    "g9": "SHIPPED",
+    "settle_live": false,
+    "smoke": "demo/test/smoke_settle_allowlist.mjs"
   }
 }
